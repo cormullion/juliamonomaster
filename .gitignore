@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+images/.DS_Store
+.sass-cache
+.jekyll-metadata
+.DS_Store
+old*/*
+franklin.pub
+franklin
+package-lock.json
+Manifest.toml
