@@ -4,6 +4,9 @@
 
 ### JuliaMono - a monospaced font for scientific and technical computing
 
+
+~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
+
 JuliaMono is a monospaced typeface designed for programming in the [Julia](https://julialang.org) Programming Language and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was intended as an experiment to be presented at the 2020 JuliaCon conference in Lisbon, Portugal (which of course didn’t happen).
 
 JuliaMono is:
@@ -83,6 +86,8 @@ And in [Emacs](https://www.gnu.org/software/emacs/):
 ~~~
 
 ### Examples
+
+~~~<img src="/assets/specimen_2.png" width="100%" alt="specimen image 2"> ~~~
 
 The following examples will be rendered in JuliaMono by your browser (if it’s successfully downloaded the web font versions), so I hope what you see here is close to what I made.
 
@@ -288,6 +293,9 @@ Here are some samples of various languages[^languages] :
 
 One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.)
 
+~~~<img src="/assets/specimen_3.png" width="100%" alt="specimen image 6"> ~~~
+
+
 ~~~<img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> ~~~
 
 In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code.
@@ -319,12 +327,6 @@ From a design perspective, forcing every character into the same size box is a p
     </a>
 </div>
 ~~~
-
-JuliaMono is quite greedy[^greedy], and contains a lot of Unicode glyphs.
-
-~~~<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> ~~~
-
-(Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences[^otherfonts]).
 
 It’s also a good idea to support box-drawing characters and DataFrames.jl output (terminal permitting):
 
@@ -374,6 +376,8 @@ I ❤ Julia
 ```
 
 ### Contextual and stylistic alternates
+
+~~~<img src="/assets/specimen_7.png" width="100%" alt="specimen image 7"> ~~~
 
 JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as ~~~<span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span>~~~ in certain fonts are replaced by a single glyph such as ~~~<span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>~~~. These [ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature) have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.
 
