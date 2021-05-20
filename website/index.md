@@ -645,7 +645,7 @@ There are a few areas of the Unicode system that have been officially kept empty
 Each typeface can do its own thing in these areas. In JuliaMono you'll find these, among others, and if you ask nicely I might add some more:
 
 ~~~
-<img src="/assets/specimen_8.png" alt="private use area">
+<img src="/assets/specimen_8.png" width="100%" alt="private use area">
 ~~~
 
 The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (eg on github), you have no idea what glyph - if any - will be displayed.
