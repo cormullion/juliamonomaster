@@ -7,29 +7,24 @@
 
 #### ‘Why⁉’
 
-The typeface was introduced at the 2020 Julia Programming Language conference, JuliaCon, in Lisbon, Portugal, and it was (going to be) my contribution to the festivities. It was an experiment to see whether a font could be designed with a specific programming language in mind.
-
-#### ‘Is it just for Julia coding? How does it “work well with” Julia?’
-
-* it has all the glyphs used in the Unicode Input chapter of the Julia documentation (except for the emojis)
-* a few of the glyphs and ligatures were designed with the Julia programming language in mind
-* the font contains special features such as contextual alternates, stylistic sets, and “ligatures” that complement Julia syntax
-
-But in general it can be used for any purpose.
+The typeface was introduced at the 2020 Julia Programming Language conference, JuliaCon, in Lisbon, Portugal, and it was going to be my contribution to the festivities.
 
 #### ‘Where can I see it in action?’
+
+Feel free to compare it with other fonts at [dev fonts](https://devfonts.gafi.dev/) and [www.programmingfonts.org](https://www.programmingfonts.org/#julia-mono).
+
+If you use a lot of mathematics, visit the [mono-math.netlify.app](mono-math.netlify.app) site, which shows how Unicode math symbols look in various fonts.
 
 You can visit [this mirror of the Julia blog](https://julialangblogmirror.netlify.app/blog/). It hasn’t been updated for a while (it was useful during the development of [Franklin.jl](https://franklinjl.org)), but all the code examples use JuliaMono.
 
 You can browse through [this local copy](/assets/juliamanual/index.html) of an old Julia manual. The default Roboto-Mono font has been replaced with JuliaMono-Regular.
 
-As an example of using JuliaMono with [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl)-generated documents, see the documentation for [Luxor.jl](https://github.com/JuliaGraphics/Luxor.jl).
-
-Feel free to compare it with other fonts at [dev fonts](https://devfonts.gafi.dev/) [www.programmingfonts.org](https://www.programmingfonts.org/#julia-mono).
+As an example of using JuliaMono in Julia documentation, made with [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl), see the documentation for [Luxor.jl](https://github.com/JuliaGraphics/Luxor.jl).
 
 #### ‘I don’t like it as much as ``$(my_favourite_font)``’
 
 **That’s not a question!** But I know what you mean. Choice of work environment (editor, font, colour scheme, background music, preferred beverage, etc.) is very much a personal thing, and over the hours, days, and weeks that you work with your particular setup, you’ll grow accustomed to it, and unfamiliar work environments will look unappealing or even ugly. You’d probably need to try any alternatives for a while before you get more accustomed to them. Fortunately, you don’t have to try [Comic Code](https://www.myfonts.com/fonts/tabular-type-foundry/comic-code/), the [Kakoune editor](http://kakoune.org), the music of [Autechre](http://autechre.ws/), [Durian tea](https://www.tealeaves.com/products/durian), or anything else that’s new and unfamiliar; just stick to your current favourites!
+
 
 #### ‘How can I use the web fonts?’
 
@@ -149,11 +144,9 @@ atom-text-editor {
 
 <!--  force a paragraph  -->
 
-#### ‘Can I use this font in a notebook? And how do I do it?’
+#### ‘Can I use this font in a Jupyter notebook? And how do I do it?’
 
-It’s a good question. Some browsers these days are reluctant to give even you access to things on your own local disk, “for security reasons”. But a local copy of the font may be available and accessible on your particular set-up.
-
-If not, you could try using web fonts, as above. For example, if there’s a Jupyter CSS file here:
+It’s a good question. Some browsers these days are reluctant to give you access to things stored on your own local disks, “for security reasons”. But a local copy of the font may be available and accessible on your particular set-up. If not, you could try using web fonts, as above. For example, if there’s a Jupyter CSS file here:
 
 ```
 ~/.jupyter/custom/custom.css
@@ -197,13 +190,21 @@ which downloads the font once and is then available to applications.
 </div>
 ~~~
 
-#### ‘How do I use the font for plotting, in Plots.jl?’
+#### ‘Is it just for Julia coding? How does it “work well with” Julia?’
+
+No, that's just the language I use for my own code. You can use the font for any purpose.
+
+* it has all the glyphs used in the Unicode Input chapter of the Julia documentation (except for the emojis)
+* a few of the glyphs and ligatures were designed with the Julia programming language in mind
+* the font contains special features such as contextual alternates, stylistic sets, and “ligatures” that complement Julia syntax
+
+#### ‘How do I use the font in plots, say in Plots.jl?’
 
 Another great question. Are you sure you want a monospaced font on your plot? If you do, it should be easy enough to ask for the font when you plot. But it’s never as simple as you want it to be, as is usual in the world of fonts.
 
 I know very little about plotting in Julia, but some investigations suggest that:
 
-- `pyplot()` works well, mostly
+- `pyplot()` works well, mostly, as does Makie.jl
 - some backends do their own thing with fonts. For example, I couldn’t persuade the GR backend to use JuliaMono at all.
 
 Here’s some code that uses JuliaMono for a plot. The plot shows the frequency of occurrence of every Unicode character used in the Julia git repository, and uses the characters as plot markers. I went through every text file and totalled all the characters - there are 956044 letter “e”s, and so on. I’m using `pyplot()`; the `freqs` DataFrame holds the characters and the counts. I’ve created a few font objects using `Plots.font()`, which makes it easier to use different text styles in the `plot()` function. I haven’t yet worked out how to use the different weights of a font family.
@@ -296,15 +297,15 @@ Then you can use something like `minted` to format the code.
 
 #### ‘Aren’t these font files too big?’
 
-It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, `.WOFF` and `.WOFF2`, where the `2` indicates a more recent and slightly more compact format. `JuliaMono-Regular.woff` is 674KB, `JuliaMono-Regular.woff2` is 619KB - the size of a PNG image, perhaps.
+It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, `.WOFF` and `.WOFF2`, where the `2` indicates a more recent and slightly more compact format. `JuliaMono-Regular.woff2` is 619KB - the size of a PNG image, perhaps?
 
 The `.TTF` versions are getting on for 1.8MB each. (See [Does it work on Windows]([this](/faq/#does_it_work_on_windows)).)
 
 For comparison, the Themes folder of `.CSS` files for the Julia manual (and for every manual built with Documenter.jl since v0.21) is about 700KB. So in that light the WOFF2 fonts aren’t that bad. Of course, the two Google fonts downloaded by every Julia document (Lato and Roboto) are tiny, at 14KB and 11KB, with 221 glyphs in each.
 
-So, if you’re building a website, or designing for mobile applications, the size of the WOFF2 file(s) will be an important factor to weigh against the advantages of having predictable character sets. (This site is a bit of an exception, for obvious reasons.) Note that you can specify font subsets in the CSS using the **unicode-range** feature, which defines a restricted set of characters which you know are going to be used, so that users don’t download any that they won’t need.
+So, if you’re building a website, or designing for mobile applications, the size of the WOFF2 file(s) might be an important factor to weigh against the advantages of having predictable character sets. (This site is a bit of an exception, for obvious reasons.) Note that you can specify font subsets in the CSS using the **unicode-range** feature, which defines a restricted set of characters which you know are going to be used, so that users don’t download any that they won’t need.
 
-You could consider using the ‘-Latin’ variants to obviate the initial loading time.
+You could consider using the ‘-Latin’ variants to obviate the initial loading time. These have a limited number of glyphs (restricted to the basic Latin character set), but will at least be quick to download.
 
 #### ‘How is this different from any other Unicode font?’
 
@@ -318,21 +319,23 @@ Most people probably can’t tell the difference between Helvetica and Arial, an
 
 Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that's readable, easy to use, unquirky, simple, and including most of the characters (glyphs) required for modern scientific and technical programming.
 
-Matthew Carter, the famous typeface designer, talks about how the aim is to create "a beautiful set of letters" rather than "a set of beatiful letters"; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, but there's much redundancy, so predictability assists reading. However, programming typefaces have to address different problems:
+Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create "a beautiful set of letters" rather than "a set of beautiful letters"; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, but there's much redundancy, and predictability assists reading. You want the eye to glide swiftly and easily over the page. However, programming typefaces have to address different problems:
 
 - code can often consist of sequences of non-language characters
 
-- variable names might combine latin and greek letters and various punctation characters
+- a single variable name might combine latin and greek letters and various punctation characters
 
-- there are sometimes strings of characters which aren't usually seen together
+- often you want to compare areas of text with other areas (such as code laid out in tabular form)
+
+- sometimes the characters are placed so as to form larger patterns
 
 - punctuation marks are no longer just hints to assist readers, but critical pieces of information that might completely alter the meaning of the surrounding text
 
 - the programmer doesn't read code in the same way that they would read prose (citation needed!)
 
-- there's much less redundancy in the text, and when reading prose you'll find it easy to overlook misspellings and typos; when working with code you'll want to find the misspellings and typos - you don't really want your eye to glide smoothly past them!
+- there's much less redundancy in the text, and when reading prose you'll find it easy to overlook misspellings and typos; when working with code you'll want to find the misspellings and typos - you don't really want your eye to glide smoothly past them
 
-So a primary goal is to make characters easy to distinguish. The shapes aren’t compressed or condensed. The glyphs aren't fashionably thin. It might feel quite “airy” because of the generously-spacing. The punctuation is quite solid (my eyesight is probably poorer than yours!). I've tried to make glyphs that are more likely to be confused different. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. Similarly, the letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two less letters that can be confused. Similarly the asymmetries of characters like B and 8 have been enhanced.
+A primary goal is to make characters easy to distinguish. The shapes aren’t compressed or condensed. The glyphs aren't fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you'd expect (my eyesight is probably poorer than yours!). I've tried to make glyphs that are more likely to be confused look different from each other. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. Similarly, the letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. Similarly the asymmetries of characters like B and 8 have been enhanced.
 
 #### ‘Is it a package? Was it written in Julia? How will this contribute to the ecosystem of Julia language?’
 
@@ -344,7 +347,7 @@ And how will JuliaMono contribute? It’s often in the nature of an experiment t
 
 #### ‘Is it finished?’
 
-The first β release, version 0.001, was released on July 27, 2020. The most recent β release, version 0.037, was released in April 2021. Always download the latest version if you want the typeface to perform at its best.
+The first β release, version 0.001, was released on July 27, 2020. Version 0.037 was released in April 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.
 
 #### ‘Why don’t these accents/marks work properly?’
 

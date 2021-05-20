@@ -7,7 +7,7 @@
 
 ~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
 
-JuliaMono is a monospaced typeface designed for programming in the [Julia](https://julialang.org) Programming Language and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was intended as an experiment to be presented at the 2020 JuliaCon conference in Lisbon, Portugal (which of course didn’t happen).
+JuliaMono is a monospaced typeface designed for programming and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was intended as an experiment to be presented at the 2020 JuliaCon conference in Lisbon, Portugal.
 
 JuliaMono is:
 
@@ -18,7 +18,7 @@ JuliaMono is:
 - easy to use, simple, unquirky, friendly, and approachable
 - available for MacOS, Unix, and Windows [^windows]
 
-This site uses JuliaMono for all text; if your browser can’t[^ohdear] (or you didn’t allow it to) download and display web fonts, you’ll only see the font in action in the images. You’ll see a familiar formation of three dots here when/if the font has been downloaded:
+This site uses JuliaMono for all text; if your browser can’t[^ohdear] (or you didn’t allow it to) download and display web fonts, you’ll only see the font in action in the images. You’ll see three large dots here when/if the font has been successfully downloaded:
 
 ~~~<span style="text-align: center;font-family: JuliaMono-Regular;font-size:4rem;"> (  ) </span>~~~
 
@@ -88,6 +88,8 @@ And in [Emacs](https://www.gnu.org/software/emacs/):
 ### Examples
 
 ~~~<img src="/assets/specimen_2.png" width="100%" alt="specimen image 2"> ~~~
+
+~~~<img src="/assets/specimen_3.png" width="100%" alt="specimen image 3"> ~~~
 
 The following examples will be rendered in JuliaMono by your browser (if it’s successfully downloaded the web font versions), so I hope what you see here is close to what I made.
 
@@ -291,18 +293,17 @@ Here are some samples of various languages[^languages] :
 
 ### Unicode coverage
 
-One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.)
-
-~~~<img src="/assets/specimen_3.png" width="100%" alt="specimen image 6"> ~~~
-
-
 ~~~<img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> ~~~
+
+One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.) Here's a few less common ones:  
+
+~~~<img src="/assets/specimen_6.png" width="100%" alt="specimen image 6"> ~~~
 
 In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code.
 
 From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.
 
-[UnicodePlots.jl](https://github.com/Evizero/UnicodePlots.jl) uses various Unicode characters to plot figures directly in a terminal window. [^linespacing]
+The Julia package [UnicodePlots.jl](https://github.com/Evizero/UnicodePlots.jl) uses various Unicode characters to plot figures directly in a terminal window. [^linespacing]
 
 ~~~
 <div id="enlargewrap">
@@ -315,7 +316,7 @@ From a design perspective, forcing every character into the same size box is a p
 </div>
 ~~~
 
-[ImageInTerminal.jl](https://github.com/JuliaImages/ImageInTerminal.jl) is similarly awesome, conjuring images from Unicode characters:
+and the [ImageInTerminal.jl](https://github.com/JuliaImages/ImageInTerminal.jl) package uses Unicode characters to display images in the terminal:
 
 ~~~
 <div id="enlargewrap">
@@ -354,7 +355,7 @@ For a comparison of JuliaMono with other math-capable monospaced fonts, visit [m
 
 JuliaMono is quite greedy[^greedy], and contains quite a few Unicode glyphs.
 
-~~~<img src="/assets/images/juliamono/barchart.svg" width="100%" alt="silly barchart"> ~~~
+~~~<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> ~~~
 
 (Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences[^otherfonts]).
 
@@ -381,7 +382,9 @@ I ❤ Julia
 
 JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as ~~~<span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span>~~~ in certain fonts are replaced by a single glyph such as ~~~<span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>~~~. These [ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature) have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.
 
-To be honest, I’m not a big fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with. But, there are a few places in Julia where suitable Unicode alternatives are not accepted by the language, and where I feel that the ASCII-art confections currently used can be gently enhanced by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.
+To be honest, I’m not a big fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
+
+The Julia language is designed to use Unicode characters, and so ligatures aren't always needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, and the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.
 
 In JuliaMono, the following substitutions are applied when the **contextual alternates** feature is active:
 
@@ -636,20 +639,14 @@ strip:
 # Private Use Areas (PUAs)
 @@
 
-~~~
-<img src="/assets/images/juliamono/specimen_8.png" alt="private use area">
-~~~
 
 There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the standard. These are called the **Private Use Areas**, and there are three: `\ue000` to `\uf8ff`, `\UF0000` to `\UFFFFD`, and `U100000` to `U+10FFFD`.
 
-Each typeface can do its own thing in these areas. In JuliaMono, for example, if you look around `\ue800` you’ll find a few familiar shapes:
+Each typeface can do its own thing in these areas. In JuliaMono you'll find these, among others, and if you ask nicely I might add some more:
 
-```
-julia> foreach(println, '\ue800':'\ue802')
-
-
-
-```
+~~~
+<img src="/assets/specimen_8.png" alt="private use area">
+~~~
 
 The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (eg on github), you have no idea what glyph - if any - will be displayed.
 

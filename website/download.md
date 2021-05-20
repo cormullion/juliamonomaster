@@ -6,8 +6,6 @@
 
 You can find the font files at [https://github.com/cormullion/juliamono](https://github.com/cormullion/juliamono).
 
-For Arch Linux, there is also a [package in the AUR](https://aur.archlinux.org/packages/ttf-juliamono/).
-
 ### Installation
 
 #### Mac
@@ -25,11 +23,15 @@ $ brew cask install font-juliamono
 
 #### Windows
 
+You can install a font for a single user or for all users. (Some applications (such as Java) don't see fonts unless they have been installed for all users.)
+
 To install and activate a font on Windows, go to Computer |> Local Disk (C:) |> Windows |> Fonts. Locate the expanded .zip file folder, and drag the font files from there into the Fonts folder.
+
+To install for all users, just right-click the font file(s) and choose Install for All Users. Administrator privileges are required.
 
 #### Linux - using Font Manager
 
-Install Font Manager:
+You might want to install Font Manager:
 
 ```
 sudo apt install font-manager
@@ -38,6 +40,8 @@ sudo apt install font-manager
 Then double-click on the font files and click Install on each one.
 
 #### Linux - on the command line
+
+For Arch Linux, there is also a [package in the AUR](https://aur.archlinux.org/packages/ttf-juliamono/).
 
 Locate your font folder. Might be one of:
 

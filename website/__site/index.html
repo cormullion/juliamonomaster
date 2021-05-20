@@ -41,7 +41,7 @@
 	<!-- Content appended here -->
 <div class="franklin-content"><h3 id="juliamono_-_a_monospaced_font_for_scientific_and_technical_computing"><a href="#juliamono_-_a_monospaced_font_for_scientific_and_technical_computing" class="header-anchor">JuliaMono - a monospaced font for scientific and technical computing</a></h3>
 <img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> 
-<p>JuliaMono is a monospaced typeface designed for programming in the <a href="https://julialang.org">Julia</a> Programming Language and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was intended as an experiment to be presented at the 2020 JuliaCon conference in Lisbon, Portugal &#40;which of course didn’t happen&#41;.</p>
+<p>JuliaMono is a monospaced typeface designed for programming and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was intended as an experiment to be presented at the 2020 JuliaCon conference in Lisbon, Portugal.</p>
 <p>JuliaMono is:</p>
 <ul>
 <li><p>free</p>
@@ -57,7 +57,7 @@
 <li><p>available for MacOS, Unix, and Windows <sup id="fnref:windows"><a href="#fndef:windows" class="fnref">[2]</a></sup></p>
 </li>
 </ul>
-<p>This site uses JuliaMono for all text; if your browser can’t<sup id="fnref:ohdear"><a href="#fndef:ohdear" class="fnref">[3]</a></sup> &#40;or you didn’t allow it to&#41; download and display web fonts, you’ll only see the font in action in the images. You’ll see a familiar formation of three dots here when/if the font has been downloaded:</p>
+<p>This site uses JuliaMono for all text; if your browser can’t<sup id="fnref:ohdear"><a href="#fndef:ohdear" class="fnref">[3]</a></sup> &#40;or you didn’t allow it to&#41; download and display web fonts, you’ll only see the font in action in the images. You’ll see three large dots here when/if the font has been successfully downloaded:</p>
 <span style="text-align: center;font-family: JuliaMono-Regular;font-size:4rem;"> (  ) </span>
 <p>To download and install JuliaMono, see the instructions <a href="/download/">here</a>.</p>
 <h3 id="type_anything_here_nobodys_looking"><a href="#type_anything_here_nobodys_looking" class="header-anchor">Type anything here. Nobody’s looking.</a></h3>
@@ -113,6 +113,7 @@
 
 <h3 id="examples"><a href="#examples" class="header-anchor">Examples</a></h3>
 <img src="/assets/specimen_2.png" width="100%" alt="specimen image 2"> 
+<img src="/assets/specimen_3.png" width="100%" alt="specimen image 3"> 
 <p>The following examples will be rendered in JuliaMono by your browser &#40;if it’s successfully downloaded the web font versions&#41;, so I hope what you see here is close to what I made.</p>
 <p>The CSS markup applied to the following code uses two weights of the typeface, JuliaMono-Regular and JuliaMono-Medium, which is a smidgeon bolder:</p>
 <pre><code class="language-julia">using Zygote: @adjoint
@@ -300,12 +301,12 @@ end</code></pre>
 
 
 <h3 id="unicode_coverage"><a href="#unicode_coverage" class="header-anchor">Unicode coverage</a></h3>
-<p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41;</p>
-<img src="/assets/specimen_3.png" width="100%" alt="specimen image 6"> 
 <img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> 
+<p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41; Here&#39;s a few less common ones:  </p>
+<img src="/assets/specimen_6.png" width="100%" alt="specimen image 6"> 
 <p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code.</p>
 <p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
-<p><a href="https://github.com/Evizero/UnicodePlots.jl">UnicodePlots.jl</a> uses various Unicode characters to plot figures directly in a terminal window. <sup id="fnref:linespacing"><a href="#fndef:linespacing" class="fnref">[7]</a></sup></p>
+<p>The Julia package <a href="https://github.com/Evizero/UnicodePlots.jl">UnicodePlots.jl</a> uses various Unicode characters to plot figures directly in a terminal window. <sup id="fnref:linespacing"><a href="#fndef:linespacing" class="fnref">[7]</a></sup></p>
 
 <div id="enlargewrap">
     <a class="enlarge">
@@ -316,7 +317,7 @@ end</code></pre>
     </a>
 </div>
 
-<p><a href="https://github.com/JuliaImages/ImageInTerminal.jl">ImageInTerminal.jl</a> is similarly awesome, conjuring images from Unicode characters:</p>
+<p>and the <a href="https://github.com/JuliaImages/ImageInTerminal.jl">ImageInTerminal.jl</a> package uses Unicode characters to display images in the terminal:</p>
 
 <div id="enlargewrap">
     <a class="enlarge">
@@ -346,7 +347,7 @@ df &#61; 10×2 DataFrame
 <p>&#40;Can you spot the little used and sadly mathematically-unsupported “times” &#40;×&#41; character?&#41;</p>
 <p>For a comparison of JuliaMono with other math-capable monospaced fonts, visit <a href="https://mono-math.netlify.app">mono-math.netlify.app</a>, which shows how Unicode math symbols look.</p>
 <p>JuliaMono is quite greedy<sup id="fnref:greedy"><a href="#fndef:greedy" class="fnref">[8]</a></sup>, and contains quite a few Unicode glyphs.</p>
-<img src="/assets/images/juliamono/barchart.svg" width="100%" alt="silly barchart"> 
+<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> 
 <p>&#40;Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences<sup id="fnref:otherfonts"><a href="#fndef:otherfonts" class="fnref">[9]</a></sup>&#41;.</p>
 <p>If you want to know whether you can use a Unicode character as an identifier in your Julia code, use the undocumented function <code>Base.isidentifier&#40;&#41;</code>. So, for example, if you have the urge to use a dingbat &#40;one of the classic <a href="https://en.wikipedia.org/wiki/Zapf_Dingbats">Herman Zapf dingbat</a> designs&#41; as a variable name, you could look for something suitable in the output of this:</p>
 <pre><code class="language-julia">julia&gt; for n in 0x2700:0x27bf
@@ -364,7 +365,8 @@ I ❤ Julia</code></pre>
 <h3 id="contextual_and_stylistic_alternates"><a href="#contextual_and_stylistic_alternates" class="header-anchor">Contextual and stylistic alternates</a></h3>
 <img src="/assets/specimen_7.png" width="100%" alt="specimen image 7"> 
 <p>JuliaMono is an <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as <span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span> in certain fonts are replaced by a single glyph such as <span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>. These <a href="https://en.wikipedia.org/wiki/Orthographic_ligature">ligatures</a> have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.</p>
-<p>To be honest, I’m not a big fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[10]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with. But, there are a few places in Julia where suitable Unicode alternatives are not accepted by the language, and where I feel that the ASCII-art confections currently used can be gently enhanced by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.</p>
+<p>To be honest, I’m not a big fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[10]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
+<p>The Julia language is designed to use Unicode characters, and so ligatures aren&#39;t always needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, and the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.</p>
 <p>In JuliaMono, the following substitutions are applied when the <strong>contextual alternates</strong> feature is active:</p>
 
 <table class="sstable">
@@ -584,15 +586,11 @@ image:
 strip:
         docker run --rm -v &#36;&#123;PWD&#125;:/juliamono juliamono-strip:latest &quot;&#36;&#123;VERSION&#125;&quot;</code></pre>
 <div class="jm_h1"><h1 id="private_use_areas_puas"><a href="#private_use_areas_puas" class="header-anchor">Private Use Areas &#40;PUAs&#41;</a></h1></div>
-
-<img src="/assets/images/juliamono/specimen_8.png" alt="private use area">
-
 <p>There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the standard. These are called the <strong>Private Use Areas</strong>, and there are three: <code>\ue000</code> to <code>\uf8ff</code>, <code>\UF0000</code> to <code>\UFFFFD</code>, and <code>U100000</code> to <code>U&#43;10FFFD</code>.</p>
-<p>Each typeface can do its own thing in these areas. In JuliaMono, for example, if you look around <code>\ue800</code> you’ll find a few familiar shapes:</p>
-<pre><code class="language-julia">julia&gt; foreach&#40;println, &#39;\ue800&#39;:&#39;\ue802&#39;&#41;
-
-
-</code></pre>
+<p>Each typeface can do its own thing in these areas. In JuliaMono you&#39;ll find these, among others, and if you ask nicely I might add some more:</p>
+
+<img src="/assets/specimen_8.png" alt="private use area">
+
 <p>The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed &#40;eg on github&#41;, you have no idea what glyph - if any - will be displayed.</p>
 <p>You can define these to be available at the Julia REPL. For example, say you want the Julia circles to be available in the terminal when you type <code>\julialogo</code><span style="font-size: 1.5em;"></span> in a Julia session with the JuliaMono font active. Run this:</p>
 <pre><code class="language-julia">using REPL
@@ -685,7 +683,7 @@ Welcome to </code></pre>
  </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 19, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: May 20, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
