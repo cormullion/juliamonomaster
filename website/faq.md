@@ -13,7 +13,7 @@ The typeface was introduced at the 2020 Julia Programming Language conference, J
 
 Feel free to compare it with other fonts at [dev fonts](https://devfonts.gafi.dev/) and [www.programmingfonts.org](https://www.programmingfonts.org/#julia-mono).
 
-If you use a lot of mathematics, visit the [mono-math.netlify.app](mono-math.netlify.app) site, which shows how Unicode math symbols look in various fonts.
+If you use a lot of mathematics, visit the [mono-math.netlify.app](https://mono-math.netlify.app) site, which shows how Unicode math symbols look in various fonts.
 
 You can visit [this mirror of the Julia blog](https://julialangblogmirror.netlify.app/blog/). It hasn’t been updated for a while (it was useful during the development of [Franklin.jl](https://franklinjl.org)), but all the code examples use JuliaMono.
 
@@ -44,7 +44,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Regular;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.038/JuliaMono-Regular.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.037/JuliaMono-Regular.woff2");
 }
 ```
 
@@ -59,7 +59,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.038 here), whereas the JSDELIVR version always retrieves the current master version.
+Notice that the CDNJS version points to a specific version (e.g. v0.037 here), whereas the JSDELIVR version always retrieves the current master version.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -77,7 +77,7 @@ To control the display of contextual and stylistic alternates, click on the Edit
 
 ![VS Code settings](/assets/vscode-settings-2-800.png)
 
-This uses the feature codes ([listed here](/#contextual_and_stylistic_alternates)). These should all be switched on or off in a single line.
+This uses the feature codes ([listed here](/#contextual_and_stylistic_alternates)). These should be switched on or off in a single line.
 
 For example, if you want all the currently available stylistic sets, use:
 
@@ -319,7 +319,9 @@ Most people probably can’t tell the difference between Helvetica and Arial, an
 
 Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that's readable, easy to use, unquirky, simple, and including most of the characters (glyphs) required for modern scientific and technical programming.
 
-Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create "a beautiful set of letters" rather than "a set of beautiful letters"; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, but there's much redundancy, and predictability assists reading. You want the eye to glide swiftly and easily over the page. However, programming typefaces have to address different problems:
+Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create "a beautiful set of letters" rather than "a set of beautiful letters"; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter's familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, and there's much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.
+
+However, programming typefaces have to address different problems:
 
 - code can often consist of sequences of non-language characters
 
@@ -327,15 +329,19 @@ Matthew Carter, the famous typeface designer, talks about how the aim when desig
 
 - often you want to compare areas of text with other areas (such as code laid out in tabular form)
 
-- sometimes the characters are placed so as to form larger patterns
+- sometimes the characters are placed so as to form larger patterns, such as bitstrings, or array contents
 
-- punctuation marks are no longer just hints to assist readers, but critical pieces of information that might completely alter the meaning of the surrounding text
+- punctuation marks are no longer just hints to guide readers, but critical pieces of syntax that might completely alter the meaning of the surrounding text
 
 - the programmer doesn't read code in the same way that they would read prose (citation needed!)
 
-- there's much less redundancy in the text, and when reading prose you'll find it easy to overlook misspellings and typos; when working with code you'll want to find the misspellings and typos - you don't really want your eye to glide smoothly past them
+- there's much less redundancy in code: when reading prose you'll find it easy to overlook misspellings and typos, when working with code you'll want to find the misspellings and typos - you don't really want your eye to glide smoothly past them
 
-A primary goal is to make characters easy to distinguish. The shapes aren’t compressed or condensed. The glyphs aren't fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you'd expect (my eyesight is probably poorer than yours!). I've tried to make glyphs that are more likely to be confused look different from each other. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. Similarly, the letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. Similarly the asymmetries of characters like B and 8 have been enhanced.
+So I'd argue that making letters easy to distinguish is as important as making them harmoniously consistent. So a primary goal is to make characters that tend to be similar different. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.
+
+The shapes aren’t compressed or condensed. The glyphs aren't fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you'd expect (my eyesight is probably poorer than yours!).
+
+If you want to find out more about typeface and font legibility, a good place to start would be to see the work of [Sophie Beier](http://sofiebeier.dk).
 
 #### ‘Is it a package? Was it written in Julia? How will this contribute to the ecosystem of Julia language?’
 
@@ -351,7 +357,7 @@ The first β release, version 0.001, was released on July 27, 2020. Version 0.03
 
 #### ‘Why don’t these accents/marks work properly?’
 
-Unicode (and Julia) allows you to combine characters. In the Julia REPL, you can type a character and then modify it by adding a mark or diacritic. For example:
+Unicode allows you to combine characters. In the Julia REPL, you can type a character and then modify it by adding a mark or diacritic. For example:
 
 ```
 e\vec

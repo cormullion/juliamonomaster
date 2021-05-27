@@ -127,8 +127,8 @@ end
     0, ȳ -&gt; nothing
   end
 end</code></pre>
-<p>There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: JuliaMono-Regular, <span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>, <span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>, <span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>, and <span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>. <sup id="fnref:masters"><a href="#fndef:masters" class="fnref">[4]</a></sup></p>
-<p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets, intended for use as place-holders, which are of interest only if you want to have more control over font loading times in web browser-based applications.&#41;</p>
+<p>There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: JuliaMono-Regular, <span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>, <span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>, <span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>, <span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>, and <span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>. <sup id="fnref:masters"><a href="#fndef:masters" class="fnref">[4]</a></sup></p>
+<p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You probably don&#39;t want to use these - they&#39;re intended for use mainly as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.&#41;</p>
 <p>In the hands of a virtuoso &#40;such as Dr Zygmunt Szpak, the author of the following Julia code fragment<sup id="fnref:zscode"><a href="#fndef:zscode" class="fnref">[5]</a></sup>&#41;, the range of available Unicode characters can be quite expressive:</p>
 <pre><code class="language-julia">function T&#40;𝛉::AbstractArray,
            𝒞::Tuple&#123;AbstractArray,
@@ -304,7 +304,7 @@ end</code></pre>
 <img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> 
 <p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41; Here&#39;s a few less common ones:  </p>
 <img src="/assets/specimen_6.png" width="100%" alt="specimen image 6"> 
-<p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code.</p>
+<p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
 <p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
 <p>The Julia package <a href="https://github.com/Evizero/UnicodePlots.jl">UnicodePlots.jl</a> uses various Unicode characters to plot figures directly in a terminal window. <sup id="fnref:linespacing"><a href="#fndef:linespacing" class="fnref">[7]</a></sup></p>
 
@@ -328,7 +328,7 @@ end</code></pre>
     </a>
 </div>
 
-<p>It’s also a good idea to support box-drawing characters and DataFrames.jl output &#40;terminal permitting&#41;:</p>
+<p>It’s also a good idea to support box-drawing characters, such as the ones used for displaying DataFrames.jl output &#40;terminal permitting&#41;:</p>
 <pre><code class="language-julia">julia&gt; df &#61; DataFrame&#40;A&#61;samples, B&#61;glyphs&#41;
 df &#61; 10×2 DataFrame
 │ Row │ A              │ B                   │
@@ -598,7 +598,7 @@ REPL.REPLCompletions.latex_symbols&#91;&quot;\\julialogo&quot;&#93; &#61; &quot;
 <p>Now you can insert the logo in strings by typing <code>\julialogo</code><span style="font-size: 1.5em;"></span>:</p>
 <pre><code class="language-julia">julia&gt; println&#40;&quot;Welcome to &quot;&#41;
 Welcome to </code></pre>
-<p>It’s usually possible to type Unicode values directly into text. This is a useful skill to have when you’re not using the Julia REPL... On MacOS you hold the Option &#40;⌥&#41; key down while typing the four hex digits &#40;make sure you’re using the Unicode Hex Input keyboard&#41;. On Windows I think you type the four hex digits followed by <code>ALT</code> then <code>X</code>. On Linux it might be <code>ctrl</code>-<code>shift</code>-<code>u</code> followed by the hex digits.</p>
+<p>It’s usually possible to type Unicode values directly into text. This is a useful skill to have when you’re not using a capable REPL. On MacOS you hold the Option &#40;⌥&#41; key down while typing the four hex digits &#40;make sure you’re using the Unicode Hex Input keyboard&#41;. On Windows I think you type the four hex digits followed by <code>ALT</code> then <code>X</code>. On Linux it might be <code>ctrl</code>-<code>shift</code>-<code>u</code> followed by the hex digits.</p>
 <h3 id="thanks"><a href="#thanks" class="header-anchor">Thanks&#33;</a></h3>
 <p>Thanks to: Thibaut Lienart for his <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> web site builder; to Jérémie Knüsel who provided invaluable suggestions and advice; to Dr Zygmunt Szpak for his cool maths code; to Simeon Schaub for the issues and PRs, and to others in the Julia community for help and suggestions.</p>
 <h3 id="footnotes"><a href="#footnotes" class="header-anchor">Footnotes</a></h3>
@@ -683,7 +683,7 @@ Welcome to </code></pre>
  </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 20, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: May 27, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

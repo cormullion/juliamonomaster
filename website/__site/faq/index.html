@@ -45,7 +45,7 @@
 <p>The typeface was introduced at the 2020 Julia Programming Language conference, JuliaCon, in Lisbon, Portugal, and it was going to be my contribution to the festivities.</p>
 <h4 id="where_can_i_see_it_in_action"><a href="#where_can_i_see_it_in_action" class="header-anchor">‘Where can I see it in action?’</a></h4>
 <p>Feel free to compare it with other fonts at <a href="https://devfonts.gafi.dev/">dev fonts</a> and <a href="https://www.programmingfonts.org/#julia-mono">www.programmingfonts.org</a>.</p>
-<p>If you use a lot of mathematics, visit the <a href="mono-math.netlify.app">mono-math.netlify.app</a> site, which shows how Unicode math symbols look in various fonts.</p>
+<p>If you use a lot of mathematics, visit the <a href="https://mono-math.netlify.app">mono-math.netlify.app</a> site, which shows how Unicode math symbols look in various fonts.</p>
 <p>You can visit <a href="https://julialangblogmirror.netlify.app/blog/">this mirror of the Julia blog</a>. It hasn’t been updated for a while &#40;it was useful during the development of <a href="https://franklinjl.org">Franklin.jl</a>&#41;, but all the code examples use JuliaMono.</p>
 <p>You can browse through <a href="/assets/juliamanual/index.html">this local copy</a> of an old Julia manual. The default Roboto-Mono font has been replaced with JuliaMono-Regular.</p>
 <p>As an example of using JuliaMono in Julia documentation, made with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a>, see the documentation for <a href="https://github.com/JuliaGraphics/Luxor.jl">Luxor.jl</a>.</p>
@@ -61,7 +61,7 @@
 <p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Regular;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.038/JuliaMono-Regular.woff2&quot;&#41;;
+	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.037/JuliaMono-Regular.woff2&quot;&#41;;
 &#125;</code></pre>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
 <pre><code class="language-css">pre &#123;
@@ -70,7 +70,7 @@
 code &#123;
 	font-family: JuliaMono-Regular;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.038 here&#41;, whereas the JSDELIVR version always retrieves the current master version.</p>
+<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.037 here&#41;, whereas the JSDELIVR version always retrieves the current master version.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <h4 id="how_do_i_control_features_in_css_in_atomjuno_or_vs_code"><a href="#how_do_i_control_features_in_css_in_atomjuno_or_vs_code" class="header-anchor">‘How do I control features in CSS, in Atom/Juno, or VS Code?’</a></h4>
@@ -79,7 +79,7 @@ code &#123;
 <p><img src="/assets/vscode-settings-1-800.png" alt="VS Code settings" /></p>
 <p>To control the display of contextual and stylistic alternates, click on the Edit Settings in JSON, and look for <code>editor.fontLigatures</code>:</p>
 <p><img src="/assets/vscode-settings-2-800.png" alt="VS Code settings" /></p>
-<p>This uses the feature codes &#40;<a href="/#contextual_and_stylistic_alternates">listed here</a>&#41;. These should all be switched on or off in a single line.</p>
+<p>This uses the feature codes &#40;<a href="/#contextual_and_stylistic_alternates">listed here</a>&#41;. These should be switched on or off in a single line.</p>
 <p>For example, if you want all the currently available stylistic sets, use:</p>
 <pre><code class="language-css">&quot;editor.fontLigatures&quot;: &quot;&#39;zero&#39;, &#39;ss01&#39;, &#39;ss02&#39;, &#39;ss03&#39;, &#39;ss04&#39;,
     &#39;ss05&#39;, &#39;ss06&#39;,  &#39;ss07&#39;, &#39;ss08&#39;, &#39;ss09&#39;, &#39;ss10&#39;, &#39;ss11&#39;, &#39;ss12&#39;&quot;,</code></pre>
@@ -236,7 +236,8 @@ display&#40;p&#41;</code></pre>
 <p>Most people probably can’t tell the difference between Helvetica and Arial, and certainly aren’t going to be bothered about minor differences between JuliaMono and other coding fonts. But that’s fine. Just stick to your current favourites&#33;</p>
 <h4 id="where_are_the_design_notes_dont_typeface_designers_love_talking_about_how_it_was_designed"><a href="#where_are_the_design_notes_dont_typeface_designers_love_talking_about_how_it_was_designed" class="header-anchor">‘Where are the design notes? Don&#39;t typeface designers love talking about how it was designed?’</a></h4>
 <p>Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that&#39;s readable, easy to use, unquirky, simple, and including most of the characters &#40;glyphs&#41; required for modern scientific and technical programming.</p>
-<p>Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create &quot;a beautiful set of letters&quot; rather than &quot;a set of beautiful letters&quot;; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, but there&#39;s much redundancy, and predictability assists reading. You want the eye to glide swiftly and easily over the page. However, programming typefaces have to address different problems:</p>
+<p>Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create &quot;a beautiful set of letters&quot; rather than &quot;a set of beautiful letters&quot;; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter&#39;s familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, and there&#39;s much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.</p>
+<p>However, programming typefaces have to address different problems:</p>
 <ul>
 <li><p>code can often consist of sequences of non-language characters</p>
 </li>
@@ -244,16 +245,18 @@ display&#40;p&#41;</code></pre>
 </li>
 <li><p>often you want to compare areas of text with other areas &#40;such as code laid out in tabular form&#41;</p>
 </li>
-<li><p>sometimes the characters are placed so as to form larger patterns</p>
+<li><p>sometimes the characters are placed so as to form larger patterns, such as bitstrings, or array contents</p>
 </li>
-<li><p>punctuation marks are no longer just hints to assist readers, but critical pieces of information that might completely alter the meaning of the surrounding text</p>
+<li><p>punctuation marks are no longer just hints to guide readers, but critical pieces of syntax that might completely alter the meaning of the surrounding text</p>
 </li>
 <li><p>the programmer doesn&#39;t read code in the same way that they would read prose &#40;citation needed&#33;&#41;</p>
 </li>
-<li><p>there&#39;s much less redundancy in the text, and when reading prose you&#39;ll find it easy to overlook misspellings and typos; when working with code you&#39;ll want to find the misspellings and typos - you don&#39;t really want your eye to glide smoothly past them</p>
+<li><p>there&#39;s much less redundancy in code: when reading prose you&#39;ll find it easy to overlook misspellings and typos, when working with code you&#39;ll want to find the misspellings and typos - you don&#39;t really want your eye to glide smoothly past them</p>
 </li>
 </ul>
-<p>A primary goal is to make characters easy to distinguish. The shapes aren’t compressed or condensed. The glyphs aren&#39;t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you&#39;d expect &#40;my eyesight is probably poorer than yours&#33;&#41;. I&#39;ve tried to make glyphs that are more likely to be confused look different from each other. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. Similarly, the letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. Similarly the asymmetries of characters like B and 8 have been enhanced.</p>
+<p>So I&#39;d argue that making letters easy to distinguish is as important as making them harmoniously consistent. So a primary goal is to make characters that tend to be similar different. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.</p>
+<p>The shapes aren’t compressed or condensed. The glyphs aren&#39;t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you&#39;d expect &#40;my eyesight is probably poorer than yours&#33;&#41;.</p>
+<p>If you want to find out more about typeface and font legibility, a good place to start would be to see the work of <a href="http://sofiebeier.dk">Sophie Beier</a>.</p>
 <h4 id="is_it_a_package_was_it_written_in_julia_how_will_this_contribute_to_the_ecosystem_of_julia_language"><a href="#is_it_a_package_was_it_written_in_julia_how_will_this_contribute_to_the_ecosystem_of_julia_language" class="header-anchor">‘Is it a package? Was it written in Julia? How will this contribute to the ecosystem of Julia language?’</a></h4>
 <p>In the world of typographical software, one programming language is currently ubiquitous &#40;hint: one of the leading programmers in the typography realm is <strong>Just van Rossum</strong>, one of the van Rossum brothers&#41; and it’s not Julia.</p>
 <p>The typeface isn’t a Julia package. It might be, soon&#33; But although Julia wasn’t used to build the typeface, I did use Julia quite a lot while designing it; sometimes to generate glyphs, there being plenty of symmetrical designs that lend themselves to programmatic construction with a simple graphics program &#40;e.g. <a href="https://github.com/JuliaGraphics/Luxor.jl">Luxor.jl</a>&#41;. And also for producing glyph lists, charts, test output, and build scripts. And the various graphics you see here and in the specimen PDF were also made with Julia. So in that sense at least the font is a bit Julian.</p>
@@ -261,7 +264,7 @@ display&#40;p&#41;</code></pre>
 <h4 id="is_it_finished"><a href="#is_it_finished" class="header-anchor">‘Is it finished?’</a></h4>
 <p>The first β release, version 0.001, was released on July 27, 2020. Version 0.037 was released in April 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.</p>
 <h4 id="why_dont_these_accentsmarks_work_properly"><a href="#why_dont_these_accentsmarks_work_properly" class="header-anchor">‘Why don’t these accents/marks work properly?’</a></h4>
-<p>Unicode &#40;and Julia&#41; allows you to combine characters. In the Julia REPL, you can type a character and then modify it by adding a mark or diacritic. For example:</p>
+<p>Unicode allows you to combine characters. In the Julia REPL, you can type a character and then modify it by adding a mark or diacritic. For example:</p>
 <pre><code class="language-julia">e\vec</code></pre>
 <p>displays as</p>
 <pre><code class="language-julia">e⃗</code></pre>
@@ -314,7 +317,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 20, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: May 27, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

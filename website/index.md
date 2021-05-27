@@ -109,9 +109,9 @@ end
 end
 ```
 
-There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: JuliaMono-Regular, ~~~<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>~~~, ~~~<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>~~~, ~~~<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>~~~, and ~~~<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>~~~. [^masters]
+There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: JuliaMono-Regular, ~~~<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>~~~, ~~~<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>~~~, ~~~<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>~~~, ~~~<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>~~~, and ~~~<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>~~~. [^masters]
 
-(There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets, intended for use as place-holders, which are of interest only if you want to have more control over font loading times in web browser-based applications.)
+(There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You probably don't want to use these - they're intended for use mainly as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.)
 
 In the hands of a virtuoso (such as Dr Zygmunt Szpak, the author of the following Julia code fragment[^zscode]), the range of available Unicode characters can be quite expressive:
 
@@ -299,7 +299,7 @@ One of the goals of JuliaMono is to include most of the characters that a typica
 
 ~~~<img src="/assets/specimen_6.png" width="100%" alt="specimen image 6"> ~~~
 
-In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code.
+In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code. You probably want ∑s in your code rather than $ \sum $s, because the big ones will upset your formatting.
 
 From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.
 
@@ -329,7 +329,7 @@ and the [ImageInTerminal.jl](https://github.com/JuliaImages/ImageInTerminal.jl) 
 </div>
 ~~~
 
-It’s also a good idea to support box-drawing characters and DataFrames.jl output (terminal permitting):
+It’s also a good idea to support box-drawing characters, such as the ones used for displaying DataFrames.jl output (terminal permitting):
 
 ```
 julia> df = DataFrame(A=samples, B=glyphs)
@@ -664,7 +664,7 @@ julia> println("Welcome to ")
 Welcome to 
 ```
 
-It’s usually possible to type Unicode values directly into text. This is a useful skill to have when you’re not using the Julia REPL... On MacOS you hold the Option (⌥) key down while typing the four hex digits (make sure you’re using the Unicode Hex Input keyboard). On Windows I think you type the four hex digits followed by `ALT` then `X`. On Linux it might be `ctrl`-`shift`-`u` followed by the hex digits.
+It’s usually possible to type Unicode values directly into text. This is a useful skill to have when you’re not using a capable REPL. On MacOS you hold the Option (⌥) key down while typing the four hex digits (make sure you’re using the Unicode Hex Input keyboard). On Windows I think you type the four hex digits followed by `ALT` then `X`. On Linux it might be `ctrl`-`shift`-`u` followed by the hex digits.
 
 
 ### Thanks!

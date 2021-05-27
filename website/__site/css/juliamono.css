@@ -6,6 +6,12 @@
 }
 
 @font-face {
+	font-family: JuliaMono-Light;
+	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Regular.woff2");
+	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
+}
+
+@font-face {
 	font-family: JuliaMono-Medium;
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Medium.woff2");
 	font-display: fallback;	/* allow 100 milliseconds then display fallback */
