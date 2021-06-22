@@ -353,7 +353,7 @@ And how will JuliaMono contribute? It’s often in the nature of an experiment t
 
 #### ‘Is it finished?’
 
-The first β release, version 0.001, was released on July 27, 2020. Version 0.037 was released in April 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.
+The first β release, version 0.001, was released on July 27, 2020. Version 0.040 was released in June 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.
 
 #### ‘Why don’t these accents/marks work properly?’
 

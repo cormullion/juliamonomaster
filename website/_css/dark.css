@@ -14,7 +14,7 @@ a:active {
 
 body {
 	color: hsl(12, 95%, 95%);
-	background-color: hsl(238, 13%, 15%);
+	background-color: hsl(238, 10%, 10%);
 }
 
 .language * {
@@ -66,6 +66,10 @@ body {
 
 .hljs-variable {
 	color: #800;
+}
+
+.hljs-comment {
+	color: #669;
 }
 
 .hljs-subst {

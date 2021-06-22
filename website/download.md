@@ -8,11 +8,11 @@ You can find the font files at [https://github.com/cormullion/juliamono](https:/
 
 ### Installation
 
-#### Mac
+#### MacOS
 
 To install and activate a font, launch Font Book from your Applications folder, and drag the font files into the middle pane labelled Font. If you're using a different font manager, you already know what to do. :)
 
-##### Homebrew
+##### MacOS Homebrew
 
 On the latest version of Homebrew, you can install the fonts with:
 

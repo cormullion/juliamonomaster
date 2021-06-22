@@ -25,7 +25,7 @@ body {
 
 .language-julia.hljs {
 	color: #011;
-	background-color: #ede1fa;
+	background-color: #f9f9f9;
 }
 
 .language-css {
@@ -73,6 +73,10 @@ body {
 
 .hljs-attribute {
 	color: #225;
+}
+
+.hljs-comment {
+	color: #444;
 }
 
 .hljs-selector-tag {

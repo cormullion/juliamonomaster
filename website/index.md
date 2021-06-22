@@ -386,6 +386,8 @@ To be honest, I’m not a big fan of their use in coding fonts (and I’m not th
 
 The Julia language is designed to use Unicode characters, and so ligatures aren't always needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, and the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.
 
+#### Contextual alternates
+
 In JuliaMono, the following substitutions are applied when the **contextual alternates** feature is active:
 
 ~~~
@@ -450,6 +452,8 @@ df2 = df |>
     @map({a = key(_), b = mean(_.b)}) |>
     DataFrame # <|
 ```
+
+#### Stylistic sets
 
 OpenType fonts also offer you the ability to choose different designs for certain characters. These are stored as a ‘stylistic set’.
 
@@ -552,6 +556,11 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td class="code_ss_off">====</td>
     <td class="code_ss_on">====</td>
     <td><p>joining equals</p></td>
+    </tr>
+	<td>ss13</td>
+    <td class="code_ss_off">&lt;!--</td>
+    <td class="code_ss_on">&lt;!--</td>
+    <td><p>HTML comment</p></td>
     </tr>
 
 </table>
