@@ -17,8 +17,8 @@ To install and activate a font, launch Font Book from your Applications folder, 
 On the latest version of Homebrew, you can install the fonts with:
 
 ```
-$ brew tap homebrew/cask-fonts
-$ brew cask install font-juliamono
+brew tap homebrew/cask-fonts
+brew install --cask font-juliamono
 ```
 
 #### Windows
