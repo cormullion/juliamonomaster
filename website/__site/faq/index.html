@@ -61,7 +61,7 @@
 <p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Regular;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.037/JuliaMono-Regular.woff2&quot;&#41;;
+	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.040/JuliaMono-Regular.woff2&quot;&#41;;
 &#125;</code></pre>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
 <pre><code class="language-css">pre &#123;
@@ -70,7 +70,7 @@
 code &#123;
 	font-family: JuliaMono-Regular;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.037 here&#41;, whereas the JSDELIVR version always retrieves the current master version.</p>
+<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.040 here&#41;, whereas the JSDELIVR version always retrieves the current release.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <h4 id="how_do_i_control_features_in_css_in_atomjuno_or_vs_code"><a href="#how_do_i_control_features_in_css_in_atomjuno_or_vs_code" class="header-anchor">‘How do I control features in CSS, in Atom/Juno, or VS Code?’</a></h4>
@@ -81,28 +81,44 @@ code &#123;
 <p><img src="/assets/vscode-settings-2-800.png" alt="VS Code settings" /></p>
 <p>This uses the feature codes &#40;<a href="/#contextual_and_stylistic_alternates">listed here</a>&#41;. These should be switched on or off in a single line.</p>
 <p>For example, if you want all the currently available stylistic sets, use:</p>
-<pre><code class="language-css">&quot;editor.fontLigatures&quot;: &quot;&#39;zero&#39;, &#39;ss01&#39;, &#39;ss02&#39;, &#39;ss03&#39;, &#39;ss04&#39;,
-    &#39;ss05&#39;, &#39;ss06&#39;,  &#39;ss07&#39;, &#39;ss08&#39;, &#39;ss09&#39;, &#39;ss10&#39;, &#39;ss11&#39;, &#39;ss12&#39;&quot;,</code></pre>
+<pre><code class="language-css">selector &#123;
+	 &quot;editor.fontLigatures&quot;: &quot;&#39;zero&#39;, &#39;ss01&#39;, &#39;ss02&#39;, &#39;ss03&#39;, &#39;ss04&#39;,
+        &#39;ss05&#39;, &#39;ss06&#39;,  &#39;ss07&#39;, &#39;ss08&#39;, &#39;ss09&#39;, &#39;ss10&#39;, &#39;ss11&#39;, &#39;ss12&#39;, &#39;ss13&#39;&quot;
+	&#125;</code></pre>
 <p>Or if you just don’t like the contextual alternates, but quite like the slashed zero, simpler g, and lighter asterisk, use this:</p>
-<pre><code class="language-css">&quot;editor.fontLigatures&quot;: &quot;&#39;calt&#39; off, &#39;zero&#39;, &#39;ss01&#39;, &#39;ss05&#39;&quot;,</code></pre>
+<pre><code class="language-css">selector &#123;
+	 &quot;editor.fontLigatures&quot;: &quot;&#39;calt&#39; off, &#39;zero&#39;, &#39;ss01&#39;, &#39;ss05&#39;&quot;,
+     &#125;</code></pre>
 <h5 id="atomjuno"><a href="#atomjuno" class="header-anchor">Atom/Juno</a></h5>
 <p>In the Atom/Juno stylesheet, you can specify the font with the required CSS selectors:</p>
-<pre><code class="language-css">font-family: &quot;JuliaMono&quot;;</code></pre>
+<pre><code class="language-css">selector &#123;
+	font-family: &quot;JuliaMono&quot;;
+	&#125;</code></pre>
 <p>which defaults to the Regular weight, or</p>
-<pre><code class="language-css">font-family: &quot;JuliaMono-Medium&quot;;</code></pre>
+<pre><code class="language-css">selector &#123;
+	font-family: &quot;JuliaMono-Medium&quot;;
+	&#125;</code></pre>
 <p>You can switch off the contextual alternates &#40;such as <code>-&gt;</code> and <code>&#61;&gt;</code>&#41; with:</p>
-<pre><code class="language-css">font-variant-ligatures: no-contextual;</code></pre>
+<pre><code class="language-css">selector &#123;
+	font-variant-ligatures: no-contextual;
+	&#125;</code></pre>
 <p>Or on &#40;if it’s not enabled by default&#41; with:</p>
-<pre><code class="language-css">font-variant-ligatures: contextual;</code></pre>
+<pre><code class="language-css">selector &#123;
+		font-variant-ligatures: contextual;
+	&#125;</code></pre>
 <p>Select any stylistic sets in a single line. For example:</p>
-<pre><code class="language-css">font-feature-settings: &quot;zero&quot;, &quot;ss02&quot;;</code></pre>
-<div class="code_ss_on">enables the slashed zero (<span class="jm_code_zero_on">0</span>) and the simpler "g" (<span class="jm_code_ss_on">g</span>).</div>
+<pre><code class="language-css">selector &#123;
+	font-feature-settings: &quot;zero&quot;, &quot;ss02&quot;;
+	&#125;</code></pre>
+
+<p>enables the slashed zero (<span class="code_ss_on">0</span>) and the simpler "g" (<span class="code_ss_on">g</span>).</p>
+
 <p>In Atom/Juno, you’d put these in the stylesheet, perhaps like this:</p>
 <pre><code class="language-css">atom-text-editor &#123;
     font-variant-ligatures: no-contextual;
 	font-feature-settings: &quot;ss01&quot;, &quot;ss02&quot;, &quot;ss03&quot;,
 	    &quot;ss04&quot;, &quot;ss05&quot;, &quot;ss06&quot;;
-&#125;</code></pre>
+	&#125;</code></pre>
 <h4 id="can_i_use_this_font_in_a_jupyter_notebook_and_how_do_i_do_it"><a href="#can_i_use_this_font_in_a_jupyter_notebook_and_how_do_i_do_it" class="header-anchor">‘Can I use this font in a Jupyter notebook? And how do I do it?’</a></h4>
 <p>It’s a good question. Some browsers these days are reluctant to give you access to things stored on your own local disks, “for security reasons”. But a local copy of the font may be available and accessible on your particular set-up. If not, you could try using web fonts, as above. For example, if there’s a Jupyter CSS file here:</p>
 <pre><code class="language-julia">~/.jupyter/custom/custom.css</code></pre>
@@ -139,7 +155,30 @@ div.input_area &#123;
 </div>
 
 <h4 id="is_it_just_for_julia_coding_how_does_it_work_well_with_julia"><a href="#is_it_just_for_julia_coding_how_does_it_work_well_with_julia" class="header-anchor">‘Is it just for Julia coding? How does it “work well with” Julia?’</a></h4>
-<p>No, that&#39;s just the language I use for my own code. You can use the font for any purpose.</p>
+<p>No, that&#39;s just the language I use. You can use the font for any purpose, with any language.</p>
+<pre><code class="language-css"># In python3
+# By default the encoding is &quot;utf-8&quot;
+import sys
+
+# printing the default encoding
+print&#40;&quot;The default encoding for python3 is:&quot;, sys.getdefaultencoding&#40;&#41;&#41;
+
+# to define string as unicode
+# we need to prefix every string with u&quot;....&quot;
+p &#61; u&quot;\u2119&quot;
+y &#61; u&quot;\u01b4&quot;
+t &#61; u&quot;\u2602&quot;
+h &#61; u&quot;\u210c&quot;
+o &#61; u&quot;\u00f8&quot;
+n &#61; u&quot;\u1f24&quot;
+
+# printing Python
+print&#40;p&#43;y&#43;t&#43;h&#43;o&#43;n&#41;
+The default encoding for python3 is: utf-8
+ℙƴ☂ℌøἤ</code></pre>
+<p>or APL &#40;technically <a href="https://github.com/mlochbaum/BQN">BQN</a>&#41;:</p>
+<pre><code class="language-css">⊑&#43;&#96;∘⌽⍟12↕2  # The 12th Fibonacci number</code></pre>
+<p>For Julia specifically:</p>
 <ul>
 <li><p>it has all the glyphs used in the Unicode Input chapter of the Julia documentation &#40;except for the emojis&#41;</p>
 </li>
@@ -225,8 +264,8 @@ display&#40;p&#41;</code></pre>
 
 <p>&#40;I used the lualatex engine.&#41;</p>
 <h4 id="arent_these_font_files_too_big"><a href="#arent_these_font_files_too_big" class="header-anchor">‘Aren’t these font files too big?’</a></h4>
-<p>It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, <code>.WOFF</code> and <code>.WOFF2</code>, where the <code>2</code> indicates a more recent and slightly more compact format. <code>JuliaMono-Regular.woff2</code> is 619KB - the size of a PNG image, perhaps?</p>
-<p>The <code>.TTF</code> versions are getting on for 1.8MB each. &#40;See <a href="&#91;this&#93;&#40;/faq/#does_it_work_on_windows&#41;">Does it work on Windows</a>.&#41;</p>
+<p>It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, <code>.WOFF</code> and <code>.WOFF2</code>, where the <code>2</code> indicates a more recent and slightly more compact format. <code>JuliaMono-Regular.woff2</code> is 837KB - the size of a PNG image, perhaps?</p>
+<p>The <code>.TTF</code> versions are getting on for 2.5MB each. &#40;See <a href="&#91;this&#93;&#40;/faq/#does_it_work_on_windows&#41;">Does it work on Windows</a>.&#41;</p>
 <p>For comparison, the Themes folder of <code>.CSS</code> files for the Julia manual &#40;and for every manual built with Documenter.jl since v0.21&#41; is about 700KB. So in that light the WOFF2 fonts aren’t that bad. Of course, the two Google fonts downloaded by every Julia document &#40;Lato and Roboto&#41; are tiny, at 14KB and 11KB, with 221 glyphs in each.</p>
 <p>So, if you’re building a website, or designing for mobile applications, the size of the WOFF2 file&#40;s&#41; might be an important factor to weigh against the advantages of having predictable character sets. &#40;This site is a bit of an exception, for obvious reasons.&#41; Note that you can specify font subsets in the CSS using the <strong>unicode-range</strong> feature, which defines a restricted set of characters which you know are going to be used, so that users don’t download any that they won’t need.</p>
 <p>You could consider using the ‘-Latin’ variants to obviate the initial loading time. These have a limited number of glyphs &#40;restricted to the basic Latin character set&#41;, but will at least be quick to download.</p>
@@ -236,8 +275,8 @@ display&#40;p&#41;</code></pre>
 <p>Most people probably can’t tell the difference between Helvetica and Arial, and certainly aren’t going to be bothered about minor differences between JuliaMono and other coding fonts. But that’s fine. Just stick to your current favourites&#33;</p>
 <h4 id="where_are_the_design_notes_dont_typeface_designers_love_talking_about_how_it_was_designed"><a href="#where_are_the_design_notes_dont_typeface_designers_love_talking_about_how_it_was_designed" class="header-anchor">‘Where are the design notes? Don&#39;t typeface designers love talking about how it was designed?’</a></h4>
 <p>Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that&#39;s readable, easy to use, unquirky, simple, and including most of the characters &#40;glyphs&#41; required for modern scientific and technical programming.</p>
-<p>Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create &quot;a beautiful set of letters&quot; rather than &quot;a set of beautiful letters&quot;; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter&#39;s familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, and there&#39;s much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.</p>
-<p>However, programming typefaces have to address different problems:</p>
+<p>Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create “a beautiful set of letters” rather than “a set of beautiful letters”; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter’s familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, and there’s much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.</p>
+<p>However, programming and coding typefaces have to address different problems:</p>
 <ul>
 <li><p>code can often consist of sequences of non-language characters</p>
 </li>
@@ -255,7 +294,7 @@ display&#40;p&#41;</code></pre>
 </li>
 </ul>
 <p>So I&#39;d argue that making letters easy to distinguish is as important as making them harmoniously consistent. So a primary goal is to make characters that tend to be similar different. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.</p>
-<p>The shapes aren’t compressed or condensed. The glyphs aren&#39;t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you&#39;d expect &#40;my eyesight is probably poorer than yours&#33;&#41;.</p>
+<p>The shapes aren’t compressed or condensed. The glyphs aren&#39;t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you&#39;d expect &#40;my eyesight is probably poorer than yours&#33;&#41;. Perhaps it&#39;s not so good for non-code text &#40;do you find this web page difficult to read?&#41;.</p>
 <p>If you want to find out more about typeface and font legibility, a good place to start would be to see the work of <a href="http://sofiebeier.dk">Sophie Beier</a>.</p>
 <h4 id="is_it_a_package_was_it_written_in_julia_how_will_this_contribute_to_the_ecosystem_of_julia_language"><a href="#is_it_a_package_was_it_written_in_julia_how_will_this_contribute_to_the_ecosystem_of_julia_language" class="header-anchor">‘Is it a package? Was it written in Julia? How will this contribute to the ecosystem of Julia language?’</a></h4>
 <p>In the world of typographical software, one programming language is currently ubiquitous &#40;hint: one of the leading programmers in the typography realm is <strong>Just van Rossum</strong>, one of the van Rossum brothers&#41; and it’s not Julia.</p>
@@ -307,9 +346,9 @@ display&#40;p&#41;</code></pre>
 <p>JuliaMono is an OTF/TTF-flavoured font that contains hinting instructions. Hinted fonts are larger than OTF/CFF &#40;PostScript-flavour&#41; as a consequence.</p>
 <h4 id="any_love_for_nerdfonts"><a href="#any_love_for_nerdfonts" class="header-anchor">‘Any love for nerdfonts?’</a></h4>
 <p><a href="https://www.nerdfonts.com">nerdfonts</a> can add about four thousand extra glyphs to a font. It does this by creating a new font that combines an existing font’s glyphs with a bunch of new ones, using a FontForge Python script. This is quite cool, in a way.</p>
-<p>JuliaMono concentrates on the Unicode standard glyphs, as used for Julia code, whereas Nerdfonts adds many non-standard glyphs such as product and brand logos, trade names, icons for dozens of file extensions, programming languages, commercial applications, and a fair number of not-so-relevant characters. It’s aimed at a much wider audience. Nerdfonts doesn’t overlap much with JuliaMono.</p>
-<p>The nerdfonts project is a bit of a hack - glyphs are pushed into areas that are outside the Private Use Area, and there’s some unnecessary duplication of icons and other Unicode characters. And, if you <em>do</em> build a nerdfont version of JuliaMono, it will be quite large.</p>
-<p>Perhaps the companies could contribute money to the Julia project in exchange for having their logos stored in the font...</p>
+<p>JuliaMono concentrates on the Unicode standard glyphs, whereas Nerdfonts adds many non-standard glyphs such as product and brand logos, trade names, icons for dozens of file extensions, programming languages, commercial applications, and a fair number of other characters such as weather symbols. It’s aimed at a much wider audience. Nerdfonts doesn’t overlap much with JuliaMono.</p>
+<p>The nerdfonts project is a cool hack, but there’s some unnecessary duplication of icons and other Unicode characters.</p>
+<p>If you <em>do</em> build a nerdfont version of JuliaMono, it will be quite large.</p>
 <h4 id="i_prefer_the_glyphs_in_this_other_font"><a href="#i_prefer_the_glyphs_in_this_other_font" class="header-anchor">‘I prefer the glyphs in this other font...’</a></h4>
 <p>Good to know&#33;</p>
 <h4 id="what_about_italics_how_about_juliasans"><a href="#what_about_italics_how_about_juliasans" class="header-anchor">‘What about italics? How about JuliaSans?’</a></h4>
@@ -317,7 +356,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: June 21, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 09, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

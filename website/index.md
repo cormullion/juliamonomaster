@@ -4,7 +4,6 @@
 
 ### JuliaMono - a monospaced font for scientific and technical computing
 
-
 ~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
 
 JuliaMono is a monospaced typeface designed for programming and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was intended as an experiment to be presented at the 2020 JuliaCon conference in Lisbon, Portugal.
@@ -384,7 +383,7 @@ JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. Ope
 
 To be honest, I’m not a big fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
 
-The Julia language is designed to use Unicode characters, and so ligatures aren't always needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, and the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.
+The Julia language is designed to use Unicode characters, and so ligatures aren't usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.
 
 #### Contextual alternates
 
@@ -429,7 +428,6 @@ In JuliaMono, the following substitutions are applied when the **contextual alte
     <td class="code_ss_off"><--></td>
     <td class="code_calt_on"><--></td>
     </tr>
-
 </table>
 ~~~
 
@@ -562,6 +560,16 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td class="code_ss_on">&lt;!--</td>
     <td><p>HTML comment</p></td>
     </tr>
+	<td>ss14</td>
+    <td class="code_ss_off">==</td>
+    <td class="code_ss_on">==</td>
+    <td><p>double equals</p></td>
+    </tr>
+	<td>ss20</td>
+    <td class="code_ss_off">(_)</td>
+    <td class="code_ss_on">(_)</td>
+    <td><p>splashtidy</p></td>
+    </tr>
 
 </table>
 ~~~
@@ -572,9 +580,9 @@ Browser-based editors such as Juno and VS Code support many OpenType features in
 
 Terminal/console applications also vary a lot; on MacOS the **Terminal** and **iTerm** applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as [Konsole](https://konsole.kde.org) and [Kitty](https://sw.kovidgoyal.net/kitty/#font-control) offer quite good support, but others such as [Alacritty](https://github.com/alacritty/alacritty) offer little or none, as yet. [^terminal]
 
-If the application allows, you should be able to switch the ``calt`` contextual ligatures off, particularly since quite a few people won’t like any of them in their code. For the following listing, I switch the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)), and then enable some of the alternative stylistic sets: compare characters such as the **0**, **g**, **a**, **j**, and **@** with the previous listing:
+If the application allows, you should be able to switch the `calt` contextual ligatures off, particularly since quite a few people won’t like any of them in their code. For the following listing, I switch the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)), and then enable some of the alternative stylistic sets: compare characters such as the **0**, **g**, **a**, **j**, and **@** with the previous listing:
 
-@@code_ss_on
+@@code_calt_off_ss_on
 ```
 julialang = true # (!= 0)
 (x, y) -> (x + y)
@@ -594,7 +602,7 @@ df2 = df |>
 ```
 @@
 
-(I originally liked the idea of a more circular ``@`` sign, but in practice it doesn’t work at small point sizes, as the details disappear. But I’ve kept it anyway.)
+(I originally liked the idea of a circular ``@`` sign, but in practice it doesn’t work too well at small point sizes, as the details disappear. But I’ve kept it anyway.)
 
 ## If you really don't like any ligatures
 
@@ -647,7 +655,6 @@ strip:
 @@jm_h1
 # Private Use Areas (PUAs)
 @@
-
 
 There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the standard. These are called the **Private Use Areas**, and there are three: `\ue000` to `\uf8ff`, `\UF0000` to `\UFFFFD`, and `U100000` to `U+10FFFD`.
 

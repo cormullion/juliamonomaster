@@ -366,7 +366,7 @@ I ❤ Julia</code></pre>
 <img src="/assets/specimen_7.png" width="100%" alt="specimen image 7"> 
 <p>JuliaMono is an <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as <span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span> in certain fonts are replaced by a single glyph such as <span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>. These <a href="https://en.wikipedia.org/wiki/Orthographic_ligature">ligatures</a> have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.</p>
 <p>To be honest, I’m not a big fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[10]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
-<p>The Julia language is designed to use Unicode characters, and so ligatures aren&#39;t always needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, and the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance the readability of the language without introducing ambiguity.</p>
+<p>The Julia language is designed to use Unicode characters, and so ligatures aren&#39;t usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.</p>
 <h4 id="contextual_alternates"><a href="#contextual_alternates" class="header-anchor">Contextual alternates</a></h4>
 <p>In JuliaMono, the following substitutions are applied when the <strong>contextual alternates</strong> feature is active:</p>
 
@@ -408,7 +408,6 @@ I ❤ Julia</code></pre>
     <td class="code_ss_off"><--></td>
     <td class="code_calt_on"><--></td>
     </tr>
-
 </table>
 
 <p>You can see these in action in the following code fragment:<sup id="fnref:width"><a href="#fndef:width" class="fnref">[11]</a></sup></p>
@@ -531,6 +530,16 @@ df2 &#61; df |&gt;
     <td class="code_ss_on">&lt;!--</td>
     <td><p>HTML comment</p></td>
     </tr>
+	<td>ss14</td>
+    <td class="code_ss_off">==</td>
+    <td class="code_ss_on">==</td>
+    <td><p>double equals</p></td>
+    </tr>
+	<td>ss20</td>
+    <td class="code_ss_off">(_)</td>
+    <td class="code_ss_on">(_)</td>
+    <td><p>splashtidy</p></td>
+    </tr>
 
 </table>
 
@@ -538,7 +547,7 @@ df2 &#61; df |&gt;
 <p>Browser-based editors such as Juno and VS Code support many OpenType features in their editor windows, but not in the terminal/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. Some features are opt in, others are opt out; this too can vary from application to application.</p>
 <p>Terminal/console applications also vary a lot; on MacOS the <strong>Terminal</strong> and <strong>iTerm</strong> applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as <a href="https://konsole.kde.org">Konsole</a> and <a href="https://sw.kovidgoyal.net/kitty/#font-control">Kitty</a> offer quite good support, but others such as <a href="https://github.com/alacritty/alacritty">Alacritty</a> offer little or none, as yet. <sup id="fnref:terminal"><a href="#fndef:terminal" class="fnref">[13]</a></sup></p>
 <p>If the application allows, you should be able to switch the <code>calt</code> contextual ligatures off, particularly since quite a few people won’t like any of them in their code. For the following listing, I switch the <strong>calt</strong> set off using CSS &#40;see <a href="/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code">here</a>&#41;, and then enable some of the alternative stylistic sets: compare characters such as the <strong>0</strong>, <strong>g</strong>, <strong>a</strong>, <strong>j</strong>, and <strong>@</strong> with the previous listing:</p>
-<div class="code_ss_on"><pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41;
+<div class="code_calt_off_ss_on"><pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41;
 &#40;x, y&#41; -&gt; &#40;x &#43; y&#41;
 f&#40;p::Int&#41; &#61; p * p
 @inbounds if f in &#40;Base.:&#43;, Base.:-&#41;
@@ -553,7 +562,7 @@ df2 &#61; df |&gt;
     @groupby&#40;_.a&#41; |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre></div>
-<p>&#40;I originally liked the idea of a more circular <code>@</code> sign, but in practice it doesn’t work at small point sizes, as the details disappear. But I’ve kept it anyway.&#41;</p>
+<p>&#40;I originally liked the idea of a circular <code>@</code> sign, but in practice it doesn’t work too well at small point sizes, as the details disappear. But I’ve kept it anyway.&#41;</p>
 <h2 id="if_you_really_dont_like_any_ligatures"><a href="#if_you_really_dont_like_any_ligatures" class="header-anchor">If you really don&#39;t like any ligatures</a></h2>
 <p>It&#39;s possible that you don&#39;t like even the few ligatures and alternate characters provided in JuliaMono. If switching them off isn&#39;t possible, or not drastic enough, you can strip them out of the font with the following terminal magic &#40;courtesy of @fredrikekre&#41;:</p>
 <pre><code class="language-julia">&#36; cat Dockerfile
@@ -690,7 +699,7 @@ Welcome to </code></pre>
  </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: June 22, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 09, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

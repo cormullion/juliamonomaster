@@ -44,7 +44,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Regular;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.037/JuliaMono-Regular.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.040/JuliaMono-Regular.woff2");
 }
 ```
 
@@ -59,7 +59,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.037 here), whereas the JSDELIVR version always retrieves the current master version.
+Notice that the CDNJS version points to a specific version (e.g. v0.040 here), whereas the JSDELIVR version always retrieves the current release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -82,14 +82,18 @@ This uses the feature codes ([listed here](/#contextual_and_stylistic_alternates
 For example, if you want all the currently available stylistic sets, use:
 
 ```css
-"editor.fontLigatures": "'zero', 'ss01', 'ss02', 'ss03', 'ss04',
-    'ss05', 'ss06',  'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12'",
+ selector {
+	 "editor.fontLigatures": "'zero', 'ss01', 'ss02', 'ss03', 'ss04',
+        'ss05', 'ss06',  'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13'"
+	}
 ```
 
 Or if you just don’t like the contextual alternates, but quite like the slashed zero, simpler g, and lighter asterisk, use this:
 
 ```css
-"editor.fontLigatures": "'calt' off, 'zero', 'ss01', 'ss05'",
+ selector {
+	 "editor.fontLigatures": "'calt' off, 'zero', 'ss01', 'ss05'",
+     }
 ```
 
 ##### Atom/Juno
@@ -97,49 +101,55 @@ Or if you just don’t like the contextual alternates, but quite like the slashe
 In the Atom/Juno stylesheet, you can specify the font with the required CSS selectors:
 
 ```css
-font-family: "JuliaMono";
+selector {
+	font-family: "JuliaMono";
+	}
 ```
 
 which defaults to the Regular weight, or
 
 ```css
-font-family: "JuliaMono-Medium";
+selector {
+	font-family: "JuliaMono-Medium";
+	}
 ```
 
 You can switch off the contextual alternates (such as `->` and `=>`) with:
 
 ```css
-font-variant-ligatures: no-contextual;
+selector {
+	font-variant-ligatures: no-contextual;
+	}
 ```
 
 Or on (if it’s not enabled by default) with:
 
 ```css
-font-variant-ligatures: contextual;
+	selector {
+		font-variant-ligatures: contextual;
+	}
 ```
 
 Select any stylistic sets in a single line. For example:
 
 ```css
-font-feature-settings: "zero", "ss02";
+selector {
+	font-feature-settings: "zero", "ss02";
+	}
 ```
 
-@@code_ss_on
-
-<!--  force a paragraph  -->
-
-~~~<p>enables the slashed zero (<span class="jm_code_zero_on">0</span>) and the simpler "g" (<span class="jm_code_ss_on">g</span>).</p>~~~
-
-@@
+~~~
+<p>enables the slashed zero (<span class="code_ss_on">0</span>) and the simpler "g" (<span class="code_ss_on">g</span>).</p>
+~~~
 
 In Atom/Juno, you’d put these in the stylesheet, perhaps like this:
 
 ```css
-atom-text-editor {
+	atom-text-editor {
     font-variant-ligatures: no-contextual;
 	font-feature-settings: "ss01", "ss02", "ss03",
 	    "ss04", "ss05", "ss06";
-}
+	}
 ```
 
 <!--  force a paragraph  -->
@@ -192,7 +202,38 @@ which downloads the font once and is then available to applications.
 
 #### ‘Is it just for Julia coding? How does it “work well with” Julia?’
 
-No, that's just the language I use for my own code. You can use the font for any purpose.
+No, that's just the language I use. You can use the font for any purpose, with any language.
+
+```css
+# In python3
+# By default the encoding is "utf-8"
+import sys
+
+# printing the default encoding
+print("The default encoding for python3 is:", sys.getdefaultencoding())
+
+# to define string as unicode
+# we need to prefix every string with u"...."
+p = u"\u2119"
+y = u"\u01b4"
+t = u"\u2602"
+h = u"\u210c"
+o = u"\u00f8"
+n = u"\u1f24"
+
+# printing Python
+print(p+y+t+h+o+n)
+The default encoding for python3 is: utf-8
+ℙƴ☂ℌøἤ
+```
+
+or APL (technically [BQN](https://github.com/mlochbaum/BQN)):
+
+```css
+ ⊑+`∘⌽⍟12↕2  # The 12th Fibonacci number
+```
+
+For Julia specifically:
 
 * it has all the glyphs used in the Unicode Input chapter of the Julia documentation (except for the emojis)
 * a few of the glyphs and ligatures were designed with the Julia programming language in mind
@@ -297,9 +338,9 @@ Then you can use something like `minted` to format the code.
 
 #### ‘Aren’t these font files too big?’
 
-It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, `.WOFF` and `.WOFF2`, where the `2` indicates a more recent and slightly more compact format. `JuliaMono-Regular.woff2` is 619KB - the size of a PNG image, perhaps?
+It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, `.WOFF` and `.WOFF2`, where the `2` indicates a more recent and slightly more compact format. `JuliaMono-Regular.woff2` is 837KB - the size of a PNG image, perhaps?
 
-The `.TTF` versions are getting on for 1.8MB each. (See [Does it work on Windows]([this](/faq/#does_it_work_on_windows)).)
+The `.TTF` versions are getting on for 2.5MB each. (See [Does it work on Windows]([this](/faq/#does_it_work_on_windows)).)
 
 For comparison, the Themes folder of `.CSS` files for the Julia manual (and for every manual built with Documenter.jl since v0.21) is about 700KB. So in that light the WOFF2 fonts aren’t that bad. Of course, the two Google fonts downloaded by every Julia document (Lato and Roboto) are tiny, at 14KB and 11KB, with 221 glyphs in each.
 
@@ -319,9 +360,9 @@ Most people probably can’t tell the difference between Helvetica and Arial, an
 
 Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that's readable, easy to use, unquirky, simple, and including most of the characters (glyphs) required for modern scientific and technical programming.
 
-Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create "a beautiful set of letters" rather than "a set of beautiful letters"; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter's familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, and there's much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.
+Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create “a beautiful set of letters” rather than “a set of beautiful letters”; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter’s familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian, Chinese - where the words are recognizable units, and there’s much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.
 
-However, programming typefaces have to address different problems:
+However, programming and coding typefaces have to address different problems:
 
 - code can often consist of sequences of non-language characters
 
@@ -339,7 +380,7 @@ However, programming typefaces have to address different problems:
 
 So I'd argue that making letters easy to distinguish is as important as making them harmoniously consistent. So a primary goal is to make characters that tend to be similar different. For example, the digits 3, 8, and 0 have similar curved tops, so I adopted the flat-top 3 and made the 0 more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.
 
-The shapes aren’t compressed or condensed. The glyphs aren't fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you'd expect (my eyesight is probably poorer than yours!).
+The shapes aren’t compressed or condensed. The glyphs aren't fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you'd expect (my eyesight is probably poorer than yours!). Perhaps it's not so good for non-code text (do you find this web page difficult to read?).
 
 If you want to find out more about typeface and font legibility, a good place to start would be to see the work of [Sophie Beier](http://sofiebeier.dk).
 
@@ -443,11 +484,11 @@ JuliaMono is an OTF/TTF-flavoured font that contains hinting instructions. Hinte
 
 [nerdfonts](https://www.nerdfonts.com) can add about four thousand extra glyphs to a font. It does this by creating a new font that combines an existing font’s glyphs with a bunch of new ones, using a FontForge Python script. This is quite cool, in a way.
 
-JuliaMono concentrates on the Unicode standard glyphs, as used for Julia code, whereas Nerdfonts adds many non-standard glyphs such as product and brand logos, trade names, icons for dozens of file extensions, programming languages, commercial applications, and a fair number of not-so-relevant characters. It’s aimed at a much wider audience. Nerdfonts doesn’t overlap much with JuliaMono.
+JuliaMono concentrates on the Unicode standard glyphs, whereas Nerdfonts adds many non-standard glyphs such as product and brand logos, trade names, icons for dozens of file extensions, programming languages, commercial applications, and a fair number of other characters such as weather symbols. It’s aimed at a much wider audience. Nerdfonts doesn’t overlap much with JuliaMono.
 
-The nerdfonts project is a bit of a hack - glyphs are pushed into areas that are outside the Private Use Area, and there’s some unnecessary duplication of icons and other Unicode characters. And, if you _do_ build a nerdfont version of JuliaMono, it will be quite large.
+The nerdfonts project is a cool hack, but there’s some unnecessary duplication of icons and other Unicode characters.
 
-Perhaps the companies could contribute money to the Julia project in exchange for having their logos stored in the font...
+If you _do_ build a nerdfont version of JuliaMono, it will be quite large.
 
 #### ‘I prefer the glyphs in this other font...’
 
