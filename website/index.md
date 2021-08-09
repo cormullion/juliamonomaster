@@ -92,7 +92,7 @@ And in [Emacs](https://www.gnu.org/software/emacs/):
 
 The following examples will be rendered in JuliaMono by your browser (if it’s successfully downloaded the web font versions), so I hope what you see here is close to what I made.
 
-The CSS markup applied to the following code uses two weights of the typeface, JuliaMono-Regular and JuliaMono-Medium, which is a smidgeon bolder:
+The CSS markup applied to the following code also uses another weight of the typeface JuliaMono-Medium, which is a smidgeon bolder:
 
 ```julia
 using Zygote: @adjoint
@@ -108,7 +108,7 @@ end
 end
 ```
 
-There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: JuliaMono-Regular, ~~~<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>~~~, ~~~<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>~~~, ~~~<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>~~~, ~~~<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>~~~, and ~~~<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>~~~. [^masters]
+There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: ~~~<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>~~~, ~~~<span style="font-family: JuliaMono-Regular;">JuliaMono-Regular</span>~~~, ~~~<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>~~~, ~~~<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>~~~, ~~~<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>~~~, and ~~~<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>~~~. [^masters] They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.
 
 (There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You probably don't want to use these - they're intended for use mainly as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.)
 
@@ -431,7 +431,7 @@ In JuliaMono, the following substitutions are applied when the **contextual alte
 </table>
 ~~~
 
-You can see these in action in the following code fragment:[^width]
+You can see some of these in action in the following code fragment:[^width]
 
 ```
 julialang = true # (!= 0)
@@ -607,10 +607,10 @@ df2 = df |>
 ## If you really don't like any ligatures
 
 It's possible that you don't like even the few ligatures and
-alternate characters provided in JuliaMono. If switching
-them off isn't possible, or not drastic enough, you can
-strip them out of the font with the following terminal magic (courtesy
-of @fredrikekre):
+contextual alternate characters provided in JuliaMono. If
+switching them off isn't possible, or not drastic enough,
+you can strip them out of the font with the following
+terminal magic (courtesy of @fredrikekre):
 
 ```
 $ cat Dockerfile

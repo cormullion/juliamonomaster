@@ -115,7 +115,7 @@
 <img src="/assets/specimen_2.png" width="100%" alt="specimen image 2"> 
 <img src="/assets/specimen_3.png" width="100%" alt="specimen image 3"> 
 <p>The following examples will be rendered in JuliaMono by your browser &#40;if it’s successfully downloaded the web font versions&#41;, so I hope what you see here is close to what I made.</p>
-<p>The CSS markup applied to the following code uses two weights of the typeface, JuliaMono-Regular and JuliaMono-Medium, which is a smidgeon bolder:</p>
+<p>The CSS markup applied to the following code also uses another weight of the typeface JuliaMono-Medium, which is a smidgeon bolder:</p>
 <pre><code class="language-julia">using Zygote: @adjoint
 function ignore&#40;f&#41;
   try return f&#40;&#41;
@@ -127,7 +127,7 @@ end
     0, ȳ -&gt; nothing
   end
 end</code></pre>
-<p>There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: JuliaMono-Regular, <span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>, <span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>, <span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>, <span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>, and <span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>. <sup id="fnref:masters"><a href="#fndef:masters" class="fnref">[4]</a></sup></p>
+<p>There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: <span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>, <span style="font-family: JuliaMono-Regular;">JuliaMono-Regular</span>, <span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>, <span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>, <span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>, and <span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>. <sup id="fnref:masters"><a href="#fndef:masters" class="fnref">[4]</a></sup> They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.</p>
 <p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You probably don&#39;t want to use these - they&#39;re intended for use mainly as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.&#41;</p>
 <p>In the hands of a virtuoso &#40;such as Dr Zygmunt Szpak, the author of the following Julia code fragment<sup id="fnref:zscode"><a href="#fndef:zscode" class="fnref">[5]</a></sup>&#41;, the range of available Unicode characters can be quite expressive:</p>
 <pre><code class="language-julia">function T&#40;𝛉::AbstractArray,
@@ -410,7 +410,7 @@ I ❤ Julia</code></pre>
     </tr>
 </table>
 
-<p>You can see these in action in the following code fragment:<sup id="fnref:width"><a href="#fndef:width" class="fnref">[11]</a></sup></p>
+<p>You can see some of these in action in the following code fragment:<sup id="fnref:width"><a href="#fndef:width" class="fnref">[11]</a></sup></p>
 <pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41;
 &#40;x, y&#41; -&gt; &#40;x &#43; y&#41;
 f&#40;p::Int&#41; &#61; p * p
@@ -564,7 +564,7 @@ df2 &#61; df |&gt;
     DataFrame # &lt;|</code></pre></div>
 <p>&#40;I originally liked the idea of a circular <code>@</code> sign, but in practice it doesn’t work too well at small point sizes, as the details disappear. But I’ve kept it anyway.&#41;</p>
 <h2 id="if_you_really_dont_like_any_ligatures"><a href="#if_you_really_dont_like_any_ligatures" class="header-anchor">If you really don&#39;t like any ligatures</a></h2>
-<p>It&#39;s possible that you don&#39;t like even the few ligatures and alternate characters provided in JuliaMono. If switching them off isn&#39;t possible, or not drastic enough, you can strip them out of the font with the following terminal magic &#40;courtesy of @fredrikekre&#41;:</p>
+<p>It&#39;s possible that you don&#39;t like even the few ligatures and contextual alternate characters provided in JuliaMono. If switching them off isn&#39;t possible, or not drastic enough, you can strip them out of the font with the following terminal magic &#40;courtesy of @fredrikekre&#41;:</p>
 <pre><code class="language-julia">&#36; cat Dockerfile
 FROM python
 RUN pip install fonttools
@@ -699,7 +699,7 @@ Welcome to </code></pre>
  </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: July 09, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: August 09, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

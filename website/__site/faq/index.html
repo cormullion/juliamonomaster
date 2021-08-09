@@ -61,7 +61,7 @@
 <p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Regular;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.040/JuliaMono-Regular.woff2&quot;&#41;;
+	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.041/JuliaMono-Regular.woff2&quot;&#41;;
 &#125;</code></pre>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
 <pre><code class="language-css">pre &#123;
@@ -70,7 +70,7 @@
 code &#123;
 	font-family: JuliaMono-Regular;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.040 here&#41;, whereas the JSDELIVR version always retrieves the current release.</p>
+<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.041 here&#41;, whereas the JSDELIVR version always retrieves the current release.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <h4 id="how_do_i_control_features_in_css_in_atomjuno_or_vs_code"><a href="#how_do_i_control_features_in_css_in_atomjuno_or_vs_code" class="header-anchor">‘How do I control features in CSS, in Atom/Juno, or VS Code?’</a></h4>
@@ -83,7 +83,7 @@ code &#123;
 <p>For example, if you want all the currently available stylistic sets, use:</p>
 <pre><code class="language-css">selector &#123;
 	 &quot;editor.fontLigatures&quot;: &quot;&#39;zero&#39;, &#39;ss01&#39;, &#39;ss02&#39;, &#39;ss03&#39;, &#39;ss04&#39;,
-        &#39;ss05&#39;, &#39;ss06&#39;,  &#39;ss07&#39;, &#39;ss08&#39;, &#39;ss09&#39;, &#39;ss10&#39;, &#39;ss11&#39;, &#39;ss12&#39;, &#39;ss13&#39;&quot;
+        &#39;ss05&#39;, &#39;ss06&#39;,  &#39;ss07&#39;, &#39;ss08&#39;, &#39;ss09&#39;, &#39;ss10&#39;, &#39;ss11&#39;, &#39;ss12&#39;, &#39;ss13&#39;, &#39;ss14&#39;&quot;
 	&#125;</code></pre>
 <p>Or if you just don’t like the contextual alternates, but quite like the slashed zero, simpler g, and lighter asterisk, use this:</p>
 <pre><code class="language-css">selector &#123;
@@ -113,7 +113,7 @@ code &#123;
 
 <p>enables the slashed zero (<span class="code_ss_on">0</span>) and the simpler "g" (<span class="code_ss_on">g</span>).</p>
 
-<p>In Atom/Juno, you’d put these in the stylesheet, perhaps like this:</p>
+<p>In Atom/Juno, you’d put these in the CSS stylesheet, perhaps like this:</p>
 <pre><code class="language-css">atom-text-editor &#123;
     font-variant-ligatures: no-contextual;
 	font-feature-settings: &quot;ss01&quot;, &quot;ss02&quot;, &quot;ss03&quot;,
@@ -301,7 +301,7 @@ display&#40;p&#41;</code></pre>
 <p>The typeface isn’t a Julia package. It might be, soon&#33; But although Julia wasn’t used to build the typeface, I did use Julia quite a lot while designing it; sometimes to generate glyphs, there being plenty of symmetrical designs that lend themselves to programmatic construction with a simple graphics program &#40;e.g. <a href="https://github.com/JuliaGraphics/Luxor.jl">Luxor.jl</a>&#41;. And also for producing glyph lists, charts, test output, and build scripts. And the various graphics you see here and in the specimen PDF were also made with Julia. So in that sense at least the font is a bit Julian.</p>
 <p>And how will JuliaMono contribute? It’s often in the nature of an experiment that the outcome is uncertain until it’s been carried out.</p>
 <h4 id="is_it_finished"><a href="#is_it_finished" class="header-anchor">‘Is it finished?’</a></h4>
-<p>The first β release, version 0.001, was released on July 27, 2020. Version 0.040 was released in June 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.</p>
+<p>The first β release, version 0.001, was released on July 27, 2020. Version 0.041 was released in July 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.</p>
 <h4 id="why_dont_these_accentsmarks_work_properly"><a href="#why_dont_these_accentsmarks_work_properly" class="header-anchor">‘Why don’t these accents/marks work properly?’</a></h4>
 <p>Unicode allows you to combine characters. In the Julia REPL, you can type a character and then modify it by adding a mark or diacritic. For example:</p>
 <pre><code class="language-julia">e\vec</code></pre>
@@ -356,7 +356,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: July 09, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: August 09, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

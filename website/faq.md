@@ -44,7 +44,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Regular;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.040/JuliaMono-Regular.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.041/JuliaMono-Regular.woff2");
 }
 ```
 
@@ -59,7 +59,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.040 here), whereas the JSDELIVR version always retrieves the current release.
+Notice that the CDNJS version points to a specific version (e.g. v0.041 here), whereas the JSDELIVR version always retrieves the current release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -84,7 +84,7 @@ For example, if you want all the currently available stylistic sets, use:
 ```css
  selector {
 	 "editor.fontLigatures": "'zero', 'ss01', 'ss02', 'ss03', 'ss04',
-        'ss05', 'ss06',  'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13'"
+        'ss05', 'ss06',  'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14'"
 	}
 ```
 
@@ -142,7 +142,7 @@ selector {
 <p>enables the slashed zero (<span class="code_ss_on">0</span>) and the simpler "g" (<span class="code_ss_on">g</span>).</p>
 ~~~
 
-In Atom/Juno, you’d put these in the stylesheet, perhaps like this:
+In Atom/Juno, you’d put these in the CSS stylesheet, perhaps like this:
 
 ```css
 	atom-text-editor {
@@ -394,7 +394,7 @@ And how will JuliaMono contribute? It’s often in the nature of an experiment t
 
 #### ‘Is it finished?’
 
-The first β release, version 0.001, was released on July 27, 2020. Version 0.040 was released in June 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.
+The first β release, version 0.001, was released on July 27, 2020. Version 0.041 was released in July 2021 - there have been many improvements since the first release. Always download the latest version if you want the typeface to perform at its best.
 
 #### ‘Why don’t these accents/marks work properly?’
 

@@ -7,8 +7,7 @@
 
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Regular.woff2");
-	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
+	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Light.woff2");
 }
 
 @font-face {
@@ -40,7 +39,8 @@
 }
 
 html {
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
+	font-weight: normal;
 }
 
 body {
@@ -49,6 +49,7 @@ body {
 	background-position : center 0;
 	background-repeat: no-repeat;
 	font-size: 18px;
+	font-weight: normal;
 }
 
 a {
@@ -84,7 +85,7 @@ a:hover {
 }
 
 .franklin-toc {
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	font-size: 0.9rem;
 	margin: 3rem;
 }
@@ -126,7 +127,8 @@ h4, h5 {
 p  {
 	font-size: 1rem;
 	line-height: 2rem;
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
+	font-weight: normal;
 	text-align: left;
 	align-items:left;
 	margin-left: 0%;
@@ -140,7 +142,7 @@ p  {
 
 .fndef, .fndef-content, .fndef-backref{
 	font-size: 0.8rem;
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	display: inline;
 	vertical-align: top;
 	line-height: 1.5rem;
@@ -148,9 +150,10 @@ p  {
 }
 
 p > code {
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	margin-top: 0.25rem;
 	margin-right: 0.25rem;
+	font-weight: normal;
 }
 
 ul {
@@ -159,9 +162,10 @@ ul {
 }
 
 pre, code {
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	width: 100%;
 	margin:0;
+	font-weight: normal;
 }
 
 code.language-julia.hljs {
@@ -178,38 +182,44 @@ code.language-julia.hljs {
 	word-wrap: break-word;
 	/* Internet Explorer 5.5+ */
 	border: none;
+	font-weight: normal;
 }
 
 .copyright {
 	margin: 10rem 2rem 2rem 2rem;
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	font-size: 0.5rem;
 	text-align: center;
 }
 
 .smallercode {
   font-size: 0.7em;
+  	font-weight: normal;
 }
 
 .codealt * {
 	font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09" ;
 	font-variant-ligatures: no-contextual;
+	font-weight: normal;
 }
 
 .code_zero_on {
 	/* slash zero */
 	font-feature-settings: "zero";
 	font-variant-ligatures: no-contextual;
+	font-weight: normal;
 }
 
 .code_alt_zero {
 	font-feature-settings: "ss04";
+	font-weight: normal;
 }
 
 .code_ss_on {
 	width:100%;
 	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss20";
 	font-variant-ligatures: no-contextual;
+	font-weight: normal;
 }
 
 .code_ss_off {
@@ -236,16 +246,17 @@ code.language-julia.hljs {
 
 /* language sample table */
 .language * {
-	 font-family: JuliaMono-Regular;
+	 font-family: JuliaMono-Light;
 	 vertical-align: top;
 	 line-height: 1.3em;
 	 padding: 0.5rem;
 	 max-width: 100%;
+ 	font-weight: normal;
 }
 
 /* stylistic alts table */
 .sstable {
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	width: 100%;
 	vertical-align: top;
 	text-align: center;
@@ -262,12 +273,13 @@ code.language-julia.hljs {
 
 
 .tryit {
-	font-family: JuliaMono-Regular;
+	font-family: JuliaMono-Light;
 	width: 90%;
 	margin: 1em;
 	line-height: 2.2em;
 	font-size: 2em;
 	flex: 1;
+ 	font-weight: normal;
 }
 
 /* images */
@@ -297,6 +309,7 @@ code.language-julia.hljs {
 
 .hljs-keyword {
 	font-family: JuliaMono-Medium;
+ 	font-weight: normal;
 }
 
 .hljs-quote
@@ -306,6 +319,7 @@ code.language-julia.hljs {
 
 .hljs-meta {
 	font-family: JuliaMono-Medium;
+ 	font-weight: normal;
 }
 
 .hljs-comment {
