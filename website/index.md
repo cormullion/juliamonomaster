@@ -108,7 +108,23 @@ end
 end
 ```
 
-There are different weights of JuliaMono, so you can control the amount of contrast you have in your highlighted code: ~~~<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>~~~, ~~~<span style="font-family: JuliaMono-Regular;">JuliaMono-Regular</span>~~~, ~~~<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>~~~, ~~~<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>~~~, ~~~<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>~~~, and ~~~<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>~~~. [^masters] They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.
+There are different weights of JuliaMono[^masters], so you can control the amount of contrast you have in your highlighted code:
+
+~~~<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>~~~
+
+~~~<span style="font-family: JuliaMono-Regular;">JuliaMono-Regular</span>~~~
+
+~~~<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>~~~
+
+~~~<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>~~~
+
+~~~<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>~~~
+
+~~~<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>~~~
+
+They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.
+
+Each of these also has a matching italic variant: so JuliaMono-Light has JuliaMono-LightItalic, and so on.
 
 (There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You probably don't want to use these - they're intended for use mainly as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.)
 

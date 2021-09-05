@@ -2,16 +2,19 @@
 
 @font-face {
 	font-family: JuliaMono-Regular;
+	font-style: normal;
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Regular.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-Light;
+	font-style: normal;
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Light.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-Medium;
+	font-style: normal;
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Medium.woff2");
 	font-display: fallback;	/* allow 100 milliseconds then display fallback */
 	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
@@ -19,6 +22,7 @@
 
 @font-face {
 	font-family: JuliaMono-Bold;
+	font-style: normal;
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Bold.woff2");
 	font-display: fallback;	/* allow 100 milliseconds then display fallback */
 	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
@@ -26,13 +30,23 @@
 
 @font-face {
 	font-family: JuliaMono-ExtraBold;
+	font-style: normal;
 	font-display: fallback;	/* allow 100 milliseconds then display fallback */
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-ExtraBold.woff2");
 	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
 }
 
 @font-face {
+	font-family: JuliaMono-ExtraBoldItalic;
+	font-style: normal;
+	font-display: fallback;	/* allow 100 milliseconds then display fallback */
+	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-ExtraBoldItalic.woff2");
+	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
+}
+
+@font-face {
 	font-family: JuliaMono-Black;
+	font-style: normal;
 	font-display: fallback;	/* allow 100 milliseconds then display fallback */
 	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@latest/webfonts/JuliaMono-Black.woff2");
 	unicode-range: U+0020-00FF, U+2049-2050, U+2000-2020;
@@ -117,8 +131,8 @@ h2, h3 {
 
 h4, h5 {
 	font-size: 1.5rem;
+	font-family: JuliaMono-ExtraBoldItalic;
 	line-height: 2rem;
-	font-family: JuliaMono-ExtraBold;
 	max-width: 50ch;
 	margin-bottom: 0.5rem;
 	hanging-punctuation: first;
