@@ -6,6 +6,8 @@
 
 You can find the font files at [https://github.com/cormullion/juliamono](https://github.com/cormullion/juliamono).
 
+I'd suggest downloading the ZIP file, or downloading the individual files (click, then "Download") just the ones you want. I wouldn't recommend cloning the git repo, unless you want over 1GB of old outdated font files on your disk.
+
 ### Installation
 
 #### MacOS
