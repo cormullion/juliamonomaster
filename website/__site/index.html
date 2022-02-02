@@ -649,7 +649,7 @@ strip:
 <p>There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the standard. These are called the <strong>Private Use Areas</strong>, and there are three: <code>\ue000</code> to <code>\uf8ff</code>, <code>\UF0000</code> to <code>\UFFFFD</code>, and <code>U100000</code> to <code>U&#43;10FFFD</code>.</p>
 <p>Each typeface can do its own thing in these areas. In JuliaMono you&#39;ll find these, among others, and if you ask nicely I might add some more:</p>
 
-<img src="/assets/specimen_8.png" width="100%" alt="private use area">
+<img src="/assets/specimen_9.png" width="100%" alt="private use area">
 
 <p>The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed &#40;eg on github&#41;, you have no idea what glyph - if any - will be displayed.</p>
 <p>You can define these to be available at the Julia REPL. For example, say you want the Julia circles to be available in the terminal when you type <code>\julialogo</code><span style="font-size: 1.5em;"></span> in a Julia session with the JuliaMono font active. Run this:</p>
