@@ -256,6 +256,10 @@ code.language-julia.hljs {
 	font-variant-ligatures: no-contextual;
 }
 
+.code_ss15_on {
+	font-feature-settings: "ss15";
+	font-variant-ligatures: no-contextual;
+}
 
 
 /* language sample table */

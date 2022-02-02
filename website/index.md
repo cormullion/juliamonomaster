@@ -571,16 +571,28 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td class="code_ss_on">====</td>
     <td><p>joining equals</p></td>
     </tr>
+    <tr>
 	<td>ss13</td>
     <td class="code_ss_off">&lt;!--</td>
     <td class="code_ss_on">&lt;!--</td>
     <td><p>HTML comment</p></td>
     </tr>
+
+	<tr>
 	<td>ss14</td>
     <td class="code_ss_off">==</td>
     <td class="code_ss_on">==</td>
     <td><p>double equals</p></td>
     </tr>
+
+	<tr>
+	<td>ss15</td>
+    <td class="code_ss_off">A B C ...</td>
+    <td class="code_ss15_on">A B C ... </td>
+    <td><p>Math script Roundhand</p></td>
+    </tr>
+
+	<tr>
 	<td>ss20</td>
     <td class="code_ss_off">(_)</td>
     <td class="code_ss_on">(_)</td>
@@ -619,6 +631,49 @@ df2 = df |>
 @@
 
 (I originally liked the idea of a circular ``@`` sign, but in practice it doesn’t work too well at small point sizes, as the details disappear. But I’ve kept it anyway.)
+
+### Mathematical script styles: Calligraphers vs Roundhanders
+
+The stylistic set `ss15` uses a script style known as "roundhand", rather than the calligraphical script style that's the default.
+
+Here's the way the default calligraphical script style looks:
+
+@@code_calt_off_ss_on
+```
+# 𝓐 𝓑 𝓒 𝓓 𝓔 ...
+function tensorform(𝒫::POMDP)
+	𝒮, 𝒜, 𝒪, R, T, O = 𝒫.𝒮, 𝒫.𝒜, 𝒫.𝒪, 𝒫.R, 𝒫.T, 𝒫.O 𝒮′ = eachindex(𝒮)
+	𝒜′ = eachindex(𝒜)
+	𝒪′ = eachindex(𝒪)
+	R′ = [R(s,a) for s in 𝒮, a in 𝒜]
+	T′ = [T(s,a,s′) for s in 𝒮, a in 𝒜, s′ in 𝒮] O′ = [O(a,s′,o) for a in 𝒜, s′ in 𝒮, o in 𝒪]
+	𝒮′, 𝒜′, 𝒪′, R′, T′, O′
+end
+```
+@@
+
+and here's the roundhand style:
+
+@@code_ss15_on
+```
+# 𝓐 𝓑 𝓒 𝓓 𝓔 ...
+function tensorform(𝒫::POMDP)
+	𝒮, 𝒜, 𝒪, R, T, O = 𝒫.𝒮, 𝒫.𝒜, 𝒫.𝒪, 𝒫.R, 𝒫.T, 𝒫.O 𝒮′ = eachindex(𝒮)
+	𝒜′ = eachindex(𝒜)
+	𝒪′ = eachindex(𝒪)
+	R′ = [R(s,a) for s in 𝒮, a in 𝒜]
+	T′ = [T(s,a,s′) for s in 𝒮, a in 𝒜, s′ in 𝒮] O′ = [O(a,s′,o) for a in 𝒜, s′ in 𝒮, o in 𝒪]
+	𝒮′, 𝒜′, 𝒪′, R′, T′, O′
+end
+```
+@@
+
+(This code snippet is from the [Algorithms
+Handbook](https://algorithmsbook.com/), by Mykel J.
+Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses
+JuliaMono for the code samples.)
+
+As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education. I suspect that few people today learn or practice the script style known as roundhand.
 
 ## If you really don't like any ligatures
 

@@ -533,16 +533,28 @@ df2 &#61; df |&gt;
     <td class="code_ss_on">====</td>
     <td><p>joining equals</p></td>
     </tr>
+    <tr>
 	<td>ss13</td>
     <td class="code_ss_off">&lt;!--</td>
     <td class="code_ss_on">&lt;!--</td>
     <td><p>HTML comment</p></td>
     </tr>
+
+	<tr>
 	<td>ss14</td>
     <td class="code_ss_off">==</td>
     <td class="code_ss_on">==</td>
     <td><p>double equals</p></td>
     </tr>
+
+	<tr>
+	<td>ss15</td>
+    <td class="code_ss_off">A B C ...</td>
+    <td class="code_ss15_on">A B C ... </td>
+    <td><p>Math script Roundhand</p></td>
+    </tr>
+
+	<tr>
 	<td>ss20</td>
     <td class="code_ss_off">(_)</td>
     <td class="code_ss_on">(_)</td>
@@ -571,6 +583,30 @@ df2 &#61; df |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre></div>
 <p>&#40;I originally liked the idea of a circular <code>@</code> sign, but in practice it doesn’t work too well at small point sizes, as the details disappear. But I’ve kept it anyway.&#41;</p>
+<h3 id="mathematical_script_styles_calligraphers_vs_roundhanders"><a href="#mathematical_script_styles_calligraphers_vs_roundhanders" class="header-anchor">Mathematical script styles: Calligraphers vs Roundhanders</a></h3>
+<p>The stylistic set <code>ss15</code> uses a script style known as &quot;roundhand&quot;, rather than the calligraphical script style that&#39;s the default.</p>
+<p>Here&#39;s the way the default calligraphical script style looks:</p>
+<div class="code_calt_off_ss_on"><pre><code class="language-julia"># 𝓐 𝓑 𝓒 𝓓 𝓔 ...
+function tensorform&#40;𝒫::POMDP&#41;
+	𝒮, 𝒜, 𝒪, R, T, O &#61; 𝒫.𝒮, 𝒫.𝒜, 𝒫.𝒪, 𝒫.R, 𝒫.T, 𝒫.O 𝒮′ &#61; eachindex&#40;𝒮&#41;
+	𝒜′ &#61; eachindex&#40;𝒜&#41;
+	𝒪′ &#61; eachindex&#40;𝒪&#41;
+	R′ &#61; &#91;R&#40;s,a&#41; for s in 𝒮, a in 𝒜&#93;
+	T′ &#61; &#91;T&#40;s,a,s′&#41; for s in 𝒮, a in 𝒜, s′ in 𝒮&#93; O′ &#61; &#91;O&#40;a,s′,o&#41; for a in 𝒜, s′ in 𝒮, o in 𝒪&#93;
+	𝒮′, 𝒜′, 𝒪′, R′, T′, O′
+end</code></pre></div>
+<p>and here&#39;s the roundhand style:</p>
+<div class="code_ss15_on"><pre><code class="language-julia"># 𝓐 𝓑 𝓒 𝓓 𝓔 ...
+function tensorform&#40;𝒫::POMDP&#41;
+	𝒮, 𝒜, 𝒪, R, T, O &#61; 𝒫.𝒮, 𝒫.𝒜, 𝒫.𝒪, 𝒫.R, 𝒫.T, 𝒫.O 𝒮′ &#61; eachindex&#40;𝒮&#41;
+	𝒜′ &#61; eachindex&#40;𝒜&#41;
+	𝒪′ &#61; eachindex&#40;𝒪&#41;
+	R′ &#61; &#91;R&#40;s,a&#41; for s in 𝒮, a in 𝒜&#93;
+	T′ &#61; &#91;T&#40;s,a,s′&#41; for s in 𝒮, a in 𝒜, s′ in 𝒮&#93; O′ &#61; &#91;O&#40;a,s′,o&#41; for a in 𝒜, s′ in 𝒮, o in 𝒪&#93;
+	𝒮′, 𝒜′, 𝒪′, R′, T′, O′
+end</code></pre></div>
+<p>&#40;This code snippet is from the <a href="https://algorithmsbook.com/">Algorithms Handbook</a>, by Mykel J. Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses JuliaMono for the code samples.&#41;</p>
+<p>As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education. I suspect that few people today learn or practice the script style known as roundhand.</p>
 <h2 id="if_you_really_dont_like_any_ligatures"><a href="#if_you_really_dont_like_any_ligatures" class="header-anchor">If you really don&#39;t like any ligatures</a></h2>
 <p>It&#39;s possible that you don&#39;t like even the few ligatures and contextual alternate characters provided in JuliaMono. If switching them off isn&#39;t possible, or not drastic enough, you can strip them out of the font with the following terminal magic &#40;courtesy of @fredrikekre&#41;:</p>
 <pre><code class="language-julia">&#36; cat Dockerfile
@@ -707,7 +743,7 @@ Welcome to </code></pre>
  </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: January 29, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: February 02, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
