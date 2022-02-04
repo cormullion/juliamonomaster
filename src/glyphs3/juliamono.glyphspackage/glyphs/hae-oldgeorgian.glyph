@@ -1,0 +1,454 @@
+{
+glyphname = "hae-oldgeorgian";
+layers = (
+{
+background = {
+shapes = (
+{
+closed = 0;
+nodes = (
+(353,968,l),
+(351,1016,o),
+(331,1056,o),
+(296,1078,cs),
+(162,1164,l),
+(81,1033,l),
+(182,963,l),
+(202,947,o),
+(210,939,o),
+(210,923,cs)
+);
+}
+);
+};
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1067,49,l),
+(1005,125,l),
+(999,134,o),
+(998,146,o),
+(999,165,cs),
+(999,172,o),
+(1001,182,o),
+(1003,194,cs),
+(1182,1100,l),
+(1032,1100,l),
+(880,303,ls),
+(873,267,o),
+(859,241,o),
+(845,234,cs),
+(653,138,ls),
+(642,133,o),
+(620,125,o),
+(599,125,cs),
+(584,125,o),
+(576,150,o),
+(578,181,cs),
+(579,189,o),
+(582,215,o),
+(584,227,cs),
+(712,855,ls),
+(719,890,o),
+(726,937,o),
+(726,975,cs),
+(726,1071,o),
+(691,1119,o),
+(615,1119,cs),
+(608,1119,o),
+(562,1119,o),
+(531,1097,cs),
+(353,971,l),
+(353,1010,o),
+(349,1042,o),
+(315,1064,cs),
+(162,1164,l),
+(81,1033,l),
+(182,963,ls),
+(203,948,o),
+(203,927,o),
+(202,908,cs),
+(202,903,o),
+(200,891,o),
+(197,878,cs),
+(23,0,l),
+(171,0,l),
+(334,828,l),
+(528,961,ls),
+(538,968,o),
+(554,980,o),
+(567,980,cs),
+(579,980,o),
+(580,969,o),
+(580,952,cs),
+(580,943,o),
+(577,906,o),
+(575,894,cs),
+(442,248,ls),
+(435,213,o),
+(429,169,o),
+(429,130,cs),
+(429,27,o),
+(464,-21,o),
+(540,-21,cs),
+(567,-21,o),
+(590,-13,o),
+(624,1,cs),
+(848,94,l),
+(848,58,o),
+(861,37,o),
+(886,9,cs),
+(994,-111,l)
+);
+}
+);
+userData = {
+assembly = "NPUSHB[ ]	/* 101 values pushed */
+137 32 1 151 5 1 34 112 33 1 33 33 29 37 25 26 26 132 27 29 20 27 29 137 29 1 29 27 16 43 46 46 132 16 19 20 16 16 19 19 16 7 6 6 2 54 53 10 2 0 0 132 55 10 20 55 55 10 55 32 10 1 10 16 0 55 15 33 29 34 34 25 19 22 149 43 37 40 16 26 27 21 41 53 1 53 46 49 149 13 6 2 7 7 16 40 10 1 10 13 22 
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+MIAP[1]	/* MoveIndirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+SRP0[ ]	/* SetRefPoint0 */
+MIRP[01101]	/* MoveIndirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[0]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+MIAP[1]	/* MoveIndirectAbsPt */
+MDRP[00100]	/* MoveDirectRelPt */
+MIAP[1]	/* MoveIndirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MIRP[01101]	/* MoveIndirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MIAP[1]	/* MoveIndirectAbsPt */
+MDRP[00100]	/* MoveDirectRelPt */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+MDAP[1]	/* MoveDirectAbsPt */
+MDRP[01100]	/* MoveDirectRelPt */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SHP[0]	/* ShiftPointByLastPoint */
+SDPVTL[1]	/* SetDualPVectorToLine */
+SRP0[ ]	/* SetRefPoint0 */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SFVTPV[ ]	/* SetFVectorToPVector */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+SHP[1]	/* ShiftPointByLastPoint */
+RTG[ ]	/* RoundToGrid */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SRP1[ ]	/* SetRefPoint1 */
+SHP[1]	/* ShiftPointByLastPoint */
+SDPVTL[1]	/* SetDualPVectorToLine */
+SRP0[ ]	/* SetRefPoint0 */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+RTG[ ]	/* RoundToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[11100]	/* MoveDirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SDPVTL[1]	/* SetDualPVectorToLine */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+SHP[0]	/* ShiftPointByLastPoint */
+SRP1[ ]	/* SetRefPoint1 */
+SHP[1]	/* ShiftPointByLastPoint */
+RTG[ ]	/* RoundToGrid */
+MDAP[1]	/* MoveDirectAbsPt */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SHP[1]	/* ShiftPointByLastPoint */
+IUP[1]	/* InterpolateUntPts */
+IUP[0]	/* InterpolateUntPts */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+DELTAP1[ ]	/* DeltaExceptionP1 */";
+};
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1067,49,l),
+(1005,125,l),
+(999,134,o),
+(998,146,o),
+(999,165,cs),
+(999,172,o),
+(1001,182,o),
+(1003,194,cs),
+(1182,1100,l),
+(1032,1100,l),
+(880,303,ls),
+(873,267,o),
+(859,241,o),
+(845,234,cs),
+(653,138,ls),
+(642,133,o),
+(620,125,o),
+(599,125,cs),
+(584,125,o),
+(576,150,o),
+(578,181,cs),
+(579,189,o),
+(582,215,o),
+(584,227,cs),
+(712,855,ls),
+(719,890,o),
+(726,937,o),
+(726,975,cs),
+(726,1071,o),
+(691,1119,o),
+(615,1119,cs),
+(608,1119,o),
+(562,1119,o),
+(531,1097,cs),
+(353,971,l),
+(353,1010,o),
+(349,1042,o),
+(315,1064,cs),
+(162,1164,l),
+(81,1033,l),
+(182,963,ls),
+(203,948,o),
+(203,927,o),
+(202,908,cs),
+(202,903,o),
+(200,891,o),
+(197,878,cs),
+(23,0,l),
+(171,0,l),
+(334,828,l),
+(528,961,ls),
+(538,968,o),
+(554,980,o),
+(567,980,cs),
+(579,980,o),
+(580,969,o),
+(580,952,cs),
+(580,943,o),
+(577,906,o),
+(575,894,cs),
+(442,248,ls),
+(435,213,o),
+(429,169,o),
+(429,130,cs),
+(429,27,o),
+(464,-21,o),
+(540,-21,cs),
+(567,-21,o),
+(590,-13,o),
+(624,1,cs),
+(848,94,l),
+(848,58,o),
+(861,37,o),
+(886,9,cs),
+(994,-111,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1067,49,l),
+(1005,125,l),
+(999,134,o),
+(998,146,o),
+(999,165,cs),
+(999,172,o),
+(1001,182,o),
+(1003,194,cs),
+(1182,1100,l),
+(1032,1100,l),
+(880,303,ls),
+(873,267,o),
+(859,241,o),
+(845,234,cs),
+(653,138,ls),
+(642,133,o),
+(620,125,o),
+(599,125,cs),
+(584,125,o),
+(576,150,o),
+(578,181,cs),
+(579,189,o),
+(582,215,o),
+(584,227,cs),
+(712,855,ls),
+(719,890,o),
+(726,937,o),
+(726,975,cs),
+(726,1071,o),
+(691,1119,o),
+(615,1119,cs),
+(608,1119,o),
+(562,1119,o),
+(531,1097,cs),
+(353,971,l),
+(353,1010,o),
+(349,1042,o),
+(315,1064,cs),
+(162,1164,l),
+(81,1033,l),
+(182,963,ls),
+(203,948,o),
+(203,927,o),
+(202,908,cs),
+(202,903,o),
+(200,891,o),
+(197,878,cs),
+(23,0,l),
+(171,0,l),
+(334,828,l),
+(528,961,ls),
+(538,968,o),
+(554,980,o),
+(567,980,cs),
+(579,980,o),
+(580,969,o),
+(580,952,cs),
+(580,943,o),
+(577,906,o),
+(575,894,cs),
+(442,248,ls),
+(435,213,o),
+(429,169,o),
+(429,130,cs),
+(429,27,o),
+(464,-21,o),
+(540,-21,cs),
+(567,-21,o),
+(590,-13,o),
+(624,1,cs),
+(848,94,l),
+(848,58,o),
+(861,37,o),
+(886,9,cs),
+(994,-111,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1067,49,l),
+(1005,125,l),
+(999,134,o),
+(998,146,o),
+(999,165,cs),
+(999,172,o),
+(1001,182,o),
+(1003,194,cs),
+(1182,1100,l),
+(1032,1100,l),
+(880,303,ls),
+(873,267,o),
+(859,241,o),
+(845,234,cs),
+(653,138,ls),
+(642,133,o),
+(620,125,o),
+(599,125,cs),
+(584,125,o),
+(576,150,o),
+(578,181,cs),
+(579,189,o),
+(582,215,o),
+(584,227,cs),
+(712,855,ls),
+(719,890,o),
+(726,937,o),
+(726,975,cs),
+(726,1071,o),
+(691,1119,o),
+(615,1119,cs),
+(608,1119,o),
+(562,1119,o),
+(531,1097,cs),
+(353,971,l),
+(353,1010,o),
+(349,1042,o),
+(315,1064,cs),
+(162,1164,l),
+(81,1033,l),
+(182,963,ls),
+(203,948,o),
+(203,927,o),
+(202,908,cs),
+(202,903,o),
+(200,891,o),
+(197,878,cs),
+(23,0,l),
+(171,0,l),
+(334,828,l),
+(528,961,ls),
+(538,968,o),
+(554,980,o),
+(567,980,cs),
+(579,980,o),
+(580,969,o),
+(580,952,cs),
+(580,943,o),
+(577,906,o),
+(575,894,cs),
+(442,248,ls),
+(435,213,o),
+(429,169,o),
+(429,130,cs),
+(429,27,o),
+(464,-21,o),
+(540,-21,cs),
+(567,-21,o),
+(590,-13,o),
+(624,1,cs),
+(848,94,l),
+(848,58,o),
+(861,37,o),
+(886,9,cs),
+(994,-111,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni2D20;
+unicode = 11552;
+}

@@ -1,0 +1,78 @@
+{
+glyphname = baht;
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(331,-128,l),
+(470,-128,l),
+(749,1580,l),
+(610,1580,l)
+);
+},
+{
+ref = B;
+}
+);
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(301,-128,l),
+(459,-128,l),
+(761,1580,l),
+(603,1580,l)
+);
+},
+{
+ref = B;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(340,-128,l),
+(485,-128,l),
+(787,1580,l),
+(642,1580,l)
+);
+},
+{
+ref = B;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(372,-182,l),
+(501,-182,l),
+(811,1580,l),
+(682,1580,l)
+);
+},
+{
+ref = B;
+}
+);
+width = 1200;
+}
+);
+unicode = 3647;
+}

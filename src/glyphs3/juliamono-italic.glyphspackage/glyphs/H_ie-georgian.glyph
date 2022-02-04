@@ -1,0 +1,325 @@
+{
+glyphname = "Hie-georgian";
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(186,0,o),
+(382,47,o),
+(576,143,c),
+(489,147,l),
+(651,51,o),
+(829,0,o),
+(985,0,c),
+(1001,138,l),
+(897,138,o),
+(745,157,o),
+(663,194,c),
+(675,213,l),
+(934,328,o),
+(1123,612,o),
+(1172,892,cs),
+(1228,1208,o),
+(1059,1468,o),
+(753,1468,cs),
+(456,1468,o),
+(207,1224,o),
+(152,912,cs),
+(101,626,o),
+(195,333,o),
+(415,217,c),
+(403,198,l),
+(309,161,o),
+(149,138,o),
+(45,138,c),
+(29,0,ls)
+);
+},
+{
+closed = 1;
+nodes = (
+(375,377,o),
+(249,621,o),
+(293,874,cs),
+(333,1101,o),
+(537,1338,o),
+(748,1338,cs),
+(946,1338,o),
+(1064,1116,o),
+(1025,894,cs),
+(978,631,o),
+(757,384,o),
+(507,266,c),
+(584,263,l)
+);
+}
+);
+userData = {
+assembly = "PUSHW[ ]	/* 1 value pushed */
+20 
+CALL[ ]	/* CallFunction */
+PUSHW[ ]	/* 1 value pushed */
+44 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+30 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+44 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+11 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+11 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+30 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+19 3 
+MIRP[10100]	/* MoveIndirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+11 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+38 3 
+MIRP[10100]	/* MoveIndirectRelPt */
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+PUSHW[ ]	/* 1 value pushed */
+1 
+RCVT[ ]	/* ReadCVT */
+IF[ ]	/* If */
+PUSHW[ ]	/* 1 value pushed */
+15 
+MDAP[1]	/* MoveDirectAbsPt */
+ELSE[ ]	/* Else */
+PUSHW[ ]	/* 2 values pushed */
+15 10 
+MIAP[0]	/* MoveIndirectAbsPt */
+EIF[ ]	/* EndIf */
+PUSHW[ ]	/* 1 value pushed */
+1 
+RCVT[ ]	/* ReadCVT */
+IF[ ]	/* If */
+PUSHW[ ]	/* 1 value pushed */
+2 
+MDAP[1]	/* MoveDirectAbsPt */
+ELSE[ ]	/* Else */
+PUSHW[ ]	/* 2 values pushed */
+2 4 
+MIAP[0]	/* MoveIndirectAbsPt */
+EIF[ ]	/* EndIf */
+PUSHW[ ]	/* 1 value pushed */
+1 
+RCVT[ ]	/* ReadCVT */
+IF[ ]	/* If */
+PUSHW[ ]	/* 1 value pushed */
+28 
+MDAP[1]	/* MoveDirectAbsPt */
+ELSE[ ]	/* Else */
+PUSHW[ ]	/* 2 values pushed */
+28 4 
+MIAP[0]	/* MoveIndirectAbsPt */
+EIF[ ]	/* EndIf */
+PUSHW[ ]	/* 1 value pushed */
+2 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+3 2 
+MIRP[10100]	/* MoveIndirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+27 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+15 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+34 2 
+MIRP[10100]	/* MoveIndirectRelPt */
+IUP[0]	/* InterpolateUntPts */
+IUP[1]	/* InterpolateUntPts */";
+};
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(187,0,o),
+(383,46,o),
+(577,142,c),
+(490,148,l),
+(652,52,o),
+(830,0,o),
+(986,0,c),
+(1000,138,l),
+(896,138,o),
+(744,157,o),
+(662,194,c),
+(676,212,l),
+(934,327,o),
+(1123,611,o),
+(1172,890,cs),
+(1228,1207,o),
+(1059,1468,o),
+(752,1468,cs),
+(456,1468,o),
+(207,1225,o),
+(152,914,cs),
+(102,627,o),
+(195,334,o),
+(416,218,c),
+(402,198,l),
+(309,161,o),
+(148,138,o),
+(44,138,c),
+(30,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(375,376,o),
+(248,620,o),
+(293,872,cs),
+(333,1100,o),
+(538,1338,o),
+(749,1338,cs),
+(947,1338,o),
+(1064,1117,o),
+(1025,896,cs),
+(978,632,o),
+(756,385,o),
+(507,267,c),
+(584,262,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(190,0,o),
+(385,45,o),
+(579,141,c),
+(492,149,l),
+(654,53,o),
+(833,0,o),
+(989,0,c),
+(997,138,l),
+(894,138,o),
+(741,156,o),
+(660,193,c),
+(679,211,l),
+(936,326,o),
+(1122,608,o),
+(1171,885,cs),
+(1227,1204,o),
+(1056,1468,o),
+(747,1468,cs),
+(453,1468,o),
+(208,1228,o),
+(153,919,cs),
+(102,630,o),
+(198,335,o),
+(418,219,c),
+(399,199,l),
+(307,162,o),
+(146,138,o),
+(42,138,c),
+(33,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(372,375,o),
+(248,617,o),
+(292,867,cs),
+(332,1097,o),
+(541,1338,o),
+(754,1338,cs),
+(950,1338,o),
+(1064,1120,o),
+(1026,901,cs),
+(979,635,o),
+(754,386,o),
+(505,268,c),
+(581,261,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(192,0,o),
+(387,44,o),
+(581,140,c),
+(494,150,l),
+(657,54,o),
+(835,0,o),
+(991,0,c),
+(995,138,l),
+(891,138,o),
+(739,155,o),
+(657,192,c),
+(682,210,l),
+(938,325,o),
+(1122,606,o),
+(1170,880,cs),
+(1227,1202,o),
+(1054,1468,o),
+(742,1468,cs),
+(451,1468,o),
+(208,1230,o),
+(154,924,cs),
+(102,632,o),
+(200,336,o),
+(421,220,c),
+(414,214,l),
+(323,151,o),
+(195,138,o),
+(49,138,c),
+(36,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(370,374,o),
+(247,615,o),
+(291,862,cs),
+(332,1095,o),
+(543,1338,o),
+(759,1338,cs),
+(952,1338,o),
+(1065,1122,o),
+(1027,906,cs),
+(979,637,o),
+(752,387,o),
+(502,269,c),
+(579,260,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni1CB2;
+unicode = 7346;
+}

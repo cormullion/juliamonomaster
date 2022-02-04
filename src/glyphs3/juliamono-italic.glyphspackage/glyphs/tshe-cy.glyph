@@ -1,0 +1,66 @@
+{
+glyphname = "tshe-cy";
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = h;
+},
+{
+alignment = -1;
+pos = (-142,92);
+ref = macron;
+scale = (0.6814,0.869);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = h;
+},
+{
+alignment = -1;
+pos = (-142,-398);
+ref = macron;
+scale = (0.6814,1.2319);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = h;
+},
+{
+alignment = -1;
+pos = (-142,178);
+ref = macron;
+scale = (0.6814,0.8097);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = h;
+},
+{
+alignment = -1;
+pos = (-142,-154);
+ref = macron;
+scale = (0.6814,1.0505);
+}
+);
+width = 1200;
+}
+);
+unicode = 1115;
+}

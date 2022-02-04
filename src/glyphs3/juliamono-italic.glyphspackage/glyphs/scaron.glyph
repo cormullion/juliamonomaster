@@ -1,0 +1,149 @@
+{
+glyphname = scaron;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (-65, 79);
+place = (-65, 79);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (871, 77);
+place = (871, 77);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1389, -3);
+place = (1389, -3);
+type = Stem;
+},
+{
+place = (159, 121);
+place = (159, 121);
+type = Stem;
+},
+{
+place = (809, 123);
+place = (809, 123);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = s;
+},
+{
+pos = (-22,18);
+ref = caroncomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = s;
+},
+{
+pos = (-21,0);
+ref = caroncomb;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-147, 21);
+place = (-147, 21);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (945, 19);
+place = (945, 19);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1550, -74);
+place = (1550, -74);
+type = Stem;
+},
+{
+place = (115, 70);
+place = (115, 70);
+type = Stem;
+},
+{
+place = (873, 73);
+place = (873, 73);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = s;
+},
+{
+pos = (4,20);
+ref = caroncomb;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-81, -9);
+place = (-81, -9);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (387, -10);
+place = (387, -10);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (646, -50);
+place = (646, -50);
+type = Stem;
+},
+{
+place = (31, 12);
+place = (31, 12);
+type = Stem;
+},
+{
+place = (356, 13);
+place = (356, 13);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = s;
+},
+{
+pos = (24,8);
+ref = caroncomb;
+}
+);
+width = 1200;
+}
+);
+note = scaron;
+unicode = 353;
+}

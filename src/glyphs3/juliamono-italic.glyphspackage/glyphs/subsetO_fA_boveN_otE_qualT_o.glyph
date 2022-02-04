@@ -1,0 +1,79 @@
+{
+glyphname = subsetOfAboveNotEqualTo;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(272,-567,l),
+(471,-567,l),
+(918,264,l),
+(719,264,l)
+);
+},
+{
+ref = subsetOfAboveEqualsSign;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(252,-567,l),
+(501,-567,l),
+(948,264,l),
+(699,264,l)
+);
+},
+{
+ref = subsetOfAboveEqualsSign;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(272,-567,l),
+(461,-567,l),
+(908,264,l),
+(719,264,l)
+);
+},
+{
+ref = subsetOfAboveEqualsSign;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(255,-567,l),
+(464,-567,l),
+(911,264,l),
+(702,264,l)
+);
+},
+{
+ref = subsetOfAboveEqualsSign;
+}
+);
+width = 1200;
+}
+);
+note = uni2ACB;
+unicode = 10955;
+}

@@ -1,0 +1,78 @@
+{
+glyphname = SigmaLunateDottedReversedSymbol;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = SigmaLunateReversedSymbol;
+},
+{
+closed = 1;
+nodes = (
+(651,591,l),
+(700,845,l),
+(441,845,l),
+(392,591,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = SigmaLunateReversedSymbol;
+},
+{
+closed = 1;
+nodes = (
+(695,550,l),
+(759,886,l),
+(417,886,l),
+(353,550,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = SigmaLunateReversedSymbol;
+},
+{
+closed = 1;
+nodes = (
+(637,595,l),
+(684,841,l),
+(435,841,l),
+(388,595,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = SigmaLunateReversedSymbol;
+},
+{
+closed = 1;
+nodes = (
+(661,579,l),
+(715,857,l),
+(431,857,l),
+(377,579,l)
+);
+}
+);
+width = 1200;
+}
+);
+unicode = 1023;
+}

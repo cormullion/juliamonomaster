@@ -1,0 +1,171 @@
+{
+glyphname = "kiBlackfoot-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (797, 111);
+place = (797, 111);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(41,0,l),
+(233,0,l),
+(536,402,l),
+(693,0,l),
+(965,0,l),
+(1222,1460,l),
+(1054,1460,l),
+(827,170,l),
+(811,170,l),
+(588,730,l),
+(588,730,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (797, 111);
+place = (797, 111);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(39,0,l),
+(235,0,l),
+(539,402,l),
+(695,0,l),
+(965,0,l),
+(1222,1460,l),
+(1054,1460,l),
+(827,170,l),
+(809,170,l),
+(586,730,l),
+(586,730,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (797, 111);
+place = (797, 111);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(41,0,l),
+(233,0,l),
+(535,402,l),
+(693,0,l),
+(965,0,l),
+(1222,1460,l),
+(1054,1460,l),
+(827,170,l),
+(811,170,l),
+(588,730,l),
+(588,730,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (797, 111);
+place = (797, 111);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(40,0,l),
+(234,0,l),
+(538,402,l),
+(694,0,l),
+(965,0,l),
+(1222,1460,l),
+(1054,1460,l),
+(827,170,l),
+(810,170,l),
+(587,730,l),
+(587,730,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni15BD;
+unicode = 5565;
+}

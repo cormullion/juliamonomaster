@@ -1,0 +1,65 @@
+{
+glyphname = grave.case;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1010,1295,l),
+(839,1630,l),
+(522,1630,l),
+(818,1295,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1081,1292,l),
+(884,1630,l),
+(452,1630,l),
+(797,1292,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(995,1290,l),
+(795,1630,l),
+(499,1630,l),
+(819,1290,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1026,1288,l),
+(912,1628,l),
+(537,1628,l),
+(787,1288,l)
+);
+}
+);
+width = 1200;
+}
+);
+}

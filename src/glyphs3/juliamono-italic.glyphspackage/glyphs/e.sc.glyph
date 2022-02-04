@@ -1,0 +1,350 @@
+{
+glyphname = e.sc;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (447,0);
+},
+{
+name = ogonek;
+pos = (846,16);
+},
+{
+name = top;
+pos = (652,1160);
+},
+{
+name = topleft;
+pos = (194,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-79, 67);
+place = (-79, 67);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (595, 67);
+place = (595, 67);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1221, 67);
+place = (1221, 67);
+type = Stem;
+},
+{
+place = (117, 97);
+place = (117, 97);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,10);
+target = (0,7);
+type = TTStem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(863,0,l),
+(887,136,l),
+(269,136,l),
+(338,526,l),
+(908,526,l),
+(932,664,l),
+(362,664,l),
+(425,1020,l),
+(1019,1020,l),
+(1044,1160,l),
+(280,1160,l),
+(75,0,l)
+);
+}
+);
+userData = {
+RMXScaler = {
+height = 80;
+weight = 4;
+width = 90;
+};
+};
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (449,0);
+},
+{
+name = ogonek;
+pos = (848,16);
+},
+{
+name = top;
+pos = (654,1160);
+},
+{
+name = topleft;
+pos = (194,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,10);
+target = (0,7);
+type = TTStem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(977,0,l),
+(1026,280,l),
+(404,280,l),
+(432,438,l),
+(994,438,l),
+(1044,720,l),
+(482,720,l),
+(509,876,l),
+(1103,876,l),
+(1154,1160,l),
+(244,1160,l),
+(39,0,l)
+);
+}
+);
+userData = {
+RMXScaler = {
+height = 80;
+weight = 10;
+width = 90;
+};
+};
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (447,0);
+},
+{
+name = ogonek;
+pos = (846,16);
+},
+{
+name = top;
+pos = (652,1160);
+},
+{
+name = topleft;
+pos = (194,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-76, 94);
+place = (-76, 94);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (710, 94);
+place = (710, 94);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1441, 94);
+place = (1441, 94);
+type = Stem;
+},
+{
+place = (153, 129);
+place = (153, 129);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,10);
+target = (0,7);
+type = TTStem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(845,0,l),
+(865,112,l),
+(247,112,l),
+(322,540,l),
+(894,540,l),
+(914,654,l),
+(342,654,l),
+(411,1044,l),
+(1005,1044,l),
+(1026,1160,l),
+(286,1160,l),
+(81,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (449,0);
+},
+{
+name = ogonek;
+pos = (848,16);
+},
+{
+name = top;
+pos = (654,1160);
+},
+{
+name = topleft;
+pos = (194,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-88, -15);
+place = (-88, -15);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (249, -15);
+place = (249, -15);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (562, -15);
+place = (562, -15);
+type = Stem;
+},
+{
+place = (10, 0);
+place = (10, 0);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,10);
+target = (0,7);
+type = TTStem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(921,0,l),
+(958,208,l),
+(338,208,l),
+(386,482,l),
+(952,482,l),
+(989,692,l),
+(423,692,l),
+(468,948,l),
+(1062,948,l),
+(1100,1160,l),
+(262,1160,l),
+(57,0,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = E;
+userData = {
+RMXScaler = {
+source = E;
+};
+};
+}

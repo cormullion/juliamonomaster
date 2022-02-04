@@ -1,0 +1,70 @@
+{
+glyphname = mhook;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = m;
+},
+{
+alignment = -1;
+pos = (381,12);
+ref = hook;
+scale = (1.0682,1);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+ref = m;
+},
+{
+alignment = -1;
+pos = (362,7);
+ref = hook;
+scale = (1.1085,1.0343);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+ref = m;
+},
+{
+alignment = -1;
+pos = (359,8);
+ref = hook;
+scale = (1.09,0.9979);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+ref = m;
+},
+{
+alignment = -1;
+pos = (360,0);
+ref = hook;
+scale = (1.09,1);
+}
+);
+width = 1200;
+}
+);
+note = mhook;
+unicode = 625;
+}

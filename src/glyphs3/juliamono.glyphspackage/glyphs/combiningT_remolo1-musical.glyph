@@ -1,0 +1,66 @@
+{
+glyphname = "combiningTremolo1-musical";
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(200,-150,l),
+(996,-24,l),
+(996,214,l),
+(200,88,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(200,-168,l),
+(996,-42,l),
+(996,220,l),
+(200,94,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(200,-150,l),
+(996,-24,l),
+(996,194,l),
+(200,68,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(200,-134,l),
+(996,-8,l),
+(996,248,l),
+(200,122,l)
+);
+}
+);
+width = 1200;
+}
+);
+unicode = 119143;
+}

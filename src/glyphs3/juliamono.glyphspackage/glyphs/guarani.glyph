@@ -1,0 +1,84 @@
+{
+glyphname = guarani;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(482,-190,l),
+(622,-190,l),
+(622,1634,l),
+(482,1634,l)
+);
+},
+{
+pos = (78,0);
+ref = G;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(508,-242,l),
+(716,-242,l),
+(716,1682,l),
+(508,1682,l)
+);
+},
+{
+pos = (78,0);
+ref = G;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(478,-182,l),
+(606,-182,l),
+(606,1626,l),
+(478,1626,l)
+);
+},
+{
+alignment = -1;
+pos = (78,0);
+ref = G;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(496,-216,l),
+(670,-216,l),
+(670,1658,l),
+(496,1658,l)
+);
+},
+{
+alignment = -1;
+pos = (78,0);
+ref = G;
+}
+);
+width = 1200;
+}
+);
+unicode = 8370;
+}

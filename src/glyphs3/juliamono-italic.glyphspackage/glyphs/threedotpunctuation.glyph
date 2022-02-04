@@ -1,0 +1,84 @@
+{
+glyphname = threedotpunctuation;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+pos = (119,0);
+ref = period;
+},
+{
+pos = (-331,456);
+ref = period;
+},
+{
+pos = (280,912);
+ref = period;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+pos = (119,0);
+ref = period;
+},
+{
+pos = (-283,546);
+ref = period;
+},
+{
+pos = (320,1092);
+ref = period;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (119,0);
+ref = period;
+},
+{
+alignment = -1;
+pos = (-339,442);
+ref = period;
+},
+{
+alignment = -1;
+pos = (273,882);
+ref = period;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (119,0);
+ref = period;
+},
+{
+alignment = -1;
+pos = (-306,502);
+ref = period;
+},
+{
+alignment = -1;
+pos = (300,1002);
+ref = period;
+}
+);
+width = 1200;
+}
+);
+unicode = 8278;
+}

@@ -1,0 +1,147 @@
+{
+glyphname = "rWestCree-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (1601, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (241, 665);
+place = (241, 665);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(434,1094,l),
+(699,938,l),
+(388,834,l),
+(370,730,l),
+(927,920,l),
+(640,1094,l),
+(988,1264,l),
+(498,1460,l),
+(480,1354,l),
+(753,1246,l),
+(752,1246,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1601, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (241, 665);
+place = (241, 665);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(434,1094,l),
+(699,938,l),
+(387,834,l),
+(371,730,l),
+(926,920,l),
+(640,1094,l),
+(989,1264,l),
+(497,1460,l),
+(481,1354,l),
+(754,1246,l),
+(751,1246,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1601, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (241, 665);
+place = (241, 665);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(434,1094,l),
+(699,938,l),
+(388,834,l),
+(370,730,l),
+(927,920,l),
+(640,1094,l),
+(988,1264,l),
+(498,1460,l),
+(480,1354,l),
+(753,1246,l),
+(752,1246,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1601, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (241, 665);
+place = (241, 665);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(434,1094,l),
+(699,938,l),
+(387,834,l),
+(371,730,l),
+(927,920,l),
+(640,1094,l),
+(989,1264,l),
+(498,1460,l),
+(481,1354,l),
+(754,1246,l),
+(751,1246,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni1551;
+unicode = 5457;
+}

@@ -1,0 +1,165 @@
+{
+glyphname = equaltobydefinition;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (600,254);
+},
+{
+name = top;
+pos = (600,1374.235);
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (-28,568);
+ref = d.superscript;
+scale = (0.4425,0.4425);
+},
+{
+pos = (-82,-2);
+ref = equal;
+scale = (1.1379,1);
+},
+{
+alignment = -1;
+pos = (350,564);
+ref = e.superscript;
+scale = (0.4425,0.4425);
+},
+{
+alignment = -1;
+pos = (668,564);
+ref = f.superscript;
+scale = (0.4425,0.4425);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (600,126);
+},
+{
+name = top;
+pos = (600,1493.35);
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (-20,688);
+ref = d.superscript;
+scale = (0.4425,0.4425);
+},
+{
+pos = (-42,-36);
+ref = equal;
+scale = (1.0668,1);
+},
+{
+alignment = -1;
+pos = (340,688);
+ref = e.superscript;
+scale = (0.4425,0.4425);
+},
+{
+alignment = -1;
+pos = (664,688);
+ref = f.superscript;
+scale = (0.4425,0.4425);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (600,260);
+},
+{
+name = top;
+pos = (600,1376.235);
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-30,570);
+ref = d.superscript;
+scale = (0.4425,0.4425);
+},
+{
+alignment = -1;
+pos = (-88,-4);
+ref = equal;
+scale = (1.1497,1);
+},
+{
+alignment = -1;
+pos = (352,564);
+ref = e.superscript;
+scale = (0.4425,0.4425);
+},
+{
+alignment = -1;
+pos = (668,564);
+ref = f.superscript;
+scale = (0.4425,0.4425);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (600,190);
+},
+{
+name = top;
+pos = (600,1434.235);
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (-24,628);
+ref = d.superscript;
+scale = (0.4425,0.4425);
+},
+{
+alignment = -1;
+pos = (-62,-20);
+ref = equal;
+scale = (1.1023,1);
+},
+{
+alignment = -1;
+pos = (346,626);
+ref = e.superscript;
+scale = (0.4425,0.4425);
+},
+{
+alignment = -1;
+pos = (666,626);
+ref = f.superscript;
+scale = (0.4425,0.4425);
+}
+);
+width = 1200;
+}
+);
+note = uni225D;
+unicode = 8797;
+}

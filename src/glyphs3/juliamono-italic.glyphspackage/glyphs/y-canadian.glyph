@@ -1,0 +1,163 @@
+{
+glyphname = "y-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (1261, 249);
+place = (1261, 249);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1591, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (231, 249);
+place = (231, 249);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(506,730,l),
+(997,1248,l),
+(569,1248,l),
+(606,1460,l),
+(488,1460,l),
+(430,1130,l),
+(738,1130,l),
+(358,730,l),
+(360,730,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1261, 249);
+place = (1261, 249);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1591, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (231, 249);
+place = (231, 249);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(508,730,l),
+(999,1248,l),
+(569,1248,l),
+(606,1460,l),
+(488,1460,l),
+(430,1130,l),
+(736,1130,l),
+(356,730,l),
+(360,730,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1261, 249);
+place = (1261, 249);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1591, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (231, 249);
+place = (231, 249);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(505,730,l),
+(997,1248,l),
+(569,1248,l),
+(606,1460,l),
+(488,1460,l),
+(430,1130,l),
+(739,1130,l),
+(358,730,l),
+(360,730,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1261, 249);
+place = (1261, 249);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1591, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (231, 249);
+place = (231, 249);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(507,730,l),
+(998,1248,l),
+(569,1248,l),
+(606,1460,l),
+(488,1460,l),
+(430,1130,l),
+(737,1130,l),
+(357,730,l),
+(360,730,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni153E;
+unicode = 5438;
+}

@@ -1,0 +1,189 @@
+{
+glyphname = ellipsis;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (-97, 81);
+place = (-97, 81);
+type = Stem;
+},
+{
+place = (15, 79);
+place = (15, 79);
+type = Stem;
+},
+{
+place = (417, 79);
+place = (417, 79);
+type = Stem;
+},
+{
+place = (819, 79);
+place = (819, 79);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+pos = (-285,26);
+ref = period;
+scale = (0.8,0.8);
+},
+{
+pos = (125,26);
+ref = period;
+scale = (0.8,0.8);
+},
+{
+pos = (525,26);
+ref = period;
+scale = (0.8,0.8);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-97, 81);
+place = (-97, 81);
+type = Stem;
+},
+{
+place = (15, 79);
+place = (15, 79);
+type = Stem;
+},
+{
+place = (417, 79);
+place = (417, 79);
+type = Stem;
+},
+{
+place = (819, 79);
+place = (819, 79);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+pos = (-285,26);
+ref = period;
+scale = (0.8091,0.7649);
+},
+{
+pos = (147,26);
+ref = period;
+scale = (0.7649,0.7649);
+},
+{
+pos = (525,26);
+ref = period;
+scale = (0.8091,0.7649);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-87, 91);
+place = (-87, 91);
+type = Stem;
+},
+{
+place = (25, 89);
+place = (25, 89);
+type = Stem;
+},
+{
+place = (427, 89);
+place = (427, 89);
+type = Stem;
+},
+{
+place = (829, 89);
+place = (829, 89);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-286,26);
+ref = period;
+scale = (0.7985,0.8059);
+},
+{
+alignment = -1;
+pos = (120,26);
+ref = period;
+scale = (0.8059,0.8059);
+},
+{
+alignment = -1;
+pos = (524,26);
+ref = period;
+scale = (0.7985,0.8059);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-97, 81);
+place = (-97, 81);
+type = Stem;
+},
+{
+place = (15, 79);
+place = (15, 79);
+type = Stem;
+},
+{
+place = (417, 79);
+place = (417, 79);
+type = Stem;
+},
+{
+place = (819, 79);
+place = (819, 79);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (-285,26);
+ref = period;
+scale = (0.8045,0.7824);
+},
+{
+alignment = -1;
+pos = (137,26);
+ref = period;
+scale = (0.7824,0.7824);
+},
+{
+alignment = -1;
+pos = (525,26);
+ref = period;
+scale = (0.8045,0.7824);
+}
+);
+width = 1200;
+}
+);
+note = ellipsis;
+unicode = 8230;
+}

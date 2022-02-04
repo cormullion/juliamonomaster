@@ -1,0 +1,167 @@
+{
+glyphname = uniE803;
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-46,-144);
+ref = _cormullion;
+scale = (0.7905,0.8082);
+},
+{
+alignment = -1;
+angle = -72.36889;
+pos = (-268,938);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+},
+{
+alignment = -1;
+angle = -143.39576;
+pos = (670,1490);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 143.39576;
+pos = (1472,748);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 72.36889;
+pos = (1030,-262);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+}
+);
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (-46,-144);
+ref = _cormullion;
+scale = (0.7905,0.8082);
+},
+{
+alignment = -1;
+angle = -72.36889;
+pos = (-268,938);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+},
+{
+alignment = -1;
+angle = -143.39576;
+pos = (670,1490);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 143.39576;
+pos = (1472,748);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 72.36889;
+pos = (1030,-262);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (-46,-144);
+ref = _cormullion;
+scale = (0.7905,0.8082);
+},
+{
+alignment = -1;
+angle = -72.36889;
+pos = (-268,938);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+},
+{
+alignment = -1;
+angle = -143.39576;
+pos = (670,1490);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 143.39576;
+pos = (1472,748);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 72.36889;
+pos = (1030,-262);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (-46,-144);
+ref = _cormullion;
+scale = (0.7905,0.8082);
+},
+{
+alignment = -1;
+angle = -72.36889;
+pos = (-268,938);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+},
+{
+alignment = -1;
+angle = -143.39576;
+pos = (670,1490);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 143.39576;
+pos = (1472,748);
+ref = _cormullion;
+scale = (0.7967,0.802);
+},
+{
+alignment = -1;
+angle = 72.36889;
+pos = (1030,-262);
+ref = _cormullion;
+scale = (0.8065,0.7922);
+}
+);
+width = 1200;
+}
+);
+note = cormullion;
+unicode = 59395;
+}

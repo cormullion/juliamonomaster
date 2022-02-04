@@ -1,0 +1,163 @@
+{
+glyphname = "pCarrier-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (963, 221);
+place = (963, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1563, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (445, 221);
+place = (445, 221);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(355,860,l),
+(955,860,l),
+(975,978,l),
+(735,978,l),
+(820,1460,l),
+(702,1460,l),
+(617,978,l),
+(375,978,l),
+(375,978,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (963, 221);
+place = (963, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1563, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (445, 221);
+place = (445, 221);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(355,860,l),
+(955,860,l),
+(975,978,l),
+(735,978,l),
+(820,1460,l),
+(702,1460,l),
+(617,978,l),
+(375,978,l),
+(375,978,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (963, 221);
+place = (963, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1563, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (445, 221);
+place = (445, 221);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(355,860,l),
+(955,860,l),
+(975,978,l),
+(735,978,l),
+(820,1460,l),
+(702,1460,l),
+(617,978,l),
+(375,978,l),
+(375,978,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (963, 221);
+place = (963, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1563, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (445, 221);
+place = (445, 221);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(355,860,l),
+(955,860,l),
+(975,978,l),
+(735,978,l),
+(820,1460,l),
+(702,1460,l),
+(617,978,l),
+(375,978,l),
+(375,978,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni15EE;
+unicode = 5614;
+}

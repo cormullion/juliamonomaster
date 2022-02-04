@@ -1,0 +1,90 @@
+{
+glyphname = Etadasiaoxiaprosgegrammeni;
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-160,0);
+ref = Eta;
+},
+{
+alignment = -1;
+pos = (18,194);
+ref = dasiaoxia.case;
+},
+{
+alignment = -1;
+pos = (434,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (-160,0);
+ref = Eta;
+},
+{
+alignment = -1;
+pos = (60,76);
+ref = dasiaoxia.case;
+},
+{
+alignment = -1;
+pos = (394,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (-180,0);
+ref = Eta;
+},
+{
+alignment = -1;
+pos = (66,110);
+ref = dasiaoxia.case;
+},
+{
+alignment = -1;
+pos = (432,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (-166,0);
+ref = Eta;
+},
+{
+alignment = -1;
+pos = (42,98);
+ref = dasiaoxia.case;
+},
+{
+alignment = -1;
+pos = (444,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+}
+);
+unicode = 8093;
+}

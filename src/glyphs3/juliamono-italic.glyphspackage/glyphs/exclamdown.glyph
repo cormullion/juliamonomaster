@@ -1,0 +1,92 @@
+{
+glyphname = exclamdown;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (535, -91);
+place = (535, -91);
+type = Stem;
+},
+{
+place = (209, -87);
+place = (209, -87);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+pos = (265,1511);
+ref = exclam;
+scale = (1,-1);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+pos = (229,1520);
+ref = exclam;
+scale = (1,-1);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (683, -48);
+place = (683, -48);
+type = Stem;
+},
+{
+place = (302, -43);
+place = (302, -43);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (239,1468);
+ref = exclam;
+scale = (1,-1);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (122, -191);
+place = (122, -191);
+type = Stem;
+},
+{
+place = (-41, -189);
+place = (-41, -189);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (252,1518);
+ref = exclam;
+scale = (1,-1);
+}
+);
+width = 1200;
+}
+);
+note = exclamdown;
+unicode = 161;
+}

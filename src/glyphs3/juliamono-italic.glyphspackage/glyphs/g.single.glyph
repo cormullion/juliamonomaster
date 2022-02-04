@@ -1,0 +1,202 @@
+{
+glyphname = g.single;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (488,-380);
+},
+{
+name = top;
+pos = (700,1118);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-419, 103);
+place = (-419, 103);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (23, 101);
+place = (23, 101);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (889, 105);
+place = (889, 105);
+type = Stem;
+},
+{
+place = (99, 161);
+place = (99, 161);
+type = Stem;
+},
+{
+place = (839, 149);
+place = (839, 149);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = g.alt;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (488,-380);
+},
+{
+name = top;
+pos = (685,1120);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-419, 103);
+place = (-419, 103);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (23, 101);
+place = (23, 101);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (889, 105);
+place = (889, 105);
+type = Stem;
+},
+{
+place = (99, 161);
+place = (99, 161);
+type = Stem;
+},
+{
+place = (839, 149);
+place = (839, 149);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = g.alt;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (634,-280);
+},
+{
+name = top;
+pos = (584,1218);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-340, 182);
+place = (-340, 182);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (102, 180);
+place = (102, 180);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (968, 184);
+place = (968, 184);
+type = Stem;
+},
+{
+place = (178, 240);
+place = (178, 240);
+type = Stem;
+},
+{
+place = (918, 228);
+place = (918, 228);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = g.alt;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (488,-380);
+},
+{
+name = top;
+pos = (693,1120);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-419, 103);
+place = (-419, 103);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (23, 101);
+place = (23, 101);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (889, 105);
+place = (889, 105);
+type = Stem;
+},
+{
+place = (99, 161);
+place = (99, 161);
+type = Stem;
+},
+{
+place = (839, 149);
+place = (839, 149);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = g.alt;
+}
+);
+width = 1200;
+}
+);
+note = g;
+}

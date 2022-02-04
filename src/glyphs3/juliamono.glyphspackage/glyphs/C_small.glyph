@@ -1,0 +1,54 @@
+{
+glyphname = Csmall;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (68,-4);
+ref = c.sc;
+scale = (1,0.8564);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (34,-6);
+ref = c.sc;
+scale = (1,0.8671);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (74,-4);
+ref = c.sc;
+scale = (1,0.8547);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (52,-6);
+ref = c.sc;
+scale = (1,0.8618);
+}
+);
+width = 1200;
+}
+);
+unicode = 7428;
+}

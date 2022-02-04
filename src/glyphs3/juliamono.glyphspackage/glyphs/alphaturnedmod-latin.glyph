@@ -1,0 +1,54 @@
+{
+glyphname = "alphaturnedmod-latin";
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (200,804);
+ref = "alphaturned-latin";
+scale = (0.668,0.668);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (220,804);
+ref = "alphaturned-latin";
+scale = (0.6626,0.6626);
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (196,804);
+ref = "alphaturned-latin";
+scale = (0.6689,0.6689);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (210,804);
+ref = "alphaturned-latin";
+scale = (0.6653,0.6653);
+}
+);
+width = 1200;
+}
+);
+unicode = 7579;
+}

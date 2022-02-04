@@ -1,0 +1,354 @@
+{
+glyphname = idotaccent.sc;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (503,0);
+},
+{
+name = ogonek;
+pos = (715,0);
+},
+{
+name = top;
+pos = (707,1158);
+},
+{
+name = topleft;
+pos = (331,1158);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-45, 95);
+place = (-45, 95);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1261, 95);
+place = (1261, 95);
+type = Stem;
+},
+{
+place = (467, 135);
+place = (467, 135);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 1;
+origin = (0,11);
+target = (0,10);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 1;
+origin = (0,6);
+target = (0,7);
+type = TTStem;
+},
+{
+options = 4;
+place = (395, 0);
+type = TTStem;
+},
+{
+options = 4;
+place = (611, 0);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,8);
+target = (0,3);
+type = TTStem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(877,0,l),
+(897,112,l),
+(611,112,l),
+(774,1040,l),
+(1060,1040,l),
+(1081,1158,l),
+(331,1158,l),
+(310,1040,l),
+(600,1040,l),
+(437,112,l),
+(147,112,l),
+(127,0,l)
+);
+},
+{
+ref = dotaccentcomb;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (503,0);
+},
+{
+name = ogonek;
+pos = (875,0);
+},
+{
+name = top;
+pos = (708,1164);
+},
+{
+name = topleft;
+pos = (249,1452);
+}
+);
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,10);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,6);
+target = (0,7);
+type = TTStem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(877,0,l),
+(918,234,l),
+(716,234,l),
+(837,918,l),
+(1039,918,l),
+(1081,1158,l),
+(331,1158,l),
+(289,918,l),
+(495,918,l),
+(374,234,l),
+(168,234,l),
+(127,0,l)
+);
+},
+{
+ref = dotaccentcomb;
+}
+);
+userData = {
+RMXScaler = {
+weight = 20;
+};
+};
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (503,0);
+},
+{
+name = ogonek;
+pos = (689,0);
+},
+{
+name = top;
+pos = (707,1158);
+},
+{
+name = topleft;
+pos = (345,1110);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-36, 127);
+place = (-36, 127);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1487, 127);
+place = (1487, 127);
+type = Stem;
+},
+{
+place = (561, 174);
+place = (561, 174);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 1;
+origin = (0,11);
+target = (0,10);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 1;
+origin = (0,6);
+target = (0,7);
+type = TTStem;
+},
+{
+options = 4;
+place = (477, 0);
+type = TTStem;
+},
+{
+options = 4;
+place = (729, 0);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,8);
+target = (0,3);
+type = TTStem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(877,0,l),
+(893,92,l),
+(589,92,l),
+(760,1060,l),
+(1064,1060,l),
+(1081,1158,l),
+(331,1158,l),
+(314,1060,l),
+(622,1060,l),
+(451,92,l),
+(143,92,l),
+(127,0,l)
+);
+},
+{
+ref = dotaccentcomb;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (503,0);
+},
+{
+name = ogonek;
+pos = (795,0);
+},
+{
+name = top;
+pos = (706,1152);
+},
+{
+name = topleft;
+pos = (291,1306);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-71, -1);
+place = (-71, -1);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (582, -1);
+place = (582, -1);
+type = Stem;
+},
+{
+place = (185, 19);
+place = (185, 19);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 1;
+origin = (0,11);
+target = (0,10);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 1;
+origin = (0,6);
+target = (0,7);
+type = TTStem;
+},
+{
+options = 4;
+place = (149, 0);
+type = TTStem;
+},
+{
+options = 4;
+place = (257, 0);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,8);
+target = (0,3);
+type = TTStem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(877,0,l),
+(908,174,l),
+(674,174,l),
+(816,980,l),
+(1050,980,l),
+(1081,1158,l),
+(331,1158,l),
+(300,980,l),
+(538,980,l),
+(396,174,l),
+(158,174,l),
+(127,0,l)
+);
+},
+{
+ref = dotaccentcomb;
+}
+);
+width = 1200;
+}
+);
+userData = {
+RMXScaler = {
+source = Idotaccent;
+};
+};
+}

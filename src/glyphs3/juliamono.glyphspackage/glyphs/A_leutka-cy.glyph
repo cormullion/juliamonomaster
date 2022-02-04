@@ -1,0 +1,82 @@
+{
+glyphname = "Aleutka-cy";
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(564,1397,l),
+(485,1310,l),
+(961,944,l),
+(1040,1031,l)
+);
+},
+{
+pos = (70,0);
+ref = K;
+}
+);
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(494,1357,l),
+(395,1240,l),
+(871,874,l),
+(970,991,l)
+);
+},
+{
+pos = (-40,0);
+ref = K;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(596,1352,l),
+(480,1180,l),
+(879,922,l),
+(995,1094,l)
+);
+},
+{
+pos = (-45,0);
+ref = K;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(615,1435,l),
+(506,1251,l),
+(1022,996,l),
+(1131,1180,l)
+);
+},
+{
+pos = (-33,0);
+ref = K;
+}
+);
+width = 1200;
+}
+);
+unicode = 1310;
+}

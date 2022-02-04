@@ -1,0 +1,171 @@
+{
+glyphname = "koBlackfoot-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (43, 111);
+place = (43, 111);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(963,0,l),
+(672,730,l),
+(253,170,l),
+(241,170,l),
+(468,1460,l),
+(300,1460,l),
+(43,0,l),
+(319,0,l),
+(622,402,l),
+(779,0,l),
+(777,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (43, 111);
+place = (43, 111);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(961,0,l),
+(668,730,l),
+(251,170,l),
+(241,170,l),
+(468,1460,l),
+(300,1460,l),
+(43,0,l),
+(321,0,l),
+(625,402,l),
+(781,0,l),
+(777,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (43, 111);
+place = (43, 111);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(963,0,l),
+(672,730,l),
+(253,170,l),
+(241,170,l),
+(468,1460,l),
+(300,1460,l),
+(43,0,l),
+(319,0,l),
+(621,402,l),
+(779,0,l),
+(777,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-57, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (1403, -20);
+target = down;
+type = TopGhost;
+},
+{
+place = (43, 111);
+place = (43, 111);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(962,0,l),
+(670,730,l),
+(252,170,l),
+(241,170,l),
+(468,1460,l),
+(300,1460,l),
+(43,0,l),
+(320,0,l),
+(624,402,l),
+(780,0,l),
+(777,0,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni15BE;
+unicode = 5566;
+}

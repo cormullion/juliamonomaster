@@ -1,0 +1,345 @@
+{
+glyphname = "vin-oldgeorgian";
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(603,-405,l),
+(584,-90,ls),
+(583,-76,o),
+(587,-50,o),
+(591,-10,cs),
+(595,45,o),
+(605,105,o),
+(616,160,cs),
+(755,856,l),
+(998,974,l),
+(1010,965,l),
+(1008,948,o),
+(1007,914,o),
+(1002,890,cs),
+(829,0,l),
+(975,0,l),
+(1144,852,ls),
+(1151,888,o),
+(1158,942,o),
+(1158,980,cs),
+(1158,1081,o),
+(1116,1117,o),
+(1048,1117,cs),
+(1017,1117,o),
+(993,1107,o),
+(968,1095,cs),
+(767,999,l),
+(762,1086,o),
+(718,1117,o),
+(658,1117,cs),
+(627,1117,o),
+(603,1107,o),
+(578,1095,cs),
+(395,1009,l),
+(413,1100,l),
+(149,1100,l),
+(121,963,l),
+(237,963,l),
+(43,0,l),
+(190,0,l),
+(369,857,l),
+(615,974,l),
+(620,965,l),
+(619,958,o),
+(617,914,o),
+(612,890,cs),
+(470,161,ls),
+(456,88,o),
+(448,31,o),
+(444,-13,cs),
+(441,-51,o),
+(437,-75,o),
+(438,-90,cs),
+(457,-405,l)
+);
+}
+);
+userData = {
+assembly = "NPUSHB[ ]	/* 105 values pushed */
+37 36 36 35 32 39 38 33 38 33 33 132 34 35 20 34 35 200 35 1 134 35 1 87 35 119 35 2 35 95 34 143 34 191 34 3 34 23 44 14 12 12 132 26 23 20 26 26 23 168 26 200 26 2 26 23 18 132 19 19 23 3 1 1 132 6 4 20 6 6 4 184 6 1 6 4 23 12 6 9 149 44 1 47 47 32 26 29 149 39 42 16 35 149 38 15 3 4 33 23 14 34 21 19 27 
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+MIAP[1]	/* MoveIndirectAbsPt */
+MIAP[1]	/* MoveIndirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MDRP[00100]	/* MoveDirectRelPt */
+MDRP[10100]	/* MoveDirectRelPt */
+MDRP[00100]	/* MoveDirectRelPt */
+MIAP[1]	/* MoveIndirectAbsPt */
+MIRP[01101]	/* MoveIndirectRelPt */
+MIAP[1]	/* MoveIndirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+MIRP[01101]	/* MoveIndirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MIRP[01101]	/* MoveIndirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[0]	/* ShiftPointByLastPoint */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+MDAP[1]	/* MoveDirectAbsPt */
+MDRP[01100]	/* MoveDirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SDPVTL[1]	/* SetDualPVectorToLine */
+SRP0[ ]	/* SetRefPoint0 */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+SHP[1]	/* ShiftPointByLastPoint */
+RTG[ ]	/* RoundToGrid */
+MDAP[1]	/* MoveDirectAbsPt */
+MIRP[01101]	/* MoveIndirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SHP[1]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SDPVTL[1]	/* SetDualPVectorToLine */
+SRP0[ ]	/* SetRefPoint0 */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+SHP[1]	/* ShiftPointByLastPoint */
+RTG[ ]	/* RoundToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[11100]	/* MoveDirectRelPt */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SHP[0]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SDPVTL[1]	/* SetDualPVectorToLine */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SDPVTL[1]	/* SetDualPVectorToLine */
+MDRP[00100]	/* MoveDirectRelPt */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+SHP[1]	/* ShiftPointByLastPoint */
+RTG[ ]	/* RoundToGrid */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+IUP[1]	/* InterpolateUntPts */
+IUP[0]	/* InterpolateUntPts */";
+};
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(603,-405,l),
+(584,-90,ls),
+(583,-76,o),
+(587,-50,o),
+(591,-10,cs),
+(595,45,o),
+(605,105,o),
+(616,160,cs),
+(755,856,l),
+(998,974,l),
+(1010,965,l),
+(1008,948,o),
+(1007,914,o),
+(1002,890,cs),
+(829,0,l),
+(975,0,l),
+(1144,852,ls),
+(1151,888,o),
+(1158,942,o),
+(1158,980,cs),
+(1158,1081,o),
+(1116,1117,o),
+(1048,1117,cs),
+(1017,1117,o),
+(993,1107,o),
+(968,1095,cs),
+(767,999,l),
+(762,1086,o),
+(718,1117,o),
+(658,1117,cs),
+(627,1117,o),
+(603,1107,o),
+(578,1095,cs),
+(395,1009,l),
+(413,1100,l),
+(149,1100,l),
+(121,963,l),
+(237,963,l),
+(43,0,l),
+(190,0,l),
+(369,857,l),
+(615,974,l),
+(620,965,l),
+(619,958,o),
+(617,914,o),
+(612,890,cs),
+(470,161,ls),
+(456,88,o),
+(448,31,o),
+(444,-13,cs),
+(441,-51,o),
+(437,-75,o),
+(438,-90,cs),
+(457,-405,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(603,-405,l),
+(584,-90,ls),
+(583,-76,o),
+(587,-50,o),
+(591,-10,cs),
+(595,45,o),
+(605,105,o),
+(616,160,cs),
+(755,856,l),
+(998,974,l),
+(1010,965,l),
+(1008,948,o),
+(1007,914,o),
+(1002,890,cs),
+(829,0,l),
+(975,0,l),
+(1144,852,ls),
+(1151,888,o),
+(1158,942,o),
+(1158,980,cs),
+(1158,1081,o),
+(1116,1117,o),
+(1048,1117,cs),
+(1017,1117,o),
+(993,1107,o),
+(968,1095,cs),
+(767,999,l),
+(762,1086,o),
+(718,1117,o),
+(658,1117,cs),
+(627,1117,o),
+(603,1107,o),
+(578,1095,cs),
+(395,1009,l),
+(413,1100,l),
+(149,1100,l),
+(121,963,l),
+(237,963,l),
+(43,0,l),
+(190,0,l),
+(369,857,l),
+(615,974,l),
+(620,965,l),
+(619,958,o),
+(617,914,o),
+(612,890,cs),
+(470,161,ls),
+(456,88,o),
+(448,31,o),
+(444,-13,cs),
+(441,-51,o),
+(437,-75,o),
+(438,-90,cs),
+(457,-405,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(603,-405,l),
+(584,-90,ls),
+(583,-76,o),
+(587,-50,o),
+(591,-10,cs),
+(595,45,o),
+(605,105,o),
+(616,160,cs),
+(755,856,l),
+(998,974,l),
+(1010,965,l),
+(1008,948,o),
+(1007,914,o),
+(1002,890,cs),
+(829,0,l),
+(975,0,l),
+(1144,852,ls),
+(1151,888,o),
+(1158,942,o),
+(1158,980,cs),
+(1158,1081,o),
+(1116,1117,o),
+(1048,1117,cs),
+(1017,1117,o),
+(993,1107,o),
+(968,1095,cs),
+(767,999,l),
+(762,1086,o),
+(718,1117,o),
+(658,1117,cs),
+(627,1117,o),
+(603,1107,o),
+(578,1095,cs),
+(395,1009,l),
+(413,1100,l),
+(149,1100,l),
+(121,963,l),
+(237,963,l),
+(43,0,l),
+(190,0,l),
+(369,857,l),
+(615,974,l),
+(620,965,l),
+(619,958,o),
+(617,914,o),
+(612,890,cs),
+(470,161,ls),
+(456,88,o),
+(448,31,o),
+(444,-13,cs),
+(441,-51,o),
+(437,-75,o),
+(438,-90,cs),
+(457,-405,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni2D05;
+unicode = 11525;
+}

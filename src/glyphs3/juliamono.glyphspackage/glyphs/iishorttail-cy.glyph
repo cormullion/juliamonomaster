@@ -1,0 +1,74 @@
+{
+glyphname = "iishorttail-cy";
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-50,0);
+ref = "brevecomb-cy";
+},
+{
+pos = (400,0);
+ref = "tail-cy";
+}
+);
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-50,0);
+ref = "brevecomb-cy";
+},
+{
+pos = (410,0);
+ref = "tail-cy";
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-50,0);
+ref = "brevecomb-cy";
+},
+{
+pos = (458,-2);
+ref = "tail-cy";
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-48,0);
+ref = "brevecomb-cy";
+},
+{
+pos = (468,0);
+ref = "tail-cy";
+}
+);
+width = 1200;
+}
+);
+unicode = 1163;
+}

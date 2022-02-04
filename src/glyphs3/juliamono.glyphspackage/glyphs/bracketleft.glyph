@@ -1,0 +1,183 @@
+{
+glyphname = bracketleft;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,7);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,4);
+target = (0,5);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,0);
+target = (0,1);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,7);
+target = (0,0);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,6);
+target = (0,5);
+type = TTStem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(918,-418,l),
+(918,-272,l),
+(518,-272,l),
+(518,1532,l),
+(918,1532,l),
+(918,1676,l),
+(338,1676,l),
+(338,-418,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(910,-418,l),
+(910,-164,l),
+(570,-164,l),
+(570,1424,l),
+(910,1424,l),
+(910,1676,l),
+(294,1676,l),
+(294,-418,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,7);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(887,-408,l),
+(887,-282,l),
+(457,-282,l),
+(457,1542,l),
+(887,1542,l),
+(887,1666,l),
+(313,1666,l),
+(313,-408,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,7);
+target = (0,2);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,6);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,4);
+target = (0,5);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,0);
+target = (0,1);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,7);
+target = (0,0);
+type = TTStem;
+},
+{
+options = 4;
+origin = (0,6);
+target = (0,5);
+type = TTStem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(914,-418,l),
+(914,-218,l),
+(544,-218,l),
+(544,1478,l),
+(914,1478,l),
+(914,1676,l),
+(316,1676,l),
+(316,-418,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = bracketleft;
+unicode = 91;
+}

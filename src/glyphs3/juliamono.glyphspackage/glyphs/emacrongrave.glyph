@@ -1,0 +1,74 @@
+{
+glyphname = emacrongrave;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (17,24);
+ref = macroncomb;
+},
+{
+pos = (17,424);
+ref = gravecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (22,18);
+ref = macroncomb;
+},
+{
+pos = (22,418);
+ref = gravecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (17,18);
+ref = macroncomb;
+},
+{
+pos = (17,418);
+ref = gravecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (20,22);
+ref = macroncomb;
+},
+{
+pos = (20,422);
+ref = gravecomb;
+}
+);
+width = 1200;
+}
+);
+unicode = 7701;
+}

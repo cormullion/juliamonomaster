@@ -1,0 +1,89 @@
+{
+glyphname = Alphadasiaperispomeniprosgegrammeni;
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-78,0);
+ref = Alpha;
+},
+{
+alignment = -1;
+pos = (-506,0);
+ref = dasiaperispomeni.case;
+},
+{
+alignment = -1;
+pos = (542,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (-86,0);
+ref = Alpha;
+},
+{
+alignment = -1;
+pos = (-470,0);
+ref = dasiaperispomeni.case;
+},
+{
+pos = (470,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (-60,0);
+ref = Alpha;
+},
+{
+alignment = -1;
+pos = (-440,0);
+ref = dasiaperispomeni.case;
+},
+{
+alignment = -1;
+pos = (534,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (-40,0);
+ref = Alpha;
+},
+{
+alignment = -1;
+pos = (-556,0);
+ref = dasiaperispomeni.case;
+},
+{
+alignment = -1;
+pos = (544,0);
+ref = prosgegrammeni;
+}
+);
+width = 1200;
+}
+);
+unicode = 8079;
+}

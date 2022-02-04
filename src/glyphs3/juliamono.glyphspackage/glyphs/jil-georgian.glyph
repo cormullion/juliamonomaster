@@ -1,0 +1,260 @@
+{
+glyphname = "jil-georgian";
+layers = (
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(953,-24,o),
+(1105,213,o),
+(1105,548,cs),
+(1105,1580,l),
+(941,1580,l),
+(941,941,l),
+(937,941,l),
+(855,1047,o),
+(744,1104,o),
+(583,1104,cs),
+(281,1104,o),
+(96,854,o),
+(96,548,cs),
+(96,220,o),
+(268,-24,o),
+(615,-24,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(365,106,o),
+(249,298,o),
+(249,537,cs),
+(249,772,o),
+(355,974,o),
+(593,974,cs),
+(817,974,o),
+(945,818,o),
+(945,537,cs),
+(945,303,o),
+(824,106,o),
+(593,106,cs)
+);
+}
+);
+userData = {
+assembly = "PUSHW[ ]	/* 1 value pushed */
+20 
+CALL[ ]	/* CallFunction */
+PUSHW[ ]	/* 1 value pushed */
+34 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+19 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+34 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+0 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+0 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+19 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+7 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+7 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+19 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+9 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+9 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+19 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+11 3 
+MIRP[10100]	/* MoveIndirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+0 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+26 3 
+MIRP[10100]	/* MoveIndirectRelPt */
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+PUSHW[ ]	/* 1 value pushed */
+9 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+1 
+RCVT[ ]	/* ReadCVT */
+IF[ ]	/* If */
+PUSHW[ ]	/* 1 value pushed */
+15 
+MDAP[1]	/* MoveDirectAbsPt */
+ELSE[ ]	/* Else */
+PUSHW[ ]	/* 2 values pushed */
+15 4 
+MIAP[0]	/* MoveIndirectAbsPt */
+EIF[ ]	/* EndIf */
+PUSHW[ ]	/* 4 values pushed */
+4 2 22 24 
+CALL[ ]	/* CallFunction */
+PUSHW[ ]	/* 1 value pushed */
+15 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 2 values pushed */
+30 2 
+MIRP[10100]	/* MoveIndirectRelPt */
+IUP[0]	/* InterpolateUntPts */
+IUP[1]	/* InterpolateUntPts */";
+};
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(934,-34,o),
+(1115,177,o),
+(1115,548,cs),
+(1115,1580,l),
+(931,1580,l),
+(931,951,l),
+(942,951,l),
+(855,1061,o),
+(739,1112,o),
+(583,1112,cs),
+(291,1112,o),
+(86,878,o),
+(86,548,cs),
+(86,188,o),
+(286,-34,o),
+(615,-34,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(388,114,o),
+(259,280,o),
+(259,537,cs),
+(259,801,o),
+(386,962,o),
+(593,962,cs),
+(812,962,o),
+(935,811,o),
+(935,537,cs),
+(935,284,o),
+(800,114,o),
+(593,114,cs)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(953,-16,o),
+(1149,195,o),
+(1149,557,cs),
+(1149,1580,l),
+(897,1580,l),
+(897,933,l),
+(958,933,l),
+(866,1036,o),
+(743,1115,o),
+(583,1115,cs),
+(272,1115,o),
+(52,880,o),
+(52,555,cs),
+(52,202,o),
+(267,-16,o),
+(615,-16,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(408,196,o),
+(293,319,o),
+(293,547,cs),
+(293,775,o),
+(406,902,o),
+(593,902,cs),
+(792,902,o),
+(901,785,o),
+(901,547,cs),
+(901,309,o),
+(780,196,o),
+(593,196,cs)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(973,-24,o),
+(1183,184,o),
+(1183,545,cs),
+(1183,1580,l),
+(863,1580,l),
+(863,908,l),
+(967,908,l),
+(869,1004,o),
+(772,1113,o),
+(583,1113,cs),
+(253,1113,o),
+(19,888,o),
+(19,551,cs),
+(19,214,o),
+(248,-24,o),
+(615,-24,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(433,250,o),
+(332,360,o),
+(332,542,cs),
+(332,730,o),
+(431,840,o),
+(598,840,cs),
+(777,840,o),
+(872,739,o),
+(872,542,cs),
+(872,363,o),
+(765,250,o),
+(598,250,cs)
+);
+}
+);
+width = 1200;
+}
+);
+note = u10EB;
+unicode = 4331;
+}

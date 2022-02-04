@@ -1,0 +1,184 @@
+{
+glyphname = acute;
+layers = (
+{
+anchors = (
+{
+name = _bottom;
+pos = (602,1726);
+},
+{
+name = _top;
+pos = (600,800);
+},
+{
+name = bottom;
+pos = (600,800);
+},
+{
+name = top;
+pos = (600,1726);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (1490, 98);
+place = (1490, 98);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,0);
+target = (0,1);
+type = TTStem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(466,932,l),
+(902,1616,l),
+(590,1616,l),
+(300,932,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = _bottom;
+pos = (600,1726);
+},
+{
+name = _top;
+pos = (600,800);
+},
+{
+name = bottom;
+pos = (600,800);
+},
+{
+name = top;
+pos = (600,1726);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (1490, 98);
+place = (1490, 98);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,3);
+target = (0,2);
+type = TTStem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(544,932,l),
+(978,1616,l),
+(572,1616,l),
+(284,932,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = _bottom;
+pos = (616,1726);
+},
+{
+name = _top;
+pos = (600,800);
+},
+{
+name = bottom;
+pos = (600,800);
+},
+{
+name = top;
+pos = (616,1726);
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(474,932,l),
+(884,1612,l),
+(588,1612,l),
+(324,932,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = _bottom;
+pos = (602,1726);
+},
+{
+name = _top;
+pos = (600,800);
+},
+{
+name = bottom;
+pos = (600,800);
+},
+{
+name = top;
+pos = (600,1726);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (1490, 98);
+place = (1490, 98);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,0);
+target = (0,1);
+type = TTStem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(506,932,l),
+(940,1616,l),
+(582,1616,l),
+(292,932,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = acute;
+unicode = 180;
+}

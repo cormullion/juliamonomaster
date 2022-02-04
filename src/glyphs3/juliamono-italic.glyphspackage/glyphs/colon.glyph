@@ -1,0 +1,74 @@
+{
+glyphname = colon;
+layers = (
+{
+annotations = (
+{
+pos = (-135.825,266.946);
+text = centerline;
+type = Text;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+pos = (7,40);
+ref = period;
+},
+{
+pos = (136,772);
+ref = period;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+pos = (12,56);
+ref = period;
+},
+{
+pos = (131,730);
+ref = period;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (3,28);
+ref = period;
+},
+{
+alignment = -1;
+pos = (124,788);
+ref = period;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (10,48);
+ref = period;
+},
+{
+alignment = -1;
+pos = (135,752);
+ref = period;
+}
+);
+width = 1200;
+}
+);
+note = colon;
+unicode = 58;
+}

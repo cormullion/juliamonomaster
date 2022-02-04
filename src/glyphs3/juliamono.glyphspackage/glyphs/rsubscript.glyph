@@ -1,0 +1,82 @@
+{
+glyphname = rsubscript;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (342,-14);
+},
+{
+name = top;
+pos = (624,786);
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = r.subscript;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (608,-168);
+},
+{
+name = top;
+pos = (600,598);
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = r.subscript;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (298,12);
+},
+{
+name = top;
+pos = (628,818);
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = r.subscript;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (476,-92);
+},
+{
+name = top;
+pos = (612,692);
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = r.subscript;
+}
+);
+width = 1200;
+}
+);
+unicode = 7523;
+}

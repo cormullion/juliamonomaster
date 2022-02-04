@@ -1,0 +1,29 @@
+{
+glyphname = space;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+width = 1200;
+},
+{
+associatedMasterId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+layerId = "21E2753D-042D-4D19-89C8-430560CC5AF5";
+name = "new Layer";
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+width = 1200;
+}
+);
+note = space;
+unicode = 32;
+}

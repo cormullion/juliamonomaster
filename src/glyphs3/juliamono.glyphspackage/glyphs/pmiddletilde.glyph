@@ -1,0 +1,64 @@
+{
+glyphname = pmiddletilde;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = p;
+},
+{
+alignment = -1;
+pos = (-356,-1554);
+ref = tildecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = p;
+},
+{
+alignment = -1;
+pos = (-286,-1574);
+ref = tildecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-18,0);
+ref = p;
+},
+{
+alignment = -1;
+pos = (-382,-1554);
+ref = tildecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = p;
+},
+{
+alignment = -1;
+pos = (-322,-1564);
+ref = tildecomb;
+}
+);
+width = 1200;
+}
+);
+unicode = 7537;
+}

@@ -1,0 +1,175 @@
+{
+glyphname = period;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,5);
+type = TTStem;
+},
+{
+horizontal = 1;
+origin = (0,11);
+target = (0,5);
+type = TTStem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(714,-40,o),
+(784,30,o),
+(784,144,cs),
+(784,258,o),
+(714,328,o),
+(600,328,cs),
+(486,328,o),
+(416,258,o),
+(416,144,cs),
+(416,30,o),
+(486,-40,o),
+(600,-40,cs)
+);
+}
+);
+width = 1200;
+},
+{
+associatedMasterId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+layerId = "21E2753D-042D-4D19-89C8-430560CC5AF5";
+name = "new Layer";
+shapes = (
+{
+closed = 1;
+nodes = (
+(732,-98,ls),
+(744,-98,o),
+(758,-84,o),
+(758,-62,cs),
+(758,256,ls),
+(758,282,o),
+(744,296,o),
+(714,296,cs),
+(380,296,ls),
+(356,296,o),
+(342,282,o),
+(342,254,cs),
+(342,-62,ls),
+(342,-84,o),
+(356,-98,o),
+(376,-98,cs)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+place = (12, 185);
+type = TTStem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(750,-56,o),
+(814,8,o),
+(814,158,cs),
+(814,308,o),
+(750,370,o),
+(600,370,cs),
+(450,370,o),
+(384,308,o),
+(384,158,cs),
+(384,8,o),
+(450,-56,o),
+(600,-56,cs)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,5);
+type = TTStem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(701,-28,o),
+(769,40,o),
+(769,142,cs),
+(769,244,o),
+(701,312,o),
+(599,312,cs),
+(497,312,o),
+(431,244,o),
+(431,142,cs),
+(431,40,o),
+(497,-28,o),
+(599,-28,cs)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,11);
+target = (0,5);
+type = TTStem;
+},
+{
+horizontal = 1;
+origin = (0,11);
+target = (0,5);
+type = TTStem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(732,-48,o),
+(800,20,o),
+(800,152,cs),
+(800,284,o),
+(732,350,o),
+(600,350,cs),
+(468,350,o),
+(400,284,o),
+(400,152,cs),
+(400,20,o),
+(468,-48,o),
+(600,-48,cs)
+);
+}
+);
+width = 1200;
+}
+);
+note = period;
+unicode = 46;
+}

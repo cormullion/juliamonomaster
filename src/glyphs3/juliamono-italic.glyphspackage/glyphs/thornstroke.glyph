@@ -1,0 +1,79 @@
+{
+glyphname = thornstroke;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(846,1194,l),
+(846,1360,l),
+(-58,1360,l),
+(-58,1194,l)
+);
+},
+{
+ref = thorn;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(826,1176,l),
+(826,1384,l),
+(-78,1384,l),
+(-78,1176,l)
+);
+},
+{
+ref = thorn;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(846,1154,l),
+(846,1280,l),
+(-58,1280,l),
+(-58,1154,l)
+);
+},
+{
+ref = thorn;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(846,1164,l),
+(846,1360,l),
+(-58,1360,l),
+(-58,1164,l)
+);
+},
+{
+alignment = -1;
+ref = thorn;
+}
+);
+width = 1200;
+}
+);
+unicode = 42853;
+}

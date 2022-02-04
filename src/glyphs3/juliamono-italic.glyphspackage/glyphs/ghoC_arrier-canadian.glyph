@@ -1,0 +1,199 @@
+{
+glyphname = "ghoCarrier-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (-169, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (235, -47);
+place = (235, -47);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (875, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(809,400,l),
+(969,0,l),
+(1101,0,l),
+(683,1040,l),
+(-99,0,l),
+(39,0,l),
+(341,400,l),
+(340,400,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(763,520,l),
+(431,520,l),
+(647,806,l),
+(647,806,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-169, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (235, -47);
+place = (235, -47);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (875, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(811,400,l),
+(971,0,l),
+(1099,0,l),
+(679,1040,l),
+(-101,0,l),
+(41,0,l),
+(343,400,l),
+(340,400,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(765,520,l),
+(433,520,l),
+(649,806,l),
+(649,806,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-169, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (235, -47);
+place = (235, -47);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (875, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(809,400,l),
+(969,0,l),
+(1101,0,l),
+(683,1040,l),
+(-99,0,l),
+(39,0,l),
+(341,400,l),
+(340,400,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(762,520,l),
+(430,520,l),
+(647,806,l),
+(647,806,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-169, 21);
+target = up;
+type = BottomGhost;
+},
+{
+horizontal = 1;
+place = (235, -47);
+place = (235, -47);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (875, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(810,400,l),
+(970,0,l),
+(1100,0,l),
+(681,1040,l),
+(-100,0,l),
+(40,0,l),
+(342,400,l),
+(340,400,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(764,520,l),
+(432,520,l),
+(648,806,l),
+(648,806,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni15C5;
+unicode = 5573;
+}

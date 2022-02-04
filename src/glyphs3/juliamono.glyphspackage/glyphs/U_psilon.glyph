@@ -1,0 +1,199 @@
+{
+glyphname = Upsilon;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (600,0);
+},
+{
+name = top;
+pos = (600,1454);
+},
+{
+name = topleft;
+pos = (54,1406);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (18, 56);
+place = (18, 56);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1380, 56);
+place = (1380, 56);
+type = Stem;
+},
+{
+place = (514, 192);
+place = (514, 192);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(688,0,l),
+(688,608,l),
+(1150,1454,l),
+(938,1454,l),
+(598,824,l),
+(264,1454,l),
+(50,1454,l),
+(514,608,l),
+(514,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (600,0);
+},
+{
+name = top;
+pos = (600,1454);
+},
+{
+name = topleft;
+pos = (54,1406);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (18, 56);
+place = (18, 56);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1380, 56);
+place = (1380, 56);
+type = Stem;
+},
+{
+place = (514, 192);
+place = (514, 192);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(746,0,l),
+(746,608,l),
+(1150,1454,l),
+(806,1454,l),
+(598,904,l),
+(394,1454,l),
+(50,1454,l),
+(456,608,l),
+(456,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (600,0);
+},
+{
+name = top;
+pos = (600,1454);
+},
+{
+name = topleft;
+pos = (54,1406);
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(678,0,l),
+(678,608,l),
+(1150,1454,l),
+(958,1454,l),
+(598,788,l),
+(242,1454,l),
+(50,1454,l),
+(524,608,l),
+(524,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (600,0);
+},
+{
+name = top;
+pos = (600,1454);
+},
+{
+name = topleft;
+pos = (54,1406);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (18, 56);
+place = (18, 56);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1380, 56);
+place = (1380, 56);
+type = Stem;
+},
+{
+place = (514, 192);
+place = (514, 192);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(718,0,l),
+(718,608,l),
+(1150,1454,l),
+(872,1454,l),
+(598,864,l),
+(330,1454,l),
+(50,1454,l),
+(486,608,l),
+(486,0,l)
+);
+}
+);
+width = 1200;
+}
+);
+unicode = 933;
+}

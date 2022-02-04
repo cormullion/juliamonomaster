@@ -1,0 +1,422 @@
+{
+glyphname = "we-oldgeorgian";
+layers = (
+{
+background = {
+shapes = (
+{
+closed = 0;
+nodes = (
+(385,968,l),
+(383,1016,o),
+(363,1056,o),
+(328,1078,cs),
+(194,1164,l),
+(113,1033,l),
+(214,963,l),
+(234,947,o),
+(242,939,o),
+(242,923,cs)
+);
+}
+);
+};
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(894,-405,l),
+(863,-170,ls),
+(861,-156,o),
+(857,-127,o),
+(857,-94,cs),
+(857,-35,o),
+(863,24,o),
+(876,83,cs),
+(1072,1001,ls),
+(1086,1067,o),
+(1092,1094,o),
+(1092,1152,cs),
+(1092,1173,o),
+(1091,1210,o),
+(1087,1235,cs),
+(1035,1580,l),
+(890,1580,l),
+(942,1235,ls),
+(946,1207,o),
+(947,1168,o),
+(947,1149,cs),
+(946,1096,o),
+(940,1066,o),
+(926,1001,cs),
+(763,234,l),
+(320,115,ls),
+(307,112,o),
+(291,109,o),
+(274,109,cs),
+(240,109,o),
+(229,127,o),
+(229,162,cs),
+(229,172,o),
+(230,182,o),
+(232,191,cs),
+(374,892,ls),
+(379,915,o),
+(381,935,o),
+(381,953,cs),
+(381,1004,o),
+(357,1039,o),
+(318,1070,cs),
+(197,1167,l),
+(114,1034,l),
+(213,964,ls),
+(227,954,o),
+(234,941,o),
+(234,926,cs),
+(234,920,o),
+(233,911,o),
+(230,898,cs),
+(93,231,ls),
+(88,206,o),
+(85,158,o),
+(85,126,cs),
+(85,35,o),
+(138,-25,o),
+(222,-25,cs),
+(272,-25,o),
+(311,-18,o),
+(360,-4,cs),
+(735,103,l),
+(732,88,ls),
+(714,-1,o),
+(712,-68,o),
+(712,-103,cs),
+(712,-131,o),
+(716,-156,o),
+(718,-170,cs),
+(749,-405,l)
+);
+}
+);
+userData = {
+assembly = "NPUSHB[ ]	/* 78 values pushed */
+154 27 1 49 132 48 48 44 43 42 15 14 13 4 1 1 132 44 13 20 44 44 13 44 13 8 132 9 9 13 13 21 53 33 36 36 132 21 24 20 21 21 24 29 28 28 24 8 24 1 24 31 21 1 21 48 0 28 29 29 44 33 24 1 30 15 42 36 39 149 21 15 13 4 18 22 9 27 
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+MIAP[1]	/* MoveIndirectAbsPt */
+MIAP[1]	/* MoveIndirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MIRP[01101]	/* MoveIndirectRelPt */
+SHP[0]	/* ShiftPointByLastPoint */
+SHP[0]	/* ShiftPointByLastPoint */
+MIAP[1]	/* MoveIndirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+SHP[1]	/* ShiftPointByLastPoint */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+MIAP[1]	/* MoveIndirectAbsPt */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+MDAP[1]	/* MoveDirectAbsPt */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SHP[1]	/* ShiftPointByLastPoint */
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SRP1[ ]	/* SetRefPoint1 */
+SHP[1]	/* ShiftPointByLastPoint */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+SDPVTL[1]	/* SetDualPVectorToLine */
+SRP0[ ]	/* SetRefPoint0 */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SRP2[ ]	/* SetRefPoint2 */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+IP[ ]	/* InterpolatePts */
+RTG[ ]	/* RoundToGrid */
+MDAP[1]	/* MoveDirectAbsPt */
+SHP[1]	/* ShiftPointByLastPoint */
+MDAP[1]	/* MoveDirectAbsPt */
+MIRP[01101]	/* MoveIndirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SHP[1]	/* ShiftPointByLastPoint */
+SDPVTL[1]	/* SetDualPVectorToLine */
+SRP0[ ]	/* SetRefPoint0 */
+CALL[ ]	/* CallFunction */
+RDTG[ ]	/* RoundDownToGrid */
+SRP0[ ]	/* SetRefPoint0 */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP0[ ]	/* SetRefPoint0 */
+SFVTPV[ ]	/* SetFVectorToPVector */
+MDRP[00100]	/* MoveDirectRelPt */
+SFVTCA[1]	/* SetFVectorToAxis */
+MDRP[00100]	/* MoveDirectRelPt */
+MDRP[00100]	/* MoveDirectRelPt */
+SFVTPV[ ]	/* SetFVectorToPVector */
+MDRP[00100]	/* MoveDirectRelPt */
+SRP1[ ]	/* SetRefPoint1 */
+SVTCA[1]	/* SetFreedomAndProjectionVectorToAxis */
+SHP[1]	/* ShiftPointByLastPoint */
+RTG[ ]	/* RoundToGrid */
+MDAP[1]	/* MoveDirectAbsPt */
+MIRP[01101]	/* MoveIndirectRelPt */
+IUP[1]	/* InterpolateUntPts */
+IUP[0]	/* InterpolateUntPts */
+DELTAP1[ ]	/* DeltaExceptionP1 */";
+};
+width = 1200;
+},
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(894,-405,l),
+(863,-170,ls),
+(861,-156,o),
+(857,-127,o),
+(857,-94,cs),
+(857,-35,o),
+(863,24,o),
+(876,83,cs),
+(1072,1001,ls),
+(1086,1067,o),
+(1092,1094,o),
+(1092,1152,cs),
+(1092,1173,o),
+(1091,1210,o),
+(1087,1235,cs),
+(1035,1580,l),
+(890,1580,l),
+(942,1235,ls),
+(946,1207,o),
+(947,1168,o),
+(947,1149,cs),
+(946,1096,o),
+(940,1066,o),
+(926,1001,cs),
+(763,234,l),
+(320,115,ls),
+(307,112,o),
+(291,109,o),
+(274,109,cs),
+(240,109,o),
+(229,127,o),
+(229,162,cs),
+(229,172,o),
+(230,182,o),
+(232,191,cs),
+(374,892,ls),
+(379,915,o),
+(381,935,o),
+(381,953,cs),
+(381,1004,o),
+(357,1039,o),
+(318,1070,cs),
+(197,1167,l),
+(114,1034,l),
+(213,964,ls),
+(227,954,o),
+(234,941,o),
+(234,926,cs),
+(234,920,o),
+(233,911,o),
+(230,898,cs),
+(93,231,ls),
+(88,206,o),
+(85,158,o),
+(85,126,cs),
+(85,35,o),
+(138,-25,o),
+(222,-25,cs),
+(272,-25,o),
+(311,-18,o),
+(360,-4,cs),
+(735,103,l),
+(732,88,ls),
+(714,-1,o),
+(712,-68,o),
+(712,-103,cs),
+(712,-131,o),
+(716,-156,o),
+(718,-170,cs),
+(749,-405,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(894,-405,l),
+(863,-170,ls),
+(861,-156,o),
+(857,-127,o),
+(857,-94,cs),
+(857,-35,o),
+(863,24,o),
+(876,83,cs),
+(1072,1001,ls),
+(1086,1067,o),
+(1092,1094,o),
+(1092,1152,cs),
+(1092,1173,o),
+(1091,1210,o),
+(1087,1235,cs),
+(1035,1580,l),
+(890,1580,l),
+(942,1235,ls),
+(946,1207,o),
+(947,1168,o),
+(947,1149,cs),
+(946,1096,o),
+(940,1066,o),
+(926,1001,cs),
+(763,234,l),
+(320,115,ls),
+(307,112,o),
+(291,109,o),
+(274,109,cs),
+(240,109,o),
+(229,127,o),
+(229,162,cs),
+(229,172,o),
+(230,182,o),
+(232,191,cs),
+(374,892,ls),
+(379,915,o),
+(381,935,o),
+(381,953,cs),
+(381,1004,o),
+(357,1039,o),
+(318,1070,cs),
+(197,1167,l),
+(114,1034,l),
+(213,964,ls),
+(227,954,o),
+(234,941,o),
+(234,926,cs),
+(234,920,o),
+(233,911,o),
+(230,898,cs),
+(93,231,ls),
+(88,206,o),
+(85,158,o),
+(85,126,cs),
+(85,35,o),
+(138,-25,o),
+(222,-25,cs),
+(272,-25,o),
+(311,-18,o),
+(360,-4,cs),
+(735,103,l),
+(732,88,ls),
+(714,-1,o),
+(712,-68,o),
+(712,-103,cs),
+(712,-131,o),
+(716,-156,o),
+(718,-170,cs),
+(749,-405,l)
+);
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(894,-405,l),
+(863,-170,ls),
+(861,-156,o),
+(857,-127,o),
+(857,-94,cs),
+(857,-35,o),
+(863,24,o),
+(876,83,cs),
+(1072,1001,ls),
+(1086,1067,o),
+(1092,1094,o),
+(1092,1152,cs),
+(1092,1173,o),
+(1091,1210,o),
+(1087,1235,cs),
+(1035,1580,l),
+(890,1580,l),
+(942,1235,ls),
+(946,1207,o),
+(947,1168,o),
+(947,1149,cs),
+(946,1096,o),
+(940,1066,o),
+(926,1001,cs),
+(763,234,l),
+(320,115,ls),
+(307,112,o),
+(291,109,o),
+(274,109,cs),
+(240,109,o),
+(229,127,o),
+(229,162,cs),
+(229,172,o),
+(230,182,o),
+(232,191,cs),
+(374,892,ls),
+(379,915,o),
+(381,935,o),
+(381,953,cs),
+(381,1004,o),
+(357,1039,o),
+(318,1070,cs),
+(197,1167,l),
+(114,1034,l),
+(213,964,ls),
+(227,954,o),
+(234,941,o),
+(234,926,cs),
+(234,920,o),
+(233,911,o),
+(230,898,cs),
+(93,231,ls),
+(88,206,o),
+(85,158,o),
+(85,126,cs),
+(85,35,o),
+(138,-25,o),
+(222,-25,cs),
+(272,-25,o),
+(311,-18,o),
+(360,-4,cs),
+(735,103,l),
+(732,88,ls),
+(714,-1,o),
+(712,-68,o),
+(712,-103,cs),
+(712,-131,o),
+(716,-156,o),
+(718,-170,cs),
+(749,-405,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni2D23;
+unicode = 11555;
+}

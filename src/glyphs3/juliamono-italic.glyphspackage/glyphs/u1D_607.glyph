@@ -1,0 +1,179 @@
+{
+glyphname = u1D607;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (504,0);
+},
+{
+name = center;
+pos = (599,550);
+},
+{
+name = top;
+pos = (698,1100);
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(943,0,l),
+(979,204,l),
+(388,204,l),
+(1086,914,l),
+(1117,1100,l),
+(257,1100,l),
+(221,896,l),
+(774,896,l),
+(97,206,l),
+(63,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (503,0);
+},
+{
+name = center;
+pos = (600,550);
+},
+{
+name = top;
+pos = (697,1098);
+}
+);
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,9);
+target = (0,8);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,5);
+target = (0,6);
+type = TTStem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(939,0,l),
+(987,270,l),
+(474,270,l),
+(1075,840,l),
+(1117,1100,l),
+(261,1100,l),
+(213,828,l),
+(687,828,l),
+(111,270,l),
+(67,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (504,0);
+},
+{
+name = center;
+pos = (599,550);
+},
+{
+name = top;
+pos = (698,1100);
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(942,0,l),
+(978,204,l),
+(388,204,l),
+(1085,914,l),
+(1116,1100,l),
+(258,1100,l),
+(222,896,l),
+(774,896,l),
+(99,206,l),
+(64,0,l)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (503,0);
+},
+{
+name = center;
+pos = (600,550);
+},
+{
+name = top;
+pos = (697,1098);
+}
+);
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,9);
+target = (0,8);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,5);
+target = (0,6);
+type = TTStem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(938,0,l),
+(986,270,l),
+(473,270,l),
+(1073,840,l),
+(1116,1100,l),
+(262,1100,l),
+(214,828,l),
+(688,828,l),
+(113,270,l),
+(68,0,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = u1D5D3;
+unicode = 120327;
+}

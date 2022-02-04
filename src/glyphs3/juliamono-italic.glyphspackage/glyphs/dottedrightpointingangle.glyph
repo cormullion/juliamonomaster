@@ -1,0 +1,84 @@
+{
+glyphname = dottedrightpointingangle;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+pos = (50,-42);
+ref = greater;
+},
+{
+pos = (319,532);
+ref = dotmath;
+},
+{
+pos = (164,-608);
+ref = dotmath;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+pos = (50,-22);
+ref = greater;
+},
+{
+pos = (357,604);
+ref = dotmath;
+},
+{
+pos = (193,-653);
+ref = dotmath;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (50,-50);
+ref = greater;
+},
+{
+alignment = -1;
+pos = (306,520);
+ref = dotmath;
+},
+{
+alignment = -1;
+pos = (141,-618);
+ref = dotmath;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (50,-18);
+ref = greater;
+},
+{
+alignment = -1;
+pos = (346,568);
+ref = dotmath;
+},
+{
+alignment = -1;
+pos = (165,-642);
+ref = dotmath;
+}
+);
+width = 1200;
+}
+);
+unicode = 11798;
+}

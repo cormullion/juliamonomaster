@@ -1,0 +1,74 @@
+{
+glyphname = Ccedillaacute;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = C;
+},
+{
+pos = (-64,4);
+ref = cedillacomb;
+},
+{
+pos = (92,350);
+ref = acutecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = C;
+},
+{
+pos = (-22,-24);
+ref = cedillacomb;
+},
+{
+pos = (49,350);
+ref = acutecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = C;
+},
+{
+pos = (22,4);
+ref = cedillacomb;
+},
+{
+pos = (76,356);
+ref = acutecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = C;
+},
+{
+pos = (46,-8);
+ref = cedillacomb;
+},
+{
+pos = (137,350);
+ref = acutecomb;
+}
+);
+width = 1200;
+}
+);
+unicode = 7688;
+}

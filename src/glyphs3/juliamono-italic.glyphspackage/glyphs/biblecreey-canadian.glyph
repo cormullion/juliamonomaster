@@ -1,0 +1,127 @@
+{
+glyphname = "biblecreey-canadian";
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (1459, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(637,730,l),
+(882,1120,l),
+(935,730,l),
+(1036,730,l),
+(954,1460,l),
+(677,992,l),
+(570,1460,l),
+(226,730,l),
+(335,730,l),
+(532,1120,l),
+(532,1120,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1459, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(641,730,l),
+(885,1120,l),
+(936,730,l),
+(1035,730,l),
+(951,1460,l),
+(673,992,l),
+(567,1460,l),
+(225,730,l),
+(337,730,l),
+(533,1120,l),
+(534,1120,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1459, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(637,730,l),
+(881,1120,l),
+(935,730,l),
+(1037,730,l),
+(954,1460,l),
+(677,992,l),
+(570,1460,l),
+(227,730,l),
+(335,730,l),
+(532,1120,l),
+(532,1120,l)
+);
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (1459, -20);
+target = down;
+type = TopGhost;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(639,730,l),
+(883,1120,l),
+(936,730,l),
+(1036,730,l),
+(952,1460,l),
+(675,992,l),
+(568,1460,l),
+(226,730,l),
+(336,730,l),
+(533,1120,l),
+(533,1120,l)
+);
+}
+);
+width = 1200;
+}
+);
+note = uni153F;
+unicode = 5439;
+}

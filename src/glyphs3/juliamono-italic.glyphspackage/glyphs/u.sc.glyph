@@ -1,0 +1,343 @@
+{
+glyphname = u.sc;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (449,0);
+},
+{
+name = ogonek;
+pos = (848,16);
+},
+{
+name = top;
+pos = (654,1160);
+},
+{
+name = topright;
+pos = (1012,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-71, 121);
+place = (-71, 121);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1495, 5);
+place = (1495, 5);
+type = Stem;
+},
+{
+place = (131, 155);
+place = (131, 155);
+type = Stem;
+},
+{
+place = (909, 155);
+place = (909, 155);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,17);
+target = (0,8);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,13);
+stem = -1;
+type = TTSnap;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(882,-22,o),
+(979,202,o),
+(1025,462,cs),
+(1148,1160,l),
+(974,1160,l),
+(859,508,ls),
+(814,254,o),
+(734,124,o),
+(519,126,cs),
+(304,128,o),
+(292,242,o),
+(337,496,cs),
+(454,1160,l),
+(274,1160,l),
+(153,474,ls),
+(100,174,o),
+(154,-22,o),
+(511,-22,cs)
+);
+}
+);
+userData = {
+RMXScaler = {
+height = 80;
+weight = 4;
+width = 90;
+};
+};
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (447,0);
+},
+{
+name = ogonek;
+pos = (463,0);
+},
+{
+name = top;
+pos = (652,1160);
+},
+{
+name = topright;
+pos = (1000,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+options = 4;
+origin = (0,17);
+target = (0,8);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,13);
+stem = -1;
+type = TTSnap;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(897,-22,o),
+(1004,189,o),
+(1052,457,cs),
+(1175,1154,l),
+(863,1154,l),
+(756,547,ls),
+(732,415,o),
+(680,268,o),
+(534,268,cs),
+(400,268,o),
+(415,395,o),
+(438,525,cs),
+(549,1154,l),
+(237,1154,l),
+(118,479,ls),
+(75,239,o),
+(113,-22,o),
+(517,-22,cs)
+);
+}
+);
+userData = {
+RMXScaler = {
+height = 80;
+weight = 10;
+width = 90;
+};
+};
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (449,0);
+},
+{
+name = ogonek;
+pos = (912,18);
+},
+{
+name = top;
+pos = (654,1160);
+},
+{
+name = topright;
+pos = (1014,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-67, 157);
+place = (-67, 157);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1760, 22);
+place = (1760, 22);
+type = Stem;
+},
+{
+place = (169, 197);
+place = (169, 197);
+type = Stem;
+},
+{
+place = (1077, 197);
+place = (1077, 197);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,17);
+target = (0,8);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,13);
+stem = -1;
+type = TTSnap;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(880,-22,o),
+(975,205,o),
+(1021,463,cs),
+(1144,1162,l),
+(992,1162,l),
+(875,501,ls),
+(827,227,o),
+(742,100,o),
+(516,102,cs),
+(289,104,o),
+(271,217,o),
+(320,491,cs),
+(438,1162,l),
+(280,1162,l),
+(158,473,ls),
+(104,163,o),
+(162,-22,o),
+(510,-22,cs)
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (449,0);
+},
+{
+name = ogonek;
+pos = (656,8);
+},
+{
+name = top;
+pos = (654,1160);
+},
+{
+name = topright;
+pos = (1006,1160);
+}
+);
+hints = (
+{
+horizontal = 1;
+place = (-84, 12);
+place = (-84, 12);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (699, -46);
+place = (699, -46);
+type = Stem;
+},
+{
+place = (17, 29);
+place = (17, 29);
+type = Stem;
+},
+{
+place = (406, 29);
+place = (406, 29);
+type = Stem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,17);
+target = (0,8);
+type = TTStem;
+},
+{
+horizontal = 1;
+options = 4;
+origin = (0,13);
+stem = -1;
+type = TTSnap;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(891,-22,o),
+(991,195,o),
+(1038,459,cs),
+(1161,1158,l),
+(919,1158,l),
+(808,529,ls),
+(774,335,o),
+(708,196,o),
+(527,198,cs),
+(352,198,o),
+(353,319,o),
+(387,511,cs),
+(501,1158,l),
+(255,1158,l),
+(135,477,ls),
+(87,207,o),
+(135,-22,o),
+(514,-22,cs)
+);
+}
+);
+width = 1200;
+}
+);
+note = U;
+userData = {
+RMXScaler = {
+source = U;
+};
+};
+}

@@ -1,0 +1,74 @@
+{
+glyphname = ecedillabreve;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (-33,-12);
+ref = cedillacomb;
+},
+{
+pos = (17,24);
+ref = brevecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (-46,-14);
+ref = cedillacomb;
+},
+{
+pos = (24,18);
+ref = brevecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (-49,-14);
+ref = cedillacomb;
+},
+{
+pos = (17,18);
+ref = brevecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+ref = e;
+},
+{
+pos = (-40,-14);
+ref = cedillacomb;
+},
+{
+pos = (20,22);
+ref = brevecomb;
+}
+);
+width = 1200;
+}
+);
+unicode = 7709;
+}

@@ -1,0 +1,177 @@
+{
+glyphname = onequarter;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (105, 21);
+place = (105, 21);
+type = Stem;
+},
+{
+place = (43, 53);
+place = (43, 53);
+type = Stem;
+},
+{
+place = (901, 47);
+place = (901, 47);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (689, -1);
+place = (689, -1);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1391, -53);
+place = (1391, -53);
+type = Stem;
+},
+{
+place = (223, 13);
+place = (223, 13);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+alignment = -1;
+pos = (-349,180);
+ref = one.numr;
+},
+{
+alignment = -1;
+pos = (65,-180);
+ref = four.dnom;
+},
+{
+pos = (-79,100);
+ref = _part.fractionslash;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+alignment = -1;
+pos = (-343,180);
+ref = one.numr;
+},
+{
+alignment = -1;
+pos = (39,-180);
+ref = four.dnom;
+},
+{
+pos = (-79,100);
+ref = _part.fractionslash;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (125, 26);
+place = (125, 26);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (664, 1);
+place = (664, 1);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (1615, -55);
+place = (1615, -55);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+pos = (-333,180);
+ref = one.numr;
+},
+{
+alignment = -1;
+pos = (96,-180);
+ref = four.dnom;
+},
+{
+pos = (-71,100);
+ref = _part.fractionslash;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (74, 37);
+place = (74, 37);
+type = Stem;
+},
+{
+place = (-27, -22);
+place = (-27, -22);
+type = Stem;
+},
+{
+place = (402, -25);
+place = (402, -25);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (795, 23);
+place = (795, 23);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (748, -16);
+place = (748, -16);
+type = Stem;
+},
+{
+place = (63, -42);
+place = (63, -42);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+pos = (-349,180);
+ref = one.numr;
+},
+{
+alignment = -1;
+pos = (47,-180);
+ref = four.dnom;
+},
+{
+pos = (-79,100);
+ref = _part.fractionslash;
+}
+);
+width = 1200;
+}
+);
+note = onequarter;
+unicode = 188;
+}

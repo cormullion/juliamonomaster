@@ -1,0 +1,84 @@
+{
+glyphname = candraBinducomb;
+layers = (
+{
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+closed = 1;
+nodes = (
+(534,1420,l),
+(666,1420,l),
+(666,1552,l),
+(534,1552,l)
+);
+},
+{
+pos = (-2,0);
+ref = brevecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+closed = 1;
+nodes = (
+(520,1426,l),
+(680,1426,l),
+(680,1586,l),
+(520,1586,l)
+);
+},
+{
+pos = (-2,0);
+ref = brevecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+closed = 1;
+nodes = (
+(536,1420,l),
+(664,1420,l),
+(664,1546,l),
+(536,1546,l)
+);
+},
+{
+alignment = -1;
+pos = (-2,0);
+ref = brevecomb;
+}
+);
+width = 1200;
+},
+{
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+closed = 1;
+nodes = (
+(528,1424,l),
+(674,1424,l),
+(674,1570,l),
+(528,1570,l)
+);
+},
+{
+alignment = -1;
+pos = (-2,0);
+ref = brevecomb;
+}
+);
+width = 1200;
+}
+);
+unicode = 784;
+}

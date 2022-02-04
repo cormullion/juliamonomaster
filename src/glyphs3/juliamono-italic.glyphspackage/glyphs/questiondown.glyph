@@ -1,0 +1,149 @@
+{
+glyphname = questiondown;
+layers = (
+{
+hints = (
+{
+horizontal = 1;
+place = (-385, 221);
+place = (-385, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (907, 285);
+place = (907, 285);
+type = Stem;
+},
+{
+place = (269, 261);
+place = (269, 261);
+type = Stem;
+},
+{
+place = (639, 229);
+place = (639, 229);
+type = Stem;
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+angle = 180;
+pos = (1425,1410);
+ref = question;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-385, 221);
+place = (-385, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (907, 285);
+place = (907, 285);
+type = Stem;
+},
+{
+place = (269, 261);
+place = (269, 261);
+type = Stem;
+},
+{
+place = (639, 229);
+place = (639, 229);
+type = Stem;
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+angle = 180;
+pos = (1425,1410);
+ref = question;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-375, 231);
+place = (-375, 231);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (917, 295);
+place = (917, 295);
+type = Stem;
+},
+{
+place = (279, 271);
+place = (279, 271);
+type = Stem;
+},
+{
+place = (649, 239);
+place = (649, 239);
+type = Stem;
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+alignment = -1;
+angle = 180;
+pos = (1399,1410);
+ref = question;
+}
+);
+width = 1200;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = (-385, 221);
+place = (-385, 221);
+type = Stem;
+},
+{
+horizontal = 1;
+place = (907, 285);
+place = (907, 285);
+type = Stem;
+},
+{
+place = (269, 261);
+place = (269, 261);
+type = Stem;
+},
+{
+place = (639, 229);
+place = (639, 229);
+type = Stem;
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+alignment = -1;
+angle = 180;
+pos = (1425,1410);
+ref = question;
+}
+);
+width = 1200;
+}
+);
+note = questiondown;
+unicode = 191;
+}

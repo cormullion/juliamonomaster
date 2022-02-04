@@ -1,0 +1,86 @@
+{
+glyphname = ringbelowcomb;
+layers = (
+{
+anchors = (
+{
+name = _bottom;
+pos = (596,0);
+},
+{
+name = bottom;
+pos = (596,-512);
+}
+);
+layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
+shapes = (
+{
+pos = (-6,-1732);
+ref = ringcomb;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = _bottom;
+pos = (596,0);
+},
+{
+name = bottom;
+pos = (596,-544);
+}
+);
+layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
+shapes = (
+{
+pos = (-6,-1732);
+ref = ringcomb;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = _bottom;
+pos = (596,0);
+},
+{
+name = bottom;
+pos = (596,-498);
+}
+);
+layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
+shapes = (
+{
+pos = (-6,-1732);
+ref = ringcomb;
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = _bottom;
+pos = (595,0);
+},
+{
+name = bottom;
+pos = (595,-524);
+}
+);
+layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
+shapes = (
+{
+pos = (-6,-1732);
+ref = ringcomb;
+}
+);
+width = 1200;
+}
+);
+unicode = 805;
+}
