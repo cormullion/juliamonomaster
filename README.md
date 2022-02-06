@@ -4,6 +4,16 @@ You can download the JuliaMono fonts [here](https://github.com/cormullion/juliam
 
 The size of that repository is kept deliberately small. So everything else is in this repository.
 
+The source files are in Glyphs3 format.
+
+The SIL Open Font License (SIL/OFL) basically says you can do whatever you like with the font except:
+
+- sell it
+
+- use a different (non-SILOFL)
+
+- use the reserved name "JuliaMono"
+
 ![specimen page 1](https://github.com/cormullion/juliamonomaster/blob/master/images/specimen_1.png)
 
 ![specimen page 2](https://github.com/cormullion/juliamonomaster/blob/master/images/specimen_2.png)
