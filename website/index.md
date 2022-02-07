@@ -587,9 +587,9 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
 
 	<tr>
 	<td>ss15</td>
-    <td class="code_ss_off">A B C ...</td>
-    <td class="code_ss15_on">A B C ... </td>
-    <td><p>Math script Roundhand</p></td>
+    <td class="code_ss_off">𝒜 ℬ 𝒞 ...</td>
+    <td class="code_ss15_on">𝒜 ℬ 𝒞 ... </td>
+    <td><p>Math Script Roundhand</p></td>
     </tr>
 
 	<tr>
@@ -604,9 +604,9 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
 
 All this fancy technology is under the control of the application and the operating system you’re using. Ideally, they will provide an easy way for you to switch the various OpenType features on and off.
 
-Browser-based editors such as Juno and VS Code support many OpenType features in their editor windows, but not in the terminal/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. Some features are opt in, others are opt out; this too can vary from application to application.
+Browser-based editors such as Juno and VS Code support many OpenType features in their editor windows, but not so much in the terminal emulator/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. Some features are opt in, others are opt out; this too can vary from application to application.
 
-Terminal/console applications also vary a lot; on MacOS the **Terminal** and **iTerm** applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as [Konsole](https://konsole.kde.org) and [Kitty](https://sw.kovidgoyal.net/kitty/#font-control) offer quite good support, but others such as [Alacritty](https://github.com/alacritty/alacritty) offer little or none, as yet. [^terminal]
+Terminal/console applications also vary a lot. [wezterm](https://wezfurlong.org/wezterm/) is cross-platform and provides excellent font support. On MacOS the **Terminal** and **iTerm** applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as [Konsole](https://konsole.kde.org) and [Kitty](https://sw.kovidgoyal.net/kitty/#font-control) offer quite good OpenType support, but others such as [Alacritty](https://github.com/alacritty/alacritty) offer little or none, as yet. [^terminal]
 
 If the application allows, you should be able to switch the `calt` contextual ligatures off, particularly since quite a few people won’t like any of them in their code. For the following listing, I switch the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)), and then enable some of the alternative stylistic sets: compare characters such as the **0**, **g**, **a**, **j**, and **@** with the previous listing:
 
@@ -634,46 +634,20 @@ df2 = df |>
 
 ### Mathematical script styles: Calligraphers vs Roundhanders
 
-The stylistic set `ss15` uses a script style known as "roundhand", rather than the calligraphical script style that's the default.
+The stylistic set `ss15` uses an old English script style known as "roundhand", rather than the default calligraphy style.
 
-Here's the way the default calligraphical script style looks:
+Here's a comparison of the two script styles - the default on top, ss15 below - as rendered in a $ \LaTeX $ document.
 
-@@code_calt_off_ss_on
-```
-# 𝓐 𝓑 𝓒 𝓓 𝓔 ...
-function tensorform(𝒫::POMDP)
-	𝒮, 𝒜, 𝒪, R, T, O = 𝒫.𝒮, 𝒫.𝒜, 𝒫.𝒪, 𝒫.R, 𝒫.T, 𝒫.O 𝒮′ = eachindex(𝒮)
-	𝒜′ = eachindex(𝒜)
-	𝒪′ = eachindex(𝒪)
-	R′ = [R(s,a) for s in 𝒮, a in 𝒜]
-	T′ = [T(s,a,s′) for s in 𝒮, a in 𝒜, s′ in 𝒮] O′ = [O(a,s′,o) for a in 𝒜, s′ in 𝒮, o in 𝒪]
-	𝒮′, 𝒜′, 𝒪′, R′, T′, O′
-end
-```
-@@
-
-and here's the roundhand style:
-
-@@code_ss15_on
-```
-# 𝓐 𝓑 𝓒 𝓓 𝓔 ...
-function tensorform(𝒫::POMDP)
-	𝒮, 𝒜, 𝒪, R, T, O = 𝒫.𝒮, 𝒫.𝒜, 𝒫.𝒪, 𝒫.R, 𝒫.T, 𝒫.O 𝒮′ = eachindex(𝒮)
-	𝒜′ = eachindex(𝒜)
-	𝒪′ = eachindex(𝒪)
-	R′ = [R(s,a) for s in 𝒮, a in 𝒜]
-	T′ = [T(s,a,s′) for s in 𝒮, a in 𝒜, s′ in 𝒮] O′ = [O(a,s′,o) for a in 𝒜, s′ in 𝒮, o in 𝒪]
-	𝒮′, 𝒜′, 𝒪′, R′, T′, O′
-end
-```
-@@
+~~~
+<img src="/assets/latex-script-styles.png" width="100%" alt="LaTeX script styles">
+~~~
 
 (This code snippet is from the [Algorithms
 Handbook](https://algorithmsbook.com/), by Mykel J.
 Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses
 JuliaMono for the code samples.)
 
-As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education. I suspect that few people today learn or practice the script style known as roundhand.
+As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education; I suspect that few people today learn or practice the roundhand script style, and some of the shapes will be unfamiliar. You may also find the more detailed forms more difficult to read on lower-resolution displays.
 
 ## If you really don't like any ligatures
 
@@ -783,6 +757,6 @@ Thanks to: Thibaut Lienart for his [Franklin.jl](https://github.com/tlienart/Fra
 
 [^typographypanel]: &nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive but I’m not convinced that all the buttons are wired up yet...
 
-[^terminal]: &nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to. In the world of fonts, nothing is 100% correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a [VS Code](https://github.com/microsoft/vscode/issues/34103) issue; here are the [Alacritty terminal developers](https://github.com/alacritty/alacritty/issues/50) working on it; here is the [iTerm documentation](https://iterm2.com/documentation-fonts.html) talking about performance.
+[^terminal]: &nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: [wezterm](https://wezfurlong.org/wezterm/) is about the best, although configuring the macOS Terminal is a bit easier, and [iTerm](https://iterm2.com) for macOS is also a reasonable alternative. In the world of fonts, nothing is 100% correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a [VS Code](https://github.com/microsoft/vscode/issues/34103) issue; here are the [Alacritty terminal developers](https://github.com/alacritty/alacritty/issues/50) working on it; here is the [iTerm documentation](https://iterm2.com/documentation-fonts.html) talking about performance.
 
 

@@ -1,5 +1,7 @@
 @def title = "JuliaMono font - FAQ"
 @def mintoclevel=2
+@def hasmath = true
+@def hascode = true
 
 # Frequently asked questions
 
@@ -311,9 +313,9 @@ An earlier approach that worked for me is as follows:
 In your $ \LaTeX $ source file, define the font, using the local pathname:
 
 ```
-\newfontfamily \JuliaMono {JuliaMono-Regular.otf}[
+\newfontfamily \JuliaMono {JuliaMono-Regular.ttf}[
     Path      = /Users/me/Library/Fonts/,
-    Extension = .otf
+    Extension = .ttf
     ]
 \newfontface \JuliaMonoMedium{JuliaMono-Regular}
 \setmonofont{JuliaMonoMedium}[
