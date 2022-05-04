@@ -181,6 +181,12 @@ div.input_area {
     font-size: 16px !important;
 }
 
+div.output_area pre{
+    background: #def !important;
+    font-size: 16px !important;
+    font-family: JuliaMono-Regular;
+}
+
 .CodeMirror {
     font-size: 16px !important;
     font-family: "JuliaMono-Regular" !important;
