@@ -8,7 +8,6 @@ shapes = (
 ref = u;
 },
 {
-pos = (-82,-34);
 ref = circumflexbelowcomb;
 }
 );
@@ -18,10 +17,11 @@ width = 1200;
 layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
 shapes = (
 {
+alignment = -1;
 ref = u;
 },
 {
-pos = (28,0);
+pos = (0,-1);
 ref = circumflexbelowcomb;
 }
 );
@@ -34,7 +34,6 @@ shapes = (
 ref = u;
 },
 {
-pos = (-33,-34);
 ref = circumflexbelowcomb;
 }
 );
@@ -44,10 +43,11 @@ width = 1200;
 layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
 shapes = (
 {
+alignment = -1;
 ref = u;
 },
 {
-pos = (75,0);
+pos = (-5,0);
 ref = circumflexbelowcomb;
 }
 );

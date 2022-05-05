@@ -12,7 +12,8 @@ pos = (29,13);
 ref = oxia;
 },
 {
-pos = (186,1113);
+alignment = -1;
+pos = (-16,-28);
 ref = ypogegrammenicomb;
 }
 );
@@ -26,12 +27,12 @@ ref = alpha;
 },
 {
 alignment = -1;
-pos = (-273,23);
+pos = (9,-7);
 ref = oxia;
 },
 {
 alignment = -1;
-pos = (357,1564);
+pos = (-113,-104);
 ref = ypogegrammenicomb;
 }
 );
@@ -45,12 +46,12 @@ ref = alpha;
 },
 {
 alignment = -1;
-pos = (-273,23);
+pos = (-3,-33);
 ref = oxia;
 },
 {
 alignment = -1;
-pos = (357,1564);
+pos = (-157,-71);
 ref = ypogegrammenicomb;
 }
 );
@@ -64,12 +65,12 @@ ref = alpha;
 },
 {
 alignment = -1;
-pos = (-273,23);
+pos = (-3,-19);
 ref = oxia;
 },
 {
 alignment = -1;
-pos = (357,1564);
+pos = (-113,-62);
 ref = ypogegrammenicomb;
 }
 );

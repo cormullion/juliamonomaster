@@ -72,12 +72,12 @@ layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
 shapes = (
 {
 alignment = -1;
-pos = (50,-72);
+pos = (-93,-72);
 ref = psili.case;
 },
 {
 alignment = -1;
-pos = (2,270);
+pos = (-45,270);
 ref = perispomenicomb;
 }
 );

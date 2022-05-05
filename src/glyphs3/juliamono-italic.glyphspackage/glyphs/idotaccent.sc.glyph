@@ -89,6 +89,7 @@ nodes = (
 );
 },
 {
+pos = (-22,0);
 ref = dotaccentcomb;
 }
 );
@@ -149,6 +150,7 @@ nodes = (
 );
 },
 {
+pos = (-10,0);
 ref = dotaccentcomb;
 }
 );
@@ -247,6 +249,8 @@ nodes = (
 );
 },
 {
+alignment = -1;
+pos = (-19,0);
 ref = dotaccentcomb;
 }
 );
@@ -340,6 +344,7 @@ nodes = (
 );
 },
 {
+pos = (-14,0);
 ref = dotaccentcomb;
 }
 );

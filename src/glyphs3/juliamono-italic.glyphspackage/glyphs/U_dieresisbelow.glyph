@@ -8,7 +8,7 @@ shapes = (
 ref = U;
 },
 {
-pos = (-226,0);
+pos = (-10,0);
 ref = dieresisbelowcomb;
 }
 );
@@ -21,7 +21,7 @@ shapes = (
 ref = U;
 },
 {
-pos = (-44,0);
+pos = (-10,0);
 ref = dieresisbelowcomb;
 }
 );
@@ -34,7 +34,7 @@ shapes = (
 ref = U;
 },
 {
-pos = (-49,0);
+pos = (1,0);
 ref = dieresisbelowcomb;
 }
 );
@@ -47,7 +47,7 @@ shapes = (
 ref = U;
 },
 {
-pos = (148,0);
+pos = (-10,0);
 ref = dieresisbelowcomb;
 }
 );

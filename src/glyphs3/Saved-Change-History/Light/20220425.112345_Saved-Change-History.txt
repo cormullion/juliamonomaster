@@ -1,0 +1,1 @@
+['trump12Cards', 'trump13Cards', 'trump15Cards', 'trump16Cards', 'trump17Cards', 'trump18Cards', 'trump1Cards', 'trump21Cards', 'trump2Cards', 'trump3Cards', 'trump4Cards', 'trump5Cards', 'trump6Cards', 'trump7Cards', 'trump8Cards', 'trump9Cards']

@@ -12,7 +12,7 @@ pos = (0,354);
 ref = caroncomb;
 },
 {
-pos = (6,802);
+pos = (0,834);
 ref = dotaccentcomb;
 }
 );
@@ -29,7 +29,7 @@ pos = (6,368);
 ref = caroncomb;
 },
 {
-pos = (6,888);
+pos = (6,848);
 ref = dotaccentcomb;
 }
 );
@@ -46,7 +46,7 @@ pos = (13,348);
 ref = caroncomb;
 },
 {
-pos = (21,784);
+pos = (13,828);
 ref = dotaccentcomb;
 }
 );
@@ -63,7 +63,7 @@ pos = (0,356);
 ref = caroncomb;
 },
 {
-pos = (4,840);
+pos = (0,836);
 ref = dotaccentcomb;
 }
 );

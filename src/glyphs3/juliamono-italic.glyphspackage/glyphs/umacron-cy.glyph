@@ -8,7 +8,7 @@ shapes = (
 ref = y;
 },
 {
-pos = (3,-4);
+pos = (14,0);
 ref = macron;
 }
 );
@@ -34,7 +34,7 @@ shapes = (
 ref = y;
 },
 {
-pos = (4,-4);
+pos = (5,0);
 ref = macron;
 }
 );

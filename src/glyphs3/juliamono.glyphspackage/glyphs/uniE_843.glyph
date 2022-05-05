@@ -26,7 +26,7 @@ scale = (0.446,0.446);
 },
 {
 pos = (316,-404);
-ref = four.subscript;
+ref = five.subscript;
 scale = (0.4799,0.4799);
 }
 );
@@ -57,7 +57,7 @@ scale = (0.446,0.446);
 },
 {
 pos = (316,-404);
-ref = four.subscript;
+ref = five.subscript;
 scale = (0.4799,0.4799);
 }
 );
@@ -88,7 +88,7 @@ scale = (0.446,0.446);
 },
 {
 pos = (316,-404);
-ref = four.subscript;
+ref = five.subscript;
 scale = (0.4799,0.4799);
 }
 );
@@ -119,7 +119,7 @@ scale = (0.3143,0.3143);
 },
 {
 pos = (314,-404);
-ref = four.subscript;
+ref = five.subscript;
 scale = (0.4799,0.4799);
 }
 );

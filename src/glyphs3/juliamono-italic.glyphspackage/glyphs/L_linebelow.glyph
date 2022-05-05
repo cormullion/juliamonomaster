@@ -34,7 +34,7 @@ shapes = (
 ref = L;
 },
 {
-pos = (104,-44);
+pos = (-22,-44);
 ref = macronbelowcomb;
 }
 );

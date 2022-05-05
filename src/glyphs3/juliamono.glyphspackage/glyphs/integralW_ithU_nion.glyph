@@ -22,7 +22,7 @@ shapes = (
 ref = integral;
 },
 {
-pos = (306,379);
+pos = (284,379);
 ref = union;
 scale = (0.5728,0.5728);
 }

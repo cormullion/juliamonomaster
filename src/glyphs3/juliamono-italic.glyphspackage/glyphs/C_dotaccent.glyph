@@ -8,8 +8,7 @@ shapes = (
 ref = C;
 },
 {
-alignment = -1;
-pos = (-2,420);
+pos = (72,350);
 ref = dotaccentcomb;
 }
 );
@@ -22,8 +21,7 @@ shapes = (
 ref = C;
 },
 {
-alignment = -1;
-pos = (-10,472);
+pos = (72,350);
 ref = dotaccentcomb;
 }
 );
@@ -36,8 +34,7 @@ shapes = (
 ref = C;
 },
 {
-alignment = -1;
-pos = (0,412);
+pos = (76,356);
 ref = dotaccentcomb;
 }
 );
@@ -50,8 +47,7 @@ shapes = (
 ref = C;
 },
 {
-alignment = -1;
-pos = (-6,446);
+pos = (72,350);
 ref = dotaccentcomb;
 }
 );

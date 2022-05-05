@@ -8,7 +8,7 @@ shapes = (
 ref = "Ii-cy";
 },
 {
-pos = (80,164);
+pos = (91,168);
 ref = macron.case;
 }
 );
@@ -34,7 +34,7 @@ shapes = (
 ref = "Ii-cy";
 },
 {
-pos = (68,187);
+pos = (70,191);
 ref = macron.case;
 }
 );

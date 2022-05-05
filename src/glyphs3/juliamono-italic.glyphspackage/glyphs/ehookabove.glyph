@@ -34,7 +34,7 @@ shapes = (
 ref = e;
 },
 {
-pos = (20,18);
+pos = (17,19);
 ref = hookabovecomb;
 }
 );

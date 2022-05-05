@@ -42,11 +42,11 @@ shapes = (
 ref = a;
 },
 {
-pos = (-1,12);
+pos = (9,12);
 ref = dieresiscomb;
 },
 {
-pos = (38,492);
+pos = (48,492);
 ref = macroncomb;
 }
 );

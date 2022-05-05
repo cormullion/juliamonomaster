@@ -9,7 +9,6 @@ ref = jdotless;
 },
 {
 alignment = 1;
-pos = (-20,0);
 ref = caroncomb;
 }
 );
@@ -23,7 +22,6 @@ ref = jdotless;
 },
 {
 alignment = 1;
-pos = (-38,-2);
 ref = caroncomb;
 }
 );

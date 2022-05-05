@@ -33,7 +33,7 @@ shapes = (
 ref = a;
 },
 {
-pos = (-21,12);
+pos = (-11,12);
 ref = breveinvertedcomb;
 }
 );

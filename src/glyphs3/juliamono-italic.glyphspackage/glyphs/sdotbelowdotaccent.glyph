@@ -9,11 +9,11 @@ alignment = -1;
 ref = s;
 },
 {
-pos = (-90,-2);
+pos = (-15,-2);
 ref = dotbelowcomb;
 },
 {
-pos = (3,16);
+pos = (-2,18);
 ref = dotaccentcomb;
 }
 );
@@ -26,11 +26,11 @@ shapes = (
 ref = s;
 },
 {
-pos = (-51,-20);
+pos = (-7,-20);
 ref = dotbelowcomb;
 },
 {
-pos = (19,2);
+pos = (17,2);
 ref = dotaccentcomb;
 }
 );

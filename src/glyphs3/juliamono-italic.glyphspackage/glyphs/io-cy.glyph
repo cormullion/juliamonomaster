@@ -34,7 +34,7 @@ shapes = (
 ref = e;
 },
 {
-pos = (59,18);
+pos = (56,19);
 ref = dieresiscomb;
 }
 );

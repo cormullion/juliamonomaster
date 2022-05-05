@@ -1,0 +1,1 @@
+['ech-arm', 'nunhafukha-hb', 'paseq-hb', 'sofpasuq-hb', 'asterisk', 'daggerwithleftguard', 'retort-alchemical', 'bismillah-ar', 'uniE831']

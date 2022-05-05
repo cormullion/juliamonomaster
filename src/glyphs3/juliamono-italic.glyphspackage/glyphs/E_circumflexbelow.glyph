@@ -8,7 +8,7 @@ shapes = (
 ref = E;
 },
 {
-pos = (-87,0);
+pos = (-10,0);
 ref = circumflexbelowcomb;
 }
 );
@@ -21,7 +21,7 @@ shapes = (
 ref = E;
 },
 {
-pos = (-20,0);
+pos = (-10,0);
 ref = circumflexbelowcomb;
 }
 );
@@ -34,7 +34,6 @@ shapes = (
 ref = E;
 },
 {
-pos = (-28,0);
 ref = circumflexbelowcomb;
 }
 );
@@ -47,7 +46,7 @@ shapes = (
 ref = E;
 },
 {
-pos = (50,0);
+pos = (-12,0);
 ref = circumflexbelowcomb;
 }
 );

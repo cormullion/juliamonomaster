@@ -9,7 +9,7 @@ alignment = -1;
 ref = e;
 },
 {
-pos = (118,24);
+pos = (90,17);
 ref = circumflexcomb_gravecomb;
 }
 );
@@ -36,7 +36,7 @@ alignment = -1;
 ref = e;
 },
 {
-pos = (107,2);
+pos = (104,3);
 ref = circumflexcomb_gravecomb;
 }
 );

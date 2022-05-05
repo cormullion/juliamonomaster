@@ -48,7 +48,7 @@ layerId = "4FB9B80E-81B5-47C9-A539-BB7C5ADDFB58";
 shapes = (
 {
 alignment = -1;
-pos = (300,698);
+pos = (301,698);
 ref = c.superscript;
 scale = (0.5,0.5);
 }
@@ -66,7 +66,7 @@ layerId = "92EF81BF-A460-40B9-8F71-75F6CAA5A9CA";
 shapes = (
 {
 alignment = -1;
-pos = (300,734);
+pos = (300,698);
 ref = c.superscript;
 scale = (0.5,0.5);
 }

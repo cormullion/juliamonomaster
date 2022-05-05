@@ -10,11 +10,11 @@ pos = (6,0);
 ref = S;
 },
 {
-pos = (-78,4);
+pos = (-3,4);
 ref = dotbelowcomb;
 },
 {
-pos = (83,352);
+pos = (78,354);
 ref = dotaccentcomb;
 }
 );
@@ -27,11 +27,11 @@ shapes = (
 ref = S;
 },
 {
-pos = (-48,-2);
+pos = (-12,-20);
 ref = dotbelowcomb;
 },
 {
-pos = (83,370);
+pos = (81,370);
 ref = dotaccentcomb;
 }
 );
@@ -46,11 +46,11 @@ pos = (16,0);
 ref = S;
 },
 {
-pos = (-18,0);
+pos = (13,0);
 ref = dotbelowcomb;
 },
 {
-pos = (61,365);
+pos = (100,348);
 ref = dotaccentcomb;
 }
 );

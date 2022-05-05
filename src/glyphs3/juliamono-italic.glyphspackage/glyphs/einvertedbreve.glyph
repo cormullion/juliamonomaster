@@ -34,7 +34,7 @@ shapes = (
 ref = e;
 },
 {
-pos = (39,18);
+pos = (36,19);
 ref = breveinvertedcomb;
 }
 );

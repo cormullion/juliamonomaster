@@ -1,0 +1,1 @@
+['Adotmacron', 'Odotaccentmacron', 'adotmacron', 'gdotaccent', 'sdotbelowdotaccent']

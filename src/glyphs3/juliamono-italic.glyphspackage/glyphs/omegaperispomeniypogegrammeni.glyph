@@ -8,8 +8,7 @@ shapes = (
 ref = omega;
 },
 {
-alignment = -1;
-pos = (0,-106);
+pos = (13,18);
 ref = perispomenicomb;
 },
 {
@@ -27,8 +26,7 @@ shapes = (
 ref = omega;
 },
 {
-alignment = -1;
-pos = (0,-106);
+pos = (13,18);
 ref = perispomenicomb;
 },
 {
@@ -46,8 +44,7 @@ shapes = (
 ref = omega;
 },
 {
-alignment = -1;
-pos = (0,-106);
+pos = (0,2);
 ref = perispomenicomb;
 },
 {
@@ -65,8 +62,7 @@ shapes = (
 ref = omega;
 },
 {
-alignment = -1;
-pos = (0,-106);
+pos = (13,18);
 ref = perispomenicomb;
 },
 {

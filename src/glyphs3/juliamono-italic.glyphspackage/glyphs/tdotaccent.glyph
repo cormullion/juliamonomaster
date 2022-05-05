@@ -10,7 +10,7 @@ pos = (38,0);
 ref = t;
 },
 {
-pos = (139,398);
+pos = (101,400);
 ref = dotaccentcomb;
 }
 );
@@ -25,7 +25,7 @@ pos = (-44,0);
 ref = t;
 },
 {
-pos = (56,402);
+pos = (19,402);
 ref = dotaccentcomb;
 }
 );
@@ -40,7 +40,7 @@ pos = (52,0);
 ref = t;
 },
 {
-pos = (136,402);
+pos = (116,404);
 ref = dotaccentcomb;
 }
 );
@@ -55,8 +55,7 @@ pos = (-4,0);
 ref = t;
 },
 {
-alignment = -1;
-pos = (-28,384);
+pos = (59,402);
 ref = dotaccentcomb;
 }
 );

@@ -1,0 +1,1 @@
+['u1F0EA', 'u1F0EB', 'u1F0EE', 'u1F0EF', 'u1F0F0', 'u1F0F1', 'u1F0F2', 'u1F0F3', 'u1F0F4', '__temp']

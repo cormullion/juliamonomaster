@@ -1,0 +1,1 @@
+['obreve', 'ohornacute', 'ohorngrave', 'Elhook-cy', 'odieresis-cy', 'elhook-cy']

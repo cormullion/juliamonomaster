@@ -19,9 +19,9 @@ alignment = 1;
 ref = union;
 },
 {
-pos = (170,260);
+pos = (255,338);
 ref = plus;
-scale = (0.718,0.718);
+scale = (0.5753,0.5753);
 }
 );
 width = 1200;
@@ -44,9 +44,9 @@ alignment = 1;
 ref = union;
 },
 {
-pos = (336,412);
+pos = (361,435);
 ref = plus;
-scale = (0.44,0.44);
+scale = (0.3988,0.3988);
 }
 );
 width = 1200;
@@ -70,9 +70,9 @@ ref = union;
 },
 {
 alignment = -1;
-pos = (142,234);
+pos = (240,324);
 ref = plus;
-scale = (0.7643,0.7643);
+scale = (0.601,0.601);
 }
 );
 width = 1200;
@@ -96,9 +96,9 @@ ref = union;
 },
 {
 alignment = -1;
-pos = (254,336);
+pos = (360,433);
 ref = plus;
-scale = (0.579,0.579);
+scale = (0.402,0.402);
 }
 );
 width = 1200;

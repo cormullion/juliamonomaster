@@ -21,7 +21,7 @@ shapes = (
 ref = "schwa-cy";
 },
 {
-pos = (25,45);
+pos = (25,40);
 ref = dieresiscomb;
 }
 );

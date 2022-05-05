@@ -36,7 +36,7 @@ alignment = -1;
 ref = G;
 },
 {
-pos = (34,364);
+pos = (50,364);
 ref = circumflexcomb;
 }
 );

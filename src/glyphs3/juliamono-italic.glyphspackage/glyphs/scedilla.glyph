@@ -5,13 +5,12 @@ layers = (
 layerId = "63BE41E3-0F49-4E61-A903-F52A2E952C90";
 shapes = (
 {
-ref = s;
-slant = (-10,0);
-},
-{
 pos = (-69,2);
 ref = cedillacomb;
 slant = (-10,0);
+},
+{
+ref = s;
 }
 );
 width = 1200;

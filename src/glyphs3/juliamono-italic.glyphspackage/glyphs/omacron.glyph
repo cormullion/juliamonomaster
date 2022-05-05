@@ -8,7 +8,7 @@ shapes = (
 ref = o;
 },
 {
-pos = (2,4);
+pos = (13,8);
 ref = macron;
 }
 );

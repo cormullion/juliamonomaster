@@ -8,11 +8,11 @@ shapes = (
 ref = s;
 },
 {
-pos = (-22,18);
+pos = (-2,18);
 ref = caroncomb;
 },
 {
-pos = (63,496);
+pos = (78,498);
 ref = dotaccentcomb;
 }
 );
@@ -25,11 +25,11 @@ shapes = (
 ref = s;
 },
 {
-pos = (-21,0);
+pos = (17,2);
 ref = caroncomb;
 },
 {
-pos = (111,520);
+pos = (93,482);
 ref = dotaccentcomb;
 }
 );
@@ -42,11 +42,11 @@ shapes = (
 ref = s;
 },
 {
-pos = (4,20);
+pos = (-5,20);
 ref = caroncomb;
 },
 {
-pos = (86,503);
+pos = (71,503);
 ref = dotaccentcomb;
 }
 );
@@ -63,7 +63,7 @@ pos = (24,8);
 ref = caroncomb;
 },
 {
-pos = (106,492);
+pos = (102,492);
 ref = dotaccentcomb;
 }
 );

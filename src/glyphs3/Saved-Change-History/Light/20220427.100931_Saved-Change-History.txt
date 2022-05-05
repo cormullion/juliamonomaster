@@ -1,0 +1,1 @@
+['Cheverticalstroke-cy', 'EnLeftHook-cy', 'Dzzhe-cy', 'ghestroke-cy', 'odieresis-cy', 'ech_yiwn-arm']

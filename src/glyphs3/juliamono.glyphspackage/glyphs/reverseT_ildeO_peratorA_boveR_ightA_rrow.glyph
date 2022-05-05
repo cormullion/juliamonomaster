@@ -21,11 +21,13 @@ layerId = "F48F13AC-C425-4574-8B52-7DBCB7751002";
 shapes = (
 {
 alignment = -1;
-pos = (-285,-544);
+pos = (-192,-472);
 ref = tilde;
+scale = (0.9039,0.9039);
 },
 {
 alignment = -1;
+pos = (11,0);
 ref = _part.matharrow;
 }
 );

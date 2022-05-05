@@ -1,0 +1,1 @@
+['C', 'G', 'S', 'Scedilla', 'Scommaaccent', 'Sdotbelow', 'Sdotbelowdotaccent', 'Tdotbelow', 'Tlinebelow', 'Udotbelow', 'Utildebelow', 'Vdotbelow', 'Ydotbelow', 'nlinebelow', 'oacute', 'ocircumflexacute', 'ocircumflexgrave', 'ocircumflextilde', 'odieresis', 'odotaccentmacron', 'ograve', 'omacronacute', 'oogonekmacron', 'rlinebelow', 'uniE843']

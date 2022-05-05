@@ -22,7 +22,7 @@ shapes = (
 ref = E;
 },
 {
-pos = (159,350);
+pos = (72,350);
 ref = circumflexcomb_tildecomb;
 }
 );

@@ -8,7 +8,7 @@ shapes = (
 ref = integral;
 },
 {
-pos = (84,476);
+pos = (95,480);
 ref = macron;
 }
 );
@@ -34,7 +34,7 @@ shapes = (
 ref = integral;
 },
 {
-pos = (75,476);
+pos = (76,480);
 ref = macron;
 }
 );

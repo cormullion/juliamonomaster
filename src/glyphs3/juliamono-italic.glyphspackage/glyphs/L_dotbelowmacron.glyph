@@ -9,7 +9,7 @@ alignment = -1;
 ref = L;
 },
 {
-pos = (-74,-38);
+pos = (1,-38);
 ref = dotbelowcomb;
 },
 {
@@ -26,7 +26,7 @@ shapes = (
 ref = L;
 },
 {
-pos = (-54,0);
+pos = (-10,0);
 ref = dotbelowcomb;
 },
 {

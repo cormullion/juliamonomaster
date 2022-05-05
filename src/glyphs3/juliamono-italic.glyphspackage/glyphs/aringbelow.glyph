@@ -34,7 +34,7 @@ shapes = (
 ref = a;
 },
 {
-pos = (-44,-17);
+pos = (-35,-17);
 ref = ringbelowcomb;
 }
 );

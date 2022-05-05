@@ -1,0 +1,1 @@
+['f', 'breveinvertedbelowcomb', 'macronbelowcomb', 'lowlinecomb', 'macron']

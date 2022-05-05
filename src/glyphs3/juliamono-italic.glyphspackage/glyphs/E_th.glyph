@@ -8,7 +8,7 @@ shapes = (
 ref = D;
 },
 {
-pos = (-100,292);
+pos = (-78,210);
 ref = hyphen;
 scale = (0.6187,0.8398);
 }
@@ -22,9 +22,9 @@ shapes = (
 ref = D;
 },
 {
-pos = (-138,170);
+pos = (-146,170);
 ref = hyphen;
-scale = (0.6308,1.0468);
+scale = (0.7738,1);
 }
 );
 width = 1200;
@@ -38,10 +38,10 @@ pos = (-10,0);
 ref = D;
 },
 {
-alignment = -1;
-pos = (-124,312);
+alignment = 1;
+pos = (-124,131);
 ref = hyphen;
-scale = (0.6166,0.8054);
+scale = (0.6166,1);
 }
 );
 width = 1200;
@@ -55,9 +55,9 @@ ref = D;
 },
 {
 alignment = -1;
-pos = (-119,232);
+pos = (-138,232);
 ref = hyphen;
-scale = (0.6247,0.9433);
+scale = (0.7312,0.9433);
 }
 );
 width = 1200;

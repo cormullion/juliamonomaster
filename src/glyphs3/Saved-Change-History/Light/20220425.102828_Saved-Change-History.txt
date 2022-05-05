@@ -1,0 +1,1 @@
+['ocircumflexacute', 'ocircumflexgrave', 'ocircumflextilde', 'odotaccentmacron', 'omacronacute', 'oogonekmacron', 'rdotbelow', 'rdotbelowmacron', 'udieresisbelow', 'udotbelow', 'utildebelow', 'wdieresis', 'wdotbelow', 'zdotbelow', 'zlinebelow', 'u1F0EC']

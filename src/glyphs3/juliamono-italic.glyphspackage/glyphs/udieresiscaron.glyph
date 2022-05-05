@@ -12,7 +12,7 @@ pos = (50,-10);
 ref = dieresiscomb;
 },
 {
-pos = (122,482);
+pos = (142,482);
 ref = caroncomb;
 }
 );
@@ -29,7 +29,7 @@ pos = (30,2);
 ref = dieresiscomb;
 },
 {
-pos = (55,480);
+pos = (93,482);
 ref = caroncomb;
 }
 );

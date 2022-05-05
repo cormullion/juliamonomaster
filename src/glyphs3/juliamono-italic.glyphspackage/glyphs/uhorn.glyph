@@ -21,7 +21,7 @@ ref = u;
 },
 {
 alignment = -1;
-pos = (-18,-330);
+pos = (299,-330);
 ref = horncomb.case;
 }
 );
@@ -47,7 +47,7 @@ ref = u;
 },
 {
 alignment = -1;
-pos = (49,-330);
+pos = (347,-330);
 ref = horncomb.case;
 }
 );
@@ -73,7 +73,7 @@ ref = u;
 },
 {
 alignment = -1;
-pos = (140,-371);
+pos = (770,-371);
 ref = horncomb.case;
 }
 );
@@ -99,7 +99,7 @@ ref = u;
 },
 {
 alignment = -1;
-pos = (-23,-332);
+pos = (264,-332);
 ref = horncomb.case;
 }
 );

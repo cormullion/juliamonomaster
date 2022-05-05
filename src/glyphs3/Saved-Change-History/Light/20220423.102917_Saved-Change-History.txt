@@ -1,0 +1,1 @@
+['u1F0E1', 'u1F0E2', 'u1F0E3', 'u1F0E4', 'u1F0E5', 'u1F0E6', 'u1F0E7', 'u1F0E8', 'u1F0E9', 'u1F0EA', 'u1F0EB', 'u1F0EC', 'u1F0ED', 'u1F0EE', 'u1F0EF', 'u1F0F0', 'u1F0F1', 'u1F0F2', 'u1F0F3', 'u1F0F4', 'u1F0F5']

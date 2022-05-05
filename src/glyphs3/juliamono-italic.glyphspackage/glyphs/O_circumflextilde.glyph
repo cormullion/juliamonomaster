@@ -9,7 +9,7 @@ alignment = -1;
 ref = O;
 },
 {
-pos = (163,350);
+pos = (72,350);
 ref = circumflexcomb_tildecomb;
 }
 );
@@ -22,7 +22,7 @@ shapes = (
 ref = O;
 },
 {
-pos = (159,350);
+pos = (72,350);
 ref = circumflexcomb_tildecomb;
 }
 );

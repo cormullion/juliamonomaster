@@ -8,7 +8,7 @@ shapes = (
 ref = e;
 },
 {
-pos = (-19,24);
+pos = (27,17);
 ref = breve.cyrl;
 }
 );
@@ -34,7 +34,7 @@ shapes = (
 ref = e;
 },
 {
-pos = (-30,18);
+pos = (-33,19);
 ref = breve.cyrl;
 }
 );

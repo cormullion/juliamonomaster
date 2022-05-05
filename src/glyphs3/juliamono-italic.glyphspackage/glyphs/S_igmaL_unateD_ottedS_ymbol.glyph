@@ -8,13 +8,9 @@ shapes = (
 ref = SigmaLunateSymbol;
 },
 {
-closed = 1;
-nodes = (
-(802,614,l),
-(842,822,l),
-(630,822,l),
-(590,614,l)
-);
+alignment = -1;
+pos = (172,548);
+ref = period;
 }
 );
 width = 1200;
@@ -26,13 +22,9 @@ shapes = (
 ref = SigmaLunateSymbol;
 },
 {
-closed = 1;
-nodes = (
-(915,550,l),
-(979,886,l),
-(637,886,l),
-(573,550,l)
-);
+alignment = -1;
+pos = (209,548);
+ref = period;
 }
 );
 width = 1200;
@@ -44,13 +36,9 @@ shapes = (
 ref = SigmaLunateSymbol;
 },
 {
-closed = 1;
-nodes = (
-(802,614,l),
-(842,822,l),
-(630,822,l),
-(590,614,l)
-);
+alignment = -1;
+pos = (172,548);
+ref = period;
 }
 );
 width = 1200;
@@ -62,13 +50,9 @@ shapes = (
 ref = SigmaLunateSymbol;
 },
 {
-closed = 1;
-nodes = (
-(869,582,l),
-(921,854,l),
-(643,854,l),
-(591,582,l)
-);
+alignment = -1;
+pos = (172,548);
+ref = period;
 }
 );
 width = 1200;

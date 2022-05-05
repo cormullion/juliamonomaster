@@ -42,11 +42,11 @@ shapes = (
 ref = C;
 },
 {
-pos = (22,4);
+pos = (12,4);
 ref = cedillacomb;
 },
 {
-pos = (76,356);
+pos = (93,356);
 ref = acutecomb;
 }
 );

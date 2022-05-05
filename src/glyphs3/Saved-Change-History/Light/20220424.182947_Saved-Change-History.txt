@@ -1,0 +1,1 @@
+['u1F0E2', 'u1F0E3', 'u1F0EC', 'u1F0ED', 'u1F0EE', 'u1F0F4', 'u1F0F5']

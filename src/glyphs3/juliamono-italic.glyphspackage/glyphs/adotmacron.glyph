@@ -8,11 +8,10 @@ shapes = (
 ref = a;
 },
 {
-pos = (5,-2);
 ref = dotaccentcomb;
 },
 {
-pos = (100,480);
+pos = (92,480);
 ref = macroncomb;
 }
 );
@@ -25,11 +24,11 @@ shapes = (
 ref = a;
 },
 {
-pos = (-46,14);
+pos = (-48,14);
 ref = dotaccentcomb;
 },
 {
-pos = (42,494);
+pos = (33,494);
 ref = macroncomb;
 }
 );
@@ -42,11 +41,11 @@ shapes = (
 ref = a;
 },
 {
-pos = (-34,12);
+pos = (-30,12);
 ref = dotaccentcomb;
 },
 {
-pos = (38,492);
+pos = (39,492);
 ref = macroncomb;
 }
 );
@@ -59,11 +58,11 @@ shapes = (
 ref = a;
 },
 {
-pos = (-48,14);
+pos = (-52,14);
 ref = dotaccentcomb;
 },
 {
-pos = (49,494);
+pos = (40,494);
 ref = macroncomb;
 }
 );

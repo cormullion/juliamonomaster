@@ -8,7 +8,7 @@ shapes = (
 ref = o;
 },
 {
-pos = (-87,-12);
+pos = (-12,-12);
 ref = dotbelowcomb;
 }
 );
@@ -21,7 +21,7 @@ shapes = (
 ref = o;
 },
 {
-pos = (-60,-26);
+pos = (-16,-26);
 ref = dotbelowcomb;
 }
 );
@@ -34,7 +34,7 @@ shapes = (
 ref = o;
 },
 {
-pos = (-43,-10);
+pos = (-2,-10);
 ref = dotbelowcomb;
 }
 );
@@ -47,7 +47,7 @@ shapes = (
 ref = o;
 },
 {
-pos = (-26,-20);
+pos = (-14,-20);
 ref = dotbelowcomb;
 }
 );

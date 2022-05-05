@@ -9,7 +9,7 @@ alignment = -1;
 ref = e;
 },
 {
-pos = (30,24);
+pos = (2,17);
 ref = circumflexcomb;
 }
 );
@@ -37,7 +37,7 @@ pos = (-10,0);
 ref = e;
 },
 {
-pos = (10,18);
+pos = (7,19);
 ref = circumflexcomb;
 }
 );

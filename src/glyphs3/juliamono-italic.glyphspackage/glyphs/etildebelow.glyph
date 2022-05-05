@@ -21,7 +21,7 @@ shapes = (
 ref = e;
 },
 {
-pos = (-3,-25);
+pos = (-3,-20);
 ref = tildebelowcomb;
 }
 );

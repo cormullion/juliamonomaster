@@ -1,5 +1,5 @@
 {
-.appVersion = "3112";
+.appVersion = "3124";
 .formatVersion = 3;
 axes = (
 {
@@ -10,7 +10,7 @@ tag = wght;
 classes = (
 {
 automatic = 1;
-code = "A A.full A.subscript A.superscript AA AVhorizontalbar Aacute Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehookabove Abrevetilde Acaron Acircumflex Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhookabove Acircumflextilde Adblgrave Adieresis Adieresismacron Adotaccent Adotbelow Adotmacron Agrave Ahookabove Ain-egyptological Ainvertedbreve Alef-egyptological Alpha-latin Alphaturned-latin Amacron Ao Aogonek Aring Aringacute Aringbelow Astroke Atilde Aturned Au Av AE AEacute AEmacron B B.full B.subscript B.superscript Bdotaccent Bdotbelow Bhook Blinebelow Bstroke Btopbar C C.full C.subscript C.superscript Cacute Cbar Ccaron Ccedilla Ccedillaacute Ccircumflex Cdotaccent Chi-latin Chook Con Creverseddot Cstroke Cuatrillo Cuatrillocomma D D.full D.subscript D.superscript DZ DZcaron Dafrican Eth Dcaron Dcedilla Dcircumflexbelow Dcroat Ddotaccent Ddotbelow Dhook Dinsular Dlinebelow Dtopbar Dz Dzcaron E E.full E.subscript E.superscript Eacute Ebreve Ecaron Ecedilla Ecedillabreve Ecircumflex Ecircumflexacute Ecircumflexbelow Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Edblgrave Edieresis Edotaccent Edotbelow Egrave Ehookabove Einvertedbreve Emacron Emacronacute Emacrongrave Eogonek Eopen Ereversed EreversedOpen Esh Estroke Et Etilde Etildebelow Ezh Ezhcaron Ezhreversed F F.full F.subscript F.superscript Fdotaccent Fhook G G.full G.subscript G.superscript Gacute Gbreve Gcaron Gcircumflex Gcommaaccent Gdotaccent Ghook Glottalstop Gmacron Gscript Gstroke Yogh H H.full H.subscript H.superscript Halfh Hbar Hbrevebelow Hcaron Hcedilla Hcircumflex Hdieresis Hdotaccent Hdotbelow Heng Hhook Hturned I I.full I.subscript I.superscript IJ Iacute Iacute_J.loclNLD Ibreve Icaron Icircumflex Idblgrave Idieresis Idieresisacute Idotaccent Idotbelow Igrave Ihookabove Iinvertedbreve Imacron Iogonek Iotaafrican Istroke Itilde Itildebelow J J.full J.subscript J.superscript Jacute Jcircumflex Jstroke K K.full K.subscript K.superscript Kacute Kcaron Kcommaaccent Kdotbelow Khook Klinebelow L L.full L.subscript L.superscript LJ LL-middleWelsh Lacute Lbar Lbroken Lcaron Lcircumflexbelow Lcommaaccent Ldot Ldotbelow Ldotbelowmacron Ldoublebar Lhighstroke Lj Llinebelow Lmiddletilde Lslash Lturned M M.full M.subscript M.superscript Macute Mdotaccent Mdotbelow Mturned N N.full N.subscript N.superscript NJ Nacute Ncaron Ncircumflexbelow Ncommaaccent Ndotaccent Ndotbelow Ngrave Eng Nhookleft Nj Nlinebelow Nlongrightleg Ntilde O O.full O.subscript O.superscript OO OU Oacute Obreve Ocaron Ocenteredtilde Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Odblgrave Odieresis Odieresismacron Odotaccent Odotaccentmacron Odotbelow Ograve Ohookabove Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhookabove Ohorntilde Ohungarumlaut Oi Oinvertedbreve Olongstroke Omacron Omacronacute Omacrongrave Oogonek Oogonekmacron Oopen Oslash Oslashacute Otilde Otildeacute Otildedieresis Otildemacron OE P P.full P.subscript P.superscript Pacute Pdotaccent Pflourish Phook Thorn Pstroke Pstrokethroughdescender Q Q.full Q.subscript Q.superscript Qhooktail Qstrokethroughdescender R R.full R.subscript R.superscript Racute Rcaron Rcommaaccent Rdblgrave Rdotaccent Rdotbelow Rdotbelowmacron Rinvertedbreve Rlinebelow Rrotunda Rstroke RumRotunda S S.full S.subscript S.superscript Sacute Sacutedotaccent Saltillo Scaron Scarondotaccent Scedilla Scircumflex Scommaaccent Sdotaccent Sdotbelow Sdotbelowdotaccent Germandbls Sobliquestroke Sswashtail Schwa T T.full T.subscript T.superscript Tbar Tcaron Tcedilla Tcircumflexbelow Tcommaaccent Tdiagonalstroke Tdotaccent Tdotbelow Thook Thornstroke Thornstrokethroughdescender Tinsular Tlinebelow Tonefive Tonesix Tonetwo Tresillo Tretroflexhook Tturned Tz U U.full U.subscript U.superscript Uacute Ubar Ubreve Ucaron Ucircumflex Ucircumflexbelow Udblgrave Udieresis Udieresisacute Udieresisbelow Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Ugrave Uhookabove Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhookabove Uhorntilde Uhungarumlaut Uinvertedbreve Umacron Umacrondieresis Uogonek Upsilonafrican Uring Utilde Utildeacute Utildebelow V V-middleWelsh V.full V.subscript V.superscript Gammaafrican Vdotbelow Vhook Vtilde Vturned W W.full W.subscript W.superscript Wacute Wcircumflex Wdieresis Wdotaccent Wdotbelow Wgrave Wynn X X.full X.subscript X.superscript Xdieresis Xdotaccent Y Y.full Y.subscript Y.superscript Yacute Ycircumflex Ydieresis Ydotaccent Ydotbelow Ygrave Yhook Yhookabove Yloop Ymacron Yr Ystroke Ytilde Z Z.full Z.subscript Z.superscript Zacute Zcaron Zcircumflex Zdotaccent Zdotbelow Zhook Zlinebelow Zstroke Zswashtail Cche-cy CrossedO-cy DeSoft-cy Djerv-cy DoubleO-cy Dwe-cy DzeReversed-cy Dzelo-cy Dzwe-cy Dzze-cy ElSoft-cy EmSoft-cy Hwe-cy Iota-cy IotifiedA-cy OBinocular-cy ODoubleMonocular-cy OMonocular-cy OmegaBroad-cy Shwe-cy Tche-cy TeWithMiddleHook-cy TseReversed-cy Tsse-cy Tswe-cy Twe-cy UkMonograph-cy YatIotified-cy YerNeutral-cy YeruBackYer-cy Yn-cy YuReversed-cy YusBlended-cy YusClosedlittle-cy YusiotifiedClosedLittle-cy Zemlya-cy Zhwe-cy A-cy Be-cy Ve-cy Ge-cy Gje-cy Gheupturn-cy De-cy De-cy.loclBGR Ie-cy Iegrave-cy Io-cy Zhe-cy Ze-cy Ii-cy Iishort-cy Iigrave-cy Iishorttail-cy Ka-cy Kje-cy El-cy El-cy.loclBGR Em-cy En-cy O-cy Pe-cy Er-cy Es-cy Te-cy U-cy Ushort-cy Ef-cy Ef-cy.loclBGR Ha-cy Che-cy Tse-cy Sha-cy Shcha-cy Dzhe-cy Softsign-cy Hardsign-cy Yeru-cy Lje-cy Nje-cy Dze-cy E-cy Ereversed-cy I-cy Yi-cy Je-cy Tshe-cy Iu-cy Ia-cy Dje-cy Omega-cy Yat-cy Eiotified-cy Yuslittle-cy Yuslittleiotified-cy Yusbig-cy Yusbigiotified-cy Ksi-cy Psi-cy Fita-cy Izhitsa-cy Izhitsadblgrave-cy Uk-cy Ghestroke-cy Ghemiddlehook-cy Zhedescender-cy Zedescender-cy Kadescender-cy Kaverticalstroke-cy Kastroke-cy Kabashkir-cy Endescender-cy Enghe-cy Pemiddlehook-cy Pedescender-cy Haabkhasian-cy Esdescender-cy Tedescender-cy Ustraight-cy Ustraightstroke-cy Hadescender-cy Tetse-cy Chedescender-cy Cheverticalstroke-cy Shha-cy Shhadescender-cy EnLeftHook-cy Dzzhe-cy Dche-cy Eldescender-cy Cheabkhasian-cy Chedescenderabkhasian-cy Palochka-cy Zhebreve-cy Kahook-cy Eltail-cy Enhook-cy Entail-cy Chekhakassian-cy Emtail-cy Abreve-cy Adieresis-cy Aie-cy Iebreve-cy Schwa-cy Schwadieresis-cy Zhedieresis-cy Zedieresis-cy Dzeabkhasian-cy Imacron-cy Idieresis-cy Odieresis-cy Obarred-cy Obarreddieresis-cy Edieresis-cy Umacron-cy Udieresis-cy Uhungarumlaut-cy Chedieresis-cy Gedescender-cy Yerudieresis-cy Gestrokehook-cy Hahook-cy Hastroke-cy Komide-cy Komidje-cy Komizje-cy Komidzje-cy Komilje-cy Kominje-cy Komisje-cy Komitje-cy Reversedze-cy Elhook-cy Lha-cy Rha-cy Yae-cy Qa-cy We-cy Aleutka-cy Elmiddlehook-cy Enmiddlehook-cy Koppa-cy Semisoftsign-cy Ertick-cy Yot Alpha Alpha.subscript Alpha.superscript Beta Beta.subscript Beta.superscript Gamma Gamma.subscript Gamma.superscript Delta Delta.subscript Delta.superscript Epsilon Epsilon.subscript Epsilon.superscript Zeta Zeta.subscript Zeta.superscript Eta Eta.subscript Eta.superscript Theta Theta.subscript Theta.superscript Iota Iota.subscript Iota.superscript Kappa Kappa.subscript Kappa.superscript Lambda Lambda.subscript Lambda.superscript Mu Mu.subscript Mu.superscript Nu Nu.subscript Nu.superscript Xi Xi.subscript Xi.superscript Omicron Omicron.subscript Omicron.superscript Pi Pi.subscript Pi.superscript Rho Rho.subscript Rho.superscript Sigma Sigma.subscript Sigma.superscript Tau Tau.subscript Tau.superscript Upsilon Upsilon.subscript Upsilon.superscript Phi Phi.subscript Phi.superscript Chi Chi.subscript Chi.superscript Psi Psi.subscript Psi.superscript Omega Omega.subscript Omega.superscript Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos Iotadieresis Upsilondieresis Heta KoppaArchaic Stigma Digamma Koppa Sampi KaiSymbol UpsilonhookSymbol UpsilonacutehookSymbol UpsilondieresishookSymbol ThetaSymbol Sho SigmaLunateSymbol San SigmaLunateReversedSymbol SigmaLunateDottedSymbol SigmaLunateDottedReversedSymbol Alphapsili Alphadasia Alphapsilivaria Alphadasiavaria Alphapsilioxia Alphadasiaoxia Alphapsiliperispomeni Alphadasiaperispomeni Alphavaria Alphaoxia Alphavrachy Alphamacron Alphaprosgegrammeni Alphapsiliprosgegrammeni Alphadasiaprosgegrammeni Alphapsilivariaprosgegrammeni Alphadasiavariaprosgegrammeni Alphapsilioxiaprosgegrammeni Alphadasiaoxiaprosgegrammeni Alphapsiliperispomeniprosgegrammeni Alphadasiaperispomeniprosgegrammeni Epsilonpsili Epsilondasia Epsilonpsilivaria Epsilondasiavaria Epsilonpsilioxia Epsilondasiaoxia Epsilonvaria Epsilonoxia Etapsili Etadasia Etapsilivaria Etadasiavaria Etapsilioxia Etadasiaoxia Etapsiliperispomeni Etadasiaperispomeni Etavaria Etaoxia Etaprosgegrammeni Etapsiliprosgegrammeni Etadasiaprosgegrammeni Etapsilivariaprosgegrammeni Etadasiavariaprosgegrammeni Etapsilioxiaprosgegrammeni Etadasiaoxiaprosgegrammeni Etapsiliperispomeniprosgegrammeni Etadasiaperispomeniprosgegrammeni Iotapsili Iotadasia Iotapsilivaria Iotadasiavaria Iotapsilioxia Iotadasiaoxia Iotapsiliperispomeni Iotadasiaperispomeni Iotavaria Iotaoxia Iotavrachy Iotamacron Omicronpsili Omicrondasia Omicronpsilivaria Omicrondasiavaria Omicronpsilioxia Omicrondasiaoxia Omicronvaria Omicronoxia Rhodasia Upsilondasia Upsilondasiavaria Upsilondasiaoxia Upsilondasiaperispomeni Upsilonvaria Upsilonoxia Upsilonvrachy Upsilonmacron Omegapsili Omegadasia Omegapsilivaria Omegadasiavaria Omegapsilioxia Omegadasiaoxia Omegapsiliperispomeni Omegadasiaperispomeni Omegavaria Omegaoxia Omegaprosgegrammeni Omegapsiliprosgegrammeni Omegadasiaprosgegrammeni Omegapsilivariaprosgegrammeni Omegadasiavariaprosgegrammeni Omegapsilioxiaprosgegrammeni Omegadasiaoxiaprosgegrammeni Omegapsiliperispomeniprosgegrammeni Omegadasiaperispomeniprosgegrammeni AlefDialectP-coptic A-fraktur ABold-fraktur B-fraktur BBold-fraktur C-fraktur CBold-fraktur D-fraktur DBold-fraktur E-fraktur EBold-fraktur F-fraktur FBold-fraktur G-fraktur GBold-fraktur H-fraktur HBold-fraktur I-fraktur IBold-fraktur J-fraktur JBold-fraktur K-fraktur KBold-fraktur L-fraktur LBold-fraktur M-fraktur MBold-fraktur N-fraktur NBold-fraktur O-fraktur OBold-fraktur P-fraktur PBold-fraktur Q-fraktur QBold-fraktur R-fraktur RBold-fraktur S-fraktur SBold-fraktur T-fraktur TBold-fraktur U-fraktur UBold-fraktur V-fraktur VBold-fraktur W-fraktur WBold-fraktur X-fraktur XBold-fraktur Y-fraktur YBold-fraktur Z-fraktur ZBold-fraktur An-georgian Ban-georgian Gan-georgian Don-georgian En-georgian Vin-georgian Zen-georgian Tan-georgian In-georgian Kan-georgian Las-georgian Man-georgian Nar-georgian On-georgian Par-georgian Zhar-georgian Rae-georgian San-georgian Tar-georgian Un-georgian Phar-georgian Khar-georgian Ghan-georgian Qar-georgian Shin-georgian Chin-georgian Can-georgian Jil-georgian Cil-georgian Char-georgian Xan-georgian Jhan-georgian Hae-georgian He-georgian Hie-georgian We-georgian Har-georgian Hoe-georgian Fi-georgian Yn-georgian Elifi-georgian GanTurned-georgian Ain-georgian Aen-georgian HardSign-georgian Labial-georgian An-oldgeorgian Ban-oldgeorgian Gan-oldgeorgian Don-oldgeorgian En-oldgeorgian Vin-oldgeorgian Zen-oldgeorgian Tan-oldgeorgian In-oldgeorgian Kan-oldgeorgian Las-oldgeorgian Man-oldgeorgian Nar-oldgeorgian On-oldgeorgian Par-oldgeorgian Zhar-oldgeorgian Rae-oldgeorgian San-oldgeorgian Tar-oldgeorgian Un-oldgeorgian Phar-oldgeorgian Khar-oldgeorgian Ghan-oldgeorgian Qar-oldgeorgian Shin-oldgeorgian Chin-oldgeorgian Can-oldgeorgian Jil-oldgeorgian Cil-oldgeorgian Char-oldgeorgian Xan-oldgeorgian Jhan-oldgeorgian Hae-oldgeorgian He-oldgeorgian Hie-oldgeorgian We-oldgeorgian Har-oldgeorgian Hoe-oldgeorgian Yn-oldgeorgian Aen-oldgeorgian Abold-math Abolditalic-math Aboldscript-math Aitalic-math Ascript-math Bbold-math Bbolditalic-math Bboldscript-math Bitalic-math Cbold-math Cbolditalic-math Cboldscript-math Citalic-math Cscript-math Dbold-math Dbolditalic-math Dboldscript-math Ditalic-math Dscript-math Ebold-math Ebolditalic-math Eboldscript-math Eitalic-math Fbold-math Fbolditalic-math Fboldscript-math Fitalic-math Gbold-math Gbolditalic-math Gboldscript-math Gitalic-math Gscript-math Hbold-math Hbolditalic-math Hboldscript-math Hitalic-math Ibold-math Ibolditalic-math Iboldscript-math Iitalic-math Jbold-math Jbolditalic-math Jboldscript-math Jitalic-math Jscript-math Kbold-math Kbolditalic-math Kboldscript-math Kitalic-math Kscript-math Lbold-math Lbolditalic-math Lboldscript-math Litalic-math Mbold-math Mbolditalic-math Mboldscript-math Mitalic-math Nbold-math Nbolditalic-math Nboldscript-math Nitalic-math Nscript-math Obold-math Obolditalic-math Oboldscript-math Oitalic-math Oscript-math Pbold-math Pbolditalic-math Pboldscript-math Pitalic-math Pscript-math Qbold-math Qbolditalic-math Qboldscript-math Qitalic-math Qscript-math Rbold-math Rbolditalic-math Rboldscript-math Ritalic-math Sbold-math Sbolditalic-math Sboldscript-math Sitalic-math Sscript-math Tbold-math Tbolditalic-math Tboldscript-math Titalic-math Tscript-math Ubold-math Ubolditalic-math Uboldscript-math Uitalic-math Uscript-math Vbold-math Vbolditalic-math Vboldscript-math Vitalic-math Vscript-math Wbold-math Wbolditalic-math Wboldscript-math Witalic-math Wscript-math Xbold-math Xbolditalic-math Xboldscript-math Xitalic-math Xscript-math Ybold-math Ybolditalic-math Yboldscript-math Yitalic-math Yscript-math Zbold-math Zbolditalic-math Zboldscript-math Zitalic-math Zscript-math BFlourish Bscript Fturned Hscript Iscript Lscript PidoubleStruck Rscript angstrom AdoubleStruck BdoubleStruck CdoubleStruck DdoubleStruck EdoubleStruck FdoubleStruck GdoubleStruck HdoubleStruck IdoubleStruck JdoubleStruck KdoubleStruck LdoubleStruck MdoubleStruck NdoubleStruck OdoubleStruck PdoubleStruck QdoubleStruck RdoubleStruck SdoubleStruck TdoubleStruck UdoubleStruck VdoubleStruck WdoubleStruck XdoubleStruck YdoubleStruck ZdoubleStruck DitalicDoubleStruck GammadoubleStruck eulerconstant kelvin Escript Fscript Mscript";
+code = "A A.full A.subscript A.superscript AA AVhorizontalbar Aacute Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehookabove Abrevetilde Acaron Acircumflex Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhookabove Acircumflextilde Adblgrave Adieresis Adieresismacron Adotaccent Adotbelow Adotmacron Agrave Ahookabove Ain-egyptological Ainvertedbreve Alef-egyptological Alpha-latin Alphaturned-latin Amacron Ao Aogonek Aring Aringacute Aringbelow Astroke Atilde Aturned Au Av AE AEacute AEmacron B B.full B.subscript B.superscript Bdotaccent Bdotbelow Bhook Blinebelow Bstroke Btopbar C C.full C.subscript C.superscript Cacute Cbar Ccaron Ccedilla Ccedillaacute Ccircumflex Cdotaccent Chi-latin Chook Con Creverseddot Cstroke Cuatrillo Cuatrillocomma D D.full D.subscript D.superscript DZ DZcaron Dafrican Eth Dcaron Dcedilla Dcircumflexbelow Dcroat Ddotaccent Ddotbelow Dhook Dinsular Dlinebelow Dtopbar Dz Dzcaron E E.full E.subscript E.superscript Eacute Ebreve Ecaron Ecedilla Ecedillabreve Ecircumflex Ecircumflexacute Ecircumflexbelow Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Edblgrave Edieresis Edotaccent Edotbelow Egrave Ehookabove Einvertedbreve Emacron Emacronacute Emacrongrave Eogonek Eopen Ereversed EreversedOpen Esh Estroke Et Etilde Etildebelow Schwa Ezh Ezhcaron Ezhreversed F F.full F.subscript F.superscript Fdotaccent Fhook G G.full G.subscript G.superscript Gacute Gbreve Gcaron Gcircumflex Gcommaaccent Gdotaccent Ghook Glottalstop Gmacron Gscript Gstroke Yogh H H.full H.subscript H.superscript Halfh Hbar Hbrevebelow Hcaron Hcedilla Hcircumflex Hdieresis Hdotaccent Hdotbelow Heng Hhook Hturned Hwair I I.full I.subscript I.superscript IJ Iacute Iacute_J.loclNLD Ibreve Icaron Icircumflex Idblgrave Idieresis Idieresisacute Idotaccent Idotbelow Igrave Ihookabove Iinvertedbreve Imacron Iogonek Iotaafrican Istroke Itilde Itildebelow J J.full J.subscript J.superscript Jacute Jcircumflex Jstroke K K.full K.subscript K.superscript Kacute Kcaron Kcommaaccent Kdotbelow Khook Klinebelow L L.full L.subscript L.superscript LJ LL-middleWelsh Lacute Lbar Lbroken Lcaron Lcircumflexbelow Lcommaaccent Ldot Ldotbelow Ldotbelowmacron Ldoublebar Lhighstroke Lj Llinebelow Lmiddletilde Lslash Lturned M M.full M.subscript M.superscript Macute Mdotaccent Mdotbelow Mturned N N.full N.subscript N.superscript NJ Nacute Ncaron Ncircumflexbelow Ncommaaccent Ndotaccent Ndotbelow Ngrave Nhookleft Nj Nlinebelow Nlongrightleg Ntilde Eng O O.full O.subscript O.superscript OO OU Oacute Obreve Ocaron Ocenteredtilde Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Odblgrave Odieresis Odieresismacron Odotaccent Odotaccentmacron Odotbelow Ograve Ohookabove Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhookabove Ohorntilde Ohungarumlaut Oi Oinvertedbreve Olongstroke Omacron Omacronacute Omacrongrave Oogonek Oogonekmacron Oopen Oslash Oslashacute Otilde Otildeacute Otildedieresis Otildemacron OE P P.full P.subscript P.superscript Pacute Pdotaccent Pflourish Phook Thorn Pstroke Pstrokethroughdescender Q Q.full Q.subscript Q.superscript Qhooktail Qstrokethroughdescender R R.full R.subscript R.superscript Racute Rcaron Rcommaaccent Rdblgrave Rdotaccent Rdotbelow Rdotbelowmacron Rinvertedbreve Rlinebelow Rrotunda Rstroke RumRotunda S S.full S.subscript S.superscript Sacute Sacutedotaccent Saltillo Scaron Scarondotaccent Scedilla Scircumflex Scommaaccent Sdotaccent Sdotbelow Sdotbelowdotaccent Germandbls Sobliquestroke Sswashtail T T.full T.subscript T.superscript Tbar Tcaron Tcedilla Tcircumflexbelow Tcommaaccent Tdiagonalstroke Tdotaccent Tdotbelow Thook Thornstroke Thornstrokethroughdescender Tinsular Tlinebelow Tonefive Tonesix Tonetwo Tresillo Tretroflexhook Tturned Tz U U.full U.subscript U.superscript Uacute Ubar Ubreve Ucaron Ucircumflex Ucircumflexbelow Udblgrave Udieresis Udieresisacute Udieresisbelow Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Ugrave Uhookabove Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhookabove Uhorntilde Uhungarumlaut Uinvertedbreve Umacron Umacrondieresis Uogonek Upsilonafrican Uring Utilde Utildeacute Utildebelow V V-middleWelsh V.full V.subscript V.superscript Gammaafrican Vdotbelow Vhook Vtilde Vturned W W.full W.subscript W.superscript Wacute Wcircumflex Wdieresis Wdotaccent Wdotbelow Wgrave Wynn X X.full X.subscript X.superscript Xdieresis Xdotaccent Y Y.full Y.subscript Y.superscript Yacute Ycircumflex Ydieresis Ydotaccent Ydotbelow Ygrave Yhook Yhookabove Yloop Ymacron Yr Ystroke Ytilde Z Z.full Z.subscript Z.superscript Zacute Zcaron Zcircumflex Zdotaccent Zdotbelow Zhook Zlinebelow Zstroke Zswashtail Cche-cy CrossedO-cy DeSoft-cy Djerv-cy DoubleO-cy Dwe-cy DzeReversed-cy Dzelo-cy Dzwe-cy Dzze-cy ElSoft-cy EmSoft-cy Hwe-cy Iota-cy IotifiedA-cy OBinocular-cy ODoubleMonocular-cy OMonocular-cy OmegaBroad-cy Shwe-cy Tche-cy TeWithMiddleHook-cy TseReversed-cy Tsse-cy Tswe-cy Twe-cy UkMonograph-cy YatIotified-cy YerNeutral-cy YeruBackYer-cy Yn-cy YuReversed-cy YusBlended-cy YusClosedlittle-cy YusiotifiedClosedLittle-cy Zemlya-cy Zhwe-cy A-cy Be-cy Ve-cy Ge-cy Gje-cy Gheupturn-cy Gedescender-cy Ghestroke-cy Ghemiddlehook-cy De-cy De-cy.loclBGR Ie-cy Iegrave-cy Io-cy Zhe-cy Ze-cy Ii-cy Iishort-cy Iigrave-cy Iishorttail-cy Ka-cy Kje-cy El-cy El-cy.loclBGR Em-cy En-cy O-cy Pe-cy Er-cy Es-cy Te-cy U-cy Ushort-cy Ef-cy Ef-cy.loclBGR Ha-cy Che-cy Tse-cy Sha-cy Shcha-cy Dzhe-cy Softsign-cy Yeru-cy Hardsign-cy Lje-cy Nje-cy Dze-cy E-cy Ereversed-cy I-cy Yi-cy Je-cy Tshe-cy Iu-cy Ia-cy Dje-cy Omega-cy Yat-cy Eiotified-cy Yuslittle-cy Yuslittleiotified-cy Yusbig-cy Yusbigiotified-cy Ksi-cy Psi-cy Fita-cy Izhitsa-cy Izhitsadblgrave-cy Uk-cy Zhedescender-cy Zedescender-cy Kadescender-cy Kaverticalstroke-cy Kastroke-cy Kabashkir-cy Endescender-cy Enghe-cy Pemiddlehook-cy Pedescender-cy Haabkhasian-cy Esdescender-cy Tedescender-cy Ustraight-cy Ustraightstroke-cy Hadescender-cy Tetse-cy Chedescender-cy Cheverticalstroke-cy Shha-cy Shhadescender-cy EnLeftHook-cy Dzzhe-cy Dche-cy Eldescender-cy Cheabkhasian-cy Chedescenderabkhasian-cy Palochka-cy Zhebreve-cy Kahook-cy Eltail-cy Enhook-cy Entail-cy Chekhakassian-cy Emtail-cy Abreve-cy Adieresis-cy Aie-cy Iebreve-cy Schwa-cy Schwadieresis-cy Zhedieresis-cy Zedieresis-cy Dzeabkhasian-cy Imacron-cy Idieresis-cy Odieresis-cy Obarred-cy Obarreddieresis-cy Edieresis-cy Umacron-cy Udieresis-cy Uhungarumlaut-cy Chedieresis-cy Yerudieresis-cy Gestrokehook-cy Hahook-cy Hastroke-cy Komide-cy Komidje-cy Komizje-cy Komidzje-cy Komilje-cy Kominje-cy Komisje-cy Komitje-cy Reversedze-cy Elhook-cy Lha-cy Rha-cy Yae-cy Qa-cy We-cy Aleutka-cy Elmiddlehook-cy Enmiddlehook-cy Koppa-cy Semisoftsign-cy Ertick-cy Yot Alpha Alpha.subscript Alpha.superscript Beta Beta.subscript Beta.superscript Gamma Gamma.subscript Gamma.superscript Delta Delta.subscript Delta.superscript Epsilon Epsilon.subscript Epsilon.superscript Zeta Zeta.subscript Zeta.superscript Eta Eta.subscript Eta.superscript Theta Theta.subscript Theta.superscript Iota Iota.subscript Iota.superscript Kappa Kappa.subscript Kappa.superscript Lambda Lambda.subscript Lambda.superscript Mu Mu.subscript Mu.superscript Nu Nu.subscript Nu.superscript Xi Xi.subscript Xi.superscript Omicron Omicron.subscript Omicron.superscript Pi Pi.subscript Pi.superscript Rho Rho.subscript Rho.superscript Sigma Sigma.subscript Sigma.superscript Tau Tau.subscript Tau.superscript Upsilon Upsilon.subscript Upsilon.superscript Phi Phi.subscript Phi.superscript Chi Chi.subscript Chi.superscript Psi Psi.subscript Psi.superscript Omega Omega.subscript Omega.superscript Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos Iotadieresis Upsilondieresis Heta Archaicsampi Pamphyliandigamma KoppaArchaic Stigma Digamma Koppa Sampi KaiSymbol UpsilonhookSymbol UpsilonacutehookSymbol UpsilondieresishookSymbol ThetaSymbol Sho SigmaLunateSymbol San SigmaLunateReversedSymbol SigmaLunateDottedSymbol SigmaLunateDottedReversedSymbol Alphapsili Alphadasia Alphapsilivaria Alphadasiavaria Alphapsilioxia Alphadasiaoxia Alphapsiliperispomeni Alphadasiaperispomeni Alphavaria Alphaoxia Alphavrachy Alphamacron Alphaprosgegrammeni Alphapsiliprosgegrammeni Alphadasiaprosgegrammeni Alphapsilivariaprosgegrammeni Alphadasiavariaprosgegrammeni Alphapsilioxiaprosgegrammeni Alphadasiaoxiaprosgegrammeni Alphapsiliperispomeniprosgegrammeni Alphadasiaperispomeniprosgegrammeni Epsilonpsili Epsilondasia Epsilonpsilivaria Epsilondasiavaria Epsilonpsilioxia Epsilondasiaoxia Epsilonvaria Epsilonoxia Etapsili Etadasia Etapsilivaria Etadasiavaria Etapsilioxia Etadasiaoxia Etapsiliperispomeni Etadasiaperispomeni Etavaria Etaoxia Etaprosgegrammeni Etapsiliprosgegrammeni Etadasiaprosgegrammeni Etapsilivariaprosgegrammeni Etadasiavariaprosgegrammeni Etapsilioxiaprosgegrammeni Etadasiaoxiaprosgegrammeni Etapsiliperispomeniprosgegrammeni Etadasiaperispomeniprosgegrammeni Iotapsili Iotadasia Iotapsilivaria Iotadasiavaria Iotapsilioxia Iotadasiaoxia Iotapsiliperispomeni Iotadasiaperispomeni Iotavaria Iotaoxia Iotavrachy Iotamacron Omicronpsili Omicrondasia Omicronpsilivaria Omicrondasiavaria Omicronpsilioxia Omicrondasiaoxia Omicronvaria Omicronoxia Rhodasia Upsilondasia Upsilondasiavaria Upsilondasiaoxia Upsilondasiaperispomeni Upsilonvaria Upsilonoxia Upsilonvrachy Upsilonmacron Omegapsili Omegadasia Omegapsilivaria Omegadasiavaria Omegapsilioxia Omegadasiaoxia Omegapsiliperispomeni Omegadasiaperispomeni Omegavaria Omegaoxia Omegaprosgegrammeni Omegapsiliprosgegrammeni Omegadasiaprosgegrammeni Omegapsilivariaprosgegrammeni Omegadasiavariaprosgegrammeni Omegapsilioxiaprosgegrammeni Omegadasiaoxiaprosgegrammeni Omegapsiliperispomeniprosgegrammeni Omegadasiaperispomeniprosgegrammeni AlefDialectP-coptic A-fraktur ABold-fraktur B-fraktur BBold-fraktur C-fraktur CBold-fraktur D-fraktur DBold-fraktur E-fraktur EBold-fraktur F-fraktur FBold-fraktur G-fraktur GBold-fraktur H-fraktur HBold-fraktur I-fraktur IBold-fraktur J-fraktur JBold-fraktur K-fraktur KBold-fraktur L-fraktur LBold-fraktur M-fraktur MBold-fraktur N-fraktur NBold-fraktur O-fraktur OBold-fraktur P-fraktur PBold-fraktur Q-fraktur QBold-fraktur R-fraktur RBold-fraktur S-fraktur SBold-fraktur T-fraktur TBold-fraktur U-fraktur UBold-fraktur V-fraktur VBold-fraktur W-fraktur WBold-fraktur X-fraktur XBold-fraktur Y-fraktur YBold-fraktur Z-fraktur ZBold-fraktur An-georgian Ban-georgian Gan-georgian Don-georgian En-georgian Vin-georgian Zen-georgian Tan-georgian In-georgian Kan-georgian Las-georgian Man-georgian Nar-georgian On-georgian Par-georgian Zhar-georgian Rae-georgian San-georgian Tar-georgian Un-georgian Phar-georgian Khar-georgian Ghan-georgian Qar-georgian Shin-georgian Chin-georgian Can-georgian Jil-georgian Cil-georgian Char-georgian Xan-georgian Jhan-georgian Hae-georgian He-georgian Hie-georgian We-georgian Har-georgian Hoe-georgian Fi-georgian Yn-georgian Elifi-georgian GanTurned-georgian Ain-georgian Aen-georgian HardSign-georgian Labial-georgian An-oldgeorgian Ban-oldgeorgian Gan-oldgeorgian Don-oldgeorgian En-oldgeorgian Vin-oldgeorgian Zen-oldgeorgian Tan-oldgeorgian In-oldgeorgian Kan-oldgeorgian Las-oldgeorgian Man-oldgeorgian Nar-oldgeorgian On-oldgeorgian Par-oldgeorgian Zhar-oldgeorgian Rae-oldgeorgian San-oldgeorgian Tar-oldgeorgian Un-oldgeorgian Phar-oldgeorgian Khar-oldgeorgian Ghan-oldgeorgian Qar-oldgeorgian Shin-oldgeorgian Chin-oldgeorgian Can-oldgeorgian Jil-oldgeorgian Cil-oldgeorgian Char-oldgeorgian Xan-oldgeorgian Jhan-oldgeorgian Hae-oldgeorgian He-oldgeorgian Hie-oldgeorgian We-oldgeorgian Har-oldgeorgian Hoe-oldgeorgian Yn-oldgeorgian Aen-oldgeorgian Abold-math Abolditalic-math Aboldscript-math Aboldscript-math.roundhand Aboldscript-math.roundhand.uv002 Aitalic-math Ascript-math Ascript-math.roundhand Ascript-math.roundhand.uv002 Bbold-math Bbolditalic-math Bboldscript-math Bboldscript-math.roundhand Bboldscript-math.roundhand.uv002 Bitalic-math Cbold-math Cbolditalic-math Cboldscript-math Cboldscript-math.roundhand Cboldscript-math.roundhand.uv002 Citalic-math Cscript-math Cscript-math.roundhand Cscript-math.roundhand.uv002 Dbold-math Dbolditalic-math Dboldscript-math Dboldscript-math.roundhand Dboldscript-math.roundhand.uv002 Ditalic-math Dscript-math Dscript-math.roundhand Dscript-math.roundhand.uv002 Ebold-math Ebolditalic-math Eboldscript-math Eboldscript-math.roundhand Eboldscript-math.roundhand.uv002 Eitalic-math Fbold-math Fbolditalic-math Fboldscript-math Fboldscript-math.roundhand Fboldscript-math.roundhand.uv002 Fitalic-math Gbold-math Gbolditalic-math Gboldscript-math Gboldscript-math.roundhand Gboldscript-math.roundhand.uv002 Gitalic-math Gscript-math Gscript-math.roundhand Gscript-math.roundhand.uv002 Hbold-math Hbolditalic-math Hboldscript-math Hboldscript-math.roundhand Hboldscript-math.roundhand.uv002 Hitalic-math Ibold-math Ibolditalic-math Iboldscript-math Iboldscript-math.roundhand Iboldscript-math.roundhand.uv002 Iitalic-math Jbold-math Jbolditalic-math Jboldscript-math Jboldscript-math.roundhand Jboldscript-math.roundhand.uv002 Jitalic-math Jscript-math Jscript-math.roundhand Jscript-math.roundhand.uv002 Kbold-math Kbolditalic-math Kboldscript-math Kboldscript-math.roundhand Kboldscript-math.roundhand.uv002 Kitalic-math Kscript-math Kscript-math.roundhand Kscript-math.roundhand.uv002 Lbold-math Lbolditalic-math Lboldscript-math Lboldscript-math.roundhand Lboldscript-math.roundhand.uv002 Litalic-math Mbold-math Mbolditalic-math Mboldscript-math Mboldscript-math.roundhand Mboldscript-math.roundhand.uv002 Mitalic-math Nbold-math Nbolditalic-math Nboldscript-math Nboldscript-math.roundhand Nboldscript-math.roundhand.uv002 Nitalic-math Nscript-math Nscript-math.roundhand Nscript-math.roundhand.uv002 Obold-math Obolditalic-math Oboldscript-math Oboldscript-math.roundhand Oboldscript-math.roundhand.uv002 Oitalic-math Oscript-math Oscript-math.roundhand Oscript-math.roundhand.uv002 Pbold-math Pbolditalic-math Pboldscript-math Pboldscript-math.roundhand Pboldscript-math.roundhand.uv002 Pitalic-math Pscript-math Pscript-math.roundhand Pscript-math.roundhand.uv002 Qbold-math Qbolditalic-math Qboldscript-math Qboldscript-math.roundhand Qboldscript-math.roundhand.uv002 Qitalic-math Qscript-math Qscript-math.roundhand Qscript-math.roundhand.uv002 Rbold-math Rbolditalic-math Rboldscript-math Rboldscript-math.roundhand Rboldscript-math.roundhand.uv002 Ritalic-math Sbold-math Sbolditalic-math Sboldscript-math Sboldscript-math.roundhand Sboldscript-math.roundhand.uv002 Sitalic-math Sscript-math Sscript-math.roundhand Sscript-math.roundhand.uv002 Tbold-math Tbolditalic-math Tboldscript-math Tboldscript-math.roundhand Tboldscript-math.roundhand.uv002 Titalic-math Tscript-math Tscript-math.roundhand Tscript-math.roundhand.uv002 Ubold-math Ubolditalic-math Uboldscript-math Uboldscript-math.roundhand Uboldscript-math.roundhand.uv002 Uitalic-math Uscript-math Uscript-math.roundhand Uscript-math.roundhand.uv002 Vbold-math Vbolditalic-math Vboldscript-math Vboldscript-math.roundhand Vboldscript-math.roundhand.uv002 Vitalic-math Vscript-math Vscript-math.roundhand Vscript-math.roundhand.uv002 Wbold-math Wbolditalic-math Wboldscript-math Wboldscript-math.roundhand Wboldscript-math.roundhand.uv002 Witalic-math Wscript-math Wscript-math.roundhand Wscript-math.roundhand.uv002 Xbold-math Xbolditalic-math Xboldscript-math Xboldscript-math.roundhand Xboldscript-math.roundhand.uv002 Xitalic-math Xscript-math Xscript-math.roundhand Xscript-math.roundhand.uv002 Ybold-math Ybolditalic-math Yboldscript-math Yboldscript-math.roundhand Yboldscript-math.roundhand.uv002 Yitalic-math Yscript-math Yscript-math.roundhand Yscript-math.roundhand.uv002 Zbold-math Zbolditalic-math Zboldscript-math Zboldscript-math.roundhand Zboldscript-math.roundhand.uv002 Zitalic-math Zscript-math Zscript-math.roundhand Zscript-math.roundhand.uv002 BFlourish Bscript Fturned Hscript Iscript Lscript PidoubleStruck Rscript AdoubleStruck BdoubleStruck CdoubleStruck DdoubleStruck EdoubleStruck FdoubleStruck GdoubleStruck HdoubleStruck IdoubleStruck JdoubleStruck KdoubleStruck LdoubleStruck MdoubleStruck NdoubleStruck OdoubleStruck PdoubleStruck QdoubleStruck RdoubleStruck SdoubleStruck TdoubleStruck UdoubleStruck VdoubleStruck WdoubleStruck XdoubleStruck YdoubleStruck ZdoubleStruck DitalicDoubleStruck GammadoubleStruck eulerconstant Escript Fscript Mscript";
 name = Uppercase;
 },
 {
@@ -103,6 +103,7 @@ languagesystem cyrl BGR;
 languagesystem cyrl SRB;
 
 languagesystem hebr dflt;
+languagesystem hebr IWR;
 ";
 name = Languagesystems;
 }
@@ -146,7 +147,8 @@ feature ss11;
 feature ss12;
 feature ss13;
 feature ss14;
-feature ss99;
+feature ss20;
+feature ss15;
 ";
 tag = aalt;
 },
@@ -157,8 +159,8 @@ code = "lookup ccmp_Other_1 {
 	@CombiningNonTopAccents = [acutebelowcomb arrowdoublerightbelowcomb arrowheadleftbelowcomb arrowheadrightbelowcomb arrowheadrightheadupbelowcomb arrowleftrightbelowcomb arrowupbelowcomb asteriskbelowcomb brevebelowcomb breveinvertedbelowcomb bridgebelowcomb bridgeinvertedbelowcomb caronbelowcomb cedillacomb circumflexbelowcomb dblarchinvertedbelowcomb dbllowlinecomb dieresisbelowcomb dotbelowcomb doublebrevebelowcomb doublemacronbelowcomb doubleringbelowcomb doubleverticallinebelowcomb downtackbelowcomb equalbelowcomb gravebelowcomb leftanglebelowcomb lefttackbelowcomb lowlinecomb macronbelowcomb minusbelowcomb ogonekcomb plusbelowcomb righttackbelowcomb ringbelowcomb ringhalfleftbelowcomb ringhalfrightbelowcomb seagullbelowcomb squarebelowcomb tildebelowcomb uptackbelowcomb verticallinebelowcomb xbelowcomb ypogegrammenicomb breveinverteddoublecomb doublebrevecomb graphemejoinercomb doublemacroncomb dotaboverightcomb horncomb slashlongcomb slashshortcomb strokelongcomb strokeshortcomb tildeoverlaycomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
-	@Markscomb = [horncomb dieresis grave acute macron tonos psili koronis dasia psilivaria dasiavaria psilioxia dasiaoxia psiliperispomeni dasiaperispomeni dialytikavaria dialytikaoxia dialytikaperispomeni varia oxia perispomeni];
-	@MarkscombCase = [horncomb.case dieresis.case grave.case acute.case macron.case tonos.case psili.case koronis.case dasia.case psilivaria.case dasiavaria.case psilioxia.case dasiaoxia.case psiliperispomeni.case dasiaperispomeni.case dialytikavaria.case dialytikaoxia.case dialytikaperispomeni.case varia.case oxia.case perispomeni.case];
+	@Markscomb = [tonos psili koronis dasia psilivaria dasiavaria psilioxia dasiaoxia psiliperispomeni dasiaperispomeni dialytikavaria dialytikaoxia dialytikaperispomeni varia oxia perispomeni horncomb dieresis grave acute macron];
+	@MarkscombCase = [tonos.case psili.case koronis.case dasia.case psilivaria.case dasiavaria.case psilioxia.case dasiaoxia.case psiliperispomeni.case dasiaperispomeni.case dialytikavaria.case dialytikaoxia.case dialytikaperispomeni.case varia.case oxia.case perispomeni.case horncomb.case dieresis.case grave.case acute.case macron.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
 } ccmp_Other_1;
@@ -170,10 +172,23 @@ lookup ccmp_Other_2 {
 
 lookup ccmp_latn_1 {
 	sub itildebelow by i tildebelowcomb;
-	sub istroke by i strokeshortcomb;
 } ccmp_latn_1;
 
 lookup ccmp_latn_2 {
+	sub fi by f i;
+	sub fl by f l;
+	sub lj by l j;
+	sub Lj by L j;
+	sub LJ by L J;
+	sub nj by n j;
+	sub Nj by N j;
+	sub NJ by N J;
+	sub dzcaron by d zcaron;
+	sub Dzcaron by D zcaron;
+	sub DZcaron by D Zcaron;
+} ccmp_latn_2;
+
+lookup ccmp_latn_3 {
 	lookupflag 0;
 	sub brevecomb acutecomb by brevecomb_acutecomb;
 	sub brevecomb gravecomb by brevecomb_gravecomb;
@@ -183,11 +198,12 @@ lookup ccmp_latn_2 {
 	sub circumflexcomb gravecomb by circumflexcomb_gravecomb;
 	sub circumflexcomb hookabovecomb by circumflexcomb_hookabovecomb;
 	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
-} ccmp_latn_2;
+} ccmp_latn_3;
 
 script latn;
 lookup ccmp_latn_1;
 lookup ccmp_latn_2;
+lookup ccmp_latn_3;
 ";
 tag = ccmp;
 },
@@ -353,10 +369,10 @@ sub eight by eightsuperior;
 sub nine by ninesuperior;
 sub parenleft by parenleftsuperior;
 sub parenright by parenrightsuperior;
+sub glottalstopreversed by glottalstopreversedsuperior;
 sub equal by equalsuperior;
 sub minus by minussuperior;
 sub plus by plussuperior;
-sub glottalstopreversed by glottalstopreversedsuperior;
 ";
 tag = sups;
 },
@@ -659,12 +675,7 @@ tag = smcp;
 },
 {
 automatic = 1;
-code = "sub horncomb by horncomb.case;
-sub dieresis by dieresis.case;
-sub grave by grave.case;
-sub acute by acute.case;
-sub macron by macron.case;
-sub tonos by tonos.case;
+code = "sub tonos by tonos.case;
 sub psili by psili.case;
 sub koronis by koronis.case;
 sub dasia by dasia.case;
@@ -680,16 +691,11 @@ sub dialytikaperispomeni by dialytikaperispomeni.case;
 sub varia by varia.case;
 sub oxia by oxia.case;
 sub perispomeni by perispomeni.case;
-sub zero by zero.lf;
-sub one by one.lf;
-sub two by two.lf;
-sub three by three.lf;
-sub four by four.lf;
-sub five by five.lf;
-sub six by six.lf;
-sub seven by seven.lf;
-sub eight by eight.lf;
-sub nine by nine.lf;
+sub horncomb by horncomb.case;
+sub dieresis by dieresis.case;
+sub grave by grave.case;
+sub acute by acute.case;
+sub macron by macron.case;
 sub zero.osf by zero.lf;
 sub one.osf by one.lf;
 sub two.osf by two.lf;
@@ -700,26 +706,16 @@ sub six.osf by six.lf;
 sub seven.osf by seven.lf;
 sub eight.osf by eight.lf;
 sub nine.osf by nine.lf;
-sub zero.tf by zero.lf;
-sub one.tf by one.lf;
-sub two.tf by two.lf;
-sub three.tf by three.lf;
-sub four.tf by four.lf;
-sub five.tf by five.lf;
-sub six.tf by six.lf;
-sub seven.tf by seven.lf;
-sub eight.tf by eight.lf;
-sub nine.tf by nine.lf;
-sub zero.tosf by zero.lf;
-sub one.tosf by one.lf;
-sub two.tosf by two.lf;
-sub three.tosf by three.lf;
-sub four.tosf by four.lf;
-sub five.tosf by five.lf;
-sub six.tosf by six.lf;
-sub seven.tosf by seven.lf;
-sub eight.tosf by eight.lf;
-sub nine.tosf by nine.lf;
+sub zero.tosf by zero;
+sub one.tosf by one;
+sub two.tosf by two;
+sub three.tosf by three;
+sub four.tosf by four;
+sub five.tosf by five;
+sub six.tosf by six;
+sub seven.tosf by seven;
+sub eight.tosf by eight;
+sub nine.tosf by nine;
 ";
 tag = case;
 },
@@ -850,6 +846,7 @@ sub quotesingle by quotesingle.full;
 sub semicolon by semicolon.full;
 sub slash by slash.full;
 sub underscore by underscore.full;
+sub hyphen by hyphen.full;
 sub whiteparenleft by whiteparenleft.full;
 sub whiteparenright by whiteparenright.full;
 sub braceleft by braceleft.full;
@@ -858,7 +855,10 @@ sub bracketleft by bracketleft.full;
 sub bracketright by bracketright.full;
 sub parenleft by parenleft.full;
 sub parenright by parenright.full;
-sub hyphen by hyphen.full;
+sub asciicircum by asciicircum.full;
+sub grave by grave.full;
+sub macron by macron.full;
+sub brokenbar by brokenbar.full;
 sub cent by cent.full;
 sub dollar by dollar.full;
 sub sterling by sterling.full;
@@ -871,10 +871,6 @@ sub greater by greater.full;
 sub less by less.full;
 sub logicalnot by logicalnot.full;
 sub plus by plus.full;
-sub brokenbar by brokenbar.full;
-sub asciicircum by asciicircum.full;
-sub grave by grave.full;
-sub macron by macron.full;
 ";
 tag = fwid;
 },
@@ -896,6 +892,8 @@ sub exclam by exclam.vert;
 sub question by question.vert;
 sub semicolon by semicolon.vert;
 sub underscore.full by underscore.full.vert;
+sub emdash by emdash.vert;
+sub endash by endash.vert;
 sub anglebracketleft by anglebracketleft.vert;
 sub anglebracketright by anglebracketright.vert;
 sub blacklenticularbracketleft by blacklenticularbracketleft.vert;
@@ -916,8 +914,6 @@ sub whitecornerbracketleft by whitecornerbracketleft.vert;
 sub whitecornerbracketright by whitecornerbracketright.vert;
 sub whitelenticularbracketleft by whitelenticularbracketleft.vert;
 sub whitelenticularbracketright by whitelenticularbracketright.vert;
-sub emdash by emdash.vert;
-sub endash by endash.vert;
 ";
 tag = vert;
 },
@@ -930,6 +926,8 @@ sub exclam by exclam.vert;
 sub question by question.vert;
 sub semicolon by semicolon.vert;
 sub underscore.full by underscore.full.vert;
+sub emdash by emdash.vert;
+sub endash by endash.vert;
 sub anglebracketleft by anglebracketleft.vert;
 sub anglebracketright by anglebracketright.vert;
 sub blacklenticularbracketleft by blacklenticularbracketleft.vert;
@@ -950,8 +948,6 @@ sub whitecornerbracketleft by whitecornerbracketleft.vert;
 sub whitecornerbracketright by whitecornerbracketright.vert;
 sub whitelenticularbracketleft by whitelenticularbracketleft.vert;
 sub whitelenticularbracketright by whitelenticularbracketright.vert;
-sub emdash by emdash.vert;
-sub endash by endash.vert;
 ";
 tag = vrt2;
 },
@@ -1336,11 +1332,18 @@ value = "Join ==";
 tag = ss14;
 },
 {
-code = "sub underscore by underscore.alternate;
-sub parenleft by parenleft.alternate;
-sub parenright by parenright.alternate;
-sub bar by bar.alternate;
-sub backslash by backslash.alternate;";
+code = "
+lookup st { sub parenleft underscore' by underscore.alternate; } st ;
+
+lookup st1 { sub parenleft' underscore.alternate by parenleft.alternate; } st1 ;
+
+lookup st2 { sub underscore.alternate parenright' by parenright.alternate; } st2 ;
+
+lookup st3 { sub bar by bar.alternate; } st3;
+
+lookup st4 { sub backslash by backslash.alternate; } st4;
+
+";
 labels = (
 {
 language = dflt;
@@ -1545,6 +1548,12 @@ pos = (829,-405);
 angle = 261.0303;
 locked = 1;
 pos = (800,1817);
+},
+{
+pos = (-163,-370);
+},
+{
+pos = (-121,-90);
 }
 );
 iconName = Light;
@@ -1583,10 +1592,10 @@ stemValues = (
 userData = {
 GSCornerRadius = 73;
 GSOffsetAutoStroke = 1;
-GSOffsetHorizontal = -27;
+GSOffsetHorizontal = 11;
 GSOffsetKeepCompatible = 1;
 GSOffsetPosition = 0;
-GSOffsetVertical = -13;
+GSOffsetVertical = 0;
 };
 visible = 1;
 },
@@ -1664,6 +1673,12 @@ pos = (-20,550);
 angle = 261.0303;
 locked = 1;
 pos = (800,1817);
+},
+{
+pos = (-163,-370);
+},
+{
+pos = (-121,-90);
 }
 );
 iconName = SemiLight;
@@ -1789,6 +1804,12 @@ pos = (322,336);
 angle = 261.0303;
 locked = 1;
 pos = (800,1817);
+},
+{
+pos = (-163,-370);
+},
+{
+pos = (-121,-90);
 }
 );
 iconName = Bold;
@@ -1911,6 +1932,21 @@ pos = (-20,550);
 angle = 261.0303;
 locked = 1;
 pos = (800,1817);
+},
+{
+pos = (513,0);
+},
+{
+pos = (-163,-370);
+},
+{
+pos = (-121,-90);
+},
+{
+pos = (-163,-370);
+},
+{
+pos = (-121,-90);
 }
 );
 iconName = Bold_SemiExtended;
@@ -1949,9 +1985,10 @@ stemValues = (
 userData = {
 GSCornerRadius = 55;
 GSOffsetAutoStroke = 1;
-GSOffsetHorizontal = 41;
+GSOffsetHorizontal = 21;
 GSOffsetKeepCompatible = 1;
 GSOffsetPosition = 0.78;
+GSOffsetProportional = 1;
 GSOffsetVertical = 0;
 GSRoughenHorizontal = 15;
 GSRoughenSegmentLength = 15;

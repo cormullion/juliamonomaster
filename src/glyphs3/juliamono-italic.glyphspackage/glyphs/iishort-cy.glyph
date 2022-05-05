@@ -10,7 +10,7 @@ pos = (50,0);
 ref = "ii-cy";
 },
 {
-pos = (10,0);
+pos = (84,0);
 ref = breve.cyrl;
 }
 );
@@ -25,7 +25,7 @@ pos = (50,0);
 ref = "ii-cy";
 },
 {
-pos = (10,0);
+pos = (68,0);
 ref = breve.cyrl;
 }
 );
@@ -40,8 +40,7 @@ pos = (50,0);
 ref = "ii-cy";
 },
 {
-alignment = -1;
-pos = (-97,0);
+pos = (10,0);
 ref = breve.cyrl;
 }
 );
@@ -56,8 +55,7 @@ pos = (50,0);
 ref = "ii-cy";
 },
 {
-alignment = -1;
-pos = (-95,0);
+pos = (74,0);
 ref = breve.cyrl;
 }
 );

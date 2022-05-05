@@ -21,7 +21,7 @@ shapes = (
 ref = S;
 },
 {
-pos = (6,-2);
+pos = (2,-20);
 ref = dotbelowcomb;
 }
 );
