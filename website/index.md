@@ -314,7 +314,7 @@ Here's a sample of some of the Unicode glyphs provided:
 
 One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.) Here's a few less common ones:  
 
-~~~<img src="/assets/specimen_6.png" width="100%" alt="specimen image 6"> ~~~
+~~~<img src="/assets/specimen_7.png" width="100%" alt="specimen image 6"> ~~~
 
 In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code. You probably want ∑s in your code rather than $ \sum $s, because the big ones will upset your formatting.
 
@@ -706,7 +706,7 @@ There are a few areas of the Unicode system that have been officially kept empty
 Each typeface can do its own thing in these areas. In JuliaMono you'll find these, among others, and if you ask nicely I might add some more:
 
 ~~~
-<img src="/assets/specimen_9.png" width="100%" alt="private use area">
+<img src="/assets/specimen_10.png" width="100%" alt="private use area">
 ~~~
 
 The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (eg on github), you have no idea what glyph - if any - will be displayed.
