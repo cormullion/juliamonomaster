@@ -316,6 +316,29 @@ One of the goals of JuliaMono is to include most of the characters that a typica
 
 ~~~<img src="/assets/specimen_7.png" width="100%" alt="specimen image 6"> ~~~
 
+There are too many to list on this page. If you want a handy way of finding out about JuliaMono's Unicode support, you can visit [https://glyphy.info](image.png) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`) to see matching characters. If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+
+~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
+
+You can also do this without leaving the Julia REPL. Install the Glyphy.jl package in the usual way, and then run it like this:
+
+```julia
+julia> using Glyphy
+
+julia> glyphy("interrobang")
+
+0203d   ‽   ✓    interrobang
+02e18   ⸘   ✓    inverted interrobang
+1f679   🙹   ✓    heavy interrobang ornament
+1f67a   🙺   ✓    sans-serif interrobang ornament
+1f67b   🙻   ✓    heavy sans-serif interrobang ornament
+ found 5 glyphs matching "interrobang"
+
+julia> glyphy(0x203d)
+
+0203d   ‽   ✓    interrobang
+```
+
 In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code. You probably want ∑s in your code rather than $ \sum $s, because the big ones will upset your formatting.
 
 From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.

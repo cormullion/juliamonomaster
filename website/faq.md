@@ -17,11 +17,30 @@ Feel free to compare it with other fonts at [dev fonts](https://devfonts.gafi.de
 
 If you use a lot of mathematics, visit the [mono-math.netlify.app](https://mono-math.netlify.app) site, which shows how Unicode math symbols look in various fonts.
 
-You can visit [this mirror of the Julia blog](https://julialangblogmirror.netlify.app/blog/). It hasn’t been updated for a while (it was useful during the development of [Franklin.jl](https://franklinjl.org)), but all the code examples use JuliaMono.
-
-You can browse through [this local copy](/assets/juliamanual/index.html) of an old Julia manual. The default Roboto-Mono font has been replaced with JuliaMono-Regular.
-
 As an example of using JuliaMono in Julia documentation, made with [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl), see the documentation for [Luxor.jl](https://github.com/JuliaGraphics/Luxor.jl).
+
+To find out about JuliaMono's Unicode support, you can visit [https://glyphy.info](image.png) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+
+~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
+
+You can also do this leaving the Julia REPL. Install the Glyphy.jl package in the usual way, and then run it like this:
+
+```julia
+julia> using Glyphy
+
+julia> glyphy("interrobang")
+
+0203d   ‽   ✓    interrobang
+02e18   ⸘   ✓    inverted interrobang
+1f679   🙹   ✓    heavy interrobang ornament
+1f67a   🙺   ✓    sans-serif interrobang ornament
+1f67b   🙻   ✓    heavy sans-serif interrobang ornament
+ found 5 glyphs matching "interrobang"
+
+julia> glyphy(0x203d)
+
+0203d   ‽   ✓    interrobang
+```
 
 #### ‘I don’t like it as much as ``$(my_favourite_font)``’
 
