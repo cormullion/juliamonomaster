@@ -23,7 +23,7 @@ To find out about JuliaMono's Unicode support, you can visit [https://glyphy.inf
 
 ~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
 
-You can also do this leaving the Julia REPL. Install the Glyphy.jl package in the usual way, and then run it like this:
+You can also do this without leaving the Julia REPL. Install the Glyphy.jl package in the usual way, and then run it like this:
 
 ```julia
 julia> using Glyphy
