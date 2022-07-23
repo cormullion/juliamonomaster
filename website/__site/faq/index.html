@@ -46,9 +46,24 @@
 <h4 id="where_can_i_see_it_in_action"><a href="#where_can_i_see_it_in_action" class="header-anchor">‘Where can I see it in action?’</a></h4>
 <p>Feel free to compare it with other fonts at <a href="https://devfonts.gafi.dev/">dev fonts</a> and <a href="https://www.programmingfonts.org/#julia-mono">www.programmingfonts.org</a>.</p>
 <p>If you use a lot of mathematics, visit the <a href="https://mono-math.netlify.app">mono-math.netlify.app</a> site, which shows how Unicode math symbols look in various fonts.</p>
-<p>You can visit <a href="https://julialangblogmirror.netlify.app/blog/">this mirror of the Julia blog</a>. It hasn’t been updated for a while &#40;it was useful during the development of <a href="https://franklinjl.org">Franklin.jl</a>&#41;, but all the code examples use JuliaMono.</p>
-<p>You can browse through <a href="/assets/juliamanual/index.html">this local copy</a> of an old Julia manual. The default Roboto-Mono font has been replaced with JuliaMono-Regular.</p>
 <p>As an example of using JuliaMono in Julia documentation, made with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a>, see the documentation for <a href="https://github.com/JuliaGraphics/Luxor.jl">Luxor.jl</a>.</p>
+<p>To find out about JuliaMono&#39;s Unicode support, you can visit <a href="image.png">https://glyphy.info</a> and type a name &#40;eg <code>interrobang</code>&#41; or a hexadecimal number &#40;eg <code>0x203d</code>&#41;, If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
+<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> 
+<p>You can also do this leaving the Julia REPL. Install the Glyphy.jl package in the usual way, and then run it like this:</p>
+<pre><code class="language-julia">julia&gt; using Glyphy
+
+julia&gt; glyphy&#40;&quot;interrobang&quot;&#41;
+
+0203d   ‽   ✓    interrobang
+02e18   ⸘   ✓    inverted interrobang
+1f679   🙹   ✓    heavy interrobang ornament
+1f67a   🙺   ✓    sans-serif interrobang ornament
+1f67b   🙻   ✓    heavy sans-serif interrobang ornament
+ found 5 glyphs matching &quot;interrobang&quot;
+
+julia&gt; glyphy&#40;0x203d&#41;
+
+0203d   ‽   ✓    interrobang</code></pre>
 <h4 id="i_dont_like_it_as_much_as_my_favourite_font"><a href="#i_dont_like_it_as_much_as_my_favourite_font" class="header-anchor">‘I don’t like it as much as <code>&#36;&#40;my_favourite_font&#41;</code>’</a></h4>
 <p><strong>That’s not a question&#33;</strong> But I know what you mean. Choice of work environment &#40;editor, font, colour scheme, background music, preferred beverage, etc.&#41; is very much a personal thing, and over the hours, days, and weeks that you work with your particular setup, you’ll grow accustomed to it, and unfamiliar work environments will look unappealing or even ugly. You’d probably need to try any alternatives for a while before you get more accustomed to them. Fortunately, you don’t have to try <a href="https://www.myfonts.com/fonts/tabular-type-foundry/comic-code/">Comic Code</a>, the <a href="http://kakoune.org">Kakoune editor</a>, the music of <a href="http://autechre.ws/">Autechre</a>, <a href="https://www.tealeaves.com/products/durian">Durian tea</a>, or anything else that’s new and unfamiliar; just stick to your current favourites&#33;</p>
 <h4 id="how_can_i_use_the_web_fonts"><a href="#how_can_i_use_the_web_fonts" class="header-anchor">‘How can I use the web fonts?’</a></h4>
@@ -362,7 +377,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 04, 2022. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 23, 2022. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

@@ -313,6 +313,23 @@ end</code></pre>
 <img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> 
 <p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41; Here&#39;s a few less common ones:  </p>
 <img src="/assets/specimen_7.png" width="100%" alt="specimen image 6"> 
+<p>There are too many to list on this page. If you want a handy way of finding out about JuliaMono&#39;s Unicode support, you can visit <a href="image.png">https://glyphy.info</a> and type a name &#40;eg <code>interrobang</code>&#41; or a hexadecimal number &#40;eg <code>0x203d</code>&#41; to see matching characters. If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
+<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> 
+<p>You can also do this leaving the Julia REPL. Install the Glyphy.jl package in the usual way, and then run it like this:</p>
+<pre><code class="language-julia">julia&gt; using Glyphy
+
+julia&gt; glyphy&#40;&quot;interrobang&quot;&#41;
+
+0203d   ‽   ✓    interrobang
+02e18   ⸘   ✓    inverted interrobang
+1f679   🙹   ✓    heavy interrobang ornament
+1f67a   🙺   ✓    sans-serif interrobang ornament
+1f67b   🙻   ✓    heavy sans-serif interrobang ornament
+ found 5 glyphs matching &quot;interrobang&quot;
+
+julia&gt; glyphy&#40;0x203d&#41;
+
+0203d   ‽   ✓    interrobang</code></pre>
 <p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
 <p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
 <p>The Julia package <a href="https://github.com/Evizero/UnicodePlots.jl">UnicodePlots.jl</a> uses various Unicode characters to plot figures directly in a terminal window. <sup id="fnref:linespacing"><a href="#fndef:linespacing" class="fnref">[7]</a></sup></p>
@@ -729,7 +746,7 @@ Welcome to </code></pre>
 </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 08, 2022. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 23, 2022. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
