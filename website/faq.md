@@ -19,7 +19,7 @@ If you use a lot of mathematics, visit the [mono-math.netlify.app](https://mono-
 
 As an example of using JuliaMono in Julia documentation, made with [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl), see the documentation for [Luxor.jl](https://github.com/JuliaGraphics/Luxor.jl).
 
-To find out about JuliaMono's Unicode support, you can visit [https://glyphy.info](image.png) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+To find out about JuliaMono's Unicode support, you can visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
 
 ~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
 

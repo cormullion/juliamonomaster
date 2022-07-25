@@ -316,7 +316,7 @@ One of the goals of JuliaMono is to include most of the characters that a typica
 
 ~~~<img src="/assets/specimen_7.png" width="100%" alt="specimen image 6"> ~~~
 
-There are too many to list on this page. If you want a handy way of finding out about JuliaMono's Unicode support, you can visit [https://glyphy.info](image.png) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`) to see matching characters. If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+There are too many to list on this page. If you want a handy way of finding out about JuliaMono's Unicode support, you can visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`) to see matching characters. If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
 
 ~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
 
