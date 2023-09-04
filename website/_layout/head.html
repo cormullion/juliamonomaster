@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{if hasmath}} {{insert head_katex.html }} {{end}}
+	{{if hascode}} {{insert head_highlight.html }} {{end}}
+	{{isdef title}}
+		<title>{{fill title}}</title>
+	{{end}}
+	<link rel="stylesheet" type="text/css" href="/css/dark.css" id="lightdark" title="dark">
+	<link rel="stylesheet" href="/css/basic.css">
+	<link rel="stylesheet" type="text/css" href="/css/juliamono.css">
+	<link rel="icon" href="/assets/favicon.png">
+	<link rel="stylesheet" href="/css/flont.css">
+	<script>
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("lightdark");
+       stylesheet.setAttribute('href', url);
+    }
+	</script>
+
+	<!-- Fontsampler -->
+	<script src="/libs/fontsampler/fontsampler.js"></script>
+	<script src="/libs/fontsampler/fontsampler-skin.js"></script>
+	
+	<link rel="stylesheet" href="/libs/fontsampler/fontsampler-skin.css">
+	<!-- /Fontsampler -->
+
+</head>
+<body>
+	{{insert header.html}}
+	<!-- Content appended here -->

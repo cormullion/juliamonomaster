@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+images/.DS_Store
+.sass-cache
+.jekyll-metadata
+.DS_Store
+old*/*
+franklin.pub
+franklin
+package-lock.json
+Manifest.toml
+Saved-Change-History.txt
+src/glyphs3/juliamono.glyphspackage/UIState.plist

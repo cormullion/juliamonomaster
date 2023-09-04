@@ -1,0 +1,230 @@
+var helpers = require("./helpers/helpers")
+var dom = require("./helpers/dom")
+
+/**
+ * Wrapper to provide global root, options and fonts to all methods (UI Elements)
+ * 
+ * @param {*} root 
+ * @param {*} options 
+ * @param {*} fonts 
+ */
+function UIElements(root, options) {
+
+    function label(labelText, labelUnit, labelValue, relatedInput) {
+        var label = document.createElement("label"),
+            text = document.createElement("span"),
+            val, unit
+
+        if (labelText === false) {
+            return false
+        }
+
+        label.dataset.fsjsFor = relatedInput
+        dom.nodeAddClass(label, options.classes.labelClass)
+
+        text.className = options.classes.labelTextClass
+        text.appendChild(document.createTextNode(labelText))
+        label.appendChild(text)
+
+        if (labelValue !== "") {
+            val = document.createElement("span")
+            val.className = options.classes.labelValueClass
+            val.contentEditable = true
+            val.appendChild(document.createTextNode(labelValue))
+            label.appendChild(val)
+
+            // Register event propagation for the editable value
+            // val.addEventListener("keyup", function () {
+            //     console.log("label val keyup", val.innerText)
+            //     label.dispatchEvent(new Event("keyup"))
+            // })
+            // val.addEventListener("blur", function () {
+            //     console.log("label val blur", val.innerText)
+            //     label.dispatchEvent(new Event("blur"))
+            // })
+        }
+
+        if (typeof(labelUnit) === "string") {
+            unit = document.createElement("span")
+            unit.className = options.classes.labelUnitClass
+            unit.appendChild(document.createTextNode(labelUnit))
+            label.appendChild(unit)
+        }
+
+        return label
+    }
+
+    function slider(key, opt, node) {
+        var input = dom.isNode(node) ? node : document.createElement("input")
+
+        var attributes = {
+            type: "range",
+            min: opt.min,
+            max: opt.max,
+            value: opt.init,
+            step: opt.step
+        }
+
+        input.setAttribute("autocomplete", "off")
+        setMissingAttributes(input, attributes)
+
+        if (typeof(input.value) === "undefined") {
+            input.value = opt.init
+            input.setAttribute("value", opt.init)
+        }
+
+        if ("unit" in input.dataset === false) {
+            input.dataset.unit = opt.unit
+        }
+        if ("init" in input.dataset === false) {
+            input.dataset.init = opt.init
+        }
+
+        // only main element get the data-fsjs; key missing means this is 
+        // a nested slider
+        if (key) {
+            input.dataset.fsjs = key
+        }
+
+        return input
+    }
+
+    function dropdown(key, opt, node) {
+        var dropdown = dom.isNode(node) ? node : document.createElement("select")
+        if ("choices" in opt === false || opt.choices.length < 1) {
+            return false
+        }
+
+        for (var c = 0; c < opt.choices.length; c++) {
+            var choice = helpers.parseParts(opt.choices[c]),
+                option = dropdown.querySelector("option[value='" + choice.val + "']")
+
+            if (!dom.isNode(option)) {
+                option = document.createElement("option")
+                option.appendChild(document.createTextNode(choice.text))
+                dropdown.appendChild(option)
+            }
+
+            option.value = choice.val
+
+            if ("init" in opt && opt.init === choice.text) {
+                option.selected = true
+                dropdown.value = option.value
+            }
+
+            if ("instance" in opt) {
+                option.dataset.instance = opt.instance
+            }
+        }
+
+        dropdown.dataset.fsjs = key
+
+        return dropdown
+    }
+
+    function textfield(key, opt, node) {
+        var tester = typeof(node) === "undefined" || node === null ? document.createElement("div") : node,
+            attr = {
+                autocomplete: "off",
+                autocorrect: "off",
+                autocapitalize: "off",
+                spellcheck: "false",
+                contenteditable: opt.editable
+            }
+
+        setMissingAttributes(tester, attr)
+
+        tester.dataset.fsjs = key
+
+        // If the original root element was a single DOM element with some text, copy that
+        // text into the tester
+        // TODO move this to interface and on tester node init
+        if (!tester.dataset.replaceText) {
+            if (options.initialText) {
+                tester.appendChild(document.createTextNode(options.initialText))
+            } else if (!options.initialText && options.originalText) {
+                tester.appendChild(document.createTextNode(options.originalText))
+            }
+            tester.dataset.replaceText = true
+        }
+
+        return tester
+    }
+
+    function buttongroup(key, opt) {
+        var group = document.createElement("div")
+
+        for (var o in opt.choices) {
+            var button = document.createElement("button"),
+                choice = helpers.parseParts(opt.choices[o])
+
+            button.dataset.choice = choice.val
+            button.appendChild(document.createTextNode(choice.text))
+            dom.nodeAddClass(options.classes.buttonClass)
+            if (opt.init === choice.val) {
+                button.className = options.classes.buttonSelectedClass
+            }
+            group.appendChild(button)
+        }
+
+        group.dataset.fsjs = key
+
+        return group
+    }
+
+    function checkboxes(key, opt) {
+        var group = document.createElement("div")
+
+        group.dataset.fsjs = key
+
+        for (var o in opt.choices) {
+            if (opt.choices.hasOwnProperty(o)) {
+                var choice = helpers.parseParts(opt.choices[o]),
+                    label = document.createElement("label"),
+                    checkbox = document.createElement("input"),
+                    text = document.createElement("span")
+
+                checkbox.setAttribute("type", "checkbox")
+                checkbox.dataset.feature = choice.val
+
+                if (opt.init.indexOf(Object.values(choice)[0]) !== -1) {
+                    checkbox.checked = true
+                }
+
+                text.appendChild(document.createTextNode(choice.text))
+
+                label.appendChild(checkbox)
+                label.appendChild(text)
+
+                group.append(label)
+            }
+        }
+
+        return group
+    }
+
+    function setMissingAttributes(node, attributes) {
+        if (typeof(node) === "undefined" || node === null || typeof(attributes) !== "object") {
+            return
+        }
+
+        for (var a in attributes) {
+            if (attributes.hasOwnProperty(a)) {
+                if (!node.hasAttribute(a)) {
+                    node.setAttribute(a, attributes[a])
+                }
+            }
+        }
+    }
+
+    return {
+        dropdown: dropdown,
+        slider: slider,
+        label: label,
+        textfield: textfield,
+        buttongroup: buttongroup,
+        checkboxes: checkboxes
+    }
+}
+
+module.exports = UIElements

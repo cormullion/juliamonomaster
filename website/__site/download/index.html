@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 <link rel="stylesheet" href="/libs/highlight/github.min.css">
+ 
+	
+		<title>JuliaMono font - Download</title>
+	
+	<link rel="stylesheet" type="text/css" href="/css/dark.css" id="lightdark" title="dark">
+	<link rel="stylesheet" href="/css/basic.css">
+	<link rel="stylesheet" type="text/css" href="/css/juliamono.css">
+	<link rel="icon" href="/assets/favicon.png">
+	<link rel="stylesheet" href="/css/flont.css">
+	<script>
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("lightdark");
+       stylesheet.setAttribute('href', url);
+    }
+	</script>
+
+	<!-- Fontsampler -->
+	<script src="/libs/fontsampler/fontsampler.js"></script>
+	<script src="/libs/fontsampler/fontsampler-skin.js"></script>
+	
+	<link rel="stylesheet" href="/libs/fontsampler/fontsampler-skin.css">
+	<!-- /Fontsampler -->
+
+</head>
+<body>
+	<header>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/faq/">FAQ</a></li>
+    <li><a href="/download/">Download</a></li>
+    <li><a href="/glyphs/" target="_blank">Glyphs</a></li>
+    <li> | </li>
+    <li>
+      <a class="lightswitchdark" onclick="setStyleSheet('/css/dark.css')"  title="switch to dark mode"  href="#">Dark</a>
+      <a class="lightswitchlight" onclick="setStyleSheet('/css/light.css')" title="switch to light mode" href="#">Light</a>
+  </li>
+  </ul>
+  <img src="/assets/hamburger.svg" id="menu-icon">
+</nav>
+</header>
+
+	<!-- Content appended here -->
+<div class="franklin-content"><h1 id="download_and_installation"><a href="#download_and_installation" class="header-anchor">Download and installation</a></h1>
+<h2 id="download"><a href="#download" class="header-anchor">Download</a></h2>
+<p>You can find the font files at <a href="https://github.com/cormullion/juliamono/releases">https://github.com/cormullion/juliamono/releases</a>.</p>
+<p>On that Releases page, you can download:</p>
+<ul>
+<li><p><code>JuliaMono-ttf .zip|.tar.gz</code> - just the TTF font files, in either Zip &#40;.zip&#41; or Tarball &#40;.gz&#41;</p>
+</li>
+<li><p><code>JuliaMono-webfonts .zip|.tar.gz</code> - just the webfonts &#40;WOFF2&#41;, in either Zip &#40;.zip&#41; or Tarball &#40;.gz&#41;</p>
+</li>
+<li><p><code>JuliaMono .zip|.tar.gz</code> - both fonts and webfonts &#40;TTF and WOFF&#41;, in either Zip &#40;.zip&#41; or Tarball &#40;.gz&#41;</p>
+</li>
+</ul>
+<p>&#40;I wouldn&#39;t recommend cloning the git repo, unless you want to download over 1 GB of outdated files and git diffs...&#41;</p>
+<p>The raw source files &#40;in Glyphs.app format&#41; are at <a href="https://github.com/cormullion/juliamonomaster">https://github.com/cormullion/juliamonomaster</a>. You&#39;ll need a licensed copy of Glyphs to build the font from these files.</p>
+<h2 id="installation"><a href="#installation" class="header-anchor">Installation</a></h2>
+<h3 id="macos"><a href="#macos" class="header-anchor">MacOS</a></h3>
+<p>To install and activate a font, launch Font Book from your Applications folder, and drag the font files into the middle pane labelled Font. If you&#39;re using a different font manager, you already know what to do. :&#41;</p>
+<h4 id="macos_homebrew"><a href="#macos_homebrew" class="header-anchor">MacOS Homebrew</a></h4>
+<p>On the latest version of Homebrew, you can install the fonts with:</p>
+<pre><code class="language-julia">brew tap homebrew/cask-fonts
+brew install --cask font-juliamono</code></pre>
+<h3 id="windows"><a href="#windows" class="header-anchor">Windows</a></h3>
+<p>You can install a font for a single user or for all users. &#40;Some applications &#40;such as Java&#41; don&#39;t see fonts unless they have been installed for all users.&#41;</p>
+<p>To install and activate a font on Windows, go to Computer |&gt; Local Disk &#40;C:&#41; |&gt; Windows |&gt; Fonts. Locate the expanded .zip file folder, and drag the font files from there into the Fonts folder.</p>
+<p>To install for all users, just right-click the font file&#40;s&#41; and choose Install for All Users. Administrator privileges are required.</p>
+<h3 id="linux_-_using_font_manager"><a href="#linux_-_using_font_manager" class="header-anchor">Linux - using Font Manager</a></h3>
+<p>You might want to install Font Manager:</p>
+<pre><code class="language-julia">sudo apt install font-manager</code></pre>
+<p>Then double-click on the font files and click Install on each one.</p>
+<h3 id="linux_-_on_the_command_line"><a href="#linux_-_on_the_command_line" class="header-anchor">Linux - on the command line</a></h3>
+<p>For Arch Linux, there is also a <a href="https://aur.archlinux.org/packages/ttf-juliamono/">package in the AUR</a>.</p>
+<p>Locate your font folder. Might be one of:</p>
+<pre><code class="language-julia">~/.fonts
+/usr/share/fonts/truetype/newfonts/
+~/.local/fonts/
+~/.local/share/fonts/</code></pre>
+<p>and copy the files there. You might want to &#40;or have to&#41; regenerate the font cache:</p>
+<pre><code class="language-julia">&#36; fc-cache -f -v</code></pre>
+<p>And verify installation:</p>
+<pre><code class="language-julia">&#36; fc-list | grep &quot;JuliaMono&quot;</code></pre>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Cormullion. Last modified: September 04, 2023. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+  
+  
+      <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+  
+
+</body>
+</html>
