@@ -10,3 +10,5 @@ package-lock.json
 Manifest.toml
 Saved-Change-History.txt
 src/glyphs3/juliamono.glyphspackage/UIState.plist
+src/glyphs3/juliamono-italic.glyphspackage
+src/glyphs3/juliamono.glyphspackage

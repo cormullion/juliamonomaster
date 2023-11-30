@@ -112,20 +112,7 @@ demo.init()
 
 ## Screenshots
 
-Editing code in [Juno](https://github.com/JunoLab/Juno.jl).
-
-~~~
-<div id="enlargewrap">
-    <a class="enlarge">
-        <img src="/assets/juno-example.png" width = "300" alt="screenshot of Juno editor">
-            <span>
-                <img src="assets/juno-example.png" width = "800" alt="screenshot of Juno editor">
-            </span>
-    </a>
-</div>
-~~~
-
-And in [VS Code](https://www.julia-vscode.org).
+In [VS Code](https://www.julia-vscode.org).
 
 ~~~
 <div id="enlargewrap">
@@ -138,7 +125,7 @@ And in [VS Code](https://www.julia-vscode.org).
 </div>
 ~~~
 
-And in [Vim](https://www.vim.org):
+In [Vim](https://www.vim.org):
 
 ~~~
 <div id="enlargewrap">
@@ -151,7 +138,7 @@ And in [Vim](https://www.vim.org):
 </div>
 ~~~
 
-And in [Emacs](https://www.gnu.org/software/emacs/):
+In [Emacs](https://www.gnu.org/software/emacs/):
 
 ~~~
 <div id="enlargewrap">
@@ -164,6 +151,18 @@ And in [Emacs](https://www.gnu.org/software/emacs/):
 </div>
 ~~~
 
+In [Helix](https://helix-editor.com):
+
+~~~
+<div id="enlargewrap">
+    <a class="enlarge">
+        <img src="/assets/helix-example.png" width = "300" alt="screenshot of helix editor">
+            <span>
+                <img src="assets/helix-example.png" width = "800" alt="screenshot of helix editor">
+            </span>
+    </a>
+</div>
+~~~
 
 ## Examples
 
@@ -958,8 +957,6 @@ Thanks to: Thibaut Lienart for his [Franklin.jl](https://github.com/tlienart/Fra
 [^typographypanel]: &nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive but I’m not convinced that all the buttons are wired up yet...
 
 [^terminal]: &nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: [wezterm](https://wezfurlong.org/wezterm/) is about the best, although configuring the macOS Terminal is a bit easier, and [iTerm](https://iterm2.com) for macOS is also a reasonable alternative. In the world of fonts, nothing is 100% correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a [VS Code](https://github.com/microsoft/vscode/issues/34103) issue; here are the [Alacritty terminal developers](https://github.com/alacritty/alacritty/issues/50) working on it; here is the [iTerm documentation](https://iterm2.com/documentation-fonts.html) talking about performance.
-
-
 
 ~~~
 <center></center>

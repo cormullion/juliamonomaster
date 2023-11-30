@@ -17,9 +17,7 @@ Feel free to compare it with other fonts at [dev fonts](https://devfonts.gafi.de
 
 If you use a lot of mathematics, visit the [mono-math.netlify.app](https://mono-math.netlify.app) site, which shows how Unicode math symbols look in various fonts.
 
-As an example of using JuliaMono in Julia documentation, made with [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl), see the documentation for [Luxor.jl](https://github.com/JuliaGraphics/Luxor.jl).
-
-To find out about JuliaMono's Unicode support, you could look at the Glyphs page, or you could visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+To find out about JuliaMono's Unicode support, you could look at the Glyphs page on this site, or you could visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
 
 ~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
 
@@ -44,12 +42,11 @@ julia> glyphy(0x203d)
 
 ## ‘I don’t like it as much as ``$(my_favourite_font)``’
 
-**That’s not a question!** But I know what you mean. Choice of work environment (editor, font, colour scheme, background music, preferred beverage, etc.) is very much a personal thing, and over the hours, days, and weeks that you work with your particular setup, you’ll grow accustomed to it, and unfamiliar work environments will look unappealing or even ugly. You’d probably need to try any alternatives for a while before you get more accustomed to them. Fortunately, you don’t have to try [Comic Code](https://www.myfonts.com/fonts/tabular-type-foundry/comic-code/), the [Kakoune editor](http://kakoune.org), the music of [Autechre](http://autechre.ws/), [Durian tea](https://www.tealeaves.com/products/durian), or anything else that’s new and unfamiliar; just stick to your current favourites!
-
+**That’s not a question!** But I know what you mean. Choice of work environment (editor, font, colour scheme, background music, preferred beverage, etc.) is very much a personal thing, and over the hours, days, and weeks that you work with your particular setup, you’ll grow accustomed to it, and unfamiliar work environments will look unappealing or even ugly. You’d probably need to try any alternatives for a while before you get more accustomed to them.
 
 ## ‘How can I use the web fonts?’
 
-Find the relevant CSS file, and add a link to the WOFF2 stored on the server.
+Find the relevant CSS file, and add a link to a WOFF2 file stored on a server.
 
 Option 1 (using the [jsdelivr](https://cdn.jsdelivr.net) content delivery network):
 
@@ -109,7 +106,7 @@ For example, if you like a slashed zero, a single story g, and fancier HTML comm
 	}
 ```
 
-If you hate all contextual alternates, but quite fancy a lighter asterisk, use this:
+If you don’t like contextual alternates, but quite fancy a lighter asterisk, use this:
 
 ```css
  selector {
@@ -416,7 +413,7 @@ The font is OFL/SIL-licensed, and you can find the source [here](https://github.
 
 ## ‘Is it finished?’
 
-Some say that projects are never finished, just abandoned. As of June 2023, I'm still making small changes and fixes, and it's currently at version 0.050. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
+Some say that projects are never finished, just abandoned. As of December 2023, I’m still making small changes and fixes, and it’s currently at version 0.052. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
 
 ## ‘Why don’t these accents/marks work properly?’
 
