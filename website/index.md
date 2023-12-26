@@ -6,7 +6,7 @@
 
 ~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
 
-JuliaMono is a monospaced typeface designed for programming and in other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference (which was to have been held in Lisbon, Portugal, but took place online.)
+JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference (which was to have been held in Lisbon, Portugal, but took place online.)
 
 JuliaMono is:
 
