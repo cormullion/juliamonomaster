@@ -62,7 +62,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.048/JuliaMono-Light.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.052/JuliaMono-Light.woff2");
 }
 ```
 
@@ -77,7 +77,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.048 here), whereas the JSDELIVR version always retrieves the latest release.
+Notice that the CDNJS version points to a specific version (e.g. v0.052 here), whereas the JSDELIVR version always retrieves the latest release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -403,7 +403,7 @@ However, programming and coding typefaces have to address different problems:
 
 So I'd argue that making letters easy to distinguish is as important as making them harmoniously consistent. A primary goal is to make characters that tend to be similar different. For example, the digits 3, 8, and 0 have similar curved tops, so the 3 has a flat-top, and the 0 is more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.
 
-The shapes aren’t compressed or condensed. The glyphs aren’t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you’d expect (my eyesight is probably poorer than yours!). Perhaps it’s not so good for non-code text (do you find this web page difficult to read?).
+The shapes aren’t compressed or condensed. The glyphs aren’t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you’d expect (my eyesight is probably poorer than yours!). Perhaps it’s not so good for non-code text (do you find this web page difficult to read?). One feature of JuliaMono is that there's some variability and inconsistency in the design; this is the result of human inadequacy :) 
 
 If you want to find out more about typeface and font legibility, a good place to start would be to see the work of [Sophie Beier](http://sofiebeier.dk).
 
@@ -413,7 +413,7 @@ The font is OFL/SIL-licensed, and you can find the source [here](https://github.
 
 ## ‘Is it finished?’
 
-Some say that projects are never finished, just abandoned. As of December 2023, I’m still making small changes and fixes, and it’s currently at version 0.053. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
+Some say that projects are never finished, just abandoned. As of March 2024, I’m still making small changes and fixes, and it’s currently at version 0.054. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be truly finished.
 
 ## ‘Why don’t these accents/marks/diacritics work properly?’
 

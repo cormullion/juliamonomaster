@@ -271,7 +271,7 @@ code.language-julia.hljs {
 
 .code_ss_on {
 	width:100%;
-	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss20";
+	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss20";
 	font-variant-ligatures: no-contextual;
 	font-weight: normal;
 }

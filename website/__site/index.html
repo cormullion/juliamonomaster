@@ -480,7 +480,7 @@ julia&gt; ❤&#40;s&#41; &#61; println&#40;&quot;I ❤ &#36;&#40;s&#41;&quot;&#4
 
 julia&gt; ❤&#40;&quot;Julia&quot;&#41;
 I ❤ Julia</code></pre>
-<h2 id="contextual_and_stylistic_alternates_ligatures"><a href="#contextual_and_stylistic_alternates_ligatures" class="header-anchor">Contextual and stylistic alternates &#40;“ligatures”&#41;</a></h2>
+<h2 id="contextual_and_stylistic_alternates_often_called_ligatures"><a href="#contextual_and_stylistic_alternates_often_called_ligatures" class="header-anchor">Contextual and stylistic alternates &#40;often called “ligatures”&#41;</a></h2>
 <p>JuliaMono is an <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as <span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span> in certain fonts are replaced by a single glyph such as <span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>. These alternatives, often referred to generally as ‘<a href="https://en.wikipedia.org/wiki/Orthographic_ligature">ligatures</a>’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.</p>
 <p>If you love lots of programming-oriented ligatures, you should probably use <a href="https://fonts.google.com/specimen/Fira&#43;Code">Fira Code</a>, a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a big fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[10]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
 <p>Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren&#39;t usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.</p>
@@ -668,6 +668,13 @@ df2 &#61; df |&gt;
     <td class="code_ss_off">()[]{}</td>
     <td class="code_ss_on">()[]{}</td>
     <td><p>smaller parentheses etc</p></td>
+    </tr>
+	<tr>
+
+	<td>ss17</td>
+    <td class="code_ss_off">⣰⣲⣴</td>
+    <td class="code_ss_on">⣰⣲⣴</td>
+    <td><p>quadrants replace Braille dots</p></td>
     </tr>
 
 	<tr>
@@ -901,7 +908,7 @@ Welcome to </code></pre>
 </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: December 26, 2023. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: March 06, 2024. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

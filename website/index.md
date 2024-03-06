@@ -503,7 +503,7 @@ julia> ❤("Julia")
 I ❤ Julia
 ```
 
-## Contextual and stylistic alternates (“ligatures”)
+## Contextual and stylistic alternates (often called “ligatures”)
 
 JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as ~~~<span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span>~~~ in certain fonts are replaced by a single glyph such as ~~~<span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>~~~. These alternatives, often referred to generally as ‘[ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature)’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.
 
@@ -707,6 +707,13 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td class="code_ss_off">()[]{}</td>
     <td class="code_ss_on">()[]{}</td>
     <td><p>smaller parentheses etc</p></td>
+    </tr>
+	<tr>
+
+	<td>ss17</td>
+    <td class="code_ss_off">⣰⣲⣴</td>
+    <td class="code_ss_on">⣰⣲⣴</td>
+    <td><p>quadrants replace Braille dots</p></td>
     </tr>
 
 	<tr>
