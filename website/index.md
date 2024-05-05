@@ -748,6 +748,13 @@ Some character variations are provided in `cv..` features.
     <td class="code_cv_on">~</td>
     <td class="code_ss_off"><p>alternate ASCII tilde</p></td>
     </tr>
+    <tr>
+	<td class="code_ss_off">cv04</td>
+    <td class="code_ss_off">l</td>
+    <td class="code_cv_on">l</td>
+    <td class="code_ss_off"><p>alternate l</p></td>
+    </tr>
+
 </table>
 ~~~
 
