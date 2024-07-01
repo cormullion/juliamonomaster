@@ -53,7 +53,8 @@ Option 1 (using the [jsdelivr](https://cdn.jsdelivr.net) content delivery networ
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2");
+    src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Black.woff2");
+	/* src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2"); */
 }
 ```
 
@@ -62,7 +63,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.052/JuliaMono-Light.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.056/JuliaMono-Light.woff2");
 }
 ```
 
@@ -77,7 +78,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.052 here), whereas the JSDELIVR version always retrieves the latest release.
+Notice that the CDNJS version points to a specific version (e.g. v0.056 here), whereas the JSDELIVR version always retrieves the latest release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -413,7 +414,7 @@ The font is OFL/SIL-licensed, and you can find the source [here](https://github.
 
 ## ‘Is it finished?’
 
-Some say that projects are never finished, just abandoned. As of March 2024, I’m still making small changes and fixes, and it’s currently at version 0.054. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be truly finished.
+Some say that projects are never finished, just abandoned. As of March 2024, I’m still making small changes and fixes, and it’s currently at version 0.056. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be truly finished.
 
 ## ‘Why don’t these accents/marks/diacritics work properly?’
 

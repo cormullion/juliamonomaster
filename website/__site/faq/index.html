@@ -80,12 +80,13 @@ julia&gt; glyphy&#40;0x203d&#41;
 <p>Option 1 &#40;using the <a href="https://cdn.jsdelivr.net">jsdelivr</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2&quot;&#41;;
+    src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Black.woff2&quot;&#41;;
+	/* src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2&quot;&#41;; */
 &#125;</code></pre>
 <p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.052/JuliaMono-Light.woff2&quot;&#41;;
+	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.056/JuliaMono-Light.woff2&quot;&#41;;
 &#125;</code></pre>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
 <pre><code class="language-css">pre &#123;
@@ -94,7 +95,7 @@ julia&gt; glyphy&#40;0x203d&#41;
 code &#123;
 	font-family: JuliaMono-Light;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.052 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
+<p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.056 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <h2 id="how_do_i_control_features_in_vs_code_or_css"><a href="#how_do_i_control_features_in_vs_code_or_css" class="header-anchor">‘How do I control features in VS Code or CSS?’</a></h2>
@@ -332,7 +333,7 @@ display&#40;p&#41;</code></pre>
 <h2 id="wheres_the_source_whats_the_licence"><a href="#wheres_the_source_whats_the_licence" class="header-anchor">‘Where’s the source? What’s the licence?‘</a></h2>
 <p>The font is OFL/SIL-licensed, and you can find the source <a href="https://github.com/cormullion/juliamonomaster">here</a>. The SIL license allows you to do almost anything you want, <strong>except</strong> re-issue it under tha same name or with a different licence.</p>
 <h2 id="is_it_finished"><a href="#is_it_finished" class="header-anchor">‘Is it finished?’</a></h2>
-<p>Some say that projects are never finished, just abandoned. As of March 2024, I’m still making small changes and fixes, and it’s currently at version 0.054. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be truly finished.</p>
+<p>Some say that projects are never finished, just abandoned. As of March 2024, I’m still making small changes and fixes, and it’s currently at version 0.056. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be truly finished.</p>
 <h2 id="why_dont_these_accentsmarksdiacritics_work_properly"><a href="#why_dont_these_accentsmarksdiacritics_work_properly" class="header-anchor">‘Why don’t these accents/marks/diacritics work properly?’</a></h2>
 <p>Unicode allows you to combine characters - ie stack them vertically. For example, you can combine the glyph for <code>e</code> &#40;U&#43;0065&#41; with the glyph U&#43;20D7 &#40;the “combining right arrow above”&#41; to get:</p>
 <pre><code class="language-julia">e⃗</code></pre>
@@ -390,7 +391,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: March 06, 2024. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 01, 2024. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
