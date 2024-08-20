@@ -364,7 +364,7 @@ Then you can use something like `minted` to format the code.
 
 It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, `.WOFF` and `.WOFF2`, where the `2` indicates a more recent and slightly more compact format. `JuliaMono-Light.woff2` is 837KB - the size of a PNG image, perhaps?
 
-The `.TTF` versions are getting on for 2.5MB each. (See [Does it work on Windows]([this](/faq/#does_it_work_on_windows)).)
+The `.TTF` versions are getting on for 2.5MB each. (See [Does it work on Windows](/faq/#does_it_work_on_windows).)
 
 For comparison, the Themes folder of `.CSS` files for the Julia manual (and for every manual built with Documenter.jl since v0.21) is about 700KB. So in that light the WOFF2 fonts aren’t that bad. Of course, the two Google fonts downloaded by every Julia document (Lato and Roboto) are tiny, at 14KB and 11KB, with 221 glyphs in each.
 
