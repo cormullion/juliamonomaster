@@ -51,7 +51,7 @@
 	<!-- Content appended here -->
 <div class="franklin-content"><h1 id="juliamono_-_a_monospaced_font_for_scientific_and_technical_computing"><a href="#juliamono_-_a_monospaced_font_for_scientific_and_technical_computing" class="header-anchor">JuliaMono - a monospaced font for scientific and technical computing</a></h1>
 <img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> 
-<p>JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference &#40;which was to have been held in Lisbon, Portugal, but took place online.&#41;</p>
+<p>JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference &#40;which was to have been held in Lisbon, Portugal, but instead took place online.&#41;</p>
 <p>JuliaMono is:</p>
 <ul>
 <li><p>free</p>
@@ -128,7 +128,7 @@ var fonts = [
     }
 ]
 var options = {
-    initialText: "editable sample text editable sample text editable sample text",
+    initialText: "editable sample text",
 
     // This sets the UI element’s order and groupings
     order: [["fontsize", "lineheight", "letterspacing", "fontfamily"], "tester"],
@@ -234,7 +234,6 @@ end</code></pre>
 <span style="font-family: JuliaMono-BoldItalic;">JuliaMono-BoldItalic</span>
 <span style="font-family: JuliaMono-ExtraBoldItalic;">JuliaMono-ExtraBoldItalic</span>
 <span style="font-family: JuliaMono-BlackItalic;">JuliaMono-BlackItalic</span>
-<p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You don&#39;t want to use these - they&#39;re intended for use as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.&#41;</p>
 <p>In the hands of a virtuoso &#40;such as Dr Zygmunt Szpak, the author of the following Julia code fragment<sup id="fnref:zscode"><a href="#fndef:zscode" class="fnref">[5]</a></sup>&#41;, the range of available Unicode characters can be quite expressive:</p>
 <pre><code class="language-julia">function T&#40;𝛉::AbstractArray,
            𝒞::Tuple&#123;AbstractArray,
@@ -410,12 +409,61 @@ end</code></pre>
 </table>
 
 
+<h3 id="mono_space"><a href="#mono_space" class="header-anchor">Mono space</a></h3>
+<p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
+<p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
 <h2 id="unicode_coverage"><a href="#unicode_coverage" class="header-anchor">Unicode coverage</a></h2>
-<p>Here&#39;s a sample of some of the Unicode glyphs provided:</p>
-<img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> 
-<p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41; Here&#39;s a few less common ones:</p>
-<img src="/assets/specimen_7.png" width="100%" alt="specimen image 7"> 
-<p>You can see a complete list of glyphs on the Glyphs page &#40;caution: it&#39;s quite a large page&#41;. If you want a more flexible way of finding out about JuliaMono&#39;s Unicode support, you can visit <a href="https://glyphy.info">glyphy.info</a> and type a name &#40;eg <code>interrobang</code>&#41; or a hexadecimal number &#40;eg <code>0x203d</code>&#41; to see matching characters. If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
+<p>The current version of Unicode &#40;16&#41; defines about 150,000 glyphs. A font can contain only a maximum of 64,000 – you won&#39;t find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.</p>
+<p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41;</p>
+<p>JuliaMono is quite greedy<sup id="fnref:greedy"><a href="#fndef:greedy" class="fnref">[7]</a></sup>, and contains quite a few Unicode glyphs.</p>
+<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> 
+<p>&#40;Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences<sup id="fnref:otherfonts"><a href="#fndef:otherfonts" class="fnref">[8]</a></sup>&#41;.</p>
+<p>Here are a few areas of the vast sprawling Unicode landscape that are covered to a reasonable extent:</p>
+<p>Ogham and Runic</p>
+<pre><code class="language-julia">ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ᚛᚜ᚠᚡᚢᚣᚤᚥᚦᚧᚨᚩᚪᚫᚬᚭᚮᚯᚰᚱᚲ...</code></pre>
+<p>Boxes and line drawing:</p>
+<pre><code class="language-julia">╭───────── 2x&#43;√&#40;x^y&#41; ─────────╮
+│                             │
+│  2x &#43; √&#40;x ^ y&#41;              │
+│    ├─ 1 ⇒ &#43;                 │
+│    ├─ 2 ⇒ 2x                │
+│    │      ├─ 1 ⇒ *          │
+│    │      ├─ 2 ⇒ 2          │
+│    │      └─ 3 ⇒ x          │
+│    └─ 3 ⇒ √&#40;x ^ y&#41;          │
+│           ├─ 1 ⇒ √          │
+│           └─ 2 ⇒ x ^ y      │
+│                  ├─ 1 ⇒     │
+│                  ├─ 2 ⇒     │
+│                  └─ 3 ⇒     │
+│                             │
+╰─────────────────── inspect ─╯
+
+╔══╦══╗  ╭──┬──╮  ┏━━┳━━┓  ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐ 
+║┌─╨─┐║  │╓─╁─╖│  ┃┌─╂─┐┃  ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥ 
+║│╲ ╱│║  │║ ┃ ║│  ┃│ ╿ │┃  ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘ 
+╠╡ ╳ ╞╣  ├╫─╂─╫┤  ┣┿╾┼╼┿┫  ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓
+║│╱ ╲│║  │║ ┃ ║│  ┃│ ╽ │┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+║└─╥─┘║  │╙─╀─╜│  ┃└─╂─┘┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+╚══╩══╝  ╰──┴──╯  ┗━━┻━━┛           └╌╌┘ ╎ ┗╍╍┛</code></pre>
+<p>Fractions:</p>
+<pre><code class="language-julia">¼ ½ ¾ ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ⅟ ↉</code></pre>
+<p>Blackboard &#40;double-struck&#41;</p>
+<pre><code class="language-julia">𝔸 𝔹 𝔻 𝔼 𝔽 𝔾 𝕀 𝕁 𝕂 𝕃 𝕄 𝕆 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℂ ℍ ℕ ℙ ℚ ℝ ℤ ℼ ℽ ℾ ℿ ⅀ ⅅ ⅆ ⅇ ⅈ ⅉ 𝕒 𝕓 𝕔 𝕕 𝕖 𝕗 𝕘 𝕙 𝕚 𝕛 𝕜 𝕝 𝕞 𝕟 𝕠 𝕡 𝕢 𝕣 𝕤 𝕥 𝕦 𝕧 𝕨 𝕩 𝕪 𝕫 𝟘 𝟙 𝟚 𝟛 𝟜 𝟝 𝟞 𝟟 𝟠 𝟡</code></pre>
+<p>Maths:</p>
+<pre><code class="language-julia">⊂ ⊃ ⊄ ⊅ ⊆ ⊇ ⊈ ⊉ ⊊ ⊋ ⊌ ⊍ ⊎ ⊏ ⊐ ⊑ ⊒ ⊓ ⊔ ⊕ ⊖ ⊗ ⊘ ⊙ ⊚ ⊛ ⊜ ⊝ ⊞ ⊟ ⊠ ⊡ ⩂ ⊢ ⊣ ⊤ ⊥ ⊦ ⊧ ⊨ ⊩ ⊪ ⊫ ⊬ ⊭ ⊮ ⊯ ⊰ ⊱ ⨔ ⨕ 𝒜 𝒞 𝒟 𝒢 𝒥 𝒦 𝒩 𝒪 𝒫 𝒬 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵 𝒶 𝒷 𝒸 𝒹 𝒻 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏 𝒜︁ ℬ︁ 𝒞︁ 𝒟︁ ℰ︁ ℱ︁ 𝒢︁ ℋ︁ ℐ︁ 𝒥︁ 𝒦︁ ℒ︁ ℳ︁ 𝒩︁ 𝒪︁ 𝒫︁ 𝒬︁ ℛ︁ 𝒮︁ 𝒯︁ 𝒰︁ 𝒱︁ 𝒲︁ 𝒳︁ 𝒴︁ 𝒵 ...</code></pre>
+<p>For a comparison of JuliaMono with other math-capable monospaced fonts, visit <a href="https://mono-math.netlify.app">mono-math.netlify.app</a>, which shows how Unicode math symbols look in various fonts.</p>
+<p>Braille &#40;for graphics&#41;</p>
+<pre><code class="language-julia">⠁ ⠂ ⠃ ⠄ ⠅ ⠆ ⠇ ⠈ ⠉ ⠊ ⠋ ⠌ ⠍ ⠎ ⠏ ⠐ ⠑ ⠒ ⠓ ⠔ ⠕ ⠖ ⠗ ⠘ ⠙ ⠚ ⠛ ⠜ ⠝ ⠞ ⠟ ⠠ ⠡ ⠢ ⠣ ⠤ ⠥ ...</code></pre>
+<p>Arrows &#40;hundreds of them&#41;</p>
+<pre><code class="language-julia">← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨ ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷ ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛ ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥ ⇦ ⇧ ⇨ ⇩ ⇪ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰ ⇱ ⇲ ⇳ ⇴ ⇵ ⇶ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⌁ ⌃ ⌄ ⌤ ⍇ ⍈ ⍐ ⍗ ⍼ ⎋ ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➢ ➣ ➤ ➥ ➦ ➧ ➨ ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾ ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ...</code></pre>
+<p>Astrology and alchemy</p>
+<pre><code class="language-julia">☹ ☺ ☻ ☼ ☽ ☾ ☿ ♀ 🜀 🜁 🜂 🜃 🜄 🜅 🜆 🜇 🜈 🜉 🜊 🜋 🜌 🜍 🜎 🜏 🜐 🜑 🜒 🜓 🜔 🜕 🜖 🜗 🜘 🜙 🜚 🜛 🜜 🜝 🜞 🜟 🜠 🜡 🜢 🜣 🜤 🜥 🜦 🜧 🜨 🜩 🜪 🜫 🜬 🜭 🜮 🜯 🜰 🜱 🜲 🜳 🜵 🜶 🜷 🜸 🜹 🜺 🜻 🜼 🜽 🜾 🜿 🝀 🝁 🝂 🝃 🝄 🝅 🝆 🝇 🝈 🝉 🝊 🝋 🝌 🝍 🝎 🝏 🝐 🝑 🝒 🝓 🝔 🝕 🝖 🝗 🝘 🝙 🝚 🝛 🝜 🝝 🝞 🝟 🝠 🝡 🝢 🝣 🝤 🝥 🝦 🝧 🝨 🝩 🝪 🝫 🝬 🝭 🝮 🝯 🝰 🝱 🝲 🝳 ⯓ ⯔ ⯕ ⯖ ⯗ ⯘ ⯙ ⯚ ⯛ ⯜ ⯝ ⯞ ⯟ ⯠ ⯡ ⯢ ⯣ ⯤ ⯥ ⯦ ⯧ ⯰ ⯱ ⯲ ⯳ ⯴ ⯵ ⯶ ⯷ ⯸ ...</code></pre>
+<p>Retrocomputing:</p>
+<pre><code class="language-julia">𜳖 𜳗 𜳘 𜳙 𜳚 𜳛 𜳜 𜳝 𜳞 𜳟 𜳠 𜳡 𜳢 𜳣 𜳤 𜳥 𜳦 𜳧 𜳨 𜳩 𜳪 𜳫 𜳬 𜳭 𜳮 𜳯 𜱌 𜱍
+𜴀 𜴁 𜴂 𜴃 𜴄 𜴅 𜴆 𜴇 𜴈 𜴉 𜴊 𜴋 𜴌 𜴍 𜴎 𜴏 𜴐 𜴑 𜴒 𜴓 𜴔 𜴕 𜴖 𜴗 𜴘 𜴙 𜴚 𜴛 𜴜 𜴝 𜴞 𜴟 𜴠 𜴡 𜴢 𜴣 𜴤 𜴥 𜴦 𜴧 𜴨 𜴩 𜴪 𜴫 𜴬 𜴭 𜴮 𜴯 𜴰 𜴱 𜴲 𜴳 𜴴 ...</code></pre>
+<p>You can see a complete list of glyphs on the Glyphs page &#40;caution: it&#39;s quite a large page&#41;. </p>
+<p>If you want a more flexible way of finding out about JuliaMono&#39;s Unicode support, you can visit <a href="https://glyphy.info">glyphy.info</a> and type a name &#40;eg <code>interrobang</code>&#41; or a hexadecimal number &#40;eg <code>0x203d</code>&#41; to see matching characters. If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
 <img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> 
 <p>If you&#39;re using the Julia language, you can also do this in the Julia REPL. Install the registered Glyphy.jl package in the usual way, and then run it like this:</p>
 <pre><code class="language-julia">julia&gt; using Glyphy
@@ -432,41 +480,6 @@ julia&gt; glyphy&#40;&quot;interrobang&quot;&#41;
 julia&gt; glyphy&#40;0x203d&#41;
 
 0203d   ‽   ✓    interrobang</code></pre>
-<h3 id="mono_space"><a href="#mono_space" class="header-anchor">Mono space</a></h3>
-<p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
-<p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
-<p>The Julia package <a href="https://github.com/Evizero/UnicodePlots.jl">UnicodePlots.jl</a> uses various Unicode characters to plot figures directly in a terminal window. <sup id="fnref:linespacing"><a href="#fndef:linespacing" class="fnref">[7]</a></sup></p>
-
-<div id="enlargewrap">
-    <a class="enlarge">
-        <img src="/assets/unicodeplots.png" width = "300" alt="UnicodePlots in action">
-            <span>
-                <img src="/assets/unicodeplots.png" width = "800" alt="UnicodePlots in action">
-            </span>
-    </a>
-</div>
-
-<p>It’s also a good idea to support box-drawing characters, such as the ones used for displaying DataFrames.jl output &#40;terminal permitting&#41;:</p>
-<pre><code class="language-julia">julia&gt; df &#61; DataFrame&#40;A&#61;samples, B&#61;glyphs&#41;
-df &#61; 10×2 DataFrame
-│ Row │ A              │ B                   │
-│     │ String         │ String              │
-├─────┼────────────────┼─────────────────────┤
-│ 1   │ sample 1       │ ▁▂▁▁▂▄▅▁▄▁▁▅▆▂▇▅▂▇  │
-│ 2   │ sample 2       │ ▁▂▄▁▁▃▁▆▂▆▃▁▂▃▂▇▄   │
-│ 3   │ sample 3       │ ▁▆▇▁▃▇▇▆▅▅▄▇▇▅▅▇▄▂  │
-│ 4   │ sample 4       │ ▅▁▄▁▆▃▁▃▇▂▂▇▅▇▃▆▃▁  │
-│ 5   │ sample 5       │ ▆▂▁▂▇▆▃▅▅▄▆▇▄▇▆▁▇   │
-│ 6   │ sample 6       │ ▁▁▇▂▂▇▃▅▂▂▆▂▄▄▁▄▂▇▆ │
-│ 7   │ sample 7       │ ▂▃▂▁▁▇▁▂▆▂▁▇▁▄▃▂▁▄  │
-│ 8   │ sample 8       │ ▄▄▁▂▄▁▅▁▅▁▂▂▇▂▁▃▄▄  │
-│ 9   │ sample 9       │ ▁▁▁▂▁▆▃▄▄▁▂▂▃▂▁▅▁▆▃ │
-│ 10  │ sample 10      │ ▁▇▄▂▅▃▇▁▇▇▆▄▇▅▄▂▄▅▄ │</code></pre>
-<p>&#40;Can you spot the little used and sadly mathematically-unsupported “times” &#40;×&#41; character?&#41;</p>
-<p>For a comparison of JuliaMono with other math-capable monospaced fonts, visit <a href="https://mono-math.netlify.app">mono-math.netlify.app</a>, which shows how Unicode math symbols look.</p>
-<p>JuliaMono is quite greedy<sup id="fnref:greedy"><a href="#fndef:greedy" class="fnref">[8]</a></sup>, and contains quite a few Unicode glyphs.</p>
-<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> 
-<p>&#40;Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences<sup id="fnref:otherfonts"><a href="#fndef:otherfonts" class="fnref">[9]</a></sup>&#41;.</p>
 <p>For Julia users, if you want to know whether you can use a Unicode character as an identifier in your Julia code, use the undocumented function <code>Base.isidentifier&#40;&#41;</code>. So, for example, if you have the urge to use a dingbat &#40;one of the classic <a href="https://en.wikipedia.org/wiki/Zapf_Dingbats">Herman Zapf dingbat</a> designs&#41; as a variable name, you could look for something suitable in the output of this:</p>
 <pre><code class="language-julia">julia&gt;  for n in 0x2700:0x27bf
 			Base.isidentifier&#40;string&#40;Char&#40;n&#41;&#41;&#41; &amp;&amp; print&#40;Char&#40;n&#41;&#41;
@@ -482,10 +495,10 @@ julia&gt; ❤&#40;&quot;Julia&quot;&#41;
 I ❤ Julia</code></pre>
 <h2 id="contextual_and_stylistic_alternates_often_called_ligatures"><a href="#contextual_and_stylistic_alternates_often_called_ligatures" class="header-anchor">Contextual and stylistic alternates &#40;often called “ligatures”&#41;</a></h2>
 <p>JuliaMono is an <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as <span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span> in certain fonts are replaced by a single glyph such as <span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>. These alternatives, often referred to generally as ‘<a href="https://en.wikipedia.org/wiki/Orthographic_ligature">ligatures</a>’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.</p>
-<p>If you love lots of programming-oriented ligatures, you should probably use <a href="https://fonts.google.com/specimen/Fira&#43;Code">Fira Code</a>, a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a big fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[10]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
+<p>If you love lots of programming-oriented ligatures, you should probably use <a href="https://fonts.google.com/specimen/Fira&#43;Code">Fira Code</a>, a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[9]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
 <p>Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren&#39;t usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.</p>
 <h3 id="contextual_alternates"><a href="#contextual_alternates" class="header-anchor">Contextual alternates</a></h3>
-<p>In JuliaMono, the following substitutions &#40;‘ligatures’&#41; are applied when the <strong>contextual alternates</strong> feature &#40;<code>calt</code>&#41; is active:</p>
+<p>In JuliaMono, the following substitutions &#40;‘ligatures’&#41; are applied when the <strong>contextual alternates</strong> feature &#40;<code>calt</code>&#41; is active, which it usually is:</p>
 
 <table class="sstable">
     <tr>
@@ -527,7 +540,7 @@ I ❤ Julia</code></pre>
     </tr>
 </table>
 
-<p>You can see some of these in action in the following code fragment:<sup id="fnref:width"><a href="#fndef:width" class="fnref">[11]</a></sup></p>
+<p>You can see some of these in action in the following code fragment:<sup id="fnref:width"><a href="#fndef:width" class="fnref">[10]</a></sup></p>
 <pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41;
 &#40;x, y&#41; -&gt; &#40;x &#43; y&#41;
 f&#40;p::Int&#41; &#61; p * p
@@ -543,10 +556,11 @@ df2 &#61; df |&gt;
     @groupby&#40;_.a&#41; |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre>
+<p>Note that these “ligatures” have to be interpreted by the terminal you’re using - the font depends on the terminal software to replace the glyphs with the joined versions. Not all terminals support ligatures&#33;</p>
 <h3 id="stylistic_sets"><a href="#stylistic_sets" class="header-anchor">Stylistic sets</a></h3>
 <p>OpenType fonts also offer you the ability to choose different designs for certain characters. These are stored as ‘stylistic sets’.</p>
 <p>All these options are stored in the font, and are often referred to by their internal four letter code &#40;not the best user-oriented design, really&#41;. For example, the contextual alternates listed above are collectively stored in the <strong>calt</strong> feature.</p>
-<p>Sometimes, an application will show the options more visually in a Typography panel<sup id="fnref:typographypanel"><a href="#fndef:typographypanel" class="fnref">[12]</a></sup>, usually tucked away somewhere on a Font chooser dialog.</p>
+<p>Sometimes, an application will show the options more visually in a Typography panel<sup id="fnref:typographypanel"><a href="#fndef:typographypanel" class="fnref">[11]</a></sup>, usually tucked away somewhere on a Font chooser dialog.</p>
 <p>Here’s a list of the stylistic sets currently available in JuliaMono.</p>
 
 <table class="sstable">
@@ -718,7 +732,7 @@ df2 &#61; df |&gt;
 
 <p>All this fancy technology is under the control of the application and the operating system you’re using. Ideally, they will provide an easy way for you to switch the various OpenType features on and off.</p>
 <p>Browser-based editors such as VS Code support many OpenType features in their editor windows, but not so much in the terminal emulator/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. &#40;See <a href="/faq/#how_do_i_control_features_in_vs_code_or_css">this section</a>.&#41; Some features are opt in, others are opt out; this too can vary from application to application.</p>
-<p>Terminal/console applications also vary a lot. <a href="https://wezfurlong.org/wezterm/">wezterm</a> is cross-platform and provides excellent font support. On MacOS the <strong>Terminal</strong> and <strong>iTerm</strong> applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as <a href="https://konsole.kde.org">Konsole</a> and <a href="https://sw.kovidgoyal.net/kitty/#font-control">Kitty</a> offer quite good OpenType support, but others such as <a href="https://github.com/alacritty/alacritty">Alacritty</a> offer little or none, as yet. <sup id="fnref:terminal"><a href="#fndef:terminal" class="fnref">[13]</a></sup></p>
+<p>Terminal/console applications also vary a lot. <a href="https://wezfurlong.org/wezterm/">wezterm</a> is cross-platform and provides excellent font support. On MacOS the <strong>Terminal</strong> and <strong>iTerm</strong> applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as <a href="https://konsole.kde.org">Konsole</a> and <a href="https://sw.kovidgoyal.net/kitty/#font-control">Kitty</a> offer quite good OpenType support, but others such as <a href="https://github.com/alacritty/alacritty">Alacritty</a> offer little or none, as yet. <sup id="fnref:terminal"><a href="#fndef:terminal" class="fnref">[12]</a></sup></p>
 <p>If the application allows, you should be able to switch the <code>calt</code> contextual ligatures off, particularly since a few people won’t like any of them in their code. </p>
 <p>You can swtich the <strong>calt</strong> set off using CSS &#40;see <a href="/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code">here</a>&#41;. You can enable one or more of the alternative stylistic sets.</p>
 <p>Off &#40;<code>calt</code> off, no stylistic sets&#41;:</p>
@@ -868,45 +882,39 @@ Welcome to </code></pre>
         <td class="fndef-content">&nbsp; “languages” Apologies for errors - I don’t speak most of these languages.</td>
     </tr>
 </table>
- <table class="fndef" id="fndef:linespacing">
+  <table class="fndef" id="fndef:greedy">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:linespacing">[7]</a></td>
-        <td class="fndef-content">&nbsp; “terminals and line spacing” Terminal applications usually provide the option to vary the line spacing. For perfectly smooth Unicode plots, you can adjust this until the shaded glyphs are in tune. But for coding purposes you might want the line spacing increased &#40;or decreased&#41; from the default, depending on the trade-off between reading speed, font size, and how many lines of code you can cram in.</td>
-    </tr>
-</table>
- <table class="fndef" id="fndef:greedy">
-    <tr>
-        <td class="fndef-backref"><a href="#fnref:greedy">[8]</a></td>
+        <td class="fndef-backref"><a href="#fnref:greedy">[7]</a></td>
         <td class="fndef-content">&nbsp; “greedy” referencing <a href="https://julialang.org/blog/2012/02/why-we-created-julia/">this classic Julia blog post</a></td>
     </tr>
 </table>
  <table class="fndef" id="fndef:otherfonts">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:otherfonts">[9]</a></td>
+        <td class="fndef-backref"><a href="#fnref:otherfonts">[8]</a></td>
         <td class="fndef-content">&nbsp; “better fonts...” Operator Mono and Fira Code are excellent typefaces... Try them&#33; Also try IBM Plex Mono, Iosevka, Recursive, and Victor Mono, to name just a few of my favourites. Like programming languages, every typeface has its strengths and weaknesses.</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:nottheonlyone">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:nottheonlyone">[10]</a></td>
+        <td class="fndef-backref"><a href="#fnref:nottheonlyone">[9]</a></td>
         <td class="fndef-content">&nbsp; “not the only one” Matthew Butterick says <a href="https://practicaltypography.com/ligatures-in-programming-fonts-hell-no.html">“hell no”</a> to them. He also uses the phrase “well-intentioned amateur ligaturists” which isn’t a label I want to have. But more seriously, he says: “my main concern is typography that faces other human beings. So if you’re preparing your code for others to read — whether on screen or on paper — skip the ligatures.”  I don’t quite agree with Fira Code’s developer that they save your brain some milliseconds of recognition time; I find I have to double-check a combination to remember what it represents, or how many characters have been replaced. But your mileage might vary.</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:width">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:width">[11]</a></td>
+        <td class="fndef-backref"><a href="#fnref:width">[10]</a></td>
         <td class="fndef-content">&nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ &#40;<span class="code_ss_off">-></span>&#41;, these are the width of a single character,and so you’d be changing the width of your string/line whenever you made the substitution.</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:typographypanel">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:typographypanel">[12]</a></td>
+        <td class="fndef-backref"><a href="#fnref:typographypanel">[11]</a></td>
         <td class="fndef-content">&nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive but I’m not convinced that all the buttons are wired up yet...</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:terminal">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:terminal">[13]</a></td>
+        <td class="fndef-backref"><a href="#fnref:terminal">[12]</a></td>
         <td class="fndef-content">&nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: <a href="https://wezfurlong.org/wezterm/">wezterm</a> is about the best, although configuring the macOS Terminal is a bit easier, and <a href="https://iterm2.com">iTerm</a> for macOS is also a reasonable alternative. In the world of fonts, nothing is 100&#37; correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a <a href="https://github.com/microsoft/vscode/issues/34103">VS Code</a> issue; here are the <a href="https://github.com/alacritty/alacritty/issues/50">Alacritty terminal developers</a> working on it; here is the <a href="https://iterm2.com/documentation-fonts.html">iTerm documentation</a> talking about performance.</td>
     </tr>
 </table>
@@ -915,7 +923,7 @@ Welcome to </code></pre>
 </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 05, 2024. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: October 20, 2024. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

@@ -6,7 +6,7 @@
 
 ~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
 
-JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference (which was to have been held in Lisbon, Portugal, but took place online.)
+JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference (which was to have been held in Lisbon, Portugal, but instead took place online.)
 
 JuliaMono is:
 
@@ -81,7 +81,7 @@ var fonts = [
     }
 ]
 var options = {
-    initialText: "editable sample text editable sample text editable sample text",
+    initialText: "editable sample text",
 
     // This sets the UI element’s order and groupings
     order: [["fontsize", "lineheight", "letterspacing", "fontfamily"], "tester"],
@@ -219,8 +219,6 @@ Each of these also has a matching italic variant: so JuliaMono-Light has JuliaMo
 ~~~<span style="font-family: JuliaMono-ExtraBoldItalic;">JuliaMono-ExtraBoldItalic</span>~~~
 
 ~~~<span style="font-family: JuliaMono-BlackItalic;">JuliaMono-BlackItalic</span>~~~
-
-(There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. You don't want to use these - they're intended for use as place-holders, of interest if you want to have more control over font loading times in web browser-based applications.)
 
 In the hands of a virtuoso (such as Dr Zygmunt Szpak, the author of the following Julia code fragment[^zscode]), the range of available Unicode characters can be quite expressive:
 
@@ -404,17 +402,106 @@ Here are some samples of various languages[^languages] :
 
 ~~~
 
+### Mono space
+
+In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code. You probably want ∑s in your code rather than $ \sum $s, because the big ones will upset your formatting.
+
+From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.
+
 ## Unicode coverage
 
-Here's a sample of some of the Unicode glyphs provided:
+The current version of Unicode (16) defines about 150,000 glyphs. A font can contain only a maximum of 64,000 -- you won't find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.
 
-~~~<img src="/assets/unicode-sample.svg" width="100%" alt="Unicode sampler"> ~~~
+One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.)
 
-One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.) Here's a few less common ones:
+JuliaMono is quite greedy[^greedy], and contains quite a few Unicode glyphs.
 
-~~~<img src="/assets/specimen_7.png" width="100%" alt="specimen image 7"> ~~~
+~~~<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> ~~~
 
-You can see a complete list of glyphs on the Glyphs page (caution: it's quite a large page). If you want a more flexible way of finding out about JuliaMono's Unicode support, you can visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`) to see matching characters. If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+(Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences[^otherfonts]).
+
+Here are a few areas of the vast sprawling Unicode landscape that are covered to a reasonable extent:
+
+Ogham and Runic
+```julia
+ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ᚛᚜ᚠᚡᚢᚣᚤᚥᚦᚧᚨᚩᚪᚫᚬᚭᚮᚯᚰᚱᚲ...
+```
+
+Boxes and line drawing:
+
+```julia
+╭───────── 2x+√(x^y) ─────────╮
+│                             │
+│  2x + √(x ^ y)              │
+│    ├─ 1 ⇒ +                 │
+│    ├─ 2 ⇒ 2x                │
+│    │      ├─ 1 ⇒ *          │
+│    │      ├─ 2 ⇒ 2          │
+│    │      └─ 3 ⇒ x          │
+│    └─ 3 ⇒ √(x ^ y)          │
+│           ├─ 1 ⇒ √          │
+│           └─ 2 ⇒ x ^ y      │
+│                  ├─ 1 ⇒     │
+│                  ├─ 2 ⇒     │
+│                  └─ 3 ⇒     │
+│                             │
+╰─────────────────── inspect ─╯
+
+╔══╦══╗  ╭──┬──╮  ┏━━┳━━┓  ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐ 
+║┌─╨─┐║  │╓─╁─╖│  ┃┌─╂─┐┃  ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥ 
+║│╲ ╱│║  │║ ┃ ║│  ┃│ ╿ │┃  ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘ 
+╠╡ ╳ ╞╣  ├╫─╂─╫┤  ┣┿╾┼╼┿┫  ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓
+║│╱ ╲│║  │║ ┃ ║│  ┃│ ╽ │┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+║└─╥─┘║  │╙─╀─╜│  ┃└─╂─┘┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+╚══╩══╝  ╰──┴──╯  ┗━━┻━━┛           └╌╌┘ ╎ ┗╍╍┛
+```
+
+Fractions:
+
+```julia
+¼ ½ ¾ ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ⅟ ↉ 
+```
+
+Blackboard (double-struck)
+```julia
+𝔸 𝔹 𝔻 𝔼 𝔽 𝔾 𝕀 𝕁 𝕂 𝕃 𝕄 𝕆 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℂ ℍ ℕ ℙ ℚ ℝ ℤ ℼ ℽ ℾ ℿ ⅀ ⅅ ⅆ ⅇ ⅈ ⅉ 𝕒 𝕓 𝕔 𝕕 𝕖 𝕗 𝕘 𝕙 𝕚 𝕛 𝕜 𝕝 𝕞 𝕟 𝕠 𝕡 𝕢 𝕣 𝕤 𝕥 𝕦 𝕧 𝕨 𝕩 𝕪 𝕫 𝟘 𝟙 𝟚 𝟛 𝟜 𝟝 𝟞 𝟟 𝟠 𝟡 
+```
+
+Maths:
+
+```julia
+⊂ ⊃ ⊄ ⊅ ⊆ ⊇ ⊈ ⊉ ⊊ ⊋ ⊌ ⊍ ⊎ ⊏ ⊐ ⊑ ⊒ ⊓ ⊔ ⊕ ⊖ ⊗ ⊘ ⊙ ⊚ ⊛ ⊜ ⊝ ⊞ ⊟ ⊠ ⊡ ⩂ ⊢ ⊣ ⊤ ⊥ ⊦ ⊧ ⊨ ⊩ ⊪ ⊫ ⊬ ⊭ ⊮ ⊯ ⊰ ⊱ ⨔ ⨕ 𝒜 𝒞 𝒟 𝒢 𝒥 𝒦 𝒩 𝒪 𝒫 𝒬 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵 𝒶 𝒷 𝒸 𝒹 𝒻 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏 𝒜︁ ℬ︁ 𝒞︁ 𝒟︁ ℰ︁ ℱ︁ 𝒢︁ ℋ︁ ℐ︁ 𝒥︁ 𝒦︁ ℒ︁ ℳ︁ 𝒩︁ 𝒪︁ 𝒫︁ 𝒬︁ ℛ︁ 𝒮︁ 𝒯︁ 𝒰︁ 𝒱︁ 𝒲︁ 𝒳︁ 𝒴︁ 𝒵 ...
+```
+
+For a comparison of JuliaMono with other math-capable monospaced fonts, visit [mono-math.netlify.app](https://mono-math.netlify.app), which shows how Unicode math symbols look in various fonts.
+
+Braille (for graphics)
+
+```julia
+⠁ ⠂ ⠃ ⠄ ⠅ ⠆ ⠇ ⠈ ⠉ ⠊ ⠋ ⠌ ⠍ ⠎ ⠏ ⠐ ⠑ ⠒ ⠓ ⠔ ⠕ ⠖ ⠗ ⠘ ⠙ ⠚ ⠛ ⠜ ⠝ ⠞ ⠟ ⠠ ⠡ ⠢ ⠣ ⠤ ⠥ ...
+```
+
+Arrows (hundreds of them)
+```julia
+ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨ ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷ ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛ ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥ ⇦ ⇧ ⇨ ⇩ ⇪ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰ ⇱ ⇲ ⇳ ⇴ ⇵ ⇶ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⌁ ⌃ ⌄ ⌤ ⍇ ⍈ ⍐ ⍗ ⍼ ⎋ ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➢ ➣ ➤ ➥ ➦ ➧ ➨ ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾ ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ...
+```
+
+Astrology and alchemy
+
+```julia
+☹ ☺ ☻ ☼ ☽ ☾ ☿ ♀ 🜀 🜁 🜂 🜃 🜄 🜅 🜆 🜇 🜈 🜉 🜊 🜋 🜌 🜍 🜎 🜏 🜐 🜑 🜒 🜓 🜔 🜕 🜖 🜗 🜘 🜙 🜚 🜛 🜜 🜝 🜞 🜟 🜠 🜡 🜢 🜣 🜤 🜥 🜦 🜧 🜨 🜩 🜪 🜫 🜬 🜭 🜮 🜯 🜰 🜱 🜲 🜳 🜵 🜶 🜷 🜸 🜹 🜺 🜻 🜼 🜽 🜾 🜿 🝀 🝁 🝂 🝃 🝄 🝅 🝆 🝇 🝈 🝉 🝊 🝋 🝌 🝍 🝎 🝏 🝐 🝑 🝒 🝓 🝔 🝕 🝖 🝗 🝘 🝙 🝚 🝛 🝜 🝝 🝞 🝟 🝠 🝡 🝢 🝣 🝤 🝥 🝦 🝧 🝨 🝩 🝪 🝫 🝬 🝭 🝮 🝯 🝰 🝱 🝲 🝳 ⯓ ⯔ ⯕ ⯖ ⯗ ⯘ ⯙ ⯚ ⯛ ⯜ ⯝ ⯞ ⯟ ⯠ ⯡ ⯢ ⯣ ⯤ ⯥ ⯦ ⯧ ⯰ ⯱ ⯲ ⯳ ⯴ ⯵ ⯶ ⯷ ⯸ ...
+```
+
+Retrocomputing:
+
+```julia
+𜳖 𜳗 𜳘 𜳙 𜳚 𜳛 𜳜 𜳝 𜳞 𜳟 𜳠 𜳡 𜳢 𜳣 𜳤 𜳥 𜳦 𜳧 𜳨 𜳩 𜳪 𜳫 𜳬 𜳭 𜳮 𜳯 𜱌 𜱍
+𜴀 𜴁 𜴂 𜴃 𜴄 𜴅 𜴆 𜴇 𜴈 𜴉 𜴊 𜴋 𜴌 𜴍 𜴎 𜴏 𜴐 𜴑 𜴒 𜴓 𜴔 𜴕 𜴖 𜴗 𜴘 𜴙 𜴚 𜴛 𜴜 𜴝 𜴞 𜴟 𜴠 𜴡 𜴢 𜴣 𜴤 𜴥 𜴦 𜴧 𜴨 𜴩 𜴪 𜴫 𜴬 𜴭 𜴮 𜴯 𜴰 𜴱 𜴲 𜴳 𜴴 ...
+```
+
+You can see a complete list of glyphs on the Glyphs page (caution: it's quite a large page). 
+
+If you want a more flexible way of finding out about JuliaMono's Unicode support, you can visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`) to see matching characters. If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
 
 ~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
 
@@ -437,55 +524,6 @@ julia> glyphy(0x203d)
 0203d   ‽   ✓    interrobang
 ```
 
-### Mono space
-
-In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code. You probably want ∑s in your code rather than $ \sum $s, because the big ones will upset your formatting.
-
-From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.
-
-The Julia package [UnicodePlots.jl](https://github.com/Evizero/UnicodePlots.jl) uses various Unicode characters to plot figures directly in a terminal window. [^linespacing]
-
-~~~
-<div id="enlargewrap">
-    <a class="enlarge">
-        <img src="/assets/unicodeplots.png" width = "300" alt="UnicodePlots in action">
-            <span>
-                <img src="/assets/unicodeplots.png" width = "800" alt="UnicodePlots in action">
-            </span>
-    </a>
-</div>
-~~~
-
-It’s also a good idea to support box-drawing characters, such as the ones used for displaying DataFrames.jl output (terminal permitting):
-
-```
-julia> df = DataFrame(A=samples, B=glyphs)
-df = 10×2 DataFrame
-│ Row │ A              │ B                   │
-│     │ String         │ String              │
-├─────┼────────────────┼─────────────────────┤
-│ 1   │ sample 1       │ ▁▂▁▁▂▄▅▁▄▁▁▅▆▂▇▅▂▇  │
-│ 2   │ sample 2       │ ▁▂▄▁▁▃▁▆▂▆▃▁▂▃▂▇▄   │
-│ 3   │ sample 3       │ ▁▆▇▁▃▇▇▆▅▅▄▇▇▅▅▇▄▂  │
-│ 4   │ sample 4       │ ▅▁▄▁▆▃▁▃▇▂▂▇▅▇▃▆▃▁  │
-│ 5   │ sample 5       │ ▆▂▁▂▇▆▃▅▅▄▆▇▄▇▆▁▇   │
-│ 6   │ sample 6       │ ▁▁▇▂▂▇▃▅▂▂▆▂▄▄▁▄▂▇▆ │
-│ 7   │ sample 7       │ ▂▃▂▁▁▇▁▂▆▂▁▇▁▄▃▂▁▄  │
-│ 8   │ sample 8       │ ▄▄▁▂▄▁▅▁▅▁▂▂▇▂▁▃▄▄  │
-│ 9   │ sample 9       │ ▁▁▁▂▁▆▃▄▄▁▂▂▃▂▁▅▁▆▃ │
-│ 10  │ sample 10      │ ▁▇▄▂▅▃▇▁▇▇▆▄▇▅▄▂▄▅▄ │
-```
-
-(Can you spot the little used and sadly mathematically-unsupported “times” (×) character?)
-
-For a comparison of JuliaMono with other math-capable monospaced fonts, visit [mono-math.netlify.app](https://mono-math.netlify.app), which shows how Unicode math symbols look.
-
-JuliaMono is quite greedy[^greedy], and contains quite a few Unicode glyphs.
-
-~~~<img src="/assets/barchart.svg" width="100%" alt="silly barchart"> ~~~
-
-(Of course, size isn’t everything - quality can beat quantity, and other fonts will offer different experiences[^otherfonts]).
-
 For Julia users, if you want to know whether you can use a Unicode character as an identifier in your Julia code, use the undocumented function `Base.isidentifier()`. So, for example, if you have the urge to use a dingbat (one of the classic [Herman Zapf dingbat](https://en.wikipedia.org/wiki/Zapf_Dingbats) designs) as a variable name, you could look for something suitable in the output of this:
 
 ```
@@ -507,13 +545,13 @@ I ❤ Julia
 
 JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as ~~~<span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span>~~~ in certain fonts are replaced by a single glyph such as ~~~<span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>~~~. These alternatives, often referred to generally as ‘[ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature)’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.
 
-If you love lots of programming-oriented ligatures, you should probably use [Fira Code](https://fonts.google.com/specimen/Fira+Code), a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a big fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
+If you love lots of programming-oriented ligatures, you should probably use [Fira Code](https://fonts.google.com/specimen/Fira+Code), a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
 
 Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren't usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.
 
 ### Contextual alternates
 
-In JuliaMono, the following substitutions (‘ligatures’) are applied when the **contextual alternates** feature (`calt`) is active:
+In JuliaMono, the following substitutions (‘ligatures’) are applied when the **contextual alternates** feature (`calt`) is active, which it usually is:
 
 ~~~
 <table class="sstable">
@@ -576,6 +614,8 @@ df2 = df |>
     @map({a = key(_), b = mean(_.b)}) |>
     DataFrame # <|
 ```
+
+Note that these “ligatures” have to be interpreted by the terminal you’re using - the font depends on the terminal software to replace the glyphs with the joined versions. Not all terminals support ligatures!
 
 ### Stylistic sets
 

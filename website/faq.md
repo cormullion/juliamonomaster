@@ -46,7 +46,7 @@ julia> glyphy(0x203d)
 
 ## ‘How can I use the web fonts?’
 
-Find the relevant CSS file, and add a link to a WOFF2 file stored on a server.
+Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server.
 
 Option 1 (using the [jsdelivr](https://cdn.jsdelivr.net) content delivery network):
 
@@ -63,7 +63,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.056/JuliaMono-Light.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.058/JuliaMono-Light.woff2");
 }
 ```
 
@@ -78,46 +78,50 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.056 here), whereas the JSDELIVR version always retrieves the latest release.
+Notice that the CDNJS version points to a specific version (e.g. v0.058 here), whereas the JSDELIVR version always retrieves the latest release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
 There are some other options for the `@font-face` directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.
 
-## ‘How do I control features in VS Code or CSS?’
+(There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mosly  if you want to have more control over font loading times in web browser-based applications.)
 
-### VS-Code
+## ‘How do I configure VS Code?’
 
 In VS-Code you’ll find the font settings somewhere in the labyrinthine (but thankfully searchable) Settings department.
 
 ![VS Code settings](/assets/vscode-settings-1-800.png)
 
-To control the display of contextual and stylistic alternates, click on the Edit Settings in JSON, and look for `editor.fontLigatures`:
+To control the display of contextual alternates and stylistic sets, click on the Edit Settings in JSON, and look for `editor.fontLigatures`:
 
 ![VS Code settings](/assets/vscode-settings-2-800.png)
 
-This uses the feature codes ([listed here](/#contextual_and_stylistic_alternates)). These should be switched on or off in a single line.
+You use the OpenType feature codes ([listed here](/#contextual_and_stylistic_alternates)). These should all be switched on or off in a single line, if you're editing the settings.json file.
 
 For example, if you like a slashed zero, a single story g, and fancier HTML comments, you want `zero`, `ss01`, and `ss13` to be switched on, so type:
 
 ```css
- selector {
-	 "editor.fontLigatures": "'zero', 'ss01', 
-       'ss13'"
-	}
+    "editor.fontFamily": "JuliaMono-Light",
+    "editor.fontLigatures": "'calt' on, 'zero', 'ss01', 'ss13'",
 ```
 
-If you don’t like contextual alternates, but quite fancy a lighter asterisk, use this:
+But if you want to keep the contextual alternates and quite fancy a lighter asterisk, use this:
 
 ```css
- selector {
 	 "editor.fontLigatures": "'calt' off, 'ss05'",
-     }
 ```
 
-### CSS
+### A tale of two TTYs
 
-In a CSS stylesheet, you can specify the font with the required CSS selectors:
+In VSCode there are two levels of OpenType font support, _editor_ and _terminal_.
+
+Editor windows support most OpenType features; you can ask for contextual alternates (ligatures), stylistic sets, alternate characters, and so on, using the feature codes listed above.
+
+Terminal windows use the xterm.js terminal emulator. This doesn't (yet) support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on [this Github issue](https://github.com/xtermjs/xterm.js/issues/9580).
+
+## ‘How do I configure the CSS?’
+
+In a CSS stylesheet, you can specify the appearance of the font. First, define the location of the online fonts:
 
 ```css
 @font-face {
@@ -126,7 +130,7 @@ In a CSS stylesheet, you can specify the font with the required CSS selectors:
 }
 ```
 
-And apply them to HTML elements using something like:
+Then apply them to HTML elements using selectors and the following keywords:
 
 ```css
 p {
@@ -152,7 +156,7 @@ selector {
 	}
 ```
 
-Select any stylistic sets in a single line. For example:
+Control all features in a single line `font-feature-settings`. For example:
 
 ```css
 selector {
@@ -162,7 +166,7 @@ selector {
 ```
 
 ~~~
-<p>switches off contextual alternates and enables the slashed zero (<span class="code_ss_on">0</span>) and the simpler "g" (<span class="code_ss_on">g</span>).</p>
+<p>which switches off contextual alternates and enables the slashed zero (<span class="code_ss_on">0</span>) and the simpler "g" (<span class="code_ss_on">g</span>).</p>
 ~~~
 
 <!--  force a paragraph  -->
@@ -414,7 +418,7 @@ The font is OFL/SIL-licensed, and you can find the source [here](https://github.
 
 ## ‘Is it finished?’
 
-Some say that projects are never finished, just abandoned. As of March 2024, I’m still making small changes and fixes, and it’s currently at version 0.056. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be truly finished.
+Some say that projects are never finished, just abandoned. As of October 2024, I’m still making small changes and fixes, and it’s currently at version 0.058. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
 
 ## ‘Why don’t these accents/marks/diacritics work properly?’
 

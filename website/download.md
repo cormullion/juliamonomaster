@@ -14,7 +14,7 @@ On that Releases page, you can download:
 
 - `JuliaMono .zip|.tar.gz` - both fonts and webfonts (TTF and WOFF), in either Zip (.zip) or Tarball (.gz)
 
-(I wouldn't recommend cloning the git repo, unless you want to download over 1 GB of outdated files and git diffs...)
+I wouldn't recommend cloning the git repo, unless you want to download over 1 GB of outdated files and git diffs...
 
 The raw source files (in Glyphs.app format) are at [https://github.com/cormullion/juliamonomaster](https://github.com/cormullion/juliamonomaster). You'll need a licensed copy of Glyphs to build the font from these files.
 
