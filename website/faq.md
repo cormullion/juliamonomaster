@@ -117,7 +117,7 @@ In VSCode there are two levels of OpenType font support, _editor_ and _terminal_
 
 Editor windows support most OpenType features; you can ask for contextual alternates (ligatures), stylistic sets, alternate characters, and so on, using the feature codes listed above.
 
-Terminal windows use the xterm.js terminal emulator. This doesn't (yet) support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on [this Github issue](https://github.com/xtermjs/xterm.js/issues/9580).
+Terminal windows use the xterm.js terminal emulator. This doesn't (yet) support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on [this Github issue](https://github.com/xtermjs/xterm.js/issues/958).
 
 ## ‘How do I configure the CSS?’
 
