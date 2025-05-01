@@ -756,6 +756,12 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td><p>quadrants replace Braille dots</p></td>
     </tr>
 
+    <td>ss18</td>
+    <td class="code_ss_off">𝒜 ℬ 𝒞 ...</td>
+    <td class="code_ss18_on">𝒜 ℬ 𝒞 ...</td>
+    <td><p>Ball point pen math script</p></td>
+    </tr>
+
 	<tr>
 	<td>ss20</td>
     <td class="code_ss_off">(_)</td>
