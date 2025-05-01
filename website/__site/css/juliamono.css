@@ -3,84 +3,84 @@
 	font-family: JuliaMono-Light;
 	src:
 		local('JuliaMono-Light'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Light.woff2");
+		url("/assets/fonts/JuliaMono-Light.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-Regular;
 	src:
 		local('JuliaMono-Regular'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Regular.woff2");
+		url("/assets/fonts/JuliaMono-Regular.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-Medium;
 	src:
 		local('JuliaMono-Medium'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Medium.woff2");
+		url("/assets/fonts/JuliaMono-Medium.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-Bold;
 	src:
 		local('JuliaMono-Bold'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Bold.woff2");
+		url("/assets/fonts/JuliaMono-Bold.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-ExtraBold;
 	src:
 		local('JuliaMono-ExtraBold'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-ExtraBold.woff2");
+		url("/assets/fonts/JuliaMono-ExtraBold.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-Black;
 	src:
 		local('JuliaMono-Black'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Black.woff2");
+		url("/assets/fonts/JuliaMono-Black.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-LightItalic;
 	src:
 		local('JuliaMono-LightItalic'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-LightItalic.woff2");
+		url("/assets/fonts/JuliaMono-LightItalic.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-RegularItalic;
 	src:
 		local('JuliaMono-RegularItalic'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-RegularItalic.woff2");
+		url("/assets/fonts/JuliaMono-RegularItalic.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-MediumItalic;
 	src:
 		local('JuliaMono-MediumItalic'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-MediumItalic.woff2");
+		url("/assets/fonts/JuliaMono-MediumItalic.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-BoldItalic;
 	src:
 		local('JuliaMono-BoldItalic'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-BoldItalic.woff2");
+		url("/assets/fonts/JuliaMono-BoldItalic.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-ExtraBoldItalic;
 	src:
 		local('JuliaMono-ExtraBoldItalic'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-ExtraBoldItalic.woff2");
+		url("/assets/fonts/JuliaMono-ExtraBoldItalic.woff2");
 }
 
 @font-face {
 	font-family: JuliaMono-BlackItalic;
 	src:
 		local('JuliaMono-BlackItalic'),
-		url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-BlackItalic.woff2");
+		url("/assets/fonts/JuliaMono-BlackItalic.woff2");
 }
 
 html {

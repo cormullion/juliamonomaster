@@ -49,7 +49,9 @@
 </header>
 
 	<!-- Content appended here -->
-<div class="franklin-content"><h1 id="juliamono_-_a_monospaced_font_for_scientific_and_technical_computing"><a href="#juliamono_-_a_monospaced_font_for_scientific_and_technical_computing" class="header-anchor">JuliaMono - a monospaced font for scientific and technical computing</a></h1>
+<div class="franklin-content"><span style="text-align: center;font-family: JuliaMono-Black;font-size:2rem;">JuliaMono - a monospaced font for scientific and technical computing</span>
+<div class="franklin-toc"><ol><li><a href="#introduction">Introduction</a><ol><li><a href="#screenshots">Screenshots</a></li><li><a href="#examples">Examples</a></li><li><a href="#languages">Languages</a></li><li><a href="#monospaced_fonts">Monospaced fonts</a></li><li><a href="#unicode_coverage">Unicode coverage</a></li><li><a href="#contextual_and_stylistic_alternates_aka_ligatures">Contextual and stylistic alternates &#40;aka “ligatures”&#41;</a></li><li><a href="#stylistic_sets">Stylistic sets</a></li><li><a href="#mathematical_scripts">Mathematical scripts</a><ol><li><a href="#ball-point_script">Ball-point script</a></li></ol></li><li><a href="#variation_selectors">Variation selectors</a></li><li><a href="#customizing_the_font">Customizing the font</a><ol><li><a href="#using_fontfreeze">Using FontFreeze</a></li></ol></li><li><a href="#using_pyftsubset">Using pyftsubset</a></li></ol></li><li><a href="#private_use_areas_puas">Private Use Areas &#40;PUAs&#41;</a><ol><li><a href="#thanks">Thanks&#33;</a></li><li><a href="#footnotes">Footnotes</a></li></ol></li></ol></div>
+<h2 id="introduction"><a href="#introduction" class="header-anchor">Introduction</a></h2>
 <img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> 
 <p>JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference &#40;which was to have been held in Lisbon, Portugal, but instead took place online.&#41;</p>
 <p>JuliaMono is:</p>
@@ -409,7 +411,7 @@ end</code></pre>
 </table>
 
 
-<h3 id="mono_space"><a href="#mono_space" class="header-anchor">Mono space</a></h3>
+<h2 id="monospaced_fonts"><a href="#monospaced_fonts" class="header-anchor">Monospaced fonts</a></h2>
 <p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
 <p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
 <h2 id="unicode_coverage"><a href="#unicode_coverage" class="header-anchor">Unicode coverage</a></h2>
@@ -493,11 +495,10 @@ julia&gt; ❤&#40;s&#41; &#61; println&#40;&quot;I ❤ &#36;&#40;s&#41;&quot;&#4
 
 julia&gt; ❤&#40;&quot;Julia&quot;&#41;
 I ❤ Julia</code></pre>
-<h2 id="contextual_and_stylistic_alternates_often_called_ligatures"><a href="#contextual_and_stylistic_alternates_often_called_ligatures" class="header-anchor">Contextual and stylistic alternates &#40;often called “ligatures”&#41;</a></h2>
+<h2 id="contextual_and_stylistic_alternates_aka_ligatures"><a href="#contextual_and_stylistic_alternates_aka_ligatures" class="header-anchor">Contextual and stylistic alternates &#40;aka “ligatures”&#41;</a></h2>
 <p>JuliaMono is an <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as <span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span> in certain fonts are replaced by a single glyph such as <span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>. These alternatives, often referred to generally as ‘<a href="https://en.wikipedia.org/wiki/Orthographic_ligature">ligatures</a>’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.</p>
 <p>If you love lots of programming-oriented ligatures, you should probably use <a href="https://fonts.google.com/specimen/Fira&#43;Code">Fira Code</a>, a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[9]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
 <p>Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren&#39;t usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.</p>
-<h3 id="contextual_alternates"><a href="#contextual_alternates" class="header-anchor">Contextual alternates</a></h3>
 <p>In JuliaMono, the following substitutions &#40;‘ligatures’&#41; are applied when the <strong>contextual alternates</strong> feature &#40;<code>calt</code>&#41; is active, which it usually is:</p>
 
 <table class="sstable">
@@ -557,7 +558,7 @@ df2 &#61; df |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre>
 <p>Note that these “ligatures” have to be interpreted by the terminal you’re using - the font depends on the terminal software to replace the glyphs with the joined versions. Not all terminals support ligatures&#33;</p>
-<h3 id="stylistic_sets"><a href="#stylistic_sets" class="header-anchor">Stylistic sets</a></h3>
+<h2 id="stylistic_sets"><a href="#stylistic_sets" class="header-anchor">Stylistic sets</a></h2>
 <p>OpenType fonts also offer you the ability to choose different designs for certain characters. These are stored as ‘stylistic sets’.</p>
 <p>All these options are stored in the font, and are often referred to by their internal four letter code &#40;not the best user-oriented design, really&#41;. For example, the contextual alternates listed above are collectively stored in the <strong>calt</strong> feature.</p>
 <p>Sometimes, an application will show the options more visually in a Typography panel<sup id="fnref:typographypanel"><a href="#fndef:typographypanel" class="fnref">[11]</a></sup>, usually tucked away somewhere on a Font chooser dialog.</p>
@@ -582,7 +583,7 @@ df2 &#61; df |&gt;
     <td>ss01</td>
     <td class="code_ss_off">g</td>
     <td class="code_ss_on">g</td>
-    <td><p>alternate g</p></td>
+    <td><p>alternate g (not italic)</p></td>
     </tr>
 
     <tr>
@@ -617,7 +618,7 @@ df2 &#61; df |&gt;
     <td>ss06</td>
     <td class="code_ss_off">a</td>
     <td class="code_ss_on">a</td>
-    <td><p>simple a</p></td>
+    <td><p>simple a (not italic)</p></td>
     </tr>
 
     <tr>
@@ -773,18 +774,21 @@ df2 &#61; df |&gt;
     @groupby&#40;_.a&#41; |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre></div>
-<h2 id="mathematical_script_styles_calligraphers_vs_roundhanders"><a href="#mathematical_script_styles_calligraphers_vs_roundhanders" class="header-anchor">Mathematical script styles: Calligraphers vs Roundhanders</a></h2>
+<h2 id="mathematical_scripts"><a href="#mathematical_scripts" class="header-anchor">Mathematical scripts</a></h2>
 <p>By default, mathematical script characters &#40;starting at Unicode U&#43;1d49C&#41; are drawn in Cursive, a basic calligraphy style.</p>
 <p>By switching to the stylistic set <code>ss15</code>, these characters change from Cursive:</p>
 <span style="font-size: 1.5em;">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</span>
 <p>to use an old English script style known as “roundhand”:</p>
-<span style="font-size: 1.5em;">𝒜︁ℬ︁𝒞︁𝒟︁ℰ︁ℱ︁𝒢︁ℋ︁ℐ︁𝒥︁𝒦︁ℒ︁ℳ︁𝒩︁𝒪︁𝒫︁𝒬︁ℛ︁𝒮︁𝒯︁𝒰︁𝒱︁𝒲︁𝒳︁𝒴︁𝒵</span>
-<p>Here’s a comparison of the two script styles in context - the default Cursive on top, <code>ss15</code>’s Roundhand below - as rendered in a \( \LaTeX \) document.</p>
+<span style="font-size: 1.5em;">𝒜︁ℬ︁𝒞︁𝒟︁ℰ︁ℱ︁𝒢︁ℋ︁ℐ︁𝒥︁𝒦︁ℒ︁ℳ︁𝒩︁𝒪︁𝒫︁𝒬︁ℛ︁𝒮︁𝒯︁𝒰︁𝒱︁𝒲︁𝒳︁𝒴︁𝓩︁</span>
+<p>Here’s a comparison of these two script styles in context - the default Cursive on top, <code>ss15</code>’s Roundhand below - as rendered in a \( \LaTeX \) document.</p>
 
 <img src="/assets/latex-script-styles.png" width="100%" alt="LaTeX script styles">
 
 <p>&#40;This code snippet is from the <a href="https://algorithmsbook.com/">Algorithms Handbook</a>, by Mykel J. Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses JuliaMono for the code samples.&#41;</p>
 <p>As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education; I suspect that few people today learn or practice the roundhand style, and some of the shapes will be unfamiliar. You may also find the more detailed forms more difficult to read on lower-resolution displays.</p>
+<h3 id="ball-point_script"><a href="#ball-point_script" class="header-anchor">Ball-point script</a></h3>
+<p>The <code>ss18</code> stylistic set contains an alternative script style - a monoline &#39;ball-point&#39; style of calligraphy. Currently upper-case only.</p>
+<span style="font-size: 1.5em; font-feature-settings:'ss18';">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</span>
 <h3 id="variation_selectors"><a href="#variation_selectors" class="header-anchor">Variation selectors</a></h3>
 <p>The Unicode system provides a mechanism whereby characters can be followed by other modifier characters that change the appearance of the preceding one. Some of these <em>variation selectors</em>, known as VS1, VS2, have code points starting at U&#43;FE00. The Unicode Consortium has defined variation selectors that change the style of capital mathematical script letters from Cursive to Roundhand.</p>
 <p>&#40;See the <a href="https://www.unicode.org/L2/L2020/20275r-math-calligraphic.pdf">Unicode Consortium PDF L2/20-275R</a>.&#41;</p>

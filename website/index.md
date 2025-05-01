@@ -2,7 +2,11 @@
 @def hasmath = true
 @def hascode = true
 
-# JuliaMono - a monospaced font for scientific and technical computing
+~~~<span style="text-align: center;font-family: JuliaMono-Black;font-size:2rem;">JuliaMono - a monospaced font for scientific and technical computing</span>~~~
+
+\toc
+
+## Introduction
 
 ~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
 
@@ -402,7 +406,7 @@ Here are some samples of various languages[^languages] :
 
 ~~~
 
-### Mono space
+## Monospaced fonts
 
 In JuliaMono, every character is the same width, because this is a [monospaced](https://en.wikipedia.org/wiki/Monospaced_font) typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and $ \LaTeX $ applications, rather than in programming code. You probably want ∑s in your code rather than $ \sum $s, because the big ones will upset your formatting.
 
@@ -541,15 +545,13 @@ julia> ❤("Julia")
 I ❤ Julia
 ```
 
-## Contextual and stylistic alternates (often called “ligatures”)
+## Contextual and stylistic alternates (aka “ligatures”)
 
 JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as ~~~<span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span>~~~ in certain fonts are replaced by a single glyph such as ~~~<span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>~~~. These alternatives, often referred to generally as ‘[ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature)’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.
 
 If you love lots of programming-oriented ligatures, you should probably use [Fira Code](https://fonts.google.com/specimen/Fira+Code), a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
 
 Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren't usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.
-
-### Contextual alternates
 
 In JuliaMono, the following substitutions (‘ligatures’) are applied when the **contextual alternates** feature (`calt`) is active, which it usually is:
 
@@ -617,7 +619,7 @@ df2 = df |>
 
 Note that these “ligatures” have to be interpreted by the terminal you’re using - the font depends on the terminal software to replace the glyphs with the joined versions. Not all terminals support ligatures!
 
-### Stylistic sets
+## Stylistic sets
 
 OpenType fonts also offer you the ability to choose different designs for certain characters. These are stored as ‘stylistic sets’.
 
@@ -647,7 +649,7 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td>ss01</td>
     <td class="code_ss_off">g</td>
     <td class="code_ss_on">g</td>
-    <td><p>alternate g</p></td>
+    <td><p>alternate g (not italic)</p></td>
     </tr>
 
     <tr>
@@ -682,7 +684,7 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td>ss06</td>
     <td class="code_ss_off">a</td>
     <td class="code_ss_on">a</td>
-    <td><p>simple a</p></td>
+    <td><p>simple a (not italic)</p></td>
     </tr>
 
     <tr>
@@ -859,7 +861,7 @@ df2 = df |>
 ```
 @@
 
-## Mathematical script styles: Calligraphers vs Roundhanders
+## Mathematical scripts
 
 By default, mathematical script characters (starting at Unicode U+1d49C) are drawn in Cursive, a basic calligraphy style.
 
@@ -869,9 +871,9 @@ By switching to the stylistic set `ss15`, these characters change from Cursive:
 
 to use an old English script style known as “roundhand”:
 
-~~~<span style="font-size: 1.5em;">𝒜︁ℬ︁𝒞︁𝒟︁ℰ︁ℱ︁𝒢︁ℋ︁ℐ︁𝒥︁𝒦︁ℒ︁ℳ︁𝒩︁𝒪︁𝒫︁𝒬︁ℛ︁𝒮︁𝒯︁𝒰︁𝒱︁𝒲︁𝒳︁𝒴︁𝒵</span>~~~
+~~~<span style="font-size: 1.5em;">𝒜︁ℬ︁𝒞︁𝒟︁ℰ︁ℱ︁𝒢︁ℋ︁ℐ︁𝒥︁𝒦︁ℒ︁ℳ︁𝒩︁𝒪︁𝒫︁𝒬︁ℛ︁𝒮︁𝒯︁𝒰︁𝒱︁𝒲︁𝒳︁𝒴︁𝓩︁</span>~~~
 
-Here’s a comparison of the two script styles in context - the default Cursive on top, `ss15`’s Roundhand below - as rendered in a $ \LaTeX $ document.
+Here’s a comparison of these two script styles in context - the default Cursive on top, `ss15`’s Roundhand below - as rendered in a $ \LaTeX $ document.
 
 ~~~
 <img src="/assets/latex-script-styles.png" width="100%" alt="LaTeX script styles">
@@ -883,6 +885,12 @@ Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses
 JuliaMono for the code samples.)
 
 As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education; I suspect that few people today learn or practice the roundhand style, and some of the shapes will be unfamiliar. You may also find the more detailed forms more difficult to read on lower-resolution displays.
+
+### Ball-point script
+
+The `ss18` stylistic set contains an alternative script style - a monoline 'ball-point' style of calligraphy. Currently upper-case only.
+
+~~~<span style="font-size: 1.5em; font-feature-settings:'ss18';">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</span>~~~
 
 ### Variation selectors
 
