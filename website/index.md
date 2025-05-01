@@ -865,6 +865,8 @@ df2 = df |>
 
 By default, mathematical script characters (starting at Unicode U+1d49C) are drawn in Cursive, a basic calligraphy style.
 
+### Calligraphy and Roundhand script
+
 By switching to the stylistic set `ss15`, these characters change from Cursive:
 
 ~~~<span style="font-size: 1.5em;">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</span>~~~
@@ -966,7 +968,7 @@ strip:
 ```
 
 @@jm_h1
-# Private Use Areas (PUAs)
+## Private Use Areas (PUAs)
 @@
 
 There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the official standard. These are called the **Private Use Areas**, and there are three: `\ue000` to `\uf8ff`, `\UF0000` to `\UFFFFD`, and `U100000` to `U+10FFFD`.

@@ -50,7 +50,7 @@
 
 	<!-- Content appended here -->
 <div class="franklin-content"><span style="text-align: center;font-family: JuliaMono-Black;font-size:2rem;">JuliaMono - a monospaced font for scientific and technical computing</span>
-<div class="franklin-toc"><ol><li><a href="#introduction">Introduction</a><ol><li><a href="#screenshots">Screenshots</a></li><li><a href="#examples">Examples</a></li><li><a href="#languages">Languages</a></li><li><a href="#monospaced_fonts">Monospaced fonts</a></li><li><a href="#unicode_coverage">Unicode coverage</a></li><li><a href="#contextual_and_stylistic_alternates_aka_ligatures">Contextual and stylistic alternates &#40;aka “ligatures”&#41;</a></li><li><a href="#stylistic_sets">Stylistic sets</a></li><li><a href="#mathematical_scripts">Mathematical scripts</a><ol><li><a href="#ball-point_script">Ball-point script</a></li></ol></li><li><a href="#variation_selectors">Variation selectors</a></li><li><a href="#customizing_the_font">Customizing the font</a><ol><li><a href="#using_fontfreeze">Using FontFreeze</a></li></ol></li><li><a href="#using_pyftsubset">Using pyftsubset</a></li></ol></li><li><a href="#private_use_areas_puas">Private Use Areas &#40;PUAs&#41;</a><ol><li><a href="#thanks">Thanks&#33;</a></li><li><a href="#footnotes">Footnotes</a></li></ol></li></ol></div>
+<div class="franklin-toc"><ol><li><a href="#introduction">Introduction</a></li><li><a href="#screenshots">Screenshots</a></li><li><a href="#examples">Examples</a></li><li><a href="#languages">Languages</a></li><li><a href="#monospaced_fonts">Monospaced fonts</a></li><li><a href="#unicode_coverage">Unicode coverage</a></li><li><a href="#contextual_and_stylistic_alternates_aka_ligatures">Contextual and stylistic alternates &#40;aka “ligatures”&#41;</a></li><li><a href="#stylistic_sets">Stylistic sets</a></li><li><a href="#mathematical_scripts">Mathematical scripts</a><ol><li><a href="#calligraphy_and_roundhand_script">Calligraphy and Roundhand script</a></li><li><a href="#ball-point_script">Ball-point script</a></li><li><a href="#variation_selectors">Variation selectors</a></li></ol></li><li><a href="#customizing_the_font">Customizing the font</a><ol><li><a href="#using_fontfreeze">Using FontFreeze</a></li><li><a href="#using_pyftsubset">Using pyftsubset</a></li></ol></li><li><a href="#private_use_areas_puas">Private Use Areas &#40;PUAs&#41;</a></li><li><a href="#thanks">Thanks&#33;</a></li><li><a href="#footnotes">Footnotes</a></li></ol></div>
 <h2 id="introduction"><a href="#introduction" class="header-anchor">Introduction</a></h2>
 <img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> 
 <p>JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference &#40;which was to have been held in Lisbon, Portugal, but instead took place online.&#41;</p>
@@ -776,6 +776,7 @@ df2 &#61; df |&gt;
     DataFrame # &lt;|</code></pre></div>
 <h2 id="mathematical_scripts"><a href="#mathematical_scripts" class="header-anchor">Mathematical scripts</a></h2>
 <p>By default, mathematical script characters &#40;starting at Unicode U&#43;1d49C&#41; are drawn in Cursive, a basic calligraphy style.</p>
+<h3 id="calligraphy_and_roundhand_script"><a href="#calligraphy_and_roundhand_script" class="header-anchor">Calligraphy and Roundhand script</a></h3>
 <p>By switching to the stylistic set <code>ss15</code>, these characters change from Cursive:</p>
 <span style="font-size: 1.5em;">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</span>
 <p>to use an old English script style known as “roundhand”:</p>
@@ -839,7 +840,7 @@ image:
 
 strip:
         docker run --rm -v &#36;&#123;PWD&#125;:/juliamono juliamono-strip:latest &quot;&#36;&#123;VERSION&#125;&quot;</code></pre>
-<div class="jm_h1"><h1 id="private_use_areas_puas"><a href="#private_use_areas_puas" class="header-anchor">Private Use Areas &#40;PUAs&#41;</a></h1></div>
+<div class="jm_h1"><h2 id="private_use_areas_puas"><a href="#private_use_areas_puas" class="header-anchor">Private Use Areas &#40;PUAs&#41;</a></h2></div>
 <p>There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the official standard. These are called the <strong>Private Use Areas</strong>, and there are three: <code>\ue000</code> to <code>\uf8ff</code>, <code>\UF0000</code> to <code>\UFFFFD</code>, and <code>U100000</code> to <code>U&#43;10FFFD</code>.</p>
 <p>Each typeface can do its own thing in these areas. In JuliaMono you’ll find these, among others, and if you ask nicely I might add some more:</p>
 
