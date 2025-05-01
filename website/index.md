@@ -15,7 +15,7 @@ JuliaMono is a monospaced typeface designed for programming and other text editi
 JuliaMono is:
 
 - free
-- distributed with a liberal licence [^licence]
+- distributed with a liberal license [^license]
 - suitable for scientific and technical programming as well as for general purpose hacking
 - full of Unicode goodness
 - easy to use, simple, unquirky, friendly, and approachable
@@ -414,7 +414,7 @@ From a design perspective, forcing every character into the same size box is a p
 
 ## Unicode coverage
 
-The current version of Unicode (16) defines about 150,000 glyphs. A font can contain only a maximum of 64,000 -- you won't find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.
+The current version of Unicode (16) defines about 150,000 glyphs. A font can contain only a maximum of 64,000 -- you won't find every Unicode glyph in a single font. So each individual font focuses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.
 
 One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.)
 
@@ -1002,7 +1002,7 @@ It’s usually possible to type Unicode values directly into text. This is a use
 Thanks to: Thibaut Lienart for his [Franklin.jl](https://github.com/tlienart/Franklin.jl) web site builder; to Jérémie Knüsel who provided invaluable suggestions and advice; to Dr Zygmunt Szpak for his cool maths code; to Simeon Schaub for the issues and PRs, and to others in the Julia community for help and suggestions. Type sample from [underscoretype](https://underscoretype.com).
 
 ## Footnotes
-[^licence]:  &nbsp; “licence” Although not MIT-licensed like Julia, JuliaMono is licensed using the [SIL Open Font licence](https://scripts.sil.org/OFL), which allows the fonts to be used, studied, modified, freely redistributed, and even sold, without affecting anything they’re bundled with.
+[^license]:  &nbsp; “license” Although not MIT-licensed like Julia, JuliaMono is licensed using the [SIL Open Font license](https://scripts.sil.org/OFL), which allows the fonts to be used, studied, modified, freely redistributed, and even sold, without affecting anything they’re bundled with.
 
 [^windows]:  &nbsp; “Windows” For more information about if and how it works on Windows, read [this](/faq/#does_it_work_on_windows), but I currently don't know enough about Windows font technology and how it differs from MacOS and Unix. Early reports said that the font didn’t look good on Windows. This was because the format was CFF/PostScript OTF, which isn’t hinted on Windows. A switch to TTF/TrueType OTF, which is hinted, was considered an improvement.
 
@@ -1022,11 +1022,11 @@ Thanks to: Thibaut Lienart for his [Franklin.jl](https://github.com/tlienart/Fra
 
 [^nottheonlyone]: &nbsp; “not the only one” Matthew Butterick says [“hell no”](https://practicaltypography.com/ligatures-in-programming-fonts-hell-no.html) to them. He also uses the phrase “well-intentioned amateur ligaturists” which isn’t a label I want to have. But more seriously, he says: “my main concern is typography that faces other human beings. So if you’re preparing your code for others to read — whether on screen or on paper — skip the ligatures.”  I don’t quite agree with Fira Code’s developer that they save your brain some milliseconds of recognition time; I find I have to double-check a combination to remember what it represents, or how many characters have been replaced. But your mileage might vary.
 
-[^width]: &nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ (~~~<span class="code_ss_off">-></span>~~~), these are the width of a single character,and so you’d be changing the width of your string/line whenever you made the substitution.
+[^width]: &nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ (~~~<span class="code_ss_off">-></span>~~~), these are the width of a single character, and so you’d be changing the width of your string/line whenever you made the substitution.
 
-[^typographypanel]: &nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive but I’m not convinced that all the buttons are wired up yet...
+[^typographypanel]: &nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive, but I’m not convinced that all the buttons are wired up yet...
 
-[^terminal]: &nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: [wezterm](https://wezfurlong.org/wezterm/) is about the best, although configuring the macOS Terminal is a bit easier, and [iTerm](https://iterm2.com) for macOS is also a reasonable alternative. In the world of fonts, nothing is 100% correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a [VS Code](https://github.com/microsoft/vscode/issues/34103) issue; here are the [Alacritty terminal developers](https://github.com/alacritty/alacritty/issues/50) working on it; here is the [iTerm documentation](https://iterm2.com/documentation-fonts.html) talking about performance.
+[^terminal]: &nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: [wezterm](https://wezfurlong.org/wezterm/) is about the best, although configuring the macOS Terminal is a bit easier, and [iTerm](https://iterm2.com) for macOS is also a reasonable alternative. In the world of fonts, nothing is 100% correct, which can be frustrating. You can track some of the issues and discussions on GitHub and elsewhere: here’s a [VS Code](https://github.com/microsoft/vscode/issues/34103) issue; here are the [Alacritty terminal developers](https://github.com/alacritty/alacritty/issues/50) working on it; here is the [iTerm documentation](https://iterm2.com/documentation-fonts.html) talking about performance.
 
 ~~~
 <center></center>
