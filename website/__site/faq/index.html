@@ -56,7 +56,7 @@
 <h2 id="where_can_i_see_it_in_action"><a href="#where_can_i_see_it_in_action" class="header-anchor">‘Where can I see it in action?’</a></h2>
 <p>Feel free to compare it with other fonts at <a href="https://devfonts.gafi.dev/">dev fonts</a> and <a href="https://www.programmingfonts.org/#julia-mono">www.programmingfonts.org</a>.</p>
 <p>If you use a lot of mathematics, visit the <a href="https://mono-math.netlify.app">mono-math.netlify.app</a> site, which shows how Unicode math symbols look in various fonts.</p>
-<p>To find out about JuliaMono&#39;s Unicode support, you could look at the Glyphs page on this site, or you could visit <a href="https://glyphy.info">glyphy.info</a> and type a name &#40;eg <code>interrobang</code>&#41; or a hexadecimal number &#40;eg <code>0x203d</code>&#41;, If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
+<p>To find out about JuliaMono&#39;s Unicode support, you could look at the Glyphs page on this site, or you could visit <a href="https://glyphy.info">glyphy.info</a> and type a name &#40;e.g. <code>interrobang</code>&#41; or a hexadecimal number &#40;e.g. <code>0x203d</code>&#41;, If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
 <img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> 
 <p>Julia users can also do this without leaving the REPL. Install the Glyphy.jl package in the usual way, and then run it like this:</p>
 <pre><code class="language-julia">julia&gt; using Glyphy
@@ -98,7 +98,7 @@ code &#123;
 <p>Notice that the CDNJS version points to a specific version &#40;e.g. v0.058 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
-<p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mosly  if you want to have more control over font loading times in web browser-based applications.&#41;</p>
+<p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.&#41;</p>
 <h2 id="how_do_i_configure_vs_code"><a href="#how_do_i_configure_vs_code" class="header-anchor">‘How do I configure VS Code?’</a></h2>
 <p>In VS-Code you’ll find the font settings somewhere in the labyrinthine &#40;but thankfully searchable&#41; Settings department.</p>
 <p><img src="/assets/vscode-settings-1-800.png" alt="VS Code settings" /></p>
@@ -113,7 +113,7 @@ code &#123;
 <h3 id="a_tale_of_two_ttys"><a href="#a_tale_of_two_ttys" class="header-anchor">A tale of two TTYs</a></h3>
 <p>In VSCode there are two levels of OpenType font support, <em>editor</em> and <em>terminal</em>.</p>
 <p>Editor windows support most OpenType features; you can ask for contextual alternates &#40;ligatures&#41;, stylistic sets, alternate characters, and so on, using the feature codes listed above.</p>
-<p>Terminal windows use the xterm.js terminal emulator. This doesn&#39;t &#40;yet&#41; support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on <a href="https://github.com/xtermjs/xterm.js/issues/958">this Github issue</a>.</p>
+<p>Terminal windows use the xterm.js terminal emulator. This doesn&#39;t &#40;yet&#41; support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on <a href="https://github.com/xtermjs/xterm.js/issues/958">this GitHub issue</a>.</p>
 <h2 id="how_do_i_configure_the_css"><a href="#how_do_i_configure_the_css" class="header-anchor">‘How do I configure the CSS?’</a></h2>
 <p>In a CSS stylesheet, you can specify the appearance of the font. First, define the location of the online fonts:</p>
 <pre><code class="language-css">@font-face &#123;
@@ -269,7 +269,7 @@ display&#40;p&#41;</code></pre>
 <h2 id="can_i_use_it_in_a_latex_document"><a href="#can_i_use_it_in_a_latex_document" class="header-anchor">‘Can I use it in a \( \LaTeX \) document?’</a></h2>
 <p>In a \( \LaTeX \) document, you should be able to define and use local fonts.</p>
 <p>Robert Moss put together an excellent package to help negotiate the various font issues that you might encounter when using Unicode and \( \LaTeX \):</p>
-<p><a href="https://github.com/mossr/julia-mono-listings">A custom Julia language style for the LaTeX listings package, and Unicode support for the JuliaMono font in a <code>lstlisting</code> environment.</a>.</p>
+<p><a href="https://github.com/mossr/julia-mono-listings">A custom Julia language style for the LaTeX listings package, and Unicode support for the JuliaMono font in a <code>lstlisting</code> environment</a>.</p>
 <p>An earlier approach that worked for me is as follows:</p>
 <p>In your \( \LaTeX \) source file, define the mono font and point to the local pathname:</p>
 <pre><code class="language-julia">\usepackage&#123;fontspec&#125;
@@ -314,7 +314,7 @@ display&#40;p&#41;</code></pre>
 <ul>
 <li><p>code can often consist of sequences of non-language characters</p>
 </li>
-<li><p>a single variable name might combine latin and greek letters and various punctuation characters</p>
+<li><p>a single variable name might combine Latin and Greek letters and various punctuation characters</p>
 </li>
 <li><p>often you want to compare areas of text with other areas &#40;such as code laid out in tabular form&#41;</p>
 </li>
@@ -331,17 +331,17 @@ display&#40;p&#41;</code></pre>
 <p>The shapes aren’t compressed or condensed. The glyphs aren’t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you’d expect &#40;my eyesight is probably poorer than yours&#33;&#41;. Perhaps it’s not so good for non-code text &#40;do you find this web page difficult to read?&#41;. One feature of JuliaMono is that there&#39;s some variability and inconsistency in the design; this is the result of human inadequacy :&#41; </p>
 <p>If you want to find out more about typeface and font legibility, a good place to start would be to see the work of <a href="http://sofiebeier.dk">Sophie Beier</a>.</p>
 <h2 id="wheres_the_source_whats_the_licence"><a href="#wheres_the_source_whats_the_licence" class="header-anchor">‘Where’s the source? What’s the licence?‘</a></h2>
-<p>The font is OFL/SIL-licensed, and you can find the source <a href="https://github.com/cormullion/juliamonomaster">here</a>. The SIL license allows you to do almost anything you want, <strong>except</strong> re-issue it under tha same name or with a different licence.</p>
+<p>The font is OFL/SIL-licensed, and you can find the source <a href="https://github.com/cormullion/juliamonomaster">here</a>. The SIL license allows you to do almost anything you want, <strong>except</strong> re-issue it under the same name or with a different license.</p>
 <h2 id="is_it_finished"><a href="#is_it_finished" class="header-anchor">‘Is it finished?’</a></h2>
 <p>Some say that projects are never finished, just abandoned. As of May 2025, I’m still making small changes and fixes, and it’s currently at version 0.060. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.</p>
 <h2 id="why_dont_these_accentsmarksdiacritics_work_properly"><a href="#why_dont_these_accentsmarksdiacritics_work_properly" class="header-anchor">‘Why don’t these accents/marks/diacritics work properly?’</a></h2>
-<p>Unicode allows you to combine characters - ie stack them vertically. For example, you can combine the glyph for <code>e</code> &#40;U&#43;0065&#41; with the glyph U&#43;20D7 &#40;the “combining right arrow above”&#41; to get:</p>
+<p>Unicode allows you to combine characters - i.e. stack them vertically. For example, you can combine the glyph for <code>e</code> &#40;U&#43;0065&#41; with the glyph U&#43;20D7 &#40;the “combining right arrow above”&#41; to get:</p>
 <pre><code class="language-julia">e⃗</code></pre>
 <p>In the Julia REPL, you can type a character and then add a combining mark using \( \LaTeX \) shortcuts. For example:</p>
 <pre><code class="language-julia">e\vec</code></pre>
 <p>displays as</p>
 <pre><code class="language-julia">e⃗</code></pre>
-<p>and the arrow mark is displayed above the character. There are lots of these <strong>combining marks</strong> &#40;also <strong>diacritics</strong>&#41; in Unicode &#40;eg U&#43;0300 to U&#43;036F, U&#43;20D0 to U&#43;20F0, and others&#41;. </p>
+<p>and the arrow mark is displayed above the character. There are lots of these <strong>combining marks</strong> &#40;also <strong>diacritics</strong>&#41; in Unicode &#40;e.g. U&#43;0300 to U&#43;036F, U&#43;20D0 to U&#43;20F0, and others&#41;.</p>
 <p>It’s possible to add more than one:</p>
 <pre><code class="language-plain">e\vec\dot</code></pre>
 <p>which JuliaMono renders like this:</p>

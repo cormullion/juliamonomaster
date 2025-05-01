@@ -58,7 +58,7 @@
 <ul>
 <li><p>free</p>
 </li>
-<li><p>distributed with a liberal licence <sup id="fnref:licence"><a href="#fndef:licence" class="fnref">[1]</a></sup></p>
+<li><p>distributed with a liberal license <sup id="fnref:license"><a href="#fndef:license" class="fnref">[1]</a></sup></p>
 </li>
 <li><p>suitable for scientific and technical programming as well as for general purpose hacking</p>
 </li>
@@ -415,7 +415,7 @@ end</code></pre>
 <p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
 <p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
 <h2 id="unicode_coverage"><a href="#unicode_coverage" class="header-anchor">Unicode coverage</a></h2>
-<p>The current version of Unicode &#40;16&#41; defines about 150,000 glyphs. A font can contain only a maximum of 64,000 – you won&#39;t find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.</p>
+<p>The current version of Unicode &#40;16&#41; defines about 150,000 glyphs. A font can contain only a maximum of 64,000 – you won&#39;t find every Unicode glyph in a single font. So each individual font focuses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.</p>
 <p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41;</p>
 <p>JuliaMono is quite greedy<sup id="fnref:greedy"><a href="#fndef:greedy" class="fnref">[7]</a></sup>, and contains quite a few Unicode glyphs.</p>
 <img src="/assets/barchart.svg" width="100%" alt="silly barchart"> 
@@ -857,10 +857,10 @@ Welcome to </code></pre>
 <h2 id="thanks"><a href="#thanks" class="header-anchor">Thanks&#33;</a></h2>
 <p>Thanks to: Thibaut Lienart for his <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> web site builder; to Jérémie Knüsel who provided invaluable suggestions and advice; to Dr Zygmunt Szpak for his cool maths code; to Simeon Schaub for the issues and PRs, and to others in the Julia community for help and suggestions. Type sample from <a href="https://underscoretype.com">underscoretype</a>.</p>
 <h2 id="footnotes"><a href="#footnotes" class="header-anchor">Footnotes</a></h2>
-<p><table class="fndef" id="fndef:licence">
+<p><table class="fndef" id="fndef:license">
     <tr>
-        <td class="fndef-backref"><a href="#fnref:licence">[1]</a></td>
-        <td class="fndef-content">&nbsp; “licence” Although not MIT-licensed like Julia, JuliaMono is licensed using the <a href="https://scripts.sil.org/OFL">SIL Open Font licence</a>, which allows the fonts to be used, studied, modified, freely redistributed, and even sold, without affecting anything they’re bundled with.</td>
+        <td class="fndef-backref"><a href="#fnref:license">[1]</a></td>
+        <td class="fndef-content">&nbsp; “license” Although not MIT-licensed like Julia, JuliaMono is licensed using the <a href="https://scripts.sil.org/OFL">SIL Open Font license</a>, which allows the fonts to be used, studied, modified, freely redistributed, and even sold, without affecting anything they’re bundled with.</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:windows">
@@ -914,19 +914,19 @@ Welcome to </code></pre>
  <table class="fndef" id="fndef:width">
     <tr>
         <td class="fndef-backref"><a href="#fnref:width">[10]</a></td>
-        <td class="fndef-content">&nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ &#40;<span class="code_ss_off">-></span>&#41;, these are the width of a single character,and so you’d be changing the width of your string/line whenever you made the substitution.</td>
+        <td class="fndef-content">&nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ &#40;<span class="code_ss_off">-></span>&#41;, these are the width of a single character, and so you’d be changing the width of your string/line whenever you made the substitution.</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:typographypanel">
     <tr>
         <td class="fndef-backref"><a href="#fnref:typographypanel">[11]</a></td>
-        <td class="fndef-content">&nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive but I’m not convinced that all the buttons are wired up yet...</td>
+        <td class="fndef-content">&nbsp; “Typography panel” These vary widely in their abilities and functions: the MacOS Terminal app’s Typography panel is comprehensive, but I’m not convinced that all the buttons are wired up yet...</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:terminal">
     <tr>
         <td class="fndef-backref"><a href="#fnref:terminal">[12]</a></td>
-        <td class="fndef-content">&nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: <a href="https://wezfurlong.org/wezterm/">wezterm</a> is about the best, although configuring the macOS Terminal is a bit easier, and <a href="https://iterm2.com">iTerm</a> for macOS is also a reasonable alternative. In the world of fonts, nothing is 100&#37; correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a <a href="https://github.com/microsoft/vscode/issues/34103">VS Code</a> issue; here are the <a href="https://github.com/alacritty/alacritty/issues/50">Alacritty terminal developers</a> working on it; here is the <a href="https://iterm2.com/documentation-fonts.html">iTerm documentation</a> talking about performance.</td>
+        <td class="fndef-content">&nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: <a href="https://wezfurlong.org/wezterm/">wezterm</a> is about the best, although configuring the macOS Terminal is a bit easier, and <a href="https://iterm2.com">iTerm</a> for macOS is also a reasonable alternative. In the world of fonts, nothing is 100&#37; correct, which can be frustrating. You can track some of the issues and discussions on GitHub and elsewhere: here’s a <a href="https://github.com/microsoft/vscode/issues/34103">VS Code</a> issue; here are the <a href="https://github.com/alacritty/alacritty/issues/50">Alacritty terminal developers</a> working on it; here is the <a href="https://iterm2.com/documentation-fonts.html">iTerm documentation</a> talking about performance.</td>
     </tr>
 </table>
  
