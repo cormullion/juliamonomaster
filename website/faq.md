@@ -17,7 +17,7 @@ Feel free to compare it with other fonts at [dev fonts](https://devfonts.gafi.de
 
 If you use a lot of mathematics, visit the [mono-math.netlify.app](https://mono-math.netlify.app) site, which shows how Unicode math symbols look in various fonts.
 
-To find out about JuliaMono's Unicode support, you could look at the Glyphs page on this site, or you could visit [glyphy.info](https://glyphy.info) and type a name (eg `interrobang`) or a hexadecimal number (eg `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
+To find out about JuliaMono's Unicode support, you could look at the Glyphs page on this site, or you could visit [glyphy.info](https://glyphy.info) and type a name (for example `interrobang`) or a hexadecimal number (for example `0x203d`), If the glyph is present in JuliaMono, you'll see a checkmark `✓`:
 
 ~~~<img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> ~~~
 
@@ -84,7 +84,7 @@ You may prefer to serve the WOFF/2 fonts from your own server. One problem you m
 
 There are some other options for the `@font-face` directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.
 
-(There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mosly  if you want to have more control over font loading times in web browser-based applications.)
+(There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.)
 
 ## ‘How do I configure VS Code?’
 
@@ -117,7 +117,7 @@ In VSCode there are two levels of OpenType font support, _editor_ and _terminal_
 
 Editor windows support most OpenType features; you can ask for contextual alternates (ligatures), stylistic sets, alternate characters, and so on, using the feature codes listed above.
 
-Terminal windows use the xterm.js terminal emulator. This doesn't (yet) support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on [this Github issue](https://github.com/xtermjs/xterm.js/issues/958).
+Terminal windows use the xterm.js terminal emulator. This doesn't (yet) support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on [this GitHub issue](https://github.com/xtermjs/xterm.js/issues/958).
 
 ## ‘How do I configure the CSS?’
 
@@ -327,7 +327,7 @@ In a $ \LaTeX $ document, you should be able to define and use local fonts.
 
 Robert Moss put together an excellent package to help negotiate the various font issues that you might encounter when using Unicode and $ \LaTeX $:
 
-[A custom Julia language style for the LaTeX listings package, and Unicode support for the JuliaMono font in a `lstlisting` environment.](https://github.com/mossr/julia-mono-listings).
+[A custom Julia language style for the LaTeX listings package, and Unicode support for the JuliaMono font in a `lstlisting` environment](https://github.com/mossr/julia-mono-listings).
 
 An earlier approach that worked for me is as follows:
 
@@ -394,7 +394,7 @@ However, programming and coding typefaces have to address different problems:
 
 - code can often consist of sequences of non-language characters
 
-- a single variable name might combine latin and greek letters and various punctuation characters
+- a single variable name might combine Latin and Greek letters and various punctuation characters
 
 - often you want to compare areas of text with other areas (such as code laid out in tabular form)
 
@@ -414,7 +414,7 @@ If you want to find out more about typeface and font legibility, a good place to
 
 ## ‘Where’s the source? What’s the licence?‘
 
-The font is OFL/SIL-licensed, and you can find the source [here](https://github.com/cormullion/juliamonomaster). The SIL license allows you to do almost anything you want, **except** re-issue it under tha same name or with a different licence.
+The font is OFL/SIL-licensed, and you can find the source [here](https://github.com/cormullion/juliamonomaster). The SIL licence allows you to do almost anything you want, **except** re-issue it under tha same name or with a different licence.
 
 ## ‘Is it finished?’
 
@@ -422,7 +422,7 @@ Some say that projects are never finished, just abandoned. As of May 2025, I’m
 
 ## ‘Why don’t these accents/marks/diacritics work properly?’
 
-Unicode allows you to combine characters - ie stack them vertically. For example, you can combine the glyph for `e` (U+0065) with the glyph U+20D7 (the “combining right arrow above”) to get:
+Unicode allows you to combine characters - place one above the vertically. For example, you can combine the glyph for `e` (U+0065) with the glyph U+20D7 (the “combining right arrow above”) to get:
 
 ```
 e⃗ 
@@ -440,7 +440,7 @@ displays as
 e⃗
 ```
 
-and the arrow mark is displayed above the character. There are lots of these **combining marks** (also **diacritics**) in Unicode (eg U+0300 to U+036F, U+20D0 to U+20F0, and others). 
+and the arrow mark is displayed above the character. There are lots of these **combining marks** (also **diacritics**) in Unicode (for example U+0300 to U+036F, U+20D0 to U+20F0, and others). 
 
 It’s possible to add more than one:
 

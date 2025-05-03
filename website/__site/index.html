@@ -207,7 +207,15 @@ demo.init()
 <img src="/assets/specimen_2.png" width="100%" alt="specimen image 2"> 
 <img src="/assets/specimen_3.png" width="100%" alt="specimen image 3"> 
 <p>The following examples will be rendered in JuliaMono by your browser &#40;if it’s successfully downloaded the web font versions&#41;, so I hope what you see here is close to what I made.</p>
-<p>The CSS markup applied to the following code also uses another weight of the typeface JuliaMono-Medium, which is a smidgeon bolder:</p>
+<p>There are different weights of JuliaMono<sup id="fnref:masters"><a href="#fndef:masters" class="fnref">[4]</a></sup>, so you can control the amount of contrast you have in your highlighted code:</p>
+<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>
+<span style="font-family: JuliaMono-Regular;">JuliaMono-Regular</span>
+<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>
+<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>
+<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>
+<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>
+<p>They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.</p>
+<p>The CSS markup applied to the following code also uses another weight of the typeface, JuliaMono-Medium, which is a smidgeon bolder:</p>
 <pre><code class="language-julia">using Zygote: @adjoint
 function ignore&#40;f&#41;
     try return f&#40;&#41;
@@ -221,15 +229,7 @@ end
         0, ȳ -&gt; nothing
     end
 end</code></pre>
-<p>There are different weights of JuliaMono<sup id="fnref:masters"><a href="#fndef:masters" class="fnref">[4]</a></sup>, so you can control the amount of contrast you have in your highlighted code:</p>
-<span style="font-family: JuliaMono-Light;">JuliaMono-Light</span>
-<span style="font-family: JuliaMono-Regular;">JuliaMono-Regular</span>
-<span style="font-family: JuliaMono-Medium;">JuliaMono-Medium</span>
-<span style="font-family: JuliaMono-Bold;">JuliaMono-Bold</span>
-<span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>
-<span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>
-<p>They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.</p>
-<p>Each of these also has a matching italic variant: so JuliaMono-Light has JuliaMono-LightItalic, and so on.</p>
+<p>Each weight has a matching italic variant: so JuliaMono-Light has JuliaMono-LightItalic, and so on.</p>
 <span style="font-family: JuliaMono-LightItalic;">JuliaMono-LightItalic</span>
 <span style="font-family: JuliaMono-RegularItalic;">JuliaMono-RegularItalic</span>
 <span style="font-family: JuliaMono-MediumItalic;">JuliaMono-MediumItalic</span>
@@ -465,7 +465,7 @@ end</code></pre>
 <pre><code class="language-julia">𜳖 𜳗 𜳘 𜳙 𜳚 𜳛 𜳜 𜳝 𜳞 𜳟 𜳠 𜳡 𜳢 𜳣 𜳤 𜳥 𜳦 𜳧 𜳨 𜳩 𜳪 𜳫 𜳬 𜳭 𜳮 𜳯 𜱌 𜱍
 𜴀 𜴁 𜴂 𜴃 𜴄 𜴅 𜴆 𜴇 𜴈 𜴉 𜴊 𜴋 𜴌 𜴍 𜴎 𜴏 𜴐 𜴑 𜴒 𜴓 𜴔 𜴕 𜴖 𜴗 𜴘 𜴙 𜴚 𜴛 𜴜 𜴝 𜴞 𜴟 𜴠 𜴡 𜴢 𜴣 𜴤 𜴥 𜴦 𜴧 𜴨 𜴩 𜴪 𜴫 𜴬 𜴭 𜴮 𜴯 𜴰 𜴱 𜴲 𜴳 𜴴 ...</code></pre>
 <p>You can see a complete list of glyphs on the Glyphs page &#40;caution: it&#39;s quite a large page&#41;. </p>
-<p>If you want a more flexible way of finding out about JuliaMono&#39;s Unicode support, you can visit <a href="https://glyphy.info">glyphy.info</a> and type a name &#40;eg <code>interrobang</code>&#41; or a hexadecimal number &#40;eg <code>0x203d</code>&#41; to see matching characters. If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
+<p>If you want a more flexible way of finding out about JuliaMono&#39;s Unicode support, you can visit <a href="https://glyphy.info">glyphy.info</a> and type a name &#40;for example <code>interrobang</code>&#41; or a hexadecimal number &#40;for example <code>0x203d</code>&#41; to see matching characters. If the glyph is present in JuliaMono, you&#39;ll see a checkmark <code>✓</code>:</p>
 <img src="/assets/glyphydotinfo.png" width="100%" alt="glyphy.info screen"> 
 <p>If you&#39;re using the Julia language, you can also do this in the Julia REPL. Install the registered Glyphy.jl package in the usual way, and then run it like this:</p>
 <pre><code class="language-julia">julia&gt; using Glyphy
@@ -557,9 +557,9 @@ df2 &#61; df |&gt;
     @groupby&#40;_.a&#41; |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre>
-<p>Note that these “ligatures” have to be interpreted by the terminal you’re using - the font depends on the terminal software to replace the glyphs with the joined versions. Not all terminals support ligatures&#33;</p>
+<p>Note that these ligatures have to be interpreted by the terminal you’re using - fonts rely on the underlying terminal software to replace the glyphs with the joined-up versions. Not all terminals support ligatures.</p>
 <h2 id="stylistic_sets"><a href="#stylistic_sets" class="header-anchor">Stylistic sets</a></h2>
-<p>OpenType fonts also offer you the ability to choose different designs for certain characters. These are stored as ‘stylistic sets’.</p>
+<p>OpenType fonts can also offer you the ability to choose different designs for certain characters. These are stored as ‘stylistic sets’.</p>
 <p>All these options are stored in the font, and are often referred to by their internal four letter code &#40;not the best user-oriented design, really&#41;. For example, the contextual alternates listed above are collectively stored in the <strong>calt</strong> feature.</p>
 <p>Sometimes, an application will show the options more visually in a Typography panel<sup id="fnref:typographypanel"><a href="#fndef:typographypanel" class="fnref">[11]</a></sup>, usually tucked away somewhere on a Font chooser dialog.</p>
 <p>Here’s a list of the stylistic sets currently available in JuliaMono.</p>
@@ -695,7 +695,7 @@ df2 &#61; df |&gt;
     <td>ss18</td>
     <td class="code_ss_off">𝒜 ℬ 𝒞 ...</td>
     <td class="code_ss18_on">𝒜 ℬ 𝒞 ...</td>
-    <td><p>Ball point pen math script</p></td>
+    <td><p>Ball-point pen math script</p></td>
     </tr>
 
 	<tr>
@@ -739,8 +739,8 @@ df2 &#61; df |&gt;
 
 <p>All this fancy technology is under the control of the application and the operating system you’re using. Ideally, they will provide an easy way for you to switch the various OpenType features on and off.</p>
 <p>Browser-based editors such as VS Code support many OpenType features in their editor windows, but not so much in the terminal emulator/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. &#40;See <a href="/faq/#how_do_i_control_features_in_vs_code_or_css">this section</a>.&#41; Some features are opt in, others are opt out; this too can vary from application to application.</p>
-<p>Terminal/console applications also vary a lot. <a href="https://wezfurlong.org/wezterm/">wezterm</a> is cross-platform and provides excellent font support. On MacOS the <strong>Terminal</strong> and <strong>iTerm</strong> applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as <a href="https://konsole.kde.org">Konsole</a> and <a href="https://sw.kovidgoyal.net/kitty/#font-control">Kitty</a> offer quite good OpenType support, but others such as <a href="https://github.com/alacritty/alacritty">Alacritty</a> offer little or none, as yet. <sup id="fnref:terminal"><a href="#fndef:terminal" class="fnref">[12]</a></sup></p>
-<p>If the application allows, you should be able to switch the <code>calt</code> contextual ligatures off, particularly since a few people won’t like any of them in their code. </p>
+<p>Terminal/console applications also vary a lot. <a href="https://wezfurlong.org/wezterm/">wezterm</a> is cross-platform and provides excellent font support, as does <a href="https://ghostty.org">ghostty</a>. On MacOS the <strong>Terminal</strong> and <strong>iTerm</strong> applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as <a href="https://konsole.kde.org">Konsole</a> and <a href="https://sw.kovidgoyal.net/kitty/#font-control">Kitty</a> offer quite good OpenType support, but others such as <a href="https://github.com/alacritty/alacritty">Alacritty</a> offer little or none, as yet. And the situation changes all the time. <sup id="fnref:terminal"><a href="#fndef:terminal" class="fnref">[12]</a></sup></p>
+<p>If the application allows, you should be able to switch the <code>calt</code> contextual alternates off, which is useful for people who don&#39;t like any of them in their code. </p>
 <p>You can swtich the <strong>calt</strong> set off using CSS &#40;see <a href="/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code">here</a>&#41;. You can enable one or more of the alternative stylistic sets.</p>
 <p>Off &#40;<code>calt</code> off, no stylistic sets&#41;:</p>
 <div class="code_ss_off"><pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41; --&gt;
@@ -788,7 +788,7 @@ df2 &#61; df |&gt;
 <p>&#40;This code snippet is from the <a href="https://algorithmsbook.com/">Algorithms Handbook</a>, by Mykel J. Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses JuliaMono for the code samples.&#41;</p>
 <p>As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education; I suspect that few people today learn or practice the roundhand style, and some of the shapes will be unfamiliar. You may also find the more detailed forms more difficult to read on lower-resolution displays.</p>
 <h3 id="ball-point_script"><a href="#ball-point_script" class="header-anchor">Ball-point script</a></h3>
-<p>The <code>ss18</code> stylistic set contains an alternative script style - a monoline &#39;ball-point&#39; style of calligraphy. Currently upper-case only.</p>
+<p>The <code>ss18</code> stylistic set contains an alternative script style - a monoline ball-point style of calligraphy. It&#39;s currently just for upper-case letters.</p>
 <span style="font-size: 1.5em; font-feature-settings:'ss18';">𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</span>
 <h3 id="variation_selectors"><a href="#variation_selectors" class="header-anchor">Variation selectors</a></h3>
 <p>The Unicode system provides a mechanism whereby characters can be followed by other modifier characters that change the appearance of the preceding one. Some of these <em>variation selectors</em>, known as VS1, VS2, have code points starting at U&#43;FE00. The Unicode Consortium has defined variation selectors that change the style of capital mathematical script letters from Cursive to Roundhand.</p>
@@ -841,12 +841,12 @@ image:
 strip:
         docker run --rm -v &#36;&#123;PWD&#125;:/juliamono juliamono-strip:latest &quot;&#36;&#123;VERSION&#125;&quot;</code></pre>
 <div class="jm_h1"><h2 id="private_use_areas_puas"><a href="#private_use_areas_puas" class="header-anchor">Private Use Areas &#40;PUAs&#41;</a></h2></div>
-<p>There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the official standard. These are called the <strong>Private Use Areas</strong>, and there are three: <code>\ue000</code> to <code>\uf8ff</code>, <code>\UF0000</code> to <code>\UFFFFD</code>, and <code>U100000</code> to <code>U&#43;10FFFD</code>.</p>
+<p>There are a few areas of the Unicode system that have been officially kept empty and are thus available to store characters that are not part of the official standard. These are called the <strong>Private Use Areas</strong>, and there are three: <code>U&#43;e000</code> to <code>U&#43;f8ff</code>, <code>U&#43;F0000</code> to <code>U&#43;FFFFD</code>, and <code>U&#43;100000</code> to <code>U&#43;10FFFD</code>.</p>
 <p>Each typeface can do its own thing in these areas. In JuliaMono you’ll find these, among others, and if you ask nicely I might add some more:</p>
 
 <img src="/assets/specimen_10.png" width="100%" alt="private use area">
 
-<p>The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed &#40;eg on github&#41;, you have no idea what glyph - if any - will be displayed.</p>
+<p>The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed &#40;for example on GitHub&#41;, you have no idea what glyph - if any - will be displayed.</p>
 <p>Julia users: you can define these to be available at the REPL. For example, say you want the Julia dots to be available in the terminal when you type <code>\julialogo</code><span style="font-size: 1.5em;"></span> in a Julia session with the JuliaMono font active. Run this:</p>
 <pre><code class="language-julia">using REPL
 REPL.REPLCompletions.latex_symbols&#91;&quot;\\julialogo&quot;&#93; &#61; &quot;\ue800&quot;</code></pre>
@@ -914,7 +914,7 @@ Welcome to </code></pre>
  <table class="fndef" id="fndef:width">
     <tr>
         <td class="fndef-backref"><a href="#fnref:width">[10]</a></td>
-        <td class="fndef-content">&nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ &#40;<span class="code_ss_off">-></span>&#41;, these are the width of a single character,and so you’d be changing the width of your string/line whenever you made the substitution.</td>
+        <td class="fndef-content">&nbsp; “alternate glyphs” Note that the substitute glyphs occupy the same width as the source glyphs they’re replacing. While you could in theory use one of the thousands of Unicode arrows, such as →, as a replacement for the ‘stabby lambda’ &#40;<span class="code_ss_off">-></span>&#41;, these are the width of a single character, and so you’d be changing the width of your string/line whenever you made the substitution.</td>
     </tr>
 </table>
  <table class="fndef" id="fndef:typographypanel">
@@ -926,7 +926,7 @@ Welcome to </code></pre>
  <table class="fndef" id="fndef:terminal">
     <tr>
         <td class="fndef-backref"><a href="#fnref:terminal">[12]</a></td>
-        <td class="fndef-content">&nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: <a href="https://wezfurlong.org/wezterm/">wezterm</a> is about the best, although configuring the macOS Terminal is a bit easier, and <a href="https://iterm2.com">iTerm</a> for macOS is also a reasonable alternative. In the world of fonts, nothing is 100&#37; correct, which can be frustrating. You can track some of the issues and discussions on github and elsewhere: here’s a <a href="https://github.com/microsoft/vscode/issues/34103">VS Code</a> issue; here are the <a href="https://github.com/alacritty/alacritty/issues/50">Alacritty terminal developers</a> working on it; here is the <a href="https://iterm2.com/documentation-fonts.html">iTerm documentation</a> talking about performance.</td>
+        <td class="fndef-content">&nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: <a href="https://wezfurlong.org/wezterm/">wezterm</a> is about the best, although configuring the macOS Terminal is a bit easier, <a href="https://ghostty.org">ghostty</a> is promising, and <a href="https://iterm2.com">iTerm</a> for macOS is a reasonable alternative. In the world of fonts, nothing is 100&#37; correct, which can be frustrating. You can track some of the issues and discussions on GitHub and elsewhere: here’s a <a href="https://github.com/microsoft/vscode/issues/34103">VS Code</a> issue; here are the <a href="https://github.com/alacritty/alacritty/issues/50">Alacritty terminal developers</a> working on it; here is the <a href="https://iterm2.com/documentation-fonts.html">iTerm documentation</a> talking about performance.</td>
     </tr>
 </table>
  
@@ -934,7 +934,7 @@ Welcome to </code></pre>
 </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 01, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: May 03, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
