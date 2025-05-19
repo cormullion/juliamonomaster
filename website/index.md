@@ -10,7 +10,7 @@
 
 ~~~<img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> ~~~
 
-JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference (which was to have been held in Lisbon, Portugal, but instead took place online.)
+JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference, which was to have been held in Lisbon, Portugal, but instead took place online.
 
 JuliaMono is:
 
@@ -28,7 +28,7 @@ This site uses JuliaMono for all text; if your browser can’t[^ohdear] (or you 
 To download and install JuliaMono, see the instructions [here](/download/).
 
 ~~~
-<div id="demo" class="demo" style="margin-top:3rem;">
+<div id="demo"  style="margin-top:3rem;width: 600px">
 <p>
 </p>
 </div>
@@ -192,7 +192,7 @@ There are different weights of JuliaMono[^masters], so you can control the amoun
 
 They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.
 
-The CSS markup applied to the following code also uses another weight of the typeface, JuliaMono-Medium, which is a smidgeon bolder:
+The CSS markup applied to the following code uses another weight of the typeface, JuliaMono-Medium, which is a smidgeon bolder:
 
 ```julia
 using Zygote: @adjoint
@@ -414,7 +414,7 @@ From a design perspective, forcing every character into the same size box is a p
 
 ## Unicode coverage
 
-The current version of Unicode (16) defines about 150,000 glyphs. A font can contain only a maximum of 64,000 -- you won't find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.
+The current version of Unicode (16) defines about 150,000 glyphs. But a single font can contain only a maximum of 64,000 -- you won't find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a set of fonts to cover all the possible ranges.
 
 One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.)
 
@@ -451,13 +451,22 @@ Boxes and line drawing:
 │                             │
 ╰─────────────────── inspect ─╯
 
-╔══╦══╗  ╭──┬──╮  ┏━━┳━━┓  ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐ 
-║┌─╨─┐║  │╓─╁─╖│  ┃┌─╂─┐┃  ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥ 
-║│╲ ╱│║  │║ ┃ ║│  ┃│ ╿ │┃  ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘ 
-╠╡ ╳ ╞╣  ├╫─╂─╫┤  ┣┿╾┼╼┿┫  ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓
-║│╱ ╲│║  │║ ┃ ║│  ┃│ ╽ │┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
-║└─╥─┘║  │╙─╀─╜│  ┃└─╂─┘┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
-╚══╩══╝  ╰──┴──╯  ┗━━┻━━┛           └╌╌┘ ╎ ┗╍╍┛
+╔══╦══╗  ╭──┬──╮  ┏━━┳━━┓ 
+║┌─╨─┐║  │╓─╁─╖│  ┃┌─╂─┐┃ 
+║│╲ ╱│║  │║ ┃ ║│  ┃│ ╿ │┃ 
+╠╡ ╳ ╞╣  ├╫─╂─╫┤  ┣┿╾┼╼┿┫ 
+║│╱ ╲│║  │║ ┃ ║│  ┃│ ╽ │┃ 
+║└─╥─┘║  │╙─╀─╜│  ┃└─╂─┘┃ 
+╚══╩══╝  ╰──┴──╯  ┗━━┻━━┛ 
+
+ ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐ 
+ ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥ 
+ ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘ 
+ ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓
+ ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+ ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+          └╌╌┘ ╎ ┗╍╍┛
+
 ```
 
 Fractions:
@@ -477,7 +486,7 @@ Maths:
 ⊂ ⊃ ⊄ ⊅ ⊆ ⊇ ⊈ ⊉ ⊊ ⊋ ⊌ ⊍ ⊎ ⊏ ⊐ ⊑ ⊒ ⊓ ⊔ ⊕ ⊖ ⊗ ⊘ ⊙ ⊚ ⊛ ⊜ ⊝ ⊞ ⊟ ⊠ ⊡ ⩂ ⊢ ⊣ ⊤ ⊥ ⊦ ⊧ ⊨ ⊩ ⊪ ⊫ ⊬ ⊭ ⊮ ⊯ ⊰ ⊱ ⨔ ⨕ 𝒜 𝒞 𝒟 𝒢 𝒥 𝒦 𝒩 𝒪 𝒫 𝒬 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵 𝒶 𝒷 𝒸 𝒹 𝒻 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏 𝒜︁ ℬ︁ 𝒞︁ 𝒟︁ ℰ︁ ℱ︁ 𝒢︁ ℋ︁ ℐ︁ 𝒥︁ 𝒦︁ ℒ︁ ℳ︁ 𝒩︁ 𝒪︁ 𝒫︁ 𝒬︁ ℛ︁ 𝒮︁ 𝒯︁ 𝒰︁ 𝒱︁ 𝒲︁ 𝒳︁ 𝒴︁ 𝒵 ...
 ```
 
-For a comparison of JuliaMono with other math-capable monospaced fonts, visit [mono-math.netlify.app](https://mono-math.netlify.app), which shows how Unicode math symbols look in various fonts.
+To compare JuliaMono with other math-capable monospaced fonts, visit [mono-math.netlify.app](https://mono-math.netlify.app), which shows how Unicode math symbols look in various fonts.
 
 Braille (for graphics)
 
@@ -486,6 +495,7 @@ Braille (for graphics)
 ```
 
 Arrows (hundreds of them)
+
 ```julia
  ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨ ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷ ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛ ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥ ⇦ ⇧ ⇨ ⇩ ⇪ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰ ⇱ ⇲ ⇳ ⇴ ⇵ ⇶ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⌁ ⌃ ⌄ ⌤ ⍇ ⍈ ⍐ ⍗ ⍼ ⎋ ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➢ ➣ ➤ ➥ ➦ ➧ ➨ ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾ ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ...
 ```
@@ -549,7 +559,7 @@ I ❤ Julia
 
 JuliaMono is an [OpenType](https://en.wikipedia.org/wiki/OpenType) typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as ~~~<span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span>~~~ in certain fonts are replaced by a single glyph such as ~~~<span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>~~~. These alternatives, often referred to generally as ‘[ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature)’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.
 
-If you love lots of programming-oriented ligatures, you should probably use [Fira Code](https://fonts.google.com/specimen/Fira+Code), a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
+If you love lots of programming-oriented ligatures, you should probably use [Fira Code](https://fonts.google.com/specimen/Fira+Code), a modified version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts (and I’m not the only one[^nottheonlyone]). I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.
 
 Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren't usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.
 
@@ -617,7 +627,7 @@ df2 = df |>
     DataFrame # <|
 ```
 
-Note that these ligatures have to be interpreted by the terminal you’re using - fonts rely on the underlying terminal software to replace the glyphs with the joined-up versions. Not all terminals support ligatures.
+Note that these ligatures have to be interpreted by the terminal you’re using - fonts rely on the underlying terminal software to replace the glyphs with the alternative versions. Not all terminals support ligatures.
 
 ## Stylistic sets
 
@@ -814,7 +824,7 @@ Terminal/console applications also vary a lot. [wezterm](https://wezfurlong.org/
 
 If the application allows, you should be able to switch the `calt` contextual alternates off, which is useful for people who don't like any of them in their code. 
 
-You can swtich the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)).
+You can switch the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)).
 You can enable one or more of the alternative stylistic sets.
 
 Off (`calt` off, no stylistic sets):
@@ -839,7 +849,7 @@ df2 = df |>
 ```
 @@
 
-On (`calt` on, most stylistic sets on):
+On (`calt` on, and most stylistic sets on):
 
 @@code_calt_on_ss_on
 ```
@@ -926,7 +936,7 @@ Visit [https://mutsuntsai.github.io/fontfreeze/](https://mutsuntsai.github.io/fo
 
 ### Using pyftsubset
 
-You can do a similar job on your computer by following these instructions for using `pyftsubset`, which lets you strip features out of the font (courtesy of @fredrikekre):
+You can do a similar job on your computer by following these instructions for using `pyftsubset`, which lets you strip features out of the font (this is courtesy of @fredrikekre):
 
 ```
 $ cat Dockerfile
@@ -979,7 +989,7 @@ Each typeface can do its own thing in these areas. In JuliaMono you’ll find th
 <img src="/assets/specimen_10.png" width="100%" alt="private use area">
 ~~~
 
-The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (for example on GitHub), you have no idea what glyph - if any - will be displayed.
+The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (for example on GitHub), you have no idea what glyph - if any - will be displayed to other people.
 
 Julia users: you can define these to be available at the REPL. For example, say you want the Julia dots to be available in the terminal when you type `\julialogo`~~~<span style="font-size: 1.5em;"></span>~~~ in a Julia session with the JuliaMono font active. Run this:
 

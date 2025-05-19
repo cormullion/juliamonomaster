@@ -63,7 +63,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.058/JuliaMono-Light.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.060/JuliaMono-Light.woff2");
 }
 ```
 
@@ -78,7 +78,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (e.g. v0.058 here), whereas the JSDELIVR version always retrieves the latest release.
+Notice that the CDNJS version points to a specific version (v0.060 here), whereas the JSDELIVR version always retrieves the latest release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -86,15 +86,15 @@ There are some other options for the `@font-face` directive, which determine thi
 
 (There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.)
 
-## ‘How do I configure VS Code?’
+## ‘How do I configure VSCode?’
 
-In VS-Code you’ll find the font settings somewhere in the labyrinthine (but thankfully searchable) Settings department.
+In VSCode you’ll find the font settings somewhere in the labyrinthine (but thankfully searchable) Settings department.
 
-![VS Code settings](/assets/vscode-settings-1-800.png)
+![VSCode settings](/assets/vscode-settings-1-800.png)
 
 To control the display of contextual alternates and stylistic sets, click on the Edit Settings in JSON, and look for `editor.fontLigatures`:
 
-![VS Code settings](/assets/vscode-settings-2-800.png)
+![VSCode settings](/assets/vscode-settings-2-800.png)
 
 You use the OpenType feature codes ([listed here](/#contextual_and_stylistic_alternates)). These should all be switched on or off in a single line, if you're editing the settings.json file.
 
@@ -105,7 +105,7 @@ For example, if you like a slashed zero, a single story g, and fancier HTML comm
     "editor.fontLigatures": "'calt' on, 'zero', 'ss01', 'ss13'",
 ```
 
-But if you want to keep the contextual alternates and quite fancy a lighter asterisk, use this:
+But if you want to switch of the contextual alternates but quite fancy a lighter asterisk, use this:
 
 ```css
 	 "editor.fontLigatures": "'calt' off, 'ss05'",
@@ -406,7 +406,7 @@ However, programming and coding typefaces have to address different problems:
 
 - there’s much less redundancy in code: when reading prose you’ll find it easy to overlook misspellings and typos, when working with code you’ll want to find the misspellings and typos - you don’t really want your eye to glide smoothly past these
 
-So I'd argue that making letters easy to distinguish is as important as making them harmoniously consistent. A primary goal is to make characters that tend to be similar different. For example, the digits 3, 8, and 0 have similar curved tops, so the 3 has a flat-top, and the 0 is more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.
+So I'd argue that making letters easy to distinguish is as important as making them harmoniously consistent. A primary goal is to make characters that tend to be similar different. For example, in some fonts the digits 3, 8, and 0 have similar curved tops, so JuliaMono's 3 has a flat-top, and the 0 is more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.
 
 The shapes aren’t compressed or condensed. The glyphs aren’t fashionably thin. It might feel quite “airy” because of the generous spacing. The punctuation is quite solid and possibly larger than you’d expect (my eyesight is probably poorer than yours!). Perhaps it’s not so good for non-code text (do you find this web page difficult to read?). One feature of JuliaMono is that there's some variability and inconsistency in the design; this is the result of human inadequacy :) 
 
@@ -414,7 +414,7 @@ If you want to find out more about typeface and font legibility, a good place to
 
 ## ‘Where’s the source? What’s the licence?‘
 
-The font is OFL/SIL-licensed, and you can find the source [here](https://github.com/cormullion/juliamonomaster). The SIL licence allows you to do almost anything you want, **except** re-issue it under tha same name or with a different licence.
+The font is OFL/SIL-licensed, and you can find the source files (in Glyphs format) [here](https://github.com/cormullion/juliamonomaster). The SIL licence allows you to do almost anything you want, **except** re-issue it under the same name or with a different licence.
 
 ## ‘Is it finished?’
 
@@ -501,7 +501,7 @@ d̢̳̪̺̯͍̐ͮ̄̅ͤͬ͊̓͒̄́̀͠i̜̪͔͇̖͙͈͍̓̇̽͊͗a̝̳ͥͤͯ͑�
 
 ## ‘Does it work on macOS?’
 
-Yes. JuliaMono works well, with most modern MacOS text editors, such as Visual Studio Code, Sublime Text, the excellent free CotEditor, Panic's new Nova editor, BBEdit, and TextEdit, among others. If these editors support OpenType features such as stylistic alternatives and ligatures (not all do), these features of JuliaMono should work well.
+Yes. JuliaMono works well, with most modern MacOS text editors, such as Visual Studio Code, Sublime Text, the excellent free CotEditor, Panic's Nova editor, BBEdit, and TextEdit, among others. If these editors support OpenType features such as stylistic alternatives and ligatures (not all do), these features of JuliaMono should work well.
 
 ## ‘Does it work on Linux?’
 
@@ -530,9 +530,7 @@ JuliaMono is an OTF/TTF-flavoured font that contains hinting instructions. Hinte
 
 ## ‘What about a nerdfonts version?’
 
-[nerdfonts](https://www.nerdfonts.com) adds about four thousand extra glyphs to a font. It does this by creating a new font that combines an existing font’s glyphs with a bunch of new ones, using a FontForge Python script.
-
-JuliaMono concentrates on the Unicode standard glyphs, whereas Nerdfonts adds many non-standard glyphs such as product and brand logos, trade names, icons for dozens of file extensions, programming languages, commercial applications, and a fair number of other characters such as weather symbols. It’s aimed at a much wider audience. The Nerdfonts glyph set doesn’t overlap too much with JuliaMono's.
+[nerdfonts](https://www.nerdfonts.com) adds thousands of extra glyphs to a font. It does this by creating a new font that combines an existing font’s glyphs with a bunch of new ones, using a FontForge Python script.
 
 You can download a Nerdfonts-enhanced version of JuliaMono [here](https://github.com/mietzen/juliamono-nerd-font/tree/main), thanks to the hard work of [@mietzen](https://github.com/mietzen)!
 

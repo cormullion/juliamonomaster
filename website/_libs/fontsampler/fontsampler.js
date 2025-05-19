@@ -181,7 +181,7 @@ module.exports = {
             unit: "px",
             init: 36,
             min: 8,
-            max: 96,
+            max: 160,
             step: 1,
             label: "Size",
             render: true,
