@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="/css/basic.css">
 	<link rel="stylesheet" type="text/css" href="/css/juliamono.css">
 	<link rel="icon" href="/assets/favicon.png">
-	<link rel="stylesheet" href="/css/flont.css">
 	<script>
     function setStyleSheet(url){
        var stylesheet = document.getElementById("lightdark");
@@ -53,7 +52,7 @@
 <div class="franklin-toc"><ol><li><a href="#introduction">Introduction</a></li><li><a href="#screenshots">Screenshots</a></li><li><a href="#examples">Examples</a></li><li><a href="#languages">Languages</a></li><li><a href="#monospaced_fonts">Monospaced fonts</a></li><li><a href="#unicode_coverage">Unicode coverage</a></li><li><a href="#contextual_and_stylistic_alternates_aka_ligatures">Contextual and stylistic alternates &#40;aka “ligatures”&#41;</a></li><li><a href="#stylistic_sets">Stylistic sets</a></li><li><a href="#mathematical_scripts">Mathematical scripts</a><ol><li><a href="#calligraphy_and_roundhand_script">Calligraphy and Roundhand script</a></li><li><a href="#ball-point_script">Ball-point script</a></li><li><a href="#variation_selectors">Variation selectors</a></li></ol></li><li><a href="#customizing_the_font">Customizing the font</a><ol><li><a href="#using_fontfreeze">Using FontFreeze</a></li><li><a href="#using_pyftsubset">Using pyftsubset</a></li></ol></li><li><a href="#private_use_areas_puas">Private Use Areas &#40;PUAs&#41;</a></li><li><a href="#thanks">Thanks&#33;</a></li><li><a href="#footnotes">Footnotes</a></li></ol></div>
 <h2 id="introduction"><a href="#introduction" class="header-anchor">Introduction</a></h2>
 <img src="/assets/specimen_1.png" width="100%" alt="specimen image 1"> 
-<p>JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference &#40;which was to have been held in Lisbon, Portugal, but instead took place online.&#41;</p>
+<p>JuliaMono is a monospaced typeface designed for programming and other text editing environments that require a wide range of specialist and technical Unicode characters. It was presented at the 2020 JuliaCon conference, which was to have been held in Lisbon, Portugal, but instead took place online.</p>
 <p>JuliaMono is:</p>
 <ul>
 <li><p>free</p>
@@ -73,7 +72,7 @@
 <span style="text-align: center;font-family: JuliaMono-Light;font-size:4rem;"> (  ) </span>
 <p>To download and install JuliaMono, see the instructions <a href="/download/">here</a>.</p>
 
-<div id="demo" class="demo" style="margin-top:3rem;">
+<div id="demo"  style="margin-top:3rem;width: 600px">
 <p>
 </p>
 </div>
@@ -215,7 +214,7 @@ demo.init()
 <span style="font-family: JuliaMono-ExtraBold;">JuliaMono-ExtraBold</span>
 <span style="font-family: JuliaMono-Black;">JuliaMono-Black</span>
 <p>They all occupy the same amount of horizontal space, so they can be mixed without losing alignment.</p>
-<p>The CSS markup applied to the following code also uses another weight of the typeface, JuliaMono-Medium, which is a smidgeon bolder:</p>
+<p>The CSS markup applied to the following code uses another weight of the typeface, JuliaMono-Medium, which is a smidgeon bolder:</p>
 <pre><code class="language-julia">using Zygote: @adjoint
 function ignore&#40;f&#41;
     try return f&#40;&#41;
@@ -415,7 +414,7 @@ end</code></pre>
 <p>In JuliaMono, every character is the same width, because this is a <a href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> typeface. Usually, typefaces with a lot of Unicode mathematical symbols are not monospaced, because they’re intended for use in prose and \( \LaTeX \) applications, rather than in programming code. You probably want ∑s in your code rather than \( \sum \)s, because the big ones will upset your formatting.</p>
 <p>From a design perspective, forcing every character into the same size box is a problem. It’s like fitting every human being of whatever shape or size into identical airplane seats - some characters are bound to look uncomfortable. There’s never quite enough room for a nice-looking “m” or “w”.</p>
 <h2 id="unicode_coverage"><a href="#unicode_coverage" class="header-anchor">Unicode coverage</a></h2>
-<p>The current version of Unicode &#40;16&#41; defines about 150,000 glyphs. A font can contain only a maximum of 64,000 – you won&#39;t find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a number of fonts to cover this range.</p>
+<p>The current version of Unicode &#40;16&#41; defines about 150,000 glyphs. But a single font can contain only a maximum of 64,000 – you won&#39;t find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a set of fonts to cover all the possible ranges.</p>
 <p>One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. &#40;Except for all those emojis - they are best handled by the operating system.&#41;</p>
 <p>JuliaMono is quite greedy<sup id="fnref:greedy"><a href="#fndef:greedy" class="fnref">[7]</a></sup>, and contains quite a few Unicode glyphs.</p>
 <img src="/assets/barchart.svg" width="100%" alt="silly barchart"> 
@@ -441,20 +440,28 @@ end</code></pre>
 │                             │
 ╰─────────────────── inspect ─╯
 
-╔══╦══╗  ╭──┬──╮  ┏━━┳━━┓  ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐ 
-║┌─╨─┐║  │╓─╁─╖│  ┃┌─╂─┐┃  ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥ 
-║│╲ ╱│║  │║ ┃ ║│  ┃│ ╿ │┃  ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘ 
-╠╡ ╳ ╞╣  ├╫─╂─╫┤  ┣┿╾┼╼┿┫  ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓
-║│╱ ╲│║  │║ ┃ ║│  ┃│ ╽ │┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
-║└─╥─┘║  │╙─╀─╜│  ┃└─╂─┘┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
-╚══╩══╝  ╰──┴──╯  ┗━━┻━━┛           └╌╌┘ ╎ ┗╍╍┛</code></pre>
+╔══╦══╗  ╭──┬──╮  ┏━━┳━━┓ 
+║┌─╨─┐║  │╓─╁─╖│  ┃┌─╂─┐┃ 
+║│╲ ╱│║  │║ ┃ ║│  ┃│ ╿ │┃ 
+╠╡ ╳ ╞╣  ├╫─╂─╫┤  ┣┿╾┼╼┿┫ 
+║│╱ ╲│║  │║ ┃ ║│  ┃│ ╽ │┃ 
+║└─╥─┘║  │╙─╀─╜│  ┃└─╂─┘┃ 
+╚══╩══╝  ╰──┴──╯  ┗━━┻━━┛ 
+
+ ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐ 
+ ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥ 
+ ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘ 
+ ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓
+ ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+ ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇
+          └╌╌┘ ╎ ┗╍╍┛</code></pre>
 <p>Fractions:</p>
 <pre><code class="language-julia">¼ ½ ¾ ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ⅟ ↉</code></pre>
 <p>Blackboard &#40;double-struck&#41;</p>
 <pre><code class="language-julia">𝔸 𝔹 𝔻 𝔼 𝔽 𝔾 𝕀 𝕁 𝕂 𝕃 𝕄 𝕆 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℂ ℍ ℕ ℙ ℚ ℝ ℤ ℼ ℽ ℾ ℿ ⅀ ⅅ ⅆ ⅇ ⅈ ⅉ 𝕒 𝕓 𝕔 𝕕 𝕖 𝕗 𝕘 𝕙 𝕚 𝕛 𝕜 𝕝 𝕞 𝕟 𝕠 𝕡 𝕢 𝕣 𝕤 𝕥 𝕦 𝕧 𝕨 𝕩 𝕪 𝕫 𝟘 𝟙 𝟚 𝟛 𝟜 𝟝 𝟞 𝟟 𝟠 𝟡</code></pre>
 <p>Maths:</p>
 <pre><code class="language-julia">⊂ ⊃ ⊄ ⊅ ⊆ ⊇ ⊈ ⊉ ⊊ ⊋ ⊌ ⊍ ⊎ ⊏ ⊐ ⊑ ⊒ ⊓ ⊔ ⊕ ⊖ ⊗ ⊘ ⊙ ⊚ ⊛ ⊜ ⊝ ⊞ ⊟ ⊠ ⊡ ⩂ ⊢ ⊣ ⊤ ⊥ ⊦ ⊧ ⊨ ⊩ ⊪ ⊫ ⊬ ⊭ ⊮ ⊯ ⊰ ⊱ ⨔ ⨕ 𝒜 𝒞 𝒟 𝒢 𝒥 𝒦 𝒩 𝒪 𝒫 𝒬 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵 𝒶 𝒷 𝒸 𝒹 𝒻 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏 𝒜︁ ℬ︁ 𝒞︁ 𝒟︁ ℰ︁ ℱ︁ 𝒢︁ ℋ︁ ℐ︁ 𝒥︁ 𝒦︁ ℒ︁ ℳ︁ 𝒩︁ 𝒪︁ 𝒫︁ 𝒬︁ ℛ︁ 𝒮︁ 𝒯︁ 𝒰︁ 𝒱︁ 𝒲︁ 𝒳︁ 𝒴︁ 𝒵 ...</code></pre>
-<p>For a comparison of JuliaMono with other math-capable monospaced fonts, visit <a href="https://mono-math.netlify.app">mono-math.netlify.app</a>, which shows how Unicode math symbols look in various fonts.</p>
+<p>To compare JuliaMono with other math-capable monospaced fonts, visit <a href="https://mono-math.netlify.app">mono-math.netlify.app</a>, which shows how Unicode math symbols look in various fonts.</p>
 <p>Braille &#40;for graphics&#41;</p>
 <pre><code class="language-julia">⠁ ⠂ ⠃ ⠄ ⠅ ⠆ ⠇ ⠈ ⠉ ⠊ ⠋ ⠌ ⠍ ⠎ ⠏ ⠐ ⠑ ⠒ ⠓ ⠔ ⠕ ⠖ ⠗ ⠘ ⠙ ⠚ ⠛ ⠜ ⠝ ⠞ ⠟ ⠠ ⠡ ⠢ ⠣ ⠤ ⠥ ...</code></pre>
 <p>Arrows &#40;hundreds of them&#41;</p>
@@ -497,7 +504,7 @@ julia&gt; ❤&#40;&quot;Julia&quot;&#41;
 I ❤ Julia</code></pre>
 <h2 id="contextual_and_stylistic_alternates_aka_ligatures"><a href="#contextual_and_stylistic_alternates_aka_ligatures" class="header-anchor">Contextual and stylistic alternates &#40;aka “ligatures”&#41;</a></h2>
 <p>JuliaMono is an <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> typeface. OpenType technology provides powerful text positioning, pattern matching, and glyph substitution features, which are essential for languages such as Arabic and Urdu. In English, OpenType features are often seen when letter pairs such as <span style="font-size: 1.5em;font-family: Georgia;font-variant-ligatures: no-common-ligatures; ">fi</span> in certain fonts are replaced by a single glyph such as <span style="font-size: 1.5em; font-family: Georgia;">ﬁ</span>. These alternatives, often referred to generally as ‘<a href="https://en.wikipedia.org/wiki/Orthographic_ligature">ligatures</a>’ have been used ever since printing with moveable type was invented, replacing the occasional awkward character combination with a better-looking alternative.</p>
-<p>If you love lots of programming-oriented ligatures, you should probably use <a href="https://fonts.google.com/specimen/Fira&#43;Code">Fira Code</a>, a version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[9]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
+<p>If you love lots of programming-oriented ligatures, you should probably use <a href="https://fonts.google.com/specimen/Fira&#43;Code">Fira Code</a>, a modified version of Mozilla’s Fira Mono font with literally hundreds of extra ligatures. I’m not a fan of their use in coding fonts &#40;and I’m not the only one<sup id="fnref:nottheonlyone"><a href="#fndef:nottheonlyone" class="fnref">[9]</a></sup>&#41;. I like to see exactly what I’ve typed, rather than what the font has decided to replace it with.</p>
 <p>Some languages, such as Julia, are designed to use Unicode characters, and so many ligatures aren&#39;t usually needed, but there are a few places where the obvious Unicode glyphs are not accepted by the language, where the ASCII-art substitutes can be improved by the judicious use of alternate glyphs. There are also a few places where some subtle tweaks can enhance readability without introducing ambiguity.</p>
 <p>In JuliaMono, the following substitutions &#40;‘ligatures’&#41; are applied when the <strong>contextual alternates</strong> feature &#40;<code>calt</code>&#41; is active, which it usually is:</p>
 
@@ -557,7 +564,7 @@ df2 &#61; df |&gt;
     @groupby&#40;_.a&#41; |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre>
-<p>Note that these ligatures have to be interpreted by the terminal you’re using - fonts rely on the underlying terminal software to replace the glyphs with the joined-up versions. Not all terminals support ligatures.</p>
+<p>Note that these ligatures have to be interpreted by the terminal you’re using - fonts rely on the underlying terminal software to replace the glyphs with the alternative versions. Not all terminals support ligatures.</p>
 <h2 id="stylistic_sets"><a href="#stylistic_sets" class="header-anchor">Stylistic sets</a></h2>
 <p>OpenType fonts can also offer you the ability to choose different designs for certain characters. These are stored as ‘stylistic sets’.</p>
 <p>All these options are stored in the font, and are often referred to by their internal four letter code &#40;not the best user-oriented design, really&#41;. For example, the contextual alternates listed above are collectively stored in the <strong>calt</strong> feature.</p>
@@ -741,7 +748,7 @@ df2 &#61; df |&gt;
 <p>Browser-based editors such as VS Code support many OpenType features in their editor windows, but not so much in the terminal emulator/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. &#40;See <a href="/faq/#how_do_i_control_features_in_vs_code_or_css">this section</a>.&#41; Some features are opt in, others are opt out; this too can vary from application to application.</p>
 <p>Terminal/console applications also vary a lot. <a href="https://wezfurlong.org/wezterm/">wezterm</a> is cross-platform and provides excellent font support, as does <a href="https://ghostty.org">ghostty</a>. On MacOS the <strong>Terminal</strong> and <strong>iTerm</strong> applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as <a href="https://konsole.kde.org">Konsole</a> and <a href="https://sw.kovidgoyal.net/kitty/#font-control">Kitty</a> offer quite good OpenType support, but others such as <a href="https://github.com/alacritty/alacritty">Alacritty</a> offer little or none, as yet. And the situation changes all the time. <sup id="fnref:terminal"><a href="#fndef:terminal" class="fnref">[12]</a></sup></p>
 <p>If the application allows, you should be able to switch the <code>calt</code> contextual alternates off, which is useful for people who don&#39;t like any of them in their code. </p>
-<p>You can swtich the <strong>calt</strong> set off using CSS &#40;see <a href="/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code">here</a>&#41;. You can enable one or more of the alternative stylistic sets.</p>
+<p>You can switch the <strong>calt</strong> set off using CSS &#40;see <a href="/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code">here</a>&#41;. You can enable one or more of the alternative stylistic sets.</p>
 <p>Off &#40;<code>calt</code> off, no stylistic sets&#41;:</p>
 <div class="code_ss_off"><pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41; --&gt;
 &#40;x, y&#41; -&gt; &#40;x &#43; y&#41;
@@ -758,7 +765,7 @@ df2 &#61; df |&gt;
     @groupby&#40;_.a&#41; |&gt;
     @map&#40;&#123;a &#61; key&#40;_&#41;, b &#61; mean&#40;_.b&#41;&#125;&#41; |&gt;
     DataFrame # &lt;|</code></pre></div>
-<p>On &#40;<code>calt</code> on, most stylistic sets on&#41;:</p>
+<p>On &#40;<code>calt</code> on, and most stylistic sets on&#41;:</p>
 <div class="code_calt_on_ss_on"><pre><code class="language-julia">julialang &#61; true # &#40;&#33;&#61; 0&#41; --&gt;
 &#40;x, y&#41; -&gt; &#40;x &#43; y&#41;
 f&#40;p::Int&#41; &#61; p .* p&#91;&#91;1, 2, 3&#93;, &#91;4, 5, 6&#93;&#93;
@@ -803,7 +810,7 @@ df2 &#61; df |&gt;
 <p>The FontFreeze online web application allows you to create and download a customized instance of a font that has various OpenType features permanently switched on or off, so that you can use the font&#39;s features in those inadequate applications.</p>
 <p>Visit <a href="https://mutsuntsai.github.io/fontfreeze/">https://mutsuntsai.github.io/fontfreeze/</a> for details.</p>
 <h3 id="using_pyftsubset"><a href="#using_pyftsubset" class="header-anchor">Using pyftsubset</a></h3>
-<p>You can do a similar job on your computer by following these instructions for using <code>pyftsubset</code>, which lets you strip features out of the font &#40;courtesy of @fredrikekre&#41;:</p>
+<p>You can do a similar job on your computer by following these instructions for using <code>pyftsubset</code>, which lets you strip features out of the font &#40;this is courtesy of @fredrikekre&#41;:</p>
 <pre><code class="language-julia">&#36; cat Dockerfile
 FROM python
 RUN pip install fonttools
@@ -846,7 +853,7 @@ strip:
 
 <img src="/assets/specimen_10.png" width="100%" alt="private use area">
 
-<p>The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed &#40;for example on GitHub&#41;, you have no idea what glyph - if any - will be displayed.</p>
+<p>The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed &#40;for example on GitHub&#41;, you have no idea what glyph - if any - will be displayed to other people.</p>
 <p>Julia users: you can define these to be available at the REPL. For example, say you want the Julia dots to be available in the terminal when you type <code>\julialogo</code><span style="font-size: 1.5em;"></span> in a Julia session with the JuliaMono font active. Run this:</p>
 <pre><code class="language-julia">using REPL
 REPL.REPLCompletions.latex_symbols&#91;&quot;\\julialogo&quot;&#93; &#61; &quot;\ue800&quot;</code></pre>
@@ -934,7 +941,7 @@ Welcome to </code></pre>
 </p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 03, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: May 19, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

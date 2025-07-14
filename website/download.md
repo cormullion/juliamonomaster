@@ -29,7 +29,7 @@ To install and activate a font, launch Font Book from your Applications folder, 
 On the latest version of Homebrew, you can install the fonts with:
 
 ```
-brew install font-juliamono
+brew install --cask font-juliamono
 ```
 
 ### Windows
