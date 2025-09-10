@@ -63,7 +63,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.060/JuliaMono-Light.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.061/JuliaMono-Light.woff2");
 }
 ```
 
@@ -78,7 +78,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (v0.060 here), whereas the JSDELIVR version always retrieves the latest release.
+Notice that the CDNJS version points to a specific version (v0.061 here), whereas the JSDELIVR version always retrieves the latest release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
@@ -368,7 +368,7 @@ Then you can use something like `minted` to format the code.
 
 It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, `.WOFF` and `.WOFF2`, where the `2` indicates a more recent and slightly more compact format. `JuliaMono-Light.woff2` is 837KB - the size of a PNG image, perhaps?
 
-The `.TTF` versions are getting on for 2.5MB each. (See [Does it work on Windows](/faq/#does_it_work_on_windows).)
+The `.TTF` versions are getting on for 3.5MB each. (See [Does it work on Windows](/faq/#does_it_work_on_windows).)
 
 For comparison, the Themes folder of `.CSS` files for the Julia manual (and for every manual built with Documenter.jl since v0.21) is about 700KB. So in that light the WOFF2 fonts aren’t that bad. Of course, the two Google fonts downloaded by every Julia document (Lato and Roboto) are tiny, at 14KB and 11KB, with 221 glyphs in each.
 
@@ -418,7 +418,7 @@ The font is OFL/SIL-licensed, and you can find the source files (in Glyphs forma
 
 ## ‘Is it finished?’
 
-Some say that projects are never finished, just abandoned. As of May 2025, I’m still making small changes and fixes, and it’s currently at version 0.060. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
+Some say that projects are never finished, just abandoned. As of September 2025, I’m still making small changes and fixes, and it’s currently at version 0.061. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
 
 ## ‘Why don’t these accents/marks/diacritics work properly?’
 

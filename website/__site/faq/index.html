@@ -85,7 +85,7 @@ julia&gt; glyphy&#40;0x203d&#41;
 <p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.060/JuliaMono-Light.woff2&quot;&#41;;
+	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.061/JuliaMono-Light.woff2&quot;&#41;;
 &#125;</code></pre>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
 <pre><code class="language-css">pre &#123;
@@ -94,7 +94,7 @@ julia&gt; glyphy&#40;0x203d&#41;
 code &#123;
 	font-family: JuliaMono-Light;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;v0.060 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
+<p>Notice that the CDNJS version points to a specific version &#40;v0.061 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.&#41;</p>
@@ -298,7 +298,7 @@ display&#40;p&#41;</code></pre>
 <p>&#40;I used the lualatex engine.&#41;</p>
 <h2 id="arent_these_font_files_too_big"><a href="#arent_these_font_files_too_big" class="header-anchor">‘Aren’t these font files too big?’</a></h2>
 <p>It depends if you mean the web fonts or the ‘desktop’ fonts. Web fonts come in two flavours, <code>.WOFF</code> and <code>.WOFF2</code>, where the <code>2</code> indicates a more recent and slightly more compact format. <code>JuliaMono-Light.woff2</code> is 837KB - the size of a PNG image, perhaps?</p>
-<p>The <code>.TTF</code> versions are getting on for 2.5MB each. &#40;See <a href="/faq/#does_it_work_on_windows">Does it work on Windows</a>.&#41;</p>
+<p>The <code>.TTF</code> versions are getting on for 3.5MB each. &#40;See <a href="/faq/#does_it_work_on_windows">Does it work on Windows</a>.&#41;</p>
 <p>For comparison, the Themes folder of <code>.CSS</code> files for the Julia manual &#40;and for every manual built with Documenter.jl since v0.21&#41; is about 700KB. So in that light the WOFF2 fonts aren’t that bad. Of course, the two Google fonts downloaded by every Julia document &#40;Lato and Roboto&#41; are tiny, at 14KB and 11KB, with 221 glyphs in each.</p>
 <p>So, if you’re building a website, or designing for mobile applications, the size of the WOFF2 file&#40;s&#41; might be an important factor to weigh against the advantages of having predictable character sets. &#40;This site is a bit of an exception, for obvious reasons.&#41; Note that you can specify font subsets in the CSS using the <strong>unicode-range</strong> feature, which defines a restricted set of characters which you know are going to be used, so that users don’t download any that they won’t need.</p>
 <p>You could consider using the ‘-Latin’ variants to obviate the initial loading time. These have a limited number of glyphs &#40;restricted to the basic Latin character set&#41;, but will at least be quick to download.</p>
@@ -332,7 +332,7 @@ display&#40;p&#41;</code></pre>
 <h2 id="wheres_the_source_whats_the_licence"><a href="#wheres_the_source_whats_the_licence" class="header-anchor">‘Where’s the source? What’s the licence?‘</a></h2>
 <p>The font is OFL/SIL-licensed, and you can find the source files &#40;in Glyphs format&#41; <a href="https://github.com/cormullion/juliamonomaster">here</a>. The SIL licence allows you to do almost anything you want, <strong>except</strong> re-issue it under the same name or with a different licence.</p>
 <h2 id="is_it_finished"><a href="#is_it_finished" class="header-anchor">‘Is it finished?’</a></h2>
-<p>Some say that projects are never finished, just abandoned. As of May 2025, I’m still making small changes and fixes, and it’s currently at version 0.060. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.</p>
+<p>Some say that projects are never finished, just abandoned. As of September 2025, I’m still making small changes and fixes, and it’s currently at version 0.061. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.</p>
 <h2 id="why_dont_these_accentsmarksdiacritics_work_properly"><a href="#why_dont_these_accentsmarksdiacritics_work_properly" class="header-anchor">‘Why don’t these accents/marks/diacritics work properly?’</a></h2>
 <p>Unicode allows you to combine characters - place one above the vertically. For example, you can combine the glyph for <code>e</code> &#40;U&#43;0065&#41; with the glyph U&#43;20D7 &#40;the “combining right arrow above”&#41; to get:</p>
 <pre><code class="language-julia">e⃗</code></pre>
@@ -389,7 +389,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: May 19, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: September 10, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
