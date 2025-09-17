@@ -14,7 +14,7 @@ JuliaMono is a monospaced typeface designed for programming and other text editi
 
 JuliaMono is:
 
-- free
+- free (but you can [buy me a ☕️](https://buymeacoffee.com/cormullion)!)
 - distributed with a liberal licence [^licence]
 - suitable for scientific and technical programming as well as for general purpose hacking
 - full of Unicode goodness
@@ -1038,6 +1038,12 @@ Thanks to: Thibaut Lienart for his [Franklin.jl](https://github.com/tlienart/Fra
 
 [^terminal]: &nbsp; “terminals again” Writers of terminal apps usually have their own ideas about how fonts and type should be managed and displayed. I haven’t yet found one that did everything that I wanted it to and nothing I didn’t expect it to: [wezterm](https://wezfurlong.org/wezterm/) is about the best, although configuring the macOS Terminal is a bit easier, [ghostty](https://ghostty.org) is promising, and [iTerm](https://iterm2.com) for macOS is a reasonable alternative. In the world of fonts, nothing is 100% correct, which can be frustrating. You can track some of the issues and discussions on GitHub and elsewhere: here’s a [VS Code](https://github.com/microsoft/vscode/issues/34103) issue; here are the [Alacritty terminal developers](https://github.com/alacritty/alacritty/issues/50) working on it; here is the [iTerm documentation](https://iterm2.com/documentation-fonts.html) talking about performance.
 
+
+
 ~~~
-<center></center>
+<center>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="cormullion" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+</center>
 ~~~
+
+~~~<span style="text-align: center;font-family: JuliaMono-Light;font-size:2rem;"> (  ) </span>~~~
