@@ -53,8 +53,7 @@ Option 1 (using the [jsdelivr](https://cdn.jsdelivr.net) content delivery networ
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-    src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Black.woff2");
-	/* src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2"); */
+	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2"); 
 }
 ```
 
@@ -63,7 +62,7 @@ Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content deliv
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.061/JuliaMono-Light.woff2");
+	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.062/JuliaMono-Light.woff2");
 }
 ```
 
@@ -78,7 +77,7 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (v0.061 here), whereas the JSDELIVR version always retrieves the latest release.
+Notice that the CDNJS version points to a specific version (v0.062 here), whereas the JSDELIVR version always retrieves the latest release.
 
 You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 

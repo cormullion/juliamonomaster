@@ -80,13 +80,12 @@ julia&gt; glyphy&#40;0x203d&#41;
 <p>Option 1 &#40;using the <a href="https://cdn.jsdelivr.net">jsdelivr</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-    src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono-webfonts/JuliaMono-Black.woff2&quot;&#41;;
-	/* src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2&quot;&#41;; */
+	src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2&quot;&#41;; 
 &#125;</code></pre>
 <p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.061/JuliaMono-Light.woff2&quot;&#41;;
+	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.062/JuliaMono-Light.woff2&quot;&#41;;
 &#125;</code></pre>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
 <pre><code class="language-css">pre &#123;
@@ -95,7 +94,7 @@ julia&gt; glyphy&#40;0x203d&#41;
 code &#123;
 	font-family: JuliaMono-Light;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;v0.061 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
+<p>Notice that the CDNJS version points to a specific version &#40;v0.062 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
 <p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.&#41;</p>
@@ -390,7 +389,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: September 10, 2025. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: January 15, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

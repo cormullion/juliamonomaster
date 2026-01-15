@@ -774,6 +774,12 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
     <td><p>Ball-point pen math script</p></td>
     </tr>
 
+    <td>ss19</td>
+    <td class="code_ss_off">timwit</td>
+    <td class="code_ss19_on">timwit</td>
+    <td><p>kerning</p></td>
+    </tr>
+
 	<tr>
 	<td>ss20</td>
     <td class="code_ss_off">(_)</td>
@@ -811,6 +817,24 @@ Some character variations are provided in `cv..` features.
     <td class="code_ss_off">l</td>
     <td class="code_cv_on">l</td>
     <td class="code_ss_off"><p>alternate l</p></td>
+    </tr>
+    <tr>
+	<td class="code_ss_off">cv05</td>
+    <td class="code_ss_off"><= >=</td>
+    <td class="code_cv_on"><= ></td>
+    <td class="code_ss_off"><p><= and >= ligatures</p></td>
+    </tr>
+        <tr>
+	<td class="code_ss_off">cv06</td>
+    <td class="code_ss_off">i</td>
+    <td class="code_cv_on">i</td>
+    <td class="code_ss_off"><p>i with no base</p></td>
+    </tr>
+    <tr>
+	<td class="code_ss_off">cv07</td>
+    <td class="code_ss_off">,;</td>
+    <td class="code_cv_on">,;</td>
+    <td class="code_ss_off"><p>thinner punctuation</p></td>
     </tr>
 
 </table>

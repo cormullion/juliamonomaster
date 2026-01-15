@@ -91,20 +91,20 @@ html {
 body {
 	margin-top: 300px;
 	background-image: url("/assets/juliamonocolordots.svg");
-	background-position : center 0;
+	background-position: center 0;
 	background-repeat: no-repeat;
 	font-size: 18px;
 	font-weight: normal;
 }
 
 a {
-	padding:0 0 0 0;
-    border-bottom-style: dotted;
+	padding: 0 0 0 0;
+	border-bottom-style: dotted;
 	text-decoration: none;
 }
 
 a:hover {
-	 border-color: green;
+	border-color: green;
 }
 
 .franklin-content {
@@ -120,12 +120,12 @@ a:hover {
 }
 
 .lightswitchlight {
-	color:#000;
+	color: #000;
 	background-color: #ddd;
 }
 
 .lightswitchdark {
-	color:white;
+	color: white;
 	background-color: #111;
 }
 
@@ -140,6 +140,7 @@ a:hover {
 	margin-left: 1rem;
 	font-size: 0.9rem;
 }
+
 .franklin-toc li {
 	list-style: square;
 }
@@ -169,7 +170,8 @@ h3 {
 	hanging-punctuation: first;
 }
 
-h4, h5 {
+h4,
+h5 {
 	font-size: 1.3rem;
 	font-family: JuliaMono-BoldItalic;
 	line-height: 2rem;
@@ -178,13 +180,13 @@ h4, h5 {
 	hanging-punctuation: first;
 }
 
-p  {
+p {
 	font-size: 1rem;
 	line-height: 2rem;
 	font-family: JuliaMono-Light;
 	font-weight: normal;
 	text-align: left;
-	align-items:left;
+	align-items: left;
 	margin-left: 0%;
 	margin-right: 0%;
 	hanging-punctuation: first;
@@ -194,7 +196,9 @@ p  {
 	font-face: JuliaMono-Bold;
 }
 
-.fndef, .fndef-content, .fndef-backref{
+.fndef,
+.fndef-content,
+.fndef-backref {
 	font-size: 0.8rem;
 	font-family: JuliaMono-Light;
 	display: inline;
@@ -203,7 +207,7 @@ p  {
 
 }
 
-p > code {
+p>code {
 	font-family: JuliaMono-Medium;
 	margin-top: 0.25rem;
 	margin-right: 0.25rem;
@@ -215,10 +219,11 @@ ul {
 	margin-right: 0.25rem;
 }
 
-pre, code {
+pre,
+code {
 	font-family: JuliaMono-Light;
 	width: 100%;
-	margin:0;
+	margin: 0;
 	font-weight: normal;
 }
 
@@ -247,12 +252,12 @@ code.language-julia.hljs {
 }
 
 .smallercode {
-  font-size: 0.7em;
-  	font-weight: normal;
+	font-size: 0.7em;
+	font-weight: normal;
 }
 
 .codealt * {
-	font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09" ;
+	font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09";
 	font-variant-ligatures: no-contextual;
 	font-weight: normal;
 }
@@ -270,7 +275,7 @@ code.language-julia.hljs {
 }
 
 .code_ss_on {
-	width:100%;
+	width: 100%;
 	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss20";
 	font-variant-ligatures: no-contextual;
 	font-weight: normal;
@@ -292,12 +297,15 @@ code.language-julia.hljs {
 }
 
 .code_calt_off_ss_on {
-	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16";
+	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss16",
+		"ss17",
+		"ss18",
+		"ss19";
 	font-variant-ligatures: no-contextual;
 }
 
 .code_calt_on_ss_on {
-	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16";
+	font-feature-settings: "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19";
 	font-variant-ligatures: contextual;
 }
 
@@ -311,18 +319,26 @@ code.language-julia.hljs {
 	font-variant-ligatures: no-contextual;
 }
 
+.code_ss19_on {
+	font-feature-settings: "ss19";
+	font-variant-ligatures: no-contextual;
+}
+
 .code_cv_on {
-	font-feature-settings: "cv01", "cv02", "cv03", "cv04";
+	font-feature-settings: "cv01", "cv02", "cv03", "cv04", "cv05",
+		"cv06",
+		"cv07",
+		"cv08";
 }
 
 /* language sample table */
 .language * {
-	 font-family: JuliaMono-Light;
-	 vertical-align: top;
-	 line-height: 1.3em;
-	 padding: 0.5rem;
-	 max-width: 100%;
- 	font-weight: normal;
+	font-family: JuliaMono-Light;
+	vertical-align: top;
+	line-height: 1.3em;
+	padding: 0.5rem;
+	max-width: 100%;
+	font-weight: normal;
 }
 
 /* stylistic alts table */
@@ -333,13 +349,13 @@ code.language-julia.hljs {
 	text-align: center;
 }
 
-.sstable th > p {
-  text-align: center;
+.sstable th>p {
+	text-align: center;
 }
 
 .sstable td {
 	text-align: center;
-  width: 25%;
+	width: 25%;
 }
 
 
@@ -350,7 +366,7 @@ code.language-julia.hljs {
 	line-height: 2.2em;
 	font-size: 1em;
 	flex: 1;
- 	font-weight: normal;
+	font-weight: normal;
 }
 
 /* images */
@@ -360,18 +376,19 @@ code.language-julia.hljs {
 }
 
 .enlarge img {
-	border:1px solid #000;
-	margin:5px;
+	border: 1px solid #000;
+	margin: 5px;
 }
 
 .enlarge span {
-	position:absolute;
-	visibility:hidden;
+	position: absolute;
+	visibility: hidden;
 }
 
-.enlarge:hover, .enlarge:hover span {
-	visibility:visible;
-	z-index:3;
+.enlarge:hover,
+.enlarge:hover span {
+	visibility: visible;
+	z-index: 3;
 }
 
 .img-box {
@@ -380,40 +397,42 @@ code.language-julia.hljs {
 
 .hljs-keyword {
 	font-family: JuliaMono-Medium;
- 	font-weight: normal;
+	font-weight: normal;
 }
 
-.hljs-quote
-{
+.hljs-quote {
 	font-style: normal;
 }
 
 .hljs-meta {
 	font-family: JuliaMono-Medium;
- 	font-weight: normal;
+	font-weight: normal;
 }
 
 .hljs-comment {
 	font-style: oblique 10deg;
 }
 
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 500px) {
 	body {
-		 background-size: 500px;
+		background-size: 500px;
 	}
+
 	nav {
 		border-radius: 0.5rem;
 	}
- 	div.franklin-content {
+
+	div.franklin-content {
 		max-width: 95%;
-		margin:  1rem;
+		margin: 1rem;
 		padding: 1rem;
- 	}
+	}
+
 	header {
-	    margin-top: 0px;
+		margin-top: 0px;
 	}
 
 	body {
 		margin-top: 0px;
-		}
+	}
 }
