@@ -417,7 +417,7 @@ The font is OFL/SIL-licensed, and you can find the source files (in Glyphs forma
 
 ## ‘Is it finished?’
 
-Some say that projects are never finished, just abandoned. As of September 2025, I’m still making small changes and fixes, and it’s currently at version 0.061. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
+Some say that projects are never finished, just abandoned. As of January 2026, I’m still making small changes and fixes, and it’s currently at version 0.062. Always download the latest version if you want the typeface to perform at its best. There will probably always be minor releases in the future, particularly if the Unicode Consortium introduce lots of new characters, and so the font will probably never be finished.
 
 ## ‘Why don’t these accents/marks/diacritics work properly?’
 
