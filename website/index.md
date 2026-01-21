@@ -414,7 +414,7 @@ From a design perspective, forcing every character into the same size box is a p
 
 ## Unicode coverage
 
-The current version of Unicode (16) defines about 150,000 glyphs. But a single font can contain only a maximum of 64,000 -- you won't find every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a set of fonts to cover all the possible ranges.
+The current version of Unicode (17) defines about 150,000 glyphs. But a single font can contain only a maximum of 64,000 — you can't put every Unicode glyph in a single font. So each individual font focusses on providing subsets of the complete range. For example, there are over 100,000 Chinese, Korean, and Japanese glyphs, so your operating system keeps a set of fonts that cover all the ranges.
 
 One of the goals of JuliaMono is to include most of the characters that a typical programmer or monospaced-font user would reasonably expect to find. (Except for all those emojis - they are best handled by the operating system.)
 
@@ -742,8 +742,8 @@ Here’s a list of the stylistic sets currently available in JuliaMono.
 
 	<tr>
 	<td>ss14</td>
-    <td class="code_ss_off">==</td>
-    <td class="code_ss_on">==</td>
+    <td class="code_ss_off"> == </td>
+    <td class="code_ss_on"> == </td>
     <td><p>double equals</p></td>
     </tr>
 
@@ -820,11 +820,11 @@ Some character variations are provided in `cv..` features.
     </tr>
     <tr>
 	<td class="code_ss_off">cv05</td>
-    <td class="code_ss_off"><= >=</td>
-    <td class="code_cv_on"><= ></td>
-    <td class="code_ss_off"><p><= and >= ligatures</p></td>
+    <td class="code_ss_off"> &lt;= &gt;= </td>
+    <td class="code_cv_on"> &lt;= &gt;= </td>
+    <td class="code_ss_off"><p> &lt;= and &lt;= ligatures </p></td>
     </tr>
-        <tr>
+    <tr>
 	<td class="code_ss_off">cv06</td>
     <td class="code_ss_off">i</td>
     <td class="code_cv_on">i</td>
@@ -844,11 +844,9 @@ All this fancy technology is under the control of the application and the operat
 
 Browser-based editors such as VS Code support many OpenType features in their editor windows, but not so much in the terminal emulator/console windows. They provide a settings area where you can type CSS or JSON selectors to control the appearance of features, and you’ll have to know the feature codes. (See [this section](/faq/#how_do_i_control_features_in_vs_code_or_css).) Some features are opt in, others are opt out; this too can vary from application to application.
 
-Terminal/console applications also vary a lot. [wezterm](https://wezfurlong.org/wezterm/) is cross-platform and provides excellent font support, as does [ghostty](https://ghostty.org). On MacOS the **Terminal** and **iTerm** applications try to offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as [Konsole](https://konsole.kde.org) and [Kitty](https://sw.kovidgoyal.net/kitty/#font-control) offer quite good OpenType support, but others such as [Alacritty](https://github.com/alacritty/alacritty) offer little or none, as yet. And the situation changes all the time. [^terminal]
+Terminal/console applications also vary a lot. [wezterm](https://wezfurlong.org/wezterm/) is cross-platform and provides excellent font support, as does [ghostty](https://ghostty.org). On MacOS the **Terminal** and **iTerm** applications offer controls for OpenType features, with varying degrees of success. On Linux, some terminal applications such as [Konsole](https://konsole.kde.org) and [Kitty](https://sw.kovidgoyal.net/kitty/#font-control) offer good OpenType support, but others such as [Alacritty](https://github.com/alacritty/alacritty) offer less, as yet. And the situation changes all the time. [^terminal]
 
-If the application allows, you should be able to switch the `calt` contextual alternates off, which is useful for people who don't like any of them in their code. 
-
-You can switch the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)).
+If the application allows, you should be able to switch the `calt` contextual alternates off, which is useful for people who don't like any of them in their code. You can switch the **calt** set off using CSS (see [here](/faq/#how_do_i_control_features_in_css_in_juno_or_vs_code)).
 You can enable one or more of the alternative stylistic sets.
 
 Off (`calt` off, no stylistic sets):
@@ -920,7 +918,7 @@ Handbook](https://algorithmsbook.com/), by Mykel J.
 Kochenderfer, Tim A. Wheeler, and Kyle Wray, which uses
 JuliaMono for the code samples.)
 
-As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education; I suspect that few people today learn or practice the roundhand style, and some of the shapes will be unfamiliar. You may also find the more detailed forms more difficult to read on lower-resolution displays.
+As with all things typographical, the ease with which you recognize characters depends to some extent on your personal experiences and education. I suspect that few people today learn or practise the roundhand style, and some of the shapes will be unfamiliar. You may also find the more detailed forms more difficult to read on lower-resolution displays.
 
 ### Ball-point script
 
@@ -1013,7 +1011,7 @@ Each typeface can do its own thing in these areas. In JuliaMono you’ll find th
 <img src="/assets/specimen_10.png" width="100%" alt="private use area">
 ~~~
 
-The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (for example on GitHub), you have no idea what glyph - if any - will be displayed to other people.
+The obvious drawback to using characters in a Private Use Area is that you have to have installed the font wherever you want to see them rendered correctly, unless they’ve been converted to outlines or bitmaps. If the font isn’t installed (for example on GitHub), you have no idea what glyph — if any — will be displayed to other people.
 
 Julia users: you can define these to be available at the REPL. For example, say you want the Julia dots to be available in the terminal when you type `\julialogo`~~~<span style="font-size: 1.5em;"></span>~~~ in a Julia session with the JuliaMono font active. Run this:
 

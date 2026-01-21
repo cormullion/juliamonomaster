@@ -79,7 +79,7 @@ code {
 
 Notice that the CDNJS version points to a specific version (v0.062 here), whereas the JSDELIVR version always retrieves the latest release.
 
-You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
+You may prefer to serve the WOFF2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
 
 There are some other options for the `@font-face` directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.
 
@@ -112,11 +112,11 @@ But if you want to switch of the contextual alternates but quite fancy a lighter
 
 ### A tale of two TTYs
 
-In VSCode there are two levels of OpenType font support, _editor_ and _terminal_.
+In VSCode there are two levels of OpenType font support, _editor_ and _terminal_. They might be converging in terms of features, but they are still different in some key ways.
 
 Editor windows support most OpenType features; you can ask for contextual alternates (ligatures), stylistic sets, alternate characters, and so on, using the feature codes listed above.
 
-Terminal windows use the xterm.js terminal emulator. This doesn't (yet) support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on [this GitHub issue](https://github.com/xtermjs/xterm.js/issues/958).
+Terminal windows use the xterm.js terminal emulator. Previous iterations were not very powerful with regard to OpenType features such as ligatures, stylistic sets, and so on, but the situation is gradually improving. You can keep up to date with progress on [GitHub](https://github.com/xtermjs/xterm.js).
 
 ## ‘How do I configure the CSS?’
 
@@ -272,7 +272,7 @@ I know very little about plotting in Julia, but some investigations suggest that
 
 Here’s some code that uses JuliaMono for a plot. The plot shows the frequency of occurrence of every Unicode character used in the Julia git repository, and uses the characters as plot markers. I went through every text file and totalled all the characters - there are 956044 letter “e”s, and so on. I’m using `pyplot()`; the `freqs` DataFrame holds the characters and the counts. I’ve created a few font objects using `Plots.font()`, which makes it easier to use different text styles in the `plot()` function. I haven’t yet worked out how to use the different weights of a font family.
 
-```
+```julia
 using Plots, Plots.PlotMeasures
 pyplot()
 theme(:dark)
@@ -332,7 +332,7 @@ An earlier approach that worked for me is as follows:
 
 In your $ \LaTeX $ source file, define the mono font and point to the local pathname:
 
-```
+```latex
 \usepackage{fontspec}
 \usepackage{unicode-math}
 \usepackage[utf8]{inputenc}
@@ -385,9 +385,9 @@ Most people probably can’t tell the difference between Helvetica and Arial, an
 
 ## ‘Where are the design notes? Don't typeface designers love talking about how it was designed?’
 
-Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that's readable, easy to use, unquirky, simple, and including most of the characters (glyphs) required for modern scientific and technical programming.
+Oh, yes. Well, the design goals of JuliaMono were to make a programming font that's readable, easy to use, unquirky, simple, and including most of the characters (glyphs) required for modern scientific and technical programming.
 
-Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create “a beautiful set of letters” rather than “a set of beautiful letters”; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter’s familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian - where the words are familiar recognizable units, and there’s much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.
+Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create “a beautiful set of letters” rather than “a set of beautiful letters”; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter’s familiar Georgia typeface, are designed to communicate prose in text languages such as English, German, or French - where the words are familiar recognizable units, and there’s much redundancy, such that predictability assists reading. You want the reader's eye to glide swiftly and easily over the page.
 
 However, programming and coding typefaces have to address different problems:
 
@@ -403,7 +403,7 @@ However, programming and coding typefaces have to address different problems:
 
 - the programmer doesn't read code in the same way that they would read prose
 
-- there’s much less redundancy in code: when reading prose you’ll find it easy to overlook misspellings and typos, when working with code you’ll want to find the misspellings and typos - you don’t really want your eye to glide smoothly past these
+- there’s much less redundancy in code: when reading prose you’ll find it easy to literally overlook misspellings and typos, but when working with code you’ll want to find the misspellings and typos - you don’t really want your eye to glide smoothly past these
 
 So I'd argue that making letters easy to distinguish is as important as making them harmoniously consistent. A primary goal is to make characters that tend to be similar different. For example, in some fonts the digits 3, 8, and 0 have similar curved tops, so JuliaMono's 3 has a flat-top, and the 0 is more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.
 

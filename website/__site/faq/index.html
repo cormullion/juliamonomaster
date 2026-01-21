@@ -95,7 +95,7 @@ code &#123;
 	font-family: JuliaMono-Light;
 	&#125;</code></pre>
 <p>Notice that the CDNJS version points to a specific version &#40;v0.062 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
-<p>You may prefer to serve the WOFF/2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
+<p>You may prefer to serve the WOFF2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.&#41;</p>
 <h2 id="how_do_i_configure_vscode"><a href="#how_do_i_configure_vscode" class="header-anchor">‘How do I configure VSCode?’</a></h2>
@@ -110,9 +110,9 @@ code &#123;
 <p>But if you want to switch of the contextual alternates but quite fancy a lighter asterisk, use this:</p>
 <pre><code class="language-css">&quot;editor.fontLigatures&quot;: &quot;&#39;calt&#39; off, &#39;ss05&#39;&quot;,</code></pre>
 <h3 id="a_tale_of_two_ttys"><a href="#a_tale_of_two_ttys" class="header-anchor">A tale of two TTYs</a></h3>
-<p>In VSCode there are two levels of OpenType font support, <em>editor</em> and <em>terminal</em>.</p>
+<p>In VSCode there are two levels of OpenType font support, <em>editor</em> and <em>terminal</em>. They might be converging in terms of features, but they are still different in some key ways.</p>
 <p>Editor windows support most OpenType features; you can ask for contextual alternates &#40;ligatures&#41;, stylistic sets, alternate characters, and so on, using the feature codes listed above.</p>
-<p>Terminal windows use the xterm.js terminal emulator. This doesn&#39;t &#40;yet&#41; support OpenType features such as ligatures, stylistic sets, etc. To keep up with any improvement here, keep an eye on <a href="https://github.com/xtermjs/xterm.js/issues/958">this GitHub issue</a>.</p>
+<p>Terminal windows use the xterm.js terminal emulator. Previous iterations were not very powerful with regard to OpenType features such as ligatures, stylistic sets, and so on, but the situation is gradually improving. You can keep up to date with progress on <a href="https://github.com/xtermjs/xterm.js">GitHub</a>.</p>
 <h2 id="how_do_i_configure_the_css"><a href="#how_do_i_configure_the_css" class="header-anchor">‘How do I configure the CSS?’</a></h2>
 <p>In a CSS stylesheet, you can specify the appearance of the font. First, define the location of the online fonts:</p>
 <pre><code class="language-css">@font-face &#123;
@@ -271,7 +271,7 @@ display&#40;p&#41;</code></pre>
 <p><a href="https://github.com/mossr/julia-mono-listings">A custom Julia language style for the LaTeX listings package, and Unicode support for the JuliaMono font in a <code>lstlisting</code> environment</a>.</p>
 <p>An earlier approach that worked for me is as follows:</p>
 <p>In your \( \LaTeX \) source file, define the mono font and point to the local pathname:</p>
-<pre><code class="language-julia">\usepackage&#123;fontspec&#125;
+<pre><code class="language-latex">\usepackage&#123;fontspec&#125;
 \usepackage&#123;unicode-math&#125;
 \usepackage&#91;utf8&#93;&#123;inputenc&#125;
 \usepackage&#123;minted&#125;
@@ -307,8 +307,8 @@ display&#40;p&#41;</code></pre>
 <p>More likely, though, the overall ‘feel’ of a new and unfamiliar font - too narrow, too wide, too dense, too light, too quirky, too dull, too consistent, too variable - is a matter of personal taste, immune to objective measurement.</p>
 <p>Most people probably can’t tell the difference between Helvetica and Arial, and certainly aren’t going to be bothered about minor differences between JuliaMono and other coding fonts. But that’s fine. Just stick to your current favourites&#33;</p>
 <h2 id="where_are_the_design_notes_dont_typeface_designers_love_talking_about_how_it_was_designed"><a href="#where_are_the_design_notes_dont_typeface_designers_love_talking_about_how_it_was_designed" class="header-anchor">‘Where are the design notes? Don&#39;t typeface designers love talking about how it was designed?’</a></h2>
-<p>Oh, yes. Well, the design goals of JuliaMono were to make a programmming font that&#39;s readable, easy to use, unquirky, simple, and including most of the characters &#40;glyphs&#41; required for modern scientific and technical programming.</p>
-<p>Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create “a beautiful set of letters” rather than “a set of beautiful letters”; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter’s familiar Georgia typeface, are designed to communicate prose in text languages - English, French, Russian - where the words are familiar recognizable units, and there’s much redundancy, such that predictability assists reading. You want the eye to glide swiftly and easily over the page.</p>
+<p>Oh, yes. Well, the design goals of JuliaMono were to make a programming font that&#39;s readable, easy to use, unquirky, simple, and including most of the characters &#40;glyphs&#41; required for modern scientific and technical programming.</p>
+<p>Matthew Carter, the famous typeface designer, talks about how the aim when designing a font is to create “a beautiful set of letters” rather than “a set of beautiful letters”; the idea being that making the characters in the font harmonious and consistent with each other is of primary importance. But I would suggest that most typefaces, such as Matthew Carter’s familiar Georgia typeface, are designed to communicate prose in text languages such as English, German, or French - where the words are familiar recognizable units, and there’s much redundancy, such that predictability assists reading. You want the reader&#39;s eye to glide swiftly and easily over the page.</p>
 <p>However, programming and coding typefaces have to address different problems:</p>
 <ul>
 <li><p>code can often consist of sequences of non-language characters</p>
@@ -323,7 +323,7 @@ display&#40;p&#41;</code></pre>
 </li>
 <li><p>the programmer doesn&#39;t read code in the same way that they would read prose</p>
 </li>
-<li><p>there’s much less redundancy in code: when reading prose you’ll find it easy to overlook misspellings and typos, when working with code you’ll want to find the misspellings and typos - you don’t really want your eye to glide smoothly past these</p>
+<li><p>there’s much less redundancy in code: when reading prose you’ll find it easy to literally overlook misspellings and typos, but when working with code you’ll want to find the misspellings and typos - you don’t really want your eye to glide smoothly past these</p>
 </li>
 </ul>
 <p>So I&#39;d argue that making letters easy to distinguish is as important as making them harmoniously consistent. A primary goal is to make characters that tend to be similar different. For example, in some fonts the digits 3, 8, and 0 have similar curved tops, so JuliaMono&#39;s 3 has a flat-top, and the 0 is more distinctive. The letters a, g, p, and q in many fonts often have the same round shape sitting on the baseline; by adopting the two-storey design for a and g there are two fewer letters to be confused. The asymmetries of characters like B and 8 have been enhanced. And so on.</p>
@@ -389,7 +389,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: January 18, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: January 21, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
