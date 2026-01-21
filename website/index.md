@@ -822,7 +822,7 @@ Some character variations are provided in `cv..` features.
 	<td class="code_ss_off">cv05</td>
     <td class="code_ss_off"> &lt;= &gt;= </td>
     <td class="code_cv_on"> &lt;= &gt;= </td>
-    <td class="code_ss_off"><p> &lt;= and &lt;= ligatures </p></td>
+    <td class="code_ss_off"><p> &lt;= and &gt;= ligatures </p></td>
     </tr>
     <tr>
 	<td class="code_ss_off">cv06</td>
@@ -832,8 +832,8 @@ Some character variations are provided in `cv..` features.
     </tr>
     <tr>
 	<td class="code_ss_off">cv07</td>
-    <td class="code_ss_off">,;</td>
-    <td class="code_cv_on">,;</td>
+    <td class="code_ss_off">,</td>
+    <td class="code_cv_on">,</td>
     <td class="code_ss_off"><p>thinner punctuation</p></td>
     </tr>
 

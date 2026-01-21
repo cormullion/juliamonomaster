@@ -325,10 +325,7 @@ code.language-julia.hljs {
 }
 
 .code_cv_on {
-	font-feature-settings: "cv01", "cv02", "cv03", "cv04", "cv05",
-		"cv06",
-		"cv07",
-		"cv08";
+	font-feature-settings: "cv01", "cv02", "cv03", "cv04", "cv05", "cv06", "cv07", "cv08";
 }
 
 /* language sample table */
