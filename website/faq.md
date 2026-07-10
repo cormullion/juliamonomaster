@@ -46,27 +46,18 @@ julia> glyphy(0x203d)
 
 ## ‘How can I use the web fonts?’
 
-Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server.
-
-Option 1 (using the [jsdelivr](https://cdn.jsdelivr.net) content delivery network):
+Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server. You can use the [jsdelivr](https://cdn.jsdelivr.net) content delivery network as a server:
 
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2"); 
+	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.062/webfonts/JuliaMono-Light.woff2"); 
 }
 ```
 
-Option 2 (using the [cdnjs](https://cdnjs.com/libraries/juliamono) content delivery network):
+We're asking for version 0.062 of JuliaMono-Light here, because 0.062 is the most recent release (at the time of writing). You can choose to ask for other versions.
 
-```
-@font-face {
-	font-family: JuliaMono-Light;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.062/JuliaMono-Light.woff2");
-}
-```
-
-Then, in the area of the CSS where you control the appearance of monospaced text:
+Then, in the area of the CSS where you control the appearance of monospaced text, use CSS like this:
 
 ```css
 pre {
@@ -77,9 +68,9 @@ code {
 	}
 ```
 
-Notice that the CDNJS version points to a specific version (v0.062 here), whereas the JSDELIVR version always retrieves the latest release.
-
 You may prefer to serve the WOFF2 fonts from your own server. One problem you might encounter is related to [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which on some browsers prevents one web page from downloading fonts from another.
+
+Some people use the path to the GitHub repository for JuliaMono in the `src: url(` part of the CSS file. I don't know whether relying on GitHub for performant or reliable file-serving is to be recommended...
 
 There are some other options for the `@font-face` directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.
 

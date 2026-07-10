@@ -76,26 +76,21 @@ julia&gt; glyphy&#40;0x203d&#41;
 <h2 id="i_dont_like_it_as_much_as_my_favourite_font"><a href="#i_dont_like_it_as_much_as_my_favourite_font" class="header-anchor">‘I don’t like it as much as <code>&#36;&#40;my_favourite_font&#41;</code>’</a></h2>
 <p><strong>That’s not a question&#33;</strong> But I know what you mean. Choice of work environment &#40;editor, font, colour scheme, background music, preferred beverage, etc.&#41; is very much a personal thing, and over the hours, days, and weeks that you work with your particular setup, you’ll grow accustomed to it, and unfamiliar work environments will look unappealing or even ugly. You’d probably need to try any alternatives for a while before you get more accustomed to them.</p>
 <h2 id="how_can_i_use_the_web_fonts"><a href="#how_can_i_use_the_web_fonts" class="header-anchor">‘How can I use the web fonts?’</a></h2>
-<p>Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server.</p>
-<p>Option 1 &#40;using the <a href="https://cdn.jsdelivr.net">jsdelivr</a> content delivery network&#41;:</p>
+<p>Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server. You can use the <a href="https://cdn.jsdelivr.net">jsdelivr</a> content delivery network as a server:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2&quot;&#41;; 
+	src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.062/webfonts/JuliaMono-Light.woff2&quot;&#41;; 
 &#125;</code></pre>
-<p>Option 2 &#40;using the <a href="https://cdnjs.com/libraries/juliamono">cdnjs</a> content delivery network&#41;:</p>
-<pre><code class="language-julia">@font-face &#123;
-	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.062/JuliaMono-Light.woff2&quot;&#41;;
-&#125;</code></pre>
-<p>Then, in the area of the CSS where you control the appearance of monospaced text:</p>
+<p>We&#39;re asking for version 0.062 of JuliaMono-Light here, because 0.062 is the most recent release &#40;at the time of writing&#41;. You can choose to ask for other versions.</p>
+<p>Then, in the area of the CSS where you control the appearance of monospaced text, use CSS like this:</p>
 <pre><code class="language-css">pre &#123;
 	font-family: JuliaMono-Light;
 &#125;
 code &#123;
 	font-family: JuliaMono-Light;
 	&#125;</code></pre>
-<p>Notice that the CDNJS version points to a specific version &#40;v0.062 here&#41;, whereas the JSDELIVR version always retrieves the latest release.</p>
 <p>You may prefer to serve the WOFF2 fonts from your own server. One problem you might encounter is related to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a>, which on some browsers prevents one web page from downloading fonts from another.</p>
+<p>Some people use the path to the GitHub repository for JuliaMono in the <code>src: url&#40;</code> part of the CSS file. I don&#39;t know whether relying on GitHub for performant or reliable file-serving is to be recommended...</p>
 <p>There are some other options for the <code>@font-face</code> directive, which determine things like the behaviour of web pages while the fonts are still downloading, the range of characters you want to download, and so on.</p>
 <p>&#40;There are also versions of two of the fonts with “Latin” in the name: these are stripped down versions supporting just the basic MacRoman/Windows1252 “Latin” character sets. These are of interest mostly if you want to have more control over font loading times in web browser-based applications.&#41;</p>
 <h2 id="how_do_i_configure_vscode"><a href="#how_do_i_configure_vscode" class="header-anchor">‘How do I configure VSCode?’</a></h2>
@@ -389,7 +384,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: January 21, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 10, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
