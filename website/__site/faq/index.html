@@ -79,9 +79,11 @@ julia&gt; glyphy&#40;0x203d&#41;
 <p>Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server. You can use the <a href="https://cdn.jsdelivr.net">jsdelivr</a> content delivery network as a server:</p>
 <pre><code class="language-julia">@font-face &#123;
 	font-family: JuliaMono-Light;
-	src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.63/webfonts/JuliaMono-Light.woff2&quot;&#41;; 
+	src: url&#40;&quot;https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2&quot;&#41;; 
 &#125;</code></pre>
-<p>We&#39;re asking for version 0.63 of JuliaMono-Light here, because 0.63 is the most recent release &#40;at the time of writing&#41;. You can choose to ask for other releases.</p>
+<p>Because we didn&#39;t specify a version number, we&#39;ve been served with the current, most recent, release. If for some reason you want to download a specific release, use a URL in the form:</p>
+<pre><code class="language-julia">https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.63.1/webfonts/JuliaMono-Light.woff2</code></pre>
+<p>Here we&#39;re asking for release 0.63.1 of JuliaMono-Light.woff2.</p>
 <p>Then, in the area of the CSS where you control the appearance of monospaced text, use CSS like this:</p>
 <pre><code class="language-css">pre &#123;
 	font-family: JuliaMono-Light;
@@ -384,7 +386,7 @@ display&#40;p&#41;</code></pre>
 <p></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Cormullion. Last modified: July 15, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
+    &copy; Cormullion. Last modified: July 17, 2026. Font version . Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the Julia Programming Language, based on the "basic" template.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

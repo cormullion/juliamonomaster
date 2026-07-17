@@ -51,11 +51,17 @@ Find a suitable CSS file, and insert a link to a WOFF2 file stored on a server. 
 ```
 @font-face {
 	font-family: JuliaMono-Light;
-	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.63/webfonts/JuliaMono-Light.woff2"); 
+	src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2"); 
 }
 ```
 
-We're asking for version 0.63 of JuliaMono-Light here, because 0.63 is the most recent release (at the time of writing). You can choose to ask for other releases.
+Because we didn't specify a version number, we've been served with the current, most recent, release. If for some reason you want to download a specific release, use a URL in the form:
+
+```
+https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.63.1/webfonts/JuliaMono-Light.woff2
+```
+
+Here we're asking for release 0.63.1 of JuliaMono-Light.woff2.
 
 Then, in the area of the CSS where you control the appearance of monospaced text, use CSS like this:
 
